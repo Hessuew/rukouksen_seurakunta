@@ -1,13 +1,10 @@
 ---
-import imgLogo from '~/assets/images/index/urFIT Child Research Group Logo.webp';
 import imgResearchVisualization from '~/assets/images/index/Urfit Child Website Frontpage.webp';
-import Image from '~/components/common/Image.astro';
-import GradientText from '~/components/ui/GradientText.astro';
-import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 import Spacer from '~/components/widgets/Spacer.astro';
-import Stars from '~/components/widgets/Stars.astro';
-import Stats from '~/components/widgets/Stats.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
@@ -45,223 +42,142 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <Stars>
-    <Hero tagline="Welcome to">
-      <Fragment slot="image">
-        <Image
-          class="mx-auto rounded-md w-full"
-          widths={[200, 384, 512, 1020]}
-          sizes="(max-width: 767px) 200px, (max-width: 1023px) 384px, (max-width: 2039px) 512px, 1020px"
-          loading="eager"
-          width={640}
-          height={640}
-          src={imgLogo}
-          alt="urFIT-child Research Group Logo"
-        />
-      </Fragment>
-      <Fragment slot="title">
-        <div class="flex flex-wrap gap-[0.25em] items-center justify-center">
-          <span>
-            <p class="text-primary highlight inline-block">U</p>nde<p class="text-primary highlight inline-block">
-              r
-            </p>standing
-          </span>
-          <span>
-            <p class="text-primary highlight inline-block">FIT</p>ness
-          </span>
-          <span class="whitespace-nowrap">and</span>
-          <span>
-            <p class="text-primary highlight inline-block">c</p>ardiometabolic
-          </span>
-          <span>
-            <p class="text-primary highlight inline-block">h</p>ealth
-          </span>
-          <span>
-            <p class="text-primary highlight inline-block">i</p>n
-          </span>
-          <span>
-            <p class="text-primary highlight inline-block">l</p>ittle
-          </span>
-          <span>
-            <p class="text-primary highlight inline-block">d</p>arlings
-          </span>
-          <span class="whitespace-nowrap"><p class="text-primary highlight inline-block">(urFIT-child)</p></span>
-        </div>
-      </Fragment>
+  <!-- Hero2 Widget ******************* -->
+  <!-- actions={[
+      { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
+      { text: 'Learn more', href: '#features' },
+    ]} -->
+  <Hero2
+    image={{
+      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AstroWind Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+      <span class="text-accent dark:text-white highlight">Rukouksen seurakunta</span>
+    </Fragment>
 
-      <Fragment slot="subtitle">
-        A treasure chest of 21st-century novel discoveries aimed at <span class="whitespace-nowrap"
-          ><GradientText class="font-bold">improving</GradientText></span
-        >
-        children, adolescents, and young adults' health.
-      </Fragment>
-    </Hero>
-  </Stars>
+    <Fragment slot="subtitle"> Rukous määrittää seurakkunnan</Fragment>
+  </Hero2>
 
-  <!-- Features Widget *************** -->
-
-  <Features3
-    id="description"
-    animated={false}
-    tagline="Description"
-    title="We are a multi-disciplinary and multi-collaborative research group with clear objectives"
-    classes={{ container: 'max-w-6xl pb-0 md:pb-0 lg:pb-0' }}
-    columns={2}
+  <Steps
+    tagline={'Mihin uskomme?'}
+    title={''}
+    isReversed={true}
+    classes={{ container: 'lg:pb-0 md:pb-0' }}
     items={[
       {
-        title: 'Improving',
-        description:
-          'Improve understanding of the development of cardiovascular, metabolic, and arterial diseases from childhood until young adulthood.',
-        icon: 'tabler:brain',
+        title: 'Kaikki tarvitsevat pelastusta',
+        description: [{ text: 'Kaikki ihmiset ovat syntisiä syntymästä asti ja tarvitsevat pelastusta... Rom 3:24.' }],
+        icon: 'tabler:number-1',
       },
       {
-        title: 'Identifying',
-        description:
-          'Identify critical time periods of significant deviation from physiology to pathology during growth and maturation.',
-        icon: 'tabler:calendar-month',
+        title: 'Jeesus on Jumalan Poika',
+        description: [
+          { text: 'Jeesus on Jumalan Poika jonka kautta pelastuminen synnistä on mahdollista... John 20:30-31.' },
+        ],
+        icon: 'tabler:number-2',
       },
       {
-        title: 'Simulating',
-        description:
-          'Simulate potential intervention effects in situation where randomized clinical trials are lacking in apparently healthy children and adolescents.',
-        icon: 'tabler:pill',
+        title: 'Evankeliumin julistaminen',
+        description: [{ text: 'Evankeliumi tulee julistaa jokaiselle luodulle... Mat 28.' }],
+        icon: 'tabler:number-3',
       },
       {
-        title: 'Examining',
-        description:
-          'Examine mechanistic cross-talk within modifiable risk factors and non-modifiable risk factors to inform potentially effective intervention strategies.',
-        icon: 'tabler:zoom-exclamation',
+        title: 'Ihmeet ja merkit',
+        description: [
+          {
+            text: 'Ihmeet ja merkit, parantumiset, vapautumiset sekä pahojen henkien ulosajamiset seuraavat ja ovat todisteita todellisesta envakeliumista... Mark 16.',
+          },
+        ],
+        icon: 'tabler:number-4',
       },
       {
-        title: 'Causality',
-        description:
-          'Investigate causal inferences in risk factors relationships that prospectively influence cardiac, metabolic, and arterial health from childhood through young adulthood.',
-        icon: 'tabler:timeline',
-      },
-      {
-        title: 'Discovering',
-        description:
-          'Discover novel risk factors for several paediatric diseases such as hypertension, insulin resistance (type 2 diabetes), obesity, premature cardiac damage, atherosclerosis, dyslipidaemia in which several intervention strategies have had limited success.',
-        icon: 'tabler:bulb',
-      },
-      {
-        title: 'Gaps',
-        description:
-          'To fill knowledge gaps identified by the World Health Organization and other global public health agencies through the provision of substantial scientific evidence useful in updating health guidelines in primarily preventing non-communicable diseases.',
-        icon: 'tabler:book',
-      },
-      {
-        title: 'Tools',
-        description: 'Provide new tools for accurately and cheaply diagnosing childhood obesity globally.',
-        icon: 'tabler:tool',
+        title: 'Rukous',
+        description: [
+          {
+            text: 'Rukous on täysin korvaamaton väline herätyksen ja Pyhän Hengen voiman ilmentymiseen... Luk 18:1, Apt 4: 31; Jaa 5:16.',
+          },
+        ],
+        icon: 'tabler:number-5',
       },
     ]}
-  >
-    <Fragment slot="subtitle">
-      <div class="text-center w-full">
-        <div class="max-w-xl text-center inline-flex flex-wrap gap-[0.25em] items-center justify-center">
-          <span>
-            <p class="font-semibold text-primary highlight inline-block">U</p>nde<p
-              class="font-semibold text-primary highlight inline-block"
-            >
-              r
-            </p>standing
-          </span>
-          <span>
-            <p class="font-semibold text-primary highlight inline-block">FIT</p>ness
-          </span>
-          and
-          <span>
-            <p class="font-semibold text-primary highlight inline-block">c</p>ardiometabolic
-          </span>
-          <span>
-            <p class="font-semibold text-primary highlight inline-block">h</p>ealth
-          </span>
-          <span>
-            <p class="font-semibold text-primary highlight inline-block">i</p>n
-          </span>
-          <span>
-            <p class="font-semibold text-primary highlight inline-block">l</p>ittle
-          </span>
-          <span>
-            <p class="font-semibold text-primary highlight inline-block">d</p>arlings
-          </span>
-          <span>(urFIT-child)</span>
-          <span class="inline"
-            >is a multi-disciplinary and multi-collaborative research group in cooperation with renowned global experts
-            across several continents, viz; Oceania, North America, Africa, Europe, and Asia. Our objectives are to:</span
-          >
-        </div>
-      </div>
+  />
+
+  <Testimonials
+    id="todistuksia"
+    tagline="Todistuksia"
+    title="Kävijöiden omia todistuksia"
+    subtitle="'Jeesus vastasi hänelle: ”Minä olen puhunut julkisesti maailmalle. Olen aina opettanut synagogassa ja temppelissä, jonne kaikki juutalaiset kokoontuvat. Salassa en ole puhunut mitään. Miksi minulta kysyt? Kysy niiltä, jotka ovat kuulleet, mitä minä olen heille puhunut. He kyllä tietävät, mitä olen puhunut.”' Johannes 18:20-21."
+    testimonials={[
+      {
+        testimonial: ``,
+        name: 'Mahidere Wondiye',
+        job: 'Valmistunut',
+        image: {
+          src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Mahidere Wondiye Image',
+        },
+      },
+      {
+        testimonial: ``,
+        name: 'CJ',
+        job: '',
+        image: {
+          src: 'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'CJ Image',
+        },
+      },
+      {
+        testimonial: ``,
+        name: 'Ahunsimere Adeniran',
+        job: 'Opiskelija',
+        image: {
+          src: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80',
+          alt: 'Ahunsimere Adeniran Image',
+        },
+      },
+      {
+        testimonial: ``,
+        name: 'Akua',
+        job: '',
+        image: {
+          src: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Akua Image',
+        },
+      },
+      {
+        testimonial: ``,
+        name: 'Akosua',
+        job: 'Product Manager',
+        image: {
+          src: 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80',
+          alt: 'Jessica Collins Image',
+        },
+      },
+      {
+        testimonial: ``,
+        name: 'Ida Pikkarainen',
+        job: 'Hoitaja & lääketeknikko',
+        image: {
+          src: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Ida Pikkarainen Image',
+        },
+      },
+    ]}
+  />
+
+  <Hero id="tapahtumat" tagline="Tulevat tapahtumat">
+    <Fragment slot="title">
+      Järjestämme tapahtumia, jotka sytyttävät jokaisen hengen tuleen.
+      <span class="text-primary highlight"> Odota</span> Jeesuksen tekevän ihmeitä!
     </Fragment>
-  </Features3>
 
-  <!-- Hero Widget ****************** -->
-
-  <Features3 classes={{ container: 'max-w-6xl' }}>
     <Fragment slot="subtitle">
-      <span class="text-base"
-        >Modifiable risk factors are total cholesterol, triglyceride, low-density lipoprotein cholesterol, high-density
-        lipoprotein cholesterol, insulin resistance (glucose and insulin), blood pressure, heart rate, low-grade
-        inflammation, obesity, body composition (fat mass and muscle mass), sedentary time, light physical activity,
-        moderate-to-vigorous physical activity, smoking habit, cardiorespiratory fitness. Risk factors were measured
-        during clinic visits from childhood starting at age 7 years and repeated either yearly or bi-annually until age
-        17 years. Young adulthood assessments occurred at age 24 years clinic visit, the 30-year clinic visit data
-        collection has been completed (2022 - 2024).
-      </span>
+      'He sanoivat toisilleen: ”Eikö meidän sydämemme ollutkin palava, kun hän puhui meille tiellä ja avasi meille
+      Kirjoitukset?”' Luukas 24:32
     </Fragment>
-  </Features3>
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    title=`With world-class data 
-    <a
-      href="https://www.bristol.ac.uk/alspac/"
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-      class="text-blue-700 hover:underline"
-      >(Children of the 90s)</a>
-    from the University of Bristol, UK, our findings reach the widest audience possible.
-    `
-    classes={{ container: 'pb-0 md:pb-0 lg:pb-0' }}
-    stats={[
-      { title: 'Participating families', amount: '14.5K' },
-      { title: 'Years of data collection', amount: '30' },
-    ]}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    classes={{ item: 'md:w-full pt-0 md:pt-0 lg:pt-0' }}
-    stats={[{ title: 'Global audience of our work', amount: '5,500,000,000+' }]}
-  />
-
-  <!-- Hero Widget ******************* -->
-
-  <Hero
-    image={{
-      src: imgResearchVisualization,
-      alt: 'urFIT-child research visualization',
-    }}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    classes={{ item: 'md:w-full' }}
-    stats={[
-      {
-        amount: 'urFIT-child',
-        classes: { amount: 'text-[2.6rem] font-bold lg:text-7xl xl:text-7xl' },
-        lowerCase: true,
-        curve: true,
-      },
-    ]}
-  >
-    <Fragment slot="title">Enabling children's health globally: </Fragment>
-  </Stats>
+  </Hero>
 
   <!-- Spacer ******************* -->
 
