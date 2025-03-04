@@ -16,8 +16,8 @@ export const headerData: { links: Array<MenuLink> } = {
       href: getPermalink('/#todistuksia'),
     },
     {
-      text: 'Tapahtumat',
-      href: getPermalink('/#tapahtumat'),
+      text: 'Sinulle',
+      href: getPermalink('/#sinulle'),
     },
   ],
 };

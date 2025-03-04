@@ -1,7 +1,7 @@
 # Main site configuration
 site:
-  name: urFIT-child # Website name used across the site
-  site: 'https://urfit-child.com' # Production URL
+  name: Rukouksen seurakunta # Website name used across the site
+  site: 'https://rukouksen-seurakunta.fi' # Production URL
   base: '/' # Base URL path
   trailingSlash: false # URL format configuration
 
@@ -10,22 +10,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: urFIT-child # Default page title
-    template: '%s — urFIT-child' # Template for dynamic page titles
-  description: 'urFIT-child is a multi-disciplinary and multi-collaborative research group with clear objectives.'
+    default: Rukouksen seurakunta # Default page title
+    template: '%s — Rukouksen seurakunta' # Template for dynamic page titles
+  description: 'Käytyäsi rukouksen seurakunnassa Jeesus ei enää kysy sinulta, "Etkö jaksanut valvoa minun kanssani edes yhtä hetkeä?" '
   robots:
     index: true # Allow search engines to index
     follow: true # Allow search engines to follow links
   openGraph:
-    site_name: urFIT-child # Site name for social sharing
+    site_name: Rukouksen seurakunta # Site name for social sharing
     images:
       - url: '~/assets/images/index/urFIT Child Research Group Logo.webp'
         width: 1600
         height: 1600
     type: website
   twitter:
-    handle: '@urfit-child' # Twitter handle
-    site: '@urfit-child' # Twitter site account
+    handle: '@rukouksen_seurakunta' # Twitter handle
+    site: '@rukouksen_seurakunta' # Twitter site account
     cardType: summary_large_image # Twitter card type
 
 # Internationalization settings
