@@ -1,0 +1,87 @@
+---
+import akosua_enhanced from '~/assets/images/akosua_enhanced2.webp';
+import greta_enhanced from '~/assets/images/greta2.webp';
+import ida_enhanced from '~/assets/images/ida_enhanced2.webp';
+import juhani_enhanced from '~/assets/images/juhani_enhanced2.webp';
+import ImageTextSection from './ImageTextSection.astro';
+
+// Sample data for demonstration
+const sampleItems = [
+  {
+    title: 'Seurakunnan Palvelija',
+    name: 'Akosua Osei Owusu',
+    // content:
+    //   "1) The religious people were people without the Spirit of God inside of them. Therefore, their speech brought forth no conviction. Stephen, on the other hand, was a man who was full of the Holy Ghost, which meant that the words proceeding from him brought conviction to the hearers' hearts. Due to this, religious people would prefer to have one of their own speak rather than Stephen. Because then they would still feel comfortable in their positions with no conviction. <br /> <br />  2) The Bible commands us to seek and set our minds on things that are above, eternal. Stephen, as a believer, always had his mind on things eternal. Thus, when the religious people started gnashing their teeth at him, Stephen gazed into heaven because he was used to doing it and didn't focus at all at the peoples’ reaction. Sure, as he was full of the Holy Spirit, the Spirit could have directed his eyes up. Regardless, he focused on things above. <br /> <br />3) Because Stephen was so used to setting his mind on eternal things, when he gazed into heaven this time, he saw the glory of God and Jesus.",
+    content: `1 )  Ihmiset ilman Jumalan Henkeä sisimmässään olivat uskonnollisia. Siksi heidän puheensa ei tuonut synnintuntoa toisille. Stefanos taas oli mies täynä Pyhää Henkeä. Tämä tarkoitti, että hänen suustaan lähtevät sanat toivat synnintunnon kuulijoiden sydämiin. Uskonnolliset ihmiset olisivat halunneet jonkun toisen puhuvan, koska silloin he olisivat voineet elää niin kuin elivät ilman synnintuntoa.
+              <br /> <br />
+              2) Raamattu komentaa meitä etsimään ja asettamaan mielemme niihin asioihin, jotka ovat ylhäällä ja ikuisia. Stefanos piti mielensä aina ikuisissa asioissa. Ja kun uskonnollinen väkijoukko alkoi kiristellä hampaitaan hänelle, Stefanos katsoi taivaaseen. Hän oli tottunut siihen, eikä hän keskittynyt ollenkaan ihmisten  reaktioihin. Hän oli toki täynä Pyhää Henkeä ja Henki kykeni ohjaamaan hänen silmänsä ylös. Siitä huolimatta hän keskittyi itse ylhäällä oleviin asioihin.
+              <br /> <br />
+              3) Koska Stefanos oli niin tottunut keskittymään ikuisiin asioihin, kun hän tällä kertaa katsoi taivaaseen hän näki Jumalan kirkkauden ja Jeesuksen.`,
+    image: {
+      src: akosua_enhanced,
+      alt: 'Iloinen Akosua - kuva',
+    },
+    isReversed: false,
+  },
+  {
+    title: 'Seurakunnan Palvelija',
+    name: 'Ida Pikkarainen',
+    content:
+      'Kun rukoilimme, näin kun Mahi oli verkossa. Monta kalastajan verkkoa oli kietoutunut hánen ympärilleen ja hän oli aivan jumissa. Hän oli sikiöasennossa ja ei pystynyt liikkumaan. Mutta sitten rukoillessamme verkon punokset alkoivat erkaantua toisistaan. Verkot hajosivat itsestään, kunnes niistä ei ollut jäljellä mitään. Sitten Mahi nousi ylös ja lähti liikkeelle niin iloisena Herran antamasta vapaudesta. Halleluja!!',
+    image: {
+      src: ida_enhanced,
+      alt: 'Riemukas Ida - Kuva',
+    },
+    isReversed: true,
+  },
+  {
+    title: 'Seurakunnan Palvelija',
+    name: 'Greta Juusola',
+    content: 'Mmm.. ',
+    image: {
+      src: greta_enhanced,
+      alt: 'Our vision image',
+    },
+    isReversed: false,
+  },
+  // {
+  //   title: 'Paimen - Mahidere Wondiye',
+  //   content: '',
+  //   image: {
+  //     src: imgAgbaje,
+  //     alt: 'Our vision image',
+  //   },
+  //   isReversed: true,
+  // },
+  // {
+  //   title: 'Paimen - CJ',
+  //   content: '',
+  //   image: {
+  //     src: imgAgbaje,
+  //     alt: 'Our vision image',
+  //   },
+  //   isReversed: false,
+  // },
+  {
+    title: 'Piispa & Evankeliumin Julistaja',
+    name: 'Juhani Juusola',
+    content: '',
+    image: {
+      src: juhani_enhanced,
+      alt: 'Our vision image',
+    },
+    isReversed: true,
+  },
+];
+---
+
+<section class="">
+  <ImageTextSection
+    id="meista"
+    tagline="Meistä"
+    title="Keitä olemme"
+    subtitle="'Teille pakanoille sanon: koska olen pakanoiden apostoli, minä pidän virkaani kunniassa' Kirje roomalaisille 11:13. <br /> <br /> 'Minun kerskaukseni on siis Kristuksessa Jeesuksessa palvellessani Jumalaa. En näet rohkene puhua mistään muusta kuin siitä, mitä Kristus, saattaakseen pakanat kuuliaisiksi, on minun kauttani vaikuttanut sanalla ja teoilla, tunnustekojen ja ihmeiden voimalla, Jumalan Hengen voimalla...' Kirje roomalaisille 15:17-19. <br /> <br/> 'Luotettava ei ole se, joka itse suosittelee itseään, vaan se, jota Herra suosittelee.' Kirje korinttilaisille 10:18. <br /> <br /> (Alla esimerkkejä siitä, mitä Pyhä Henki on puhunut näiden palvelijoidensa kautta)"
+    classes={{ headline: { subtitle: 'max-w-5xl' } }}
+    items={sampleItems}
+  />
+</section>

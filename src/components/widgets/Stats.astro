@@ -1,7 +1,9 @@
 ---
+import Image from '~/components/common/Image.astro';
 import type { Stats as Props } from '~/types';
 import { Icon } from 'astro-icon/components';
 import { twMerge } from 'tailwind-merge';
+import GradientText from '../ui/GradientText.astro';
 import Headline from '../ui/Headline.astro';
 import WidgetWrapper from '../ui/WidgetWrapper.astro';
 import AnimatedChildSvg from './AnimatedChildSvg.astro';
@@ -11,6 +13,7 @@ const {
   subtitle = await Astro.slots.render('subtitle'),
   tagline,
   stats = [],
+  image = await Astro.slots.render('image'),
 
   id,
   isDark = false,
@@ -23,7 +26,7 @@ const { item: itemClass = '' } = classes;
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} />
-  <div class="flex flex-wrap justify-center -m-4 text-center">
+  <div class="flex flex-wrap justify-center -m-4 text-center pb-8">
     {
       stats &&
         stats.map(({ amount, classes, title, icon, lowerCase, curve }) => (
@@ -38,7 +41,7 @@ const { item: itemClass = '' } = classes;
                 <Icon name={icon} class="w-10 h-10" />
               </div>
             )}
-            <div class="relative inline-block">
+            <div class="relative inline-block pb-2">
               {amount && (
                 <div
                   class={twMerge(
@@ -47,7 +50,7 @@ const { item: itemClass = '' } = classes;
                   )}
                   aria-label={`${title}: ${amount}`}
                 >
-                  {amount}
+                  <GradientText>{amount}</GradientText>
                 </div>
               )}
               {curve && (
@@ -68,6 +71,36 @@ const { item: itemClass = '' } = classes;
             )}
           </div>
         ))
+    }
+  </div>
+
+  <div
+    class="intersect-once intercept-no-queue intersect-tenth sm:intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+  >
+    {
+      image && (
+        <div class="relative m-auto max-w-5xl">
+          {typeof image === 'string' ? (
+            <Fragment set:html={image} />
+          ) : (
+            image && (
+              <div class="relative m-auto max-w-5xl">
+                <Image
+                  class={twMerge('mx-auto rounded-md w-full', image?.class ?? '')}
+                  widths={[400, 768, 1024, 2040]}
+                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                  loading="eager"
+                  decoding="async"
+                  objectPosition="top top"
+                  width={2040}
+                  height={800}
+                  {...image}
+                />
+              </div>
+            )
+          )}
+        </div>
+      )
     }
   </div>
 </WidgetWrapper>

@@ -1,24 +1,65 @@
 ---
+import imgGold from '~/assets/images/gold2.webp';
+import imgGold2 from '~/assets/images/gold3.5.webp';
 import { twMerge } from 'tailwind-merge';
 
 const {
-  style2 = false,
-  text = Astro.slots.render('default'),
+  text,
+  imageNro = 1,
   class: className = '',
   isHeading = false,
+  animate = true,
+  backgroundStyles = {},
 } = Astro.props as {
-  style2?: boolean;
-  text: string;
+  text?: string;
+  imageNro?: number;
   class?: string;
   isHeading?: boolean;
+  animate?: boolean;
+  backgroundStyles?: Record<string, string>;
 };
+
+// Get content from either text prop or default slot
+const content = text || (await Astro.slots.render('default'));
+
+const defaultBackgroundStyles = {
+  backgroundImage: `url(${imageNro === 1 ? imgGold.src : imgGold2.src})`,
+  WebkitBackgroundClip: 'text',
+  backgroundClip: 'text',
+  color: 'transparent',
+  backgroundRepeat: 'no-repeat',
+  backgroundAttachment: 'local', // Ensures the background stays with the text
+  backgroundPosition: '10% 80%', // Moves it slightly down
+};
+
+// Merge default styles with custom styles
+const commonStyles = {
+  ...defaultBackgroundStyles,
+  ...backgroundStyles,
+};
+
+const commonClasses = twMerge(
+  'text-primary highlight',
+  className,
+  animate &&
+    'intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-tenth sm:intersect-quarter'
+);
 ---
 
-<span
-  class={twMerge(
-    'text-primary highlight inline-block',
-    style2 && 'bg-gradient-to-r from-orange-600 to-yellow-400 text-transparent bg-clip-text italic',
-    className,
-    isHeading && 'text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading'
-  )}>{text}</span
->
+{
+  isHeading ? (
+    <h1
+      class={twMerge(
+        commonClasses,
+        'inline-block text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading'
+      )}
+      style={commonStyles}
+    >
+      {content}
+    </h1>
+  ) : (
+    <span class={twMerge(commonClasses, 'inline-block max-w-full')} style={commonStyles}>
+      {content}
+    </span>
+  )
+}

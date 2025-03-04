@@ -22,9 +22,12 @@ export default {
       fontFamily: {
         sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
         serif: ['var(--aw-font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
+        signature: ['Tangerine', ...defaultTheme.fontFamily.serif],
         heading: ['var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
       },
-
+      fontSize: {
+        'jesus': '24rem', 
+      },
       animation: {
         fade: 'fadeInUp 1s both',
       },

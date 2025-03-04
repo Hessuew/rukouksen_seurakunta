@@ -249,6 +249,8 @@ export interface Hero extends Headline, Widget {
         src: string | ImageMetadata;
         alt?: string;
         class?: string;
+        width?: number;
+        height?: number;
         isInfographics?: boolean;
         link?: {
           href: string;
@@ -265,6 +267,13 @@ export interface Team extends Omit<Headline, 'classes'>, Widget {
 
 export interface Stats extends Omit<Headline, 'classes'>, Widget {
   stats?: Array<Stat>;
+  image?:
+    | string
+    | {
+        src: string | ImageMetadata;
+        alt?: string;
+        class?: string;
+      };
 }
 
 export interface Pricing extends Omit<Headline, 'classes'>, Widget {
@@ -275,6 +284,21 @@ export interface Pricing extends Omit<Headline, 'classes'>, Widget {
 export interface Testimonials extends Omit<Headline, 'classes'>, Widget {
   testimonials?: Array<Testimonial>;
   callToAction?: CallToAction;
+}
+
+interface ImageTextSectionItem {
+  title: string;
+  name: string;
+  content: string;
+  image: {
+    src: string | ImageMetadata;
+    alt: string;
+  };
+  isReversed?: boolean;
+}
+
+export interface ImageTextSection extends Omit<Headline, 'classes'>, Widget {
+  items: Array<ImageTextSectionItem>;
 }
 
 export interface Brands extends Omit<Headline, 'classes'>, Widget {

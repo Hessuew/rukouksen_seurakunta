@@ -1,61 +1,118 @@
 ---
+import imgGold from '~/assets/images/gold2.webp';
 import Stats from '~/components/widgets/Stats.astro';
+import GradientText from '../ui/GradientText.astro';
+
+const mainText = 'Tule!';
+const secondaryText = 'Ja kohtaa Jeesus';
+const baseDelay = 800;
+const secondaryDelay = 1600;
+const delayIncrement = 50;
+const underlineDelay = baseDelay + mainText.length * delayIncrement + 500; // Add delay after last letter
 ---
 
-<style>
+<style define:vars={{ imgGoldUrl: `url(${imgGold.src})`, underlineDelay: `${underlineDelay}ms` }}>
   @keyframes letterFade {
     0% {
-      color: var(--aw-color-page);
+      color: #09183f;
     }
     100% {
       color: transparent;
     }
   }
 
+  @keyframes drawUnderline {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
   .animate-letter {
     opacity: 0;
+    color: #09183f;
     display: inline-block;
     animation-delay: inherit;
+    background-image: var(--imgGoldUrl);
+    background-repeat: no-repeat;
+    background-position: 10% 80%;
     background-clip: text;
     -webkit-background-clip: text;
-    color: var(--aw-color-page);
+    visibility: hidden; /* Hide the letters completely before animation */
   }
 
   .wave-wrapper.visible .animate-letter {
     opacity: 1;
+    visibility: visible; /* Show letters when animation starts */
     animation: letterFade 2s ease-in-out forwards;
+  }
+
+  .text-underline {
+    position: relative;
+  }
+
+  .text-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 4px;
+    width: 0;
+    opacity: 0;
+    background-image: var(--imgGoldUrl);
+    background-repeat: no-repeat;
+    background-position: 10% 80%;
+    background-size: cover;
+    visibility: hidden;
+  }
+
+  .wave-wrapper.visible .text-underline::after {
+    visibility: visible;
+    animation: drawUnderline 1s ease-out forwards;
+    animation-delay: var(--underlineDelay);
+  }
+
+  .space-char {
+    display: inline-block;
+    width: 0.2em;
   }
 </style>
 
 <Stats classes={{ container: 'max-w-6xl mx-auto', item: 'md:w-full' }}>
-  <Fragment slot="title">
-    <div class="text-center">
-      Engulfing the globe with
-      <span class="highlight bg-gradient-to-r from-orange-600 to-yellow-400 text-transparent bg-clip-text">divine</span>
-      fire
-    </div>
-  </Fragment>
   <Fragment slot="subtitle">
-    <div class="text-center w-full wave-wrapper">
+    <div class="text-4xl md:text-5xl font-bold text-center italic">
+      <GradientText class="pr-3">Henki</GradientText>
+      <span class="pr-3">ja</span>
+      <GradientText class="pr-1">morsian</GradientText> sanovat:
+    </div>
+    <div class="text-center w-full wave-wrapper pt-6 flex flex-col items-center">
       <div
-        class="inline-flex flex-row bg-gradient-to-r from-orange-600 to-yellow-400 text-transparent bg-clip-text italic text-4xl xs:text-5xl md:text-6xl font-bold leading-tighter tracking-tighter pr-3"
+        class="text-transparent bg-clip-text text-4xl xs:text-6xl md:text-7xl font-bold leading-tighter tracking-tighter text-underline mb-4"
       >
-        <span class="animate-letter" style="animation-delay: 800ms;">F</span>
-        <span class="animate-letter" style="animation-delay: 850ms;">l</span>
-        <span class="animate-letter" style="animation-delay: 900ms;">a</span>
-        <span class="animate-letter" style="animation-delay: 950ms;">m</span>
-        <span class="animate-letter" style="animation-delay: 1000ms;">e</span>
-        <span class="animate-letter" style="animation-delay: 1050ms;">&nbsp;</span>
-        <span class="animate-letter" style="animation-delay: 1100ms;">t</span>
-        <span class="animate-letter" style="animation-delay: 1150ms;">h</span>
-        <span class="animate-letter" style="animation-delay: 1200ms;">e</span>
-        <span class="animate-letter" style="animation-delay: 1250ms;">&nbsp;</span>
-        <span class="animate-letter" style="animation-delay: 1300ms;">F</span>
-        <span class="animate-letter" style="animation-delay: 1350ms;">r</span>
-        <span class="animate-letter" style="animation-delay: 1400ms;">e</span>
-        <span class="animate-letter" style="animation-delay: 1450ms;">e</span>
-        <span class="animate-letter" style="animation-delay: 1500ms;">z</span>
-        <span class="animate-letter" style="animation-delay: 1550ms;">e</span>
+        {
+          Array.from(mainText).map((char, index) => (
+            <span class="animate-letter" style={`animation-delay: ${baseDelay + index * delayIncrement}ms;`}>
+              {char}
+            </span>
+          ))
+        }
+      </div>
+      <div class="text-transparent bg-clip-text text-4xl md:text-5xl font-bold leading-tighter tracking-tighter pt-6">
+        {
+          Array.from(secondaryText).map((char, index) =>
+            char === ' ' ? (
+              <span class="space-char" />
+            ) : (
+              <span class="animate-letter" style={`animation-delay: ${secondaryDelay + index * delayIncrement}ms;`}>
+                {char}
+              </span>
+            )
+          )
+        }
       </div>
     </div>
   </Fragment>

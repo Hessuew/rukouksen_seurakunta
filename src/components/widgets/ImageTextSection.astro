@@ -1,0 +1,68 @@
+---
+import type { ImageTextSection as Props } from '~/types';
+import Image from 'astro/components/Image.astro';
+import GradientText from '../ui/GradientText.astro';
+import Headline from '../ui/Headline.astro';
+import WidgetWrapper from '../ui/WidgetWrapper.astro';
+
+const {
+  title = '',
+  subtitle = '',
+  tagline = '',
+  items = [],
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper
+  id={id}
+  animated={false}
+  isDark={isDark}
+  containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`}
+  bg={bg}
+>
+  <Headline
+    title={title}
+    subtitle={subtitle}
+    tagline={tagline}
+    classes={{
+      ...((classes?.headline as object) ?? {}),
+    }}
+  />
+  <div class="space-y-16">
+    {
+      items.map(({ isReversed, image, title, content, name }) => (
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-center intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-tenth sm:intersect-quarter">
+          <div class={`flex justify-center ${isReversed ? 'md:order-3' : 'md:order-1'}`}>
+            <Image
+              class="rounded-lg shadow-md"
+              width={680}
+              height={680}
+              widths={[680, 768]}
+              layout="responsive"
+              {...image}
+            />
+          </div>
+
+          <div class="md:order-2 col-start-2 col-span-3 flex flex-col h-full">
+            <div class="border-b-2 border-primary-500 pb-2 w-full mb-4">
+              <h3 class="inline-flex items-center">
+                <GradientText animate={false} class="text-2xl font-bold italic pr-px" set:html={title} />
+                <span class="text-2xl font-bold px-4">-</span>
+                <span class="font-signature text-4xl font-bold">{name}</span>
+              </h3>
+            </div>
+            <div class="prose prose-lg max-w-none" set:html={content} />
+          </div>
+
+          {/* Empty div to maintain the 3-column grid layout */}
+          <div class={`hidden md:block ${isReversed ? 'md:order-1' : 'md:order-3'}`} />
+        </div>
+      ))
+    }
+  </div>
+</WidgetWrapper>
