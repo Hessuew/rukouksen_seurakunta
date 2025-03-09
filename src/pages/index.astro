@@ -1,17 +1,18 @@
 ---
 import ahunsi from '~/assets/images/ahunsi.webp';
-import akosua_enhanced from '~/assets/images/akosua_enhanced2.webp';
+import akosua from '~/assets/images/akosua.webp';
 import akua from '~/assets/images/akua.webp';
 import ben_enhanced from '~/assets/images/ben2.webp';
-import cj_enhanced from '~/assets/images/cj_enhanced.webp';
-import ida_enhanced from '~/assets/images/ida_enhanced2.webp';
+import cj from '~/assets/images/cj.webp';
+import ida from '~/assets/images/ida.webp';
+import iina from '~/assets/images/iina.webp';
 import logo from '~/assets/images/logo.webp';
 import mahi_enhanced from '~/assets/images/mahi_enhanced.webp';
+import maria from '~/assets/images/maria.webp';
 import imgPrayerChurchKuopio from '~/assets/images/prayer_church_kuopio2.webp';
 import GradientText from '~/components/ui/GradientText.astro';
-import AnimatedStats2 from '~/components/widgets/AnimatedStats.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-import Hero2 from '~/components/widgets/Hero2.astro';
+import Hero from '~/components/widgets/Hero.astro';
 import ImageTextSectionExample from '~/components/widgets/ImageTextSectionExample.astro';
 import Jesus from '~/components/widgets/Jesus.astro';
 import Spacer from '~/components/widgets/Spacer.astro';
@@ -19,6 +20,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import { Icon } from 'astro-icon/components';
 
 const metadata = {
   title: 'Rukouksen seurakunta | Rukoushuone kaikille kansoille',
@@ -31,7 +33,7 @@ const metadata = {
     description:
       'Rukouksen seurakunta on ryhmä, joka keskittyy Jeesukseen intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen etsimiseen. Tule mukaan rukouskokouksiin, kohtaa Jeesus ja koe Jumalan läsnäolo.',
     type: 'website',
-    image: imgPrayerChurchKuopio,
+    image: logo,
     article: {
       publishedTime: '2025-03-03T05:03:23+02:00',
       modifiedTime: '2025-03-03T05:03:23+02:00',
@@ -54,17 +56,36 @@ const metadata = {
     cardType: 'summary_large_image',
   },
 };
+
+const styleStyle = {
+  backgroundPosition: 'center',
+  backgroundAttachment: 'local',
+  backgroundRepeat: 'repeat',
+  backgroundSize: '100% 100%',
+};
 ---
 
 <Layout metadata={metadata}>
-  <Hero2
+  <Hero
     image={{
       src: logo,
       alt: 'Rukouksen seurakunnan logo',
+      width: 600,
+      height: 600,
     }}
   >
     <Fragment slot="title">
-      <GradientText isHeading={true}>Rukouksen seurakunta</GradientText>
+      <GradientText
+        isHeading={true}
+        imageNro={2}
+        class="w-full text-[12vw] sm:text-[14vw] md:text-[12vw] lg:text-[10vw] font-bold leading-none"
+        backgroundStyles={styleStyle}
+      >
+        <div class="flex flex-col">
+          <span>Rukouksen</span>
+          <span>seurakunta</span>
+        </div>
+      </GradientText>
     </Fragment>
 
     <Fragment slot="subtitle">
@@ -76,15 +97,22 @@ const metadata = {
       <br />
       <br />
       Tämä ei tarkoita pieniä ja nättejä rukouksia. Jeesus rukoili kolme tuntia Getsemanessa ja ihmetteli etteivät opetuslapset
-      jaksaneet rukoilla edes tuntia. Jos pastori ei jaksa rukoilla edes tuntia, niin seurakuntalaiset eivät jaksa rukoilla
-      edes 20 minuuttia.
+      jaksaneet rukoilla edes tuntia. Jos pastori ei jaksa rukoilla edes tuntia, seurakuntalaiset eivät jaksa rukoilla 20
+      minuuttia.
+      <br />
       <br />
       Tuli puuttuu.
       <br />
       <br />
-      <GradientText class="italic font-bold text-xl pr-1"> Missä on sinun tulesi? </GradientText>
+      <GradientText
+        imageNro={2}
+        backgroundStyles={{ ...styleStyle, backgroundSize: '200% 100%', backgroundPosition: '10% 20%' }}
+        class="italic font-bold text-xl pr-1"
+      >
+        Missä on sinun tulesi?
+      </GradientText>
     </Fragment>
-  </Hero2>
+  </Hero>
 
   <Jesus classes={{ container: 'max-w-none w-full p-0 overflow-x-hidden' }}>
     <Fragment slot="title">
@@ -93,20 +121,26 @@ const metadata = {
           >Meidän tulemme ei ole asia, vaan henkilö..</GradientText
         >
       </div>
-      <div class="w-screen overflow-hidden mx-auto -my-4">
+      <div class="overflow-hidden mx-auto -my-4">
         <GradientText
           imageNro={2}
           class="w-full text-[28vw] sm:text-[24vw] md:text-[24vw] lg:text-[26vw] font-bold leading-none"
-          backgroundStyles={{
-            backgroundSize: '100% 100%',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'local',
-            backgroundRepeat: 'repeat',
-          }}>Jeesus</GradientText
+          backgroundStyles={styleStyle}
         >
+          Jeesus
+        </GradientText>
       </div>
       <div class="py-4">
-        <GradientText class="text-3xl xs:text-4xl md:text-5xl">Jumalan Poika</GradientText>
+        <GradientText
+          imageNro={2}
+          backgroundStyles={{ ...styleStyle, backgroundSize: '100% 200%', backgroundPosition: '10% 20%' }}
+          class="w-full text-[10vw] sm:text-[14vw] md:text-[10vw] lg:text-[6vw] font-bold leading-none"
+        >
+          <div class="flex flex-col">
+            <span>Kristus</span>
+            <span>Jumalan Poika</span>
+          </div>
+        </GradientText>
       </div>
     </Fragment>
   </Jesus>
@@ -193,28 +227,39 @@ const metadata = {
   <Testimonials
     id="todistuksia"
     tagline="Todistuksia"
-    title="Kävijöiden omia todistuksia"
-    subtitle="'Jeesus vastasi hänelle: ”Minä olen puhunut julkisesti maailmalle. Olen aina opettanut synagogassa ja temppelissä, jonne kaikki juutalaiset kokoontuvat. Salassa en ole puhunut mitään. Miksi minulta kysyt? Kysy niiltä, jotka ovat kuulleet, mitä minä olen heille puhunut. He kyllä tietävät, mitä olen puhunut.”' Johannes 18:20-21."
+    title="Mitä ihmiset sanovat"
     testimonials={[
       {
+        testimonial: 'Kultti',
+        name: 'Nimeltä mainitsematon',
+        job: 'Vanhemmiston jäsen suomalaisessa seurakunnassa',
+        image: {
+          src: '',
+          alt: '',
+        },
+        isPositive: false,
+      },
+      {
         testimonial:
-          'Tullessani tähän seurakuntaan ensimmäistä kertaa oltuani pitkän poissa Jumalan armon alta ja kärsittyäni Paholaisen ahdistamana Jeesuksen Kristuksen armo kohtasi minut. Pyhä Henki vahvisti tämän voimakkaalla fyysisellä ilmentymällä. Yhtenä päivänä vapauduin, parannuin fyysisesti ja vastaanotin Pyhän Hengen tulen. Ikuinen kirkkaus Hänen ristintyöstän!',
-        // `The first day I set foot in this church, after a long absence from the grace of God and under the devil's bondage, I was met with the mercy of Jesus Christ and Holy Spirit confirmed it by his powerful and visible encounter. In a single day, I received freedom, healing, and the fire of the Holy Spirit. Forever be glory, for His work on the Cross!`,
+          'Olin ollut pitkään kaukana Jumalasta ja elämäni oli Saatanan vaivaama. Tullessani ensimmäistä kertaa Rukouksen seurakuntaan Jeesuksen Kristuksen armo kohtasi minut käsin kosketettavasti Pyhä Hengen vahvistaessa tämän voimakkaalla ja näkyvällä Jumalan voiman ilmenemisellä. Vapauduin, parannuin fyysisesti ja sain takaisin menettämäni Pyhän Hengen tulen. Ikuinen ylistys Jeesukselle Hänen ristintyöstään!',
         name: 'Mahidere Ali',
         job: '',
         image: {
           src: mahi_enhanced,
           alt: 'Mahidere Ali Image',
         },
+        isPositive: true,
       },
       {
-        testimonial: `Since I joined the Flame the Freeze meetings, I have experienced a profound renewal of my spiritual sensitivity and appetite for the Lord. The liberal prayer sessions, in partnership with the Holy Spirit, have revived and awakened my scriptural songs' bank, building my most holy faith (Jude 1:20) The liberty we have in our gatherings has facilitated the manifestation of the Spirit, breaking down the barriers of religious tradition and deepening our relationships with the Holy Spirit and one another. Truly, our fellowship embodies Zion—the city of the living God, the heavenly Jerusalem, and the innumerable company of angels (Heb 12:22). It is a place of divine encounters and transformative experiences.`,
-        name: 'CJ',
-        job: '',
+        testimonial:
+          'Pääsin tupakasta eroon ilman mitään korvaavia nikotiinituotteita. Rukoilin apua Jeesukselta. Tajusin, että minun pitää myös vastaanottaa apu, ja niin kulkea valossa ilman riippuvuuksia.',
+        name: 'Iina',
+        job: 'Tarjoilija',
         image: {
-          src: cj_enhanced,
-          alt: 'CJ Image',
+          src: iina,
+          alt: '',
         },
+        isPositive: true,
       },
       {
         testimonial: ``,
@@ -224,15 +269,37 @@ const metadata = {
           src: ahunsi,
           alt: 'Ahunsimere Adeniran Image',
         },
+        isPositive: true,
       },
       {
-        testimonial: `My experiences in the prayer church are countless. Before I joined, I never took prayer seriously. Now I have developed a strong habit of trusting God in everything that I do. Through that, I have seen the hand Jesus in my life, especially in my career where I specifically prayed for a job and Jesus delivered. My life has since transformed from someone who lived life aimlessly to a focused, deeply spiritual person whose faith has been renewed and who knows that it's only Jesus that can save our lives. I'm a medical researcher currently working as a teaching assistant at the university of Eastern Finland.`,
+        testimonial: `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaikessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
         name: 'Benwillis',
-        job: '',
+        job: 'Lääketieteen tutkija, opetusassitentti Itä-Suomen Yliopistolla',
         image: {
           src: ben_enhanced,
           alt: 'Benwillis Image',
         },
+        isPositive: true,
+      },
+      {
+        testimonial: 'He tulevat ajamaan seinään',
+        name: 'Nimeltä mainitsematon',
+        job: 'Pastori suomalaisessa seurakunnassa',
+        image: {
+          src: '',
+          alt: '',
+        },
+        isPositive: false,
+      },
+      {
+        testimonial: ``,
+        name: 'Ida Pikkarainen',
+        job: 'Lähihoitaja, kuntoutusohjaaja',
+        image: {
+          src: ida,
+          alt: 'Ida Pikkarainen Image',
+        },
+        isPositive: true,
       },
       {
         testimonial: ``,
@@ -242,37 +309,108 @@ const metadata = {
           src: akua,
           alt: 'Akua Image',
         },
+        isPositive: true,
       },
       {
-        testimonial: `Good morning. This is the short testimony that was requested: Jesus is a Savior. He truly saves from darkness when one calls unto Him. My life has transformed in a way that I cannot even explain. From a godless life to one that is ever aware of Him. The Prayer Church teaches the uncompromising truth of the Bible. The gatherings are always Spirit-filled and Spirit-led. The community is simply unmatched. Akosua Osei, student`,
-        name: 'Akosua Osei',
-        job: 'Student',
+        testimonial: 'En tiennyt, että Kuopiossa on tämmöistä.',
+        name: 'Maria Röning',
+        job: 'Yrittäjä',
         image: {
-          src: akosua_enhanced,
+          src: maria,
+          alt: '',
+        },
+        isPositive: true,
+      },
+      {
+        testimonial: 'He harjoittavat afrikkalaista noituutta',
+        name: 'Nimeltä mainitsematon',
+        job: 'Suomen suurimman seurakunnan sisäinen lähetysjärjestö',
+        image: {
+          src: '',
+          alt: '',
+        },
+        isPositive: false,
+      },
+      {
+        testimonial:
+          'Varo ettet pala loppuun - 2019 <br /> (Jonka jälkeen tuli on vain lisääntynyt joka vuosi. Kiitos Herralle!)',
+        name: 'Nimeltä mainitsematon',
+        job: 'Nuorisopastori ***** helluntaiseurakunnassa',
+        image: {
+          src: '',
+          alt: '',
+        },
+        isPositive: false,
+      },
+      {
+        testimonial: `Jeesus on Pelastaja. Hän pelastaa pimeydestä jokaisen, joka  huutaa Häntä avukseen. Elämäni on muuttunut niin paljon etten edes pysty ymmärtämään sitä itse kunnolla. Elin jumalattomasti, mutta nyt olen aina keskittynyt Jeesukseen. Rukouksen seurakunta opettaa mitä Raamattu sanoo laimentamatta tai pehmittelemättä sitä. Kokoontumiset ovat joka kerta täynä Pyhää Henkeä ja Hänen ohjaamiaan. Ryhmä on suoraan sanottuna suurenmoinen ja vertaansa vailla.`,
+        name: 'Akosua Osei',
+        job: 'Yliopisto-opiskelija',
+        image: {
+          src: akosua,
           alt: 'Akosua Osei Image',
         },
+        isPositive: true,
       },
       {
-        testimonial: ``,
-        name: 'Ida Pikkarainen',
-        job: 'Hoitaja & lääketeknikko',
+        testimonial: `Liityttyäni Flame the Freeze:n tapaamisiin minulle on tapahtunut paljon. Hengellinen herkkyyteni on perusteellisesti uudistunut ja samoin myös intohimoni Herraa kohtaan. Rukous hetket ovat vapaita ja Pyhän Hengen ohjaamia ja tämä yhdistelmä on tuonut takaisin hengellisten laulujen "pankkini", joilla rakennan uskoani (Juu 1:20). Kokouksiemme vapaus on tehnyt Pyhän Hengen liikkumisen normaaliksi kokemukseksi ja suhteemme Häneen ja toisiimme on syventynyt. On ihmeellistä todeta että kokoontumisemme ikäänkuin ruumillistavat Siionin—elävän Jumalan kaupungin, jossa lukematon määrä enkeleitä kokoontuu (Hep 12:22). Tämä on yliluonnollisten kohtaamisten paikka, jossa elämät muuttuvat.`,
+        name: 'CJ',
+        job: '',
         image: {
-          src: ida_enhanced,
-          alt: 'Ida Pikkarainen Image',
+          src: cj,
+          alt: 'CJ Image',
         },
+        isPositive: true,
       },
     ]}
-  />
+  >
+    <Fragment slot="subtitle">
+      Voi teitä, kun kaikki ihmiset puhuvat teistä hyvää! Samoinhan tekivät heidän isänsä väärille profeetoille.” Luukas
+      6:26
+      <br />
+      <br />
+      <div class="text-muted text-base md:text-lg lg:text-xl">
+        <div class="flex flex-row gap-4">
+          <Icon name={'tabler:thumb-up'} class="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
+          Jeesus vastasi hänelle: ”Minä olen puhunut julkisesti maailmalle. Olen aina opettanut synagogassa ja temppelissä,
+          jonne kaikki juutalaiset kokoontuvat. Salassa en ole puhunut mitään. Miksi minulta kysyt? Kysy niiltä, jotka ovat
+          kuulleet, mitä minä olen heille puhunut. He kyllä tietävät, mitä olen puhunut.” Johannes 18:20-21.
+        </div>
+        <br />
+        <br />
+        <div class="flex flex-row gap-4">
+          <Icon name={'tabler:thumb-up'} class="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
+          <Icon name={'tabler:thumb-down'} class="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
+          Kansan parissa oli hänestä paljon kiistelyä. Toiset sanoivat: ”Hän on hyvä”, toiset taas sanoivat: ”Ei, vaan hän
+          eksyttää kansan.” Johannes 7:12.
+        </div>
+        <br />
+        <br />
+        <div class="flex flex-row gap-4">
+          <Icon name={'tabler:thumb-down'} class="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
+          Mutta kun he eivät näitä löytäneet, he raahasivat Jaasonin ja muutamia muita veljiä kaupungin johtomiesten eteen
+          ja huusivat: ”Nuo koko maailman villitsijät ovat tulleet tännekin.” Apostolien teot 17:6.
+        </div>
+        <br />
+        <br />
+        <div class="flex flex-row gap-4">
+          <Icon name={'tabler:thumb-up'} class="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
+          Demetrios on saanut hyvän todistuksen kaikilta, jopa itse Totuudelta. Myös me todistamme, ja sinä tiedät, että
+          meidän todistuksemme on tosi. 3. Johanneksen kirje 1:12
+        </div>
+      </div>
+    </Fragment>
+  </Testimonials>
 
   <Stats
     id="lukuja"
     tagline="Lukuja"
     title="Käytännön lukuja vuodelta 2025"
     stats={[
-      { title: 'Ottanut Jeesuksen vastaan', amount: '9' },
+      { title: 'Ottanut Jeesuksen vastaan', amount: '16' },
       { title: 'Parannuksen tehnyttä tuhlaajapoikaa', amount: '3' },
-      { title: 'Kuullut envakeliumin', amount: '+110' },
-      { title: 'Vakio kävijää', amount: '12' },
+      { title: 'Kuullut envakeliumin', amount: '+140' },
+      { title: 'Vakiokävijää', amount: '14' },
     ]}
   />
 
@@ -285,38 +423,44 @@ const metadata = {
     classes={{ headline: { subtitle: 'max-w-5xl' } }}
     items={[
       {
-        title: 'Vapauttaa sinut kaikista synneistä, jotta sinä alat vapauttamaan muita',
+        title: 'Vapautumaan kaikista synneistä, jotta sinä alat vapauttamaan muita',
         description:
           "Jeesus tuli vapauttamaan sinut täysin vapaaksi. Ja kun olet vapaa, Hän lähettää sinut vapauttamaan muita. Tule siis ja koe Jeesus ja sitten Hän lähettää sinut auttamaan muita. <br /><br /> 'Hän synnyttää pojan, ja sinun on annettava hänelle nimeksi Jeesus, sillä hän pelastaa kansansa sen synneistä.' Mat 1:21.",
         icon: 'tabler:square-number-1',
       },
 
       {
-        title: 'Saa sinut julistamaan evankeliumia ilolla ja voimalla',
+        title: 'Alat julistamaan evankeliumia ilolla, voimalla',
         description:
           "Jos et ole täyttynyt Pyhällä Hengellä niin todennäköisesti täytyt ensimmäisessä tilaisuudessa. Ja sen jälkeen tulet olemaan Jeesuksen todistaja voimalla! <br /> <br />'Mutta te saatte voiman, kun Pyhä Henki tulee teidän päällenne, ja te tulette olemaan minun todistajani ...”' Apt 1:8.",
         icon: 'tabler:square-number-2',
       },
       {
-        title: 'Täyttää hengen elämäsi ilolla ja opettaa sinulle itse hengen lauluja 🎵',
+        title: 'Elämäsi täyttyy ilolla ja Pyhä Henki itse opettaa sinulle hengen lauluja 🎵',
         description:
           "Jumalan valtakunta ei ole syömistä ja juomista (öhöm.. kakkua ja kahvia seurakunnan tilaisuuden jälkeen), vaan vanhurskautta, rauhaa ja iloa Pyhässä Hengessä. <br /> <br />'Älkää juopuko viinistä, sillä siitä tulee irstas meno, vaan täyttykää Hengellä, puhuen toisillenne psalmein, kiitosvirsin ja hengellisin lauluin. Laulakaa ja soittakaa sydämestänne Herralle.' Ef 5:18, 19.",
         icon: 'tabler:square-number-3',
       },
       {
-        title: 'Näyttää, ohjaa ja valmistaa sinut kutsumukseesi',
+        title: 'Hän näyttää, ohjaa ja valmistaa sinut kutsumukseesi',
         description: `Pyhä Henki johdattaa sinut hengen valmistautumiseen, jonka jälkeen olet kuin Ester, jonka kuningas valitsee arvokkaaseen työhön. <br /><br /> 'Mutta, niin kuin on kirjoitettu: ”Mitä silmä ei ole nähnyt eikä korva kuullut, mikä ei ole ihmisen sydämeen noussut, minkä Jumala on valmistanut niille, jotka häntä rakastavat”', 1 Kor 2:9.`,
         icon: 'tabler:square-number-4',
       },
       {
-        title: 'Sytyttää rukouselämäsi täyteen tuleen',
-        description: `Sen sijaan, että vietät rennossa kiitos rukouksessa 5 minuuttia, alat oikein odottamaan, milloin pääset rukoilemaan raskasta taistelu rukousta 5 tuntia. <br /> <br /> 'Kerran niihin aikoihin Jeesus lähti vuorelle rukoilemaan ja vietti siellä koko yön rukoillen Jumalaa. Luuk 6:12.`,
+        title: 'Rukouselämäsi syttyy roihuamaan suuren tulen kaltaisena',
+        description: `Sen sijaan, että vietät rennossa kiitos rukouksessa 5 minuuttia, alat oikein odottamaan, että milloin pääset rukoilemaan raskasta taistelurukousta 5 tuntia. <br /> <br /> 'Kerran niihin aikoihin Jeesus lähti vuorelle rukoilemaan ja vietti siellä koko yön rukoillen Jumalaa. Luuk 6:12.`,
         icon: 'tabler:square-number-5',
       },
       {
-        title: 'Näyttää sinulle, mistä todellisessa kristityn elämässä on kyse',
+        title: 'Näet, mistä todellisessa kristityn elämässä on kyse',
         description: `'Jeesuksen mukana kulki suuri joukko ihmisiä. Hän kääntyi ja sanoi heille: ”Jos joku tulee minun luokseni eikä vihaa isäänsä ja äitiään, vaimoaan ja lapsiaan, veljiään ja sisariaan, jopa omaa elämäänsä, hän ei voi olla minun opetuslapseni. Ja joka ei kanna ristiään ja seuraa minua, ei voi olla minun opetuslapseni.”' Luuk 14:25-27.`,
         icon: 'tabler:square-number-6',
+      },
+      {
+        title:
+          'Ympärillesi alkaa kerääntyä surkeita ihmisiä, joita <span class="underline italic">Jeesus</span> auttaa kauttasi. Jumala tekee sinusta tämän sukupolven Daavidin.',
+        description: `'Daavid lähti sieltä ja pakeni Adullamin luolaan. Kun hänen veljensä ja koko hänen isänsä perhe kuulivat sen, he tulivat sinne hänen luokseen. Hänen luokseen kokoontui myös kaikenlaista ahdingossa olevaa, velkaantunutta ja katkeroitunutta väkeä, ja hänestä tuli heidän päämiehensä. Näin hänen kanssaan oli noin neljäsataa miestä.' 1. Samuelin kirja 22:1-2.`,
+        icon: 'tabler:square-number-7',
       },
     ]}
     image={{
@@ -324,10 +468,6 @@ const metadata = {
       alt: 'Rukouksen seurakunnan kokous',
     }}
   />
-
-  <Spacer size="sm" />
-
-  <AnimatedStats2 />
 
   <Spacer size="sm" />
 </Layout>

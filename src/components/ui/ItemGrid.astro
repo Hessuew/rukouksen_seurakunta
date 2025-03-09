@@ -33,9 +33,18 @@ const {
         containerClass
       )}
     >
-      {items.map(({ title, description, icon, callToAction, flag, classes: itemClasses = {} }) => (
-        <div class="intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade">
-          <div class={twMerge('flex flex-row max-w-md', panelClass, itemClasses?.panel)}>
+      {items.map(({ title, description, icon, callToAction, flag, classes: itemClasses = {} }, index) => (
+        <div
+          class={`intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade ${index === 6 ? 'col-span-full' : ''}`}
+        >
+          <div
+            class={twMerge(
+              'flex flex-row max-w-md',
+              panelClass,
+              itemClasses?.panel,
+              index === 6 ? 'mx-auto sm:max-w-sm' : ''
+            )}
+          >
             <div class="flex justify-center">
               {(icon || defaultIcon) && (
                 <div

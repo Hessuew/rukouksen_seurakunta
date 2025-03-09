@@ -185,6 +185,7 @@ export interface Testimonial {
   name?: string;
   job?: string;
   image?: string | unknown;
+  isPositive?: boolean;
 }
 
 export interface Input {

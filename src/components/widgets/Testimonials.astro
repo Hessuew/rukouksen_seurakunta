@@ -1,13 +1,14 @@
 ---
-import Image from '~/components/common/Image.astro';
 import Button from '~/components/ui/Button.astro';
 import Headline from '~/components/ui/Headline.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import TestimonialCard from '~/components/widgets/TestimonialCard.astro';
+import TestimonialCardContainer from '~/components/widgets/TestimonIalCardContainer';
 import type { Testimonials as Props } from '~/types';
 
 const {
   title = '',
-  subtitle = '',
+  subtitle = await Astro.slots.render('subtitle'),
   tagline = '',
   testimonials = [],
   callToAction,
@@ -17,57 +18,46 @@ const {
   classes = {},
   bg = await Astro.slots.render('bg'),
 } = Astro.props;
+
+// Define column number for testimonial cards distribution
+const columns1 = 4;
+const columns2 = 4;
+const columns2Boundaries = columns1 + columns2;
+const columns3 = 10;
+const columns3Boundaries = columns2Boundaries + columns3;
 ---
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} />
 
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    {
-      testimonials &&
-        testimonials.map(({ title, testimonial, name, job, image }) => (
-          <div class="flex h-auto intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-tenth sm:intersect-quarter">
-            <div class="flex flex-col p-4 md:p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-600">
-              <div class="flex items-center">
-                {image && (
-                  <div class="h-12 w-12 rounded-full border border-slate-200 dark:border-slate-600">
-                    {typeof image === 'string' ? (
-                      <Fragment set:html={image} />
-                    ) : (
-                      <Image
-                        class="h-12 w-12 rounded-full border border-slate-200 dark:border-slate-600 min-w-full min-h-full"
-                        width={48}
-                        height={48}
-                        widths={[400, 768]}
-                        layout="fixed"
-                        loading="lazy"
-                        decoding="async"
-                        style="object-fit: cover; object-position: center;"
-                        {...image}
-                      />
-                    )}
-                  </div>
-                )}
-
-                <div class="grow ml-3 rtl:ml-0 rtl:mr-3">
-                  {name && <p class="text-base font-semibold">{name}</p>}
-                  {job && <p class="text-xs text-muted">{job}</p>}
-                </div>
-              </div>
-
-              <hr class="border-slate-200 dark:border-slate-600 my-4" />
-
-              {title && <h2 class="text-lg font-medium leading-6 pb-4">{title}</h2>}
-              {testimonial && (
-                <blockquote class="flex-auto">
-                  <p class="text-muted">{testimonial}</p>
-                </blockquote>
-              )}
-            </div>
-          </div>
-        ))
-    }
-  </div>
+  <TestimonialCardContainer client:load>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="flex flex-col items-center gap-6">
+        {
+          testimonials &&
+            testimonials
+              .filter((_, index) => index < columns1)
+              .map((testimonial) => <TestimonialCard {...testimonial} />)
+        }
+      </div>
+      <div class="flex flex-col gap-6">
+        {
+          testimonials &&
+            testimonials
+              .filter((_, index) => index >= columns1 && index < columns2Boundaries)
+              .map((testimonial) => <TestimonialCard {...testimonial} />)
+        }
+      </div>
+      <div class="flex flex-col gap-6">
+        {
+          testimonials &&
+            testimonials
+              .filter((_, index) => index >= columns2Boundaries && index < columns3Boundaries)
+              .map((testimonial) => <TestimonialCard {...testimonial} />)
+        }
+      </div>
+    </div>
+  </TestimonialCardContainer>
   {
     callToAction && (
       <div class="flex justify-center mx-auto w-fit mt-8 md:mt-12 font-medium">
