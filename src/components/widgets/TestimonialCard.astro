@@ -1,0 +1,77 @@
+---
+import imgGold2 from '~/assets/images/gold3.5.webp';
+import Image from '~/components/common/Image.astro';
+import { Icon } from 'astro-icon/components';
+
+const { title, testimonial, name, job, image, isPositive = true } = Astro.props;
+
+const defaultBackgroundStyles = {
+  backgroundImage: `url(${imgGold2.src})`,
+  color: 'transparent',
+  backgroundRepeat: 'no-repeat',
+  backgroundAttachment: 'local',
+  // backgroundPosition: '25% 0%',
+  backgroundPosition: '0% 10%',
+  backgroundSize: 'cover',
+  // backgroundSize: '200% 100%',
+};
+---
+
+<div
+  class="flex h-auto intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-tenth sm:intersect-quarter"
+>
+  <div
+    style={defaultBackgroundStyles}
+    class="max-w-[400px] sm:max-w-none flex flex-col w-full rounded-md shadow-xl dark:shadow-none dark:border dark:border-white/60 overflow-hidden"
+  >
+    <div class="flex flex-col p-4 md:p-6">
+      <div class="flex items-center">
+        <div class="absolute right-4 top-2">
+          <Icon
+            name={isPositive ? 'tabler:thumb-up' : 'tabler:thumb-down'}
+            class={`w-6 h-6 ${isPositive ? 'text-green-600' : 'text-red-600'} flex-shrink-0 mt-1`}
+          />
+        </div>
+        {
+          image && (
+            <div
+              class={`min-h-12 min-w-12 rounded-full ${name !== 'CJ' ? 'border border-slate-200 dark:border-slate-600' : ''}`}
+            >
+              {typeof image === 'string' ? (
+                <Fragment set:html={image} />
+              ) : (
+                <Image
+                  class={`min-h-12 min-w-12 rounded-full ${name !== 'CJ' ? 'border border-slate-200 dark:border-slate-600' : ''} min-w-full min-h-full`}
+                  width={48}
+                  height={48}
+                  widths={[400, 768]}
+                  layout="fixed"
+                  loading="lazy"
+                  decoding="async"
+                  style={`object-fit: cover; object-position: center; ${name === 'CJ' ? 'transform: scale(1.025);' : ''}`}
+                  {...image}
+                />
+              )}
+            </div>
+          )
+        }
+
+        <div class="grow ml-3 rtl:ml-0 rtl:mr-3">
+          {name && <p class="text-base font-semibold text-black">{name}</p>}
+          {job && <p class="text-sm text-black/70">{job}</p>}
+        </div>
+      </div>
+
+      <hr class="border-slate-200 dark:border-slate-600 my-4" />
+
+      {title && <h2 class="text-lg font-medium leading-6 pb-4 text-black">{title}</h2>}
+      {
+        testimonial && (
+          <blockquote class="flex-auto bg-white/60 self-baseline rounded-lg py-2 px-4">
+            <p class="text-black" set:html={testimonial} />
+          </blockquote>
+        )
+      }
+    </div>
+  </div>
+</div>

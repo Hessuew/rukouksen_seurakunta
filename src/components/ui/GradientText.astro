@@ -22,6 +22,9 @@ const {
 // Get content from either text prop or default slot
 const content = text || (await Astro.slots.render('default'));
 
+// Check if the content contains flex layout classes
+const hasFlexClasses = className.includes('flex');
+
 const defaultBackgroundStyles = {
   backgroundImage: `url(${imageNro === 1 ? imgGold.src : imgGold2.src})`,
   WebkitBackgroundClip: 'text',
@@ -44,22 +47,22 @@ const commonClasses = twMerge(
   animate &&
     'intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-tenth sm:intersect-quarter'
 );
+
+// Add display: inline-grid to commonClasses if hasFlexClasses is true
+const finalClasses = hasFlexClasses ? twMerge(commonClasses, 'inline-grid') : commonClasses;
 ---
 
 {
   isHeading ? (
     <h1
       class={twMerge(
-        commonClasses,
-        'inline-block text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading'
+        'inline-block text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading',
+        finalClasses
       )}
       style={commonStyles}
-    >
-      {content}
-    </h1>
+      set:html={content}
+    />
   ) : (
-    <span class={twMerge(commonClasses, 'inline-block max-w-full')} style={commonStyles}>
-      {content}
-    </span>
+    <span class={twMerge(finalClasses, 'inline-block max-w-full')} style={commonStyles} set:html={content} />
   )
 }

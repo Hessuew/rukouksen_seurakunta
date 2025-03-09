@@ -36,31 +36,32 @@ const {
   <div class="space-y-16">
     {
       items.map(({ isReversed, image, title, content, name }) => (
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-center intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-tenth sm:intersect-quarter">
-          <div class={`flex justify-center ${isReversed ? 'md:order-3' : 'md:order-1'}`}>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 md:items-center items-start intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-tenth sm:intersect-quarter">
+          <div
+            class={`pt-12 flex justify-center self-start col-span-1 md:col-span-1 ${isReversed ? 'md:order-3 order-1' : 'order-1'}`}
+          >
             <Image
-              class="rounded-lg shadow-md"
+              class="rounded-lg shadow-md w-full max-w-40  sm:max-w-52"
               width={680}
               height={680}
-              widths={[680, 768]}
+              widths={[300, 400, 680]}
               layout="responsive"
               {...image}
             />
           </div>
 
-          <div class="md:order-2 col-start-2 col-span-3 flex flex-col h-full">
+          <div
+            class={`md:order-2 ${isReversed ? 'order-2' : 'order-2'} md:col-start-2 md:col-span-3 col-span-1 flex flex-col h-full`}
+          >
             <div class="border-b-2 border-primary-500 pb-2 w-full mb-4">
-              <h3 class="inline-flex items-center">
+              <h3 class="inline-flex xs:items-center flex-wrap flex-col xs:flex-row">
                 <GradientText animate={false} class="text-2xl font-bold italic pr-px" set:html={title} />
-                <span class="text-2xl font-bold px-4">-</span>
+                <span class="text-2xl font-bold px-4 hidden xs:block">-</span>
                 <span class="font-signature text-4xl font-bold">{name}</span>
               </h3>
             </div>
             <div class="prose prose-lg max-w-none" set:html={content} />
           </div>
-
-          {/* Empty div to maintain the 3-column grid layout */}
-          <div class={`hidden md:block ${isReversed ? 'md:order-1' : 'md:order-3'}`} />
         </div>
       ))
     }
