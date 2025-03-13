@@ -1,7 +1,7 @@
 # Main site configuration
 site:
   name: Rukouksen seurakunta # Website name used across the site
-  site: 'https://rukouksen-seurakunta.fi' # Production URL
+  site: 'https://rukouksenseurakunta.fi' # Production URL
   base: '/' # Base URL path
   trailingSlash: false # URL format configuration
 
@@ -19,9 +19,9 @@ metadata:
   openGraph:
     site_name: Rukouksen seurakunta # Site name for social sharing
     images:
-      - url: '~/assets/images/index/urFIT Child Research Group Logo.webp'
-        width: 1600
-        height: 1600
+      - url: '~/assets/images/index/other/logo.webp'
+        width: 1024
+        height: 1024
     type: website
   twitter:
     handle: '@rukouksen_seurakunta' # Twitter handle
