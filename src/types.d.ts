@@ -290,7 +290,7 @@ export interface Testimonials extends Omit<Headline, 'classes'>, Widget {
 interface ImageTextSectionItem {
   title: string;
   name: string;
-  content: string;
+  content?: string;
   image: {
     src: string | ImageMetadata;
     alt: string;

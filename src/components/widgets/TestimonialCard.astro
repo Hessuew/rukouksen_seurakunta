@@ -22,14 +22,14 @@ const defaultBackgroundStyles = {
 >
   <div
     style={defaultBackgroundStyles}
-    class="max-w-[400px] sm:max-w-none flex flex-col w-full rounded-md shadow-xl dark:shadow-none dark:border dark:border-white/60 overflow-hidden"
+    class="max-w-[400px] sm:max-w-none flex flex-col w-full rounded-md shadow-xl dark:shadow-none dark:border dark:border-white/60 overflow-hidden relative"
   >
     <div class="flex flex-col p-4 md:p-6">
       <div class="flex items-center">
-        <div class="absolute right-4 top-2">
+        <div class="absolute right-4 top-3 z-10">
           <Icon
             name={isPositive ? 'tabler:thumb-up' : 'tabler:thumb-down'}
-            class={`w-6 h-6 ${isPositive ? 'text-green-600' : 'text-red-600'} flex-shrink-0 mt-1`}
+            class={`w-6 h-6 ${isPositive ? 'text-green-600' : 'text-red-600'} flex-shrink-0`}
           />
         </div>
         {

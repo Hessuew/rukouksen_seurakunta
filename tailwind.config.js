@@ -26,7 +26,7 @@ export default {
         heading: ['var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
-        'jesus': '24rem', 
+        jesus: '24rem',
       },
       animation: {
         fade: 'fadeInUp 1s both',

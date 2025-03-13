@@ -9,6 +9,14 @@ export interface Props {
 
 const socialLinks = [
   {
+    ariaLabel: 'YouTube',
+    href: 'https://youtube.com/@rukouksenseurakunta?si=yOmq75WW22QRlJ2N',
+    image: {
+      src: youtubeLogo,
+      alt: 'YouTube',
+    },
+  },
+  {
     ariaLabel: 'FlameTheFreeze',
     href: 'https://flamethefreeze.com/fi/',
     image: {
@@ -17,11 +25,11 @@ const socialLinks = [
     },
   },
   {
-    ariaLabel: 'YouTube',
+    ariaLabel: 'YouTube FlameTheFreeze',
     href: 'https://youtube.com/@flamethefreeze2613?si=wBdFBGx335N-vee-',
     image: {
       src: youtubeLogo,
-      alt: 'YouTube',
+      alt: 'YouTube FlameTheFreeze',
     },
   },
 ];
@@ -29,10 +37,28 @@ const socialLinks = [
 const { theme = 'light' } = Astro.props;
 ---
 
-<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
+<footer
+  class:list={[{ dark: theme === 'dark' }, 'relative bg-page border-t border-gray-200 dark:border-slate-800 not-prose']}
+>
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
-    <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
+  <div class="relative max-w-7xl mx-auto pt-20 pb-10 px-4 sm:px-6 dark:text-slate-300">
+    <div class="md:flex items-end md:justify-between py-6 md:py-8">
+      <div class="flex flex-row gap-6 text-start pb-4 lg:pb-0 text-muted font-normal text-xs xs:text-sm">
+        <div class="flex flex-col">
+          <span>Osoite:</span>
+          <span>Aika: </span>
+          <span>Puh: </span>
+          <span>Sähköposti: </span>
+        </div>
+        <div class="flex flex-col">
+          <span class="flex flex-row"
+            >Yliopistonranta 15, sisäänkäynti C<span class="hidden xs:block">, 70210 Kuopio</span></span
+          >
+          <span>Sunnuntai klo 13 - (16)</span>
+          <span>046 5714 634</span>
+          <span>rukouksenseurakunta@gmail.com</span>
+        </div>
+      </div>
       <div class="text-sm mr-4 dark:text-muted"></div>
       {
         socialLinks?.length ? (
@@ -59,6 +85,9 @@ const { theme = 'light' } = Astro.props;
                       loading={'lazy'}
                       decoding={'async'}
                     />
+                  )}
+                  {ariaLabel === 'YouTube FlameTheFreeze' && (
+                    <span class="absolute top-1 right-1 text-[10px] text-white">FF</span>
                   )}
                 </a>
                 <span class="absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-sm text-white opacity-0 transition-opacity delay-500 group-hover:opacity-100 dark:bg-gray-200 dark:text-gray-800">

@@ -19,12 +19,21 @@ const {
   bg = await Astro.slots.render('bg'),
 } = Astro.props;
 
-// Define column number for testimonial cards distribution
-const columns1 = 4;
-const columns2 = 4;
-const columns2Boundaries = columns1 + columns2;
-const columns3 = 10;
-const columns3Boundaries = columns2Boundaries + columns3;
+// Calculate total testimonials
+const totalTestimonials = testimonials.length;
+
+// For small/medium screens (2 columns)
+// Distribute testimonials evenly between two columns
+const halfCount = Math.ceil(totalTestimonials / 2);
+const smFirstColumnItems = testimonials.slice(0, halfCount);
+const smSecondColumnItems = testimonials.slice(halfCount);
+
+// For large screens (3 columns)
+// Distribute testimonials evenly between three columns
+const thirdCount = Math.ceil(totalTestimonials / 3);
+const lgFirstColumnItems = testimonials.slice(0, thirdCount);
+const lgSecondColumnItems = testimonials.slice(thirdCount, 2 * thirdCount);
+const lgThirdColumnItems = testimonials.slice(2 * thirdCount);
 ---
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
@@ -32,32 +41,61 @@ const columns3Boundaries = columns2Boundaries + columns3;
 
   <TestimonialCardContainer client:load>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="flex flex-col items-center gap-6">
+      {/* First column */}
+      <div class="space-y-6">
+        {/* Small/Medium screens: First half of testimonials */}
         {
-          testimonials &&
-            testimonials
-              .filter((_, index) => index < columns1)
-              .map((testimonial) => <TestimonialCard {...testimonial} />)
+          smFirstColumnItems.map((testimonial, index) => (
+            <div class={`lg:hidden ${index > 0 ? 'mt-6' : ''}`}>
+              <TestimonialCard {...testimonial} />
+            </div>
+          ))
+        }
+
+        {/* Large screens: First third of testimonials */}
+        {
+          lgFirstColumnItems.map((testimonial, index) => (
+            <div class={`hidden lg:block ${index > 0 ? 'mt-6' : ''}`}>
+              <TestimonialCard {...testimonial} />
+            </div>
+          ))
         }
       </div>
-      <div class="flex flex-col gap-6">
+
+      {/* Second column */}
+      <div class="space-y-6">
+        {/* Small/Medium screens: Second half of testimonials */}
         {
-          testimonials &&
-            testimonials
-              .filter((_, index) => index >= columns1 && index < columns2Boundaries)
-              .map((testimonial) => <TestimonialCard {...testimonial} />)
+          smSecondColumnItems.map((testimonial, index) => (
+            <div class={`lg:hidden ${index > 0 ? 'mt-6' : ''}`}>
+              <TestimonialCard {...testimonial} />
+            </div>
+          ))
+        }
+
+        {/* Large screens: Second third of testimonials */}
+        {
+          lgSecondColumnItems.map((testimonial, index) => (
+            <div class={`hidden lg:block ${index > 0 ? 'mt-6' : ''}`}>
+              <TestimonialCard {...testimonial} />
+            </div>
+          ))
         }
       </div>
-      <div class="flex flex-col gap-6">
+
+      {/* Third column - Only visible on large screens */}
+      <div class="hidden lg:block space-y-6">
         {
-          testimonials &&
-            testimonials
-              .filter((_, index) => index >= columns2Boundaries && index < columns3Boundaries)
-              .map((testimonial) => <TestimonialCard {...testimonial} />)
+          lgThirdColumnItems.map((testimonial, index) => (
+            <div class={index > 0 ? 'mt-6' : ''}>
+              <TestimonialCard {...testimonial} />
+            </div>
+          ))
         }
       </div>
     </div>
   </TestimonialCardContainer>
+
   {
     callToAction && (
       <div class="flex justify-center mx-auto w-fit mt-8 md:mt-12 font-medium">
