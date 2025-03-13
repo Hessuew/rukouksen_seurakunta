@@ -1,23 +1,24 @@
 ---
-import akosua from '~/assets/images/akosua.webp';
-import ben_enhanced from '~/assets/images/ben2.webp';
-import cj from '~/assets/images/cj.webp';
-import ida from '~/assets/images/ida.webp';
-import iina from '~/assets/images/iina.webp';
+import akosua from '~/assets/images/deacons/akosua.webp';
+import ben from '~/assets/images/deacons/ben.webp';
+import ida from '~/assets/images/deacons/ida.webp';
+import cj from '~/assets/images/elders/cj.webp';
+import mahi from '~/assets/images/elders/mahi.webp';
 import prayerConference from '~/assets/images/Kuopio Prayer conference_ April 2025_finnish.webp';
 import logo from '~/assets/images/logo.webp';
-import mahi_enhanced from '~/assets/images/mahi_enhanced.webp';
-import maria from '~/assets/images/maria.webp';
 import imgPrayerChurchKuopio from '~/assets/images/prayer_church_kuopio2.webp';
+import iina from '~/assets/images/testimonials/iina.webp';
+import maria from '~/assets/images/testimonials/maria.webp';
 import GradientText from '~/components/ui/GradientText.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import ImageTextSectionExample from '~/components/widgets/ImageTextSectionExample.astro';
+import ImageTextSection from '~/components/widgets/ImageTextSection.astro';
 import Jesus from '~/components/widgets/Jesus.astro';
 import Spacer from '~/components/widgets/Spacer.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
+import { ministers } from '~/data/ministers';
 import Layout from '~/layouts/PageLayout.astro';
 import { Icon } from 'astro-icon/components';
 
@@ -290,7 +291,14 @@ const styleStyle = {
     ]}
   />
 
-  <ImageTextSectionExample />
+  <ImageTextSection
+    id="meista"
+    tagline="Meistä"
+    title="Seurakunnan evankeliumin työntekijät"
+    subtitle="'Teille pakanoille sanon: koska olen pakanoiden apostoli, minä pidän virkaani kunniassa' Kirje roomalaisille 11:13. <br /> <br /> 'Minun kerskaukseni on siis Kristuksessa Jeesuksessa palvellessani Jumalaa. En näet rohkene puhua mistään muusta kuin siitä, mitä Kristus, saattaakseen pakanat kuuliaisiksi, on minun kauttani vaikuttanut sanalla ja teoilla, tunnustekojen ja ihmeiden voimalla, Jumalan Hengen voimalla...' Kirje roomalaisille 15:17-19. <br /> <br/> 'Luotettava ei ole se, joka itse suosittelee itseään, vaan se, jota Herra suosittelee.' Kirje korinttilaisille 10:18. <br /> <br /> Alla esimerkkejä siitä, mitä Pyhä Henki on puhunut näiden palvelijoidensa kautta"
+    classes={{ headline: { subtitle: 'max-w-5xl text-base md:text-lg lg:text-xl' } }}
+    items={ministers}
+  />
 
   <Testimonials
     id="todistuksia"
@@ -354,7 +362,7 @@ const styleStyle = {
         name: 'Mahidere Ali',
         job: 'Lääkäri',
         image: {
-          src: mahi_enhanced,
+          src: mahi,
           alt: 'Mahidere Ali image',
         },
         isPositive: true,
@@ -384,7 +392,7 @@ const styleStyle = {
         name: 'Benwillis Onchonga',
         job: 'Lääketieteen tutkija, opetusassitentti Itä-Suomen Yliopistolla',
         image: {
-          src: ben_enhanced,
+          src: ben,
           alt: 'Benwillis image',
         },
         isPositive: true,
