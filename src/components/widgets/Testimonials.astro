@@ -86,8 +86,8 @@ const lgThirdColumnItems = testimonials.slice(2 * thirdCount);
       {/* Third column - Only visible on large screens */}
       <div class="hidden lg:block space-y-6">
         {
-          lgThirdColumnItems.map((testimonial, index) => (
-            <div class={index > 0 ? 'mt-6' : ''}>
+          lgThirdColumnItems.map((testimonial) => (
+            <div class={`mt-6`}>
               <TestimonialCard {...testimonial} />
             </div>
           ))
