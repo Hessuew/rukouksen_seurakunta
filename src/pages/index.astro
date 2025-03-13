@@ -1,11 +1,10 @@
 ---
-import ahunsi from '~/assets/images/ahunsi.webp';
 import akosua from '~/assets/images/akosua.webp';
-import akua from '~/assets/images/akua.webp';
 import ben_enhanced from '~/assets/images/ben2.webp';
 import cj from '~/assets/images/cj.webp';
 import ida from '~/assets/images/ida.webp';
 import iina from '~/assets/images/iina.webp';
+import prayerConference from '~/assets/images/Kuopio Prayer conference_ April 2025_finnish.webp';
 import logo from '~/assets/images/logo.webp';
 import mahi_enhanced from '~/assets/images/mahi_enhanced.webp';
 import maria from '~/assets/images/maria.webp';
@@ -23,31 +22,22 @@ import Layout from '~/layouts/PageLayout.astro';
 import { Icon } from 'astro-icon/components';
 
 const metadata = {
-  title: 'Rukouksen seurakunta | Rukoushuone kaikille kansoille',
+  title: 'Rukouksen seurakunta | Meidän tulemme ei ole asia, vaan henkilö.. Jeesus',
   description:
-    'Rukouksen seurakunta on ryhmä, joka keskittyy Jeesukseen intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen etsimiseen. Tule mukaan rukouskokouksiin, kohtaa Jeesus ja koe Jumalan läsnäolo.',
+    'Rukouksen seurakunta on ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus. Savilahti, Kuopio.',
   ignoreTitleTemplate: true,
   canonical: 'https://rukouksenseurakunta.fi',
   openGraph: {
-    title: 'Rukouksen seurakunta | Rukoushuone kaikille kansoille',
+    title: 'Rukouksen seurakunta | Meidän tulemme ei ole asia, vaan henkilö.. Jeesus',
     description:
-      'Rukouksen seurakunta on ryhmä, joka keskittyy Jeesukseen intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen etsimiseen. Tule mukaan rukouskokouksiin, kohtaa Jeesus ja koe Jumalan läsnäolo.',
+      'Rukouksen seurakunta on ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus.',
     type: 'website',
     image: logo,
     article: {
       publishedTime: '2025-03-03T05:03:23+02:00',
       modifiedTime: '2025-03-03T05:03:23+02:00',
       authors: ['Rukouksen seurakunta'],
-      tags: [
-        'Jeesus',
-        'rukous',
-        'seurakunta',
-        'herätys',
-        'evankeliumi',
-        'Pyhä Henki',
-        'Jumalan läsnäolo',
-        'rukoushuone',
-      ],
+      tags: ['Rukouksen seurakunta', 'Savilahti', 'Kuopio', 'Savilahden seurakunta', 'Kuopio seurakunta'],
     },
   },
   twitter: {
@@ -141,6 +131,84 @@ const styleStyle = {
             <span>Jumalan Poika</span>
           </div>
         </GradientText>
+      </div>
+    </Fragment>
+  </Jesus>
+
+  <Jesus classes={{ container: 'px-4 max-w-5xl' }}>
+    <Fragment slot="title">
+      <div class="py-4">
+        <GradientText imageNro={2} class="text-3xl xs:text-4xl md:text-5xl">
+          <div class="">
+            <GradientText
+              animate={false}
+              imageNro={2}
+              backgroundStyles={{ ...styleStyle, backgroundSize: '200% 100%', backgroundPosition: '10% 40%' }}
+            >
+              Tämä sama Jeesus
+            </GradientText>
+            <span>tuli pelastamaan kansansa sen..</span>
+          </div>
+        </GradientText>
+      </div>
+
+      <div class="py-4">
+        <GradientText
+          imageNro={2}
+          backgroundStyles={{ ...styleStyle, backgroundSize: '100% 200%', backgroundPosition: '10% 20%' }}
+          class="w-full text-[8vw] sm:text-[8vw] md:text-[8vw] lg:text-[6vw] font-bold leading-none pb-10"
+        >
+          <div class="flex flex-col">
+            <div class="flex flex-row items-center justify-center">
+              1. ei synnei<div class="border-b-2 mt-0.5 border-white">ssä</div>
+            </div>
+            <div class="flex flex-row text-center justify-center">
+              2. vaan synnei<span class="border-b-2 mt-0.5 border-white">stä</span>
+            </div>
+          </div>
+        </GradientText>
+      </div>
+
+      <div class="md:py-12">
+        <GradientText class="text-3xl sm:text-4xl md:text-5xl font-bold leading-none pb-2">
+          <div class="flex flex-col gap-2">
+            <span>Oletko vapaa kaikista synneistä?</span>
+            <span>Tahtoisitko olla?</span>
+          </div>
+        </GradientText>
+      </div>
+
+      <div class="w-full flex justify-center items-center text-lg md:text-2xl">
+        <div class="flex flex-col xs:flex-row xs:gap-6 text-start text-muted font-normal">
+          <div class="xs:hidden flex flex-col gap-2">
+            <div class="flex flex-col">
+              <span class="font-medium">Osoite: </span>
+              <span>Yliopistonranta 15, sisäänkäynti C, 70210 Kuopio</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-medium">Aika: </span>
+              <span>Sunnuntai klo 13 - (16)</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-medium">Puh: </span>
+              <span>046 5714 634</span>
+            </div>
+            <span class="font-medium">Sähköposti: </span>
+            <span>rukouksenseurakunta@gmail.com</span>
+          </div>
+          <div class="hidden xs:flex xs:flex-col">
+            <span>Osoite:</span>
+            <span>Aika: </span>
+            <span>Puh: </span>
+            <span>Sähköposti: </span>
+          </div>
+          <div class="hidden xs:flex xs:flex-col">
+            <span>Yliopistonranta 15, sisäänkäynti C, 70210 Kuopio</span>
+            <span>Sunnuntai klo 13 - (16)</span>
+            <span>046 5714 634</span>
+            <span>rukouksenseurakunta@gmail.com</span>
+          </div>
+        </div>
       </div>
     </Fragment>
   </Jesus>
@@ -240,44 +308,54 @@ const styleStyle = {
         isPositive: false,
       },
       {
-        testimonial:
-          'Olin ollut pitkään kaukana Jumalasta ja elämäni oli Saatanan vaivaama. Tullessani ensimmäistä kertaa Rukouksen seurakuntaan Jeesuksen Kristuksen armo kohtasi minut käsin kosketettavasti Pyhä Hengen vahvistaessa tämän voimakkaalla ja näkyvällä Jumalan voiman ilmenemisellä. Vapauduin, parannuin fyysisesti ja sain takaisin menettämäni Pyhän Hengen tulen. Ikuinen ylistys Jeesukselle Hänen ristintyöstään!',
-        name: 'Mahidere Ali',
-        job: '',
+        testimonial: 'En tiennyt, että Kuopiossa on tämmöistä!',
+        name: 'Maria Röning',
+        job: 'Yrittäjä',
         image: {
-          src: mahi_enhanced,
-          alt: 'Mahidere Ali Image',
-        },
-        isPositive: true,
-      },
-      {
-        testimonial:
-          'Pääsin tupakasta eroon ilman mitään korvaavia nikotiinituotteita. Rukoilin apua Jeesukselta. Tajusin, että minun pitää myös vastaanottaa apu, ja niin kulkea valossa ilman riippuvuuksia.',
-        name: 'Iina',
-        job: 'Tarjoilija',
-        image: {
-          src: iina,
+          src: maria,
           alt: '',
         },
         isPositive: true,
       },
       {
-        testimonial: ``,
-        name: 'Ahunsimere Adeniran',
-        job: 'Opiskelija',
+        testimonial: `Jeesus on Pelastaja. Hän pelastaa pimeydestä jokaisen, joka  huutaa Häntä avukseen. Elämäni on muuttunut niin paljon etten edes pysty ymmärtämään sitä itse kunnolla. Elin jumalattomasti, mutta nyt olen aina keskittynyt Jeesukseen. Rukouksen seurakunta opettaa mitä Raamattu sanoo laimentamatta tai pehmittelemättä sitä. Kokoontumiset ovat joka kerta täynä Pyhää Henkeä ja Hänen ohjaamiaan. Ryhmä on suoraan sanottuna suurenmoinen ja vertaansa vailla.`,
+        name: 'Akosua Osei',
+        job: 'Yliopisto-opiskelija',
         image: {
-          src: ahunsi,
-          alt: 'Ahunsimere Adeniran Image',
+          src: akosua,
+          alt: 'Akosua Osei image',
         },
         isPositive: true,
       },
       {
-        testimonial: `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaikessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
-        name: 'Benwillis',
-        job: 'Lääketieteen tutkija, opetusassitentti Itä-Suomen Yliopistolla',
+        testimonial:
+          'Varo ettet pala loppuun - 2019 <br />(Jonka jälkeen tuli on vain lisääntynyt joka vuosi. Kiitos Herralle!)',
+        name: 'Nimeltä mainitsematon',
+        job: 'Nuorisopastori ***** helluntaiseurakunnassa',
         image: {
-          src: ben_enhanced,
-          alt: 'Benwillis Image',
+          src: '',
+          alt: '',
+        },
+        isPositive: false,
+      },
+      // {
+      //   testimonial: ``,
+      //   name: 'Ahunsimere Adeniran',
+      //   job: 'Opiskelija',
+      //   image: {
+      //     src: ahunsi,
+      //     alt: 'Ahunsimere Adeniran image',
+      //   },
+      //   isPositive: true,
+      // },
+      {
+        testimonial:
+          'Olin ollut pitkään kaukana Jumalasta ja elämäni oli Saatanan vaivaama. Tullessani ensimmäistä kertaa Rukouksen seurakuntaan Jeesuksen Kristuksen armo kohtasi minut käsin kosketettavasti Pyhä Hengen vahvistaessa tämän voimakkaalla ja näkyvällä Jumalan voiman ilmenemisellä. Vapauduin, parannuin fyysisesti ja sain takaisin menettämäni Pyhän Hengen tulen. Ikuinen ylistys Jeesukselle Hänen ristintyöstään!',
+        name: 'Mahidere Ali',
+        job: 'Lääkäri',
+        image: {
+          src: mahi_enhanced,
+          alt: 'Mahidere Ali image',
         },
         isPositive: true,
       },
@@ -292,31 +370,32 @@ const styleStyle = {
         isPositive: false,
       },
       {
-        testimonial: ``,
+        testimonial: `Olen kasvanut hengellisesti todella paljon 6 kuukaudessa, kun aloin priorisoimaan näitä tapaamisia. <br /> Minulle on kerrottu, että Jumala on kasvattanut minua niin paljon, että olen nyt hengellisesti vanhempi kuin edellisen seurakunnan pastorini.`,
         name: 'Ida Pikkarainen',
         job: 'Lähihoitaja, kuntoutusohjaaja',
         image: {
           src: ida,
-          alt: 'Ida Pikkarainen Image',
+          alt: 'Ida Pikkarainen image',
         },
         isPositive: true,
       },
       {
-        testimonial: ``,
-        name: 'Akua',
-        job: '',
+        testimonial: `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaicessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
+        name: 'Benwillis Onchonga',
+        job: 'Lääketieteen tutkija, opetusassitentti Itä-Suomen Yliopistolla',
         image: {
-          src: akua,
-          alt: 'Akua Image',
+          src: ben_enhanced,
+          alt: 'Benwillis image',
         },
         isPositive: true,
       },
       {
-        testimonial: 'En tiennyt, että Kuopiossa on tämmöistä.',
-        name: 'Maria Röning',
-        job: 'Yrittäjä',
+        testimonial:
+          'Vastaanotin Jeesuksen, pääsin eroon tupakasta ilman mitään korvaavia nikotiinituotteita. Rukoilin apua Jeesukselta. Tajusin, että minun pitää myös vastaanottaa apu, ja niin kulkea valossa ilman riippuvuuksia.',
+        name: 'Iina',
+        job: 'Tarjoilija',
         image: {
-          src: maria,
+          src: iina,
           alt: '',
         },
         isPositive: true,
@@ -332,36 +411,25 @@ const styleStyle = {
         isPositive: false,
       },
       {
-        testimonial:
-          'Varo ettet pala loppuun - 2019 <br /> (Jonka jälkeen tuli on vain lisääntynyt joka vuosi. Kiitos Herralle!)',
-        name: 'Nimeltä mainitsematon',
-        job: 'Nuorisopastori ***** helluntaiseurakunnassa',
-        image: {
-          src: '',
-          alt: '',
-        },
-        isPositive: false,
-      },
-      {
-        testimonial: `Jeesus on Pelastaja. Hän pelastaa pimeydestä jokaisen, joka  huutaa Häntä avukseen. Elämäni on muuttunut niin paljon etten edes pysty ymmärtämään sitä itse kunnolla. Elin jumalattomasti, mutta nyt olen aina keskittynyt Jeesukseen. Rukouksen seurakunta opettaa mitä Raamattu sanoo laimentamatta tai pehmittelemättä sitä. Kokoontumiset ovat joka kerta täynä Pyhää Henkeä ja Hänen ohjaamiaan. Ryhmä on suoraan sanottuna suurenmoinen ja vertaansa vailla.`,
-        name: 'Akosua Osei',
-        job: 'Yliopisto-opiskelija',
-        image: {
-          src: akosua,
-          alt: 'Akosua Osei Image',
-        },
-        isPositive: true,
-      },
-      {
         testimonial: `Liityttyäni Flame the Freeze:n tapaamisiin minulle on tapahtunut paljon. Hengellinen herkkyyteni on perusteellisesti uudistunut ja samoin myös intohimoni Herraa kohtaan. Rukous hetket ovat vapaita ja Pyhän Hengen ohjaamia ja tämä yhdistelmä on tuonut takaisin hengellisten laulujen "pankkini", joilla rakennan uskoani (Juu 1:20). Kokouksiemme vapaus on tehnyt Pyhän Hengen liikkumisen normaaliksi kokemukseksi ja suhteemme Häneen ja toisiimme on syventynyt. On ihmeellistä todeta että kokoontumisemme ikäänkuin ruumillistavat Siionin—elävän Jumalan kaupungin, jossa lukematon määrä enkeleitä kokoontuu (Hep 12:22). Tämä on yliluonnollisten kohtaamisten paikka, jossa elämät muuttuvat.`,
         name: 'CJ',
         job: '',
         image: {
           src: cj,
-          alt: 'CJ Image',
+          alt: 'CJ image',
         },
         isPositive: true,
       },
+      // {
+      //   testimonial: ``,
+      //   name: 'Akua',
+      //   job: '',
+      //   image: {
+      //     src: akua,
+      //     alt: 'Akua image',
+      //   },
+      //   isPositive: true,
+      // },
     ]}
   >
     <Fragment slot="subtitle">
@@ -407,10 +475,10 @@ const styleStyle = {
     tagline="Lukuja"
     title="Käytännön lukuja vuodelta 2025"
     stats={[
+      { title: 'Vakiokävijää kokoontumisissa', amount: '14' },
+      { title: 'Kuullut envakeliumin', amount: '+164' },
       { title: 'Ottanut Jeesuksen vastaan', amount: '16' },
-      { title: 'Parannuksen tehnyttä tuhlaajapoikaa', amount: '3' },
-      { title: 'Kuullut envakeliumin', amount: '+140' },
-      { title: 'Vakiokävijää', amount: '14' },
+      { title: 'Parannuksen tehnyttä tuhlaajapoikaa', amount: '4' },
     ]}
   />
 
@@ -447,8 +515,8 @@ const styleStyle = {
         icon: 'tabler:square-number-4',
       },
       {
-        title: 'Rukouselämäsi syttyy roihuamaan suuren tulen kaltaisena',
-        description: `Sen sijaan, että vietät rennossa kiitos rukouksessa 5 minuuttia, alat oikein odottamaan, että milloin pääset rukoilemaan raskasta taistelurukousta 5 tuntia. <br /> <br /> 'Kerran niihin aikoihin Jeesus lähti vuorelle rukoilemaan ja vietti siellä koko yön rukoillen Jumalaa. Luuk 6:12.`,
+        title: 'Rukouselämäsi syttyy roihuamaan niin kuin suuri tuli',
+        description: `Sen sijaan, että vietät rennossa kiitosrukouksessa 5 minuuttia, alat oikein odottamaan, että milloin pääset rukoilemaan raskasta taistelurukousta 5 tuntia. <br /> <br /> 'Kerran niihin aikoihin Jeesus lähti vuorelle rukoilemaan ja vietti siellä koko yön rukoillen Jumalaa. Luuk 6:12.`,
         icon: 'tabler:square-number-5',
       },
       {
@@ -469,5 +537,67 @@ const styleStyle = {
     }}
   />
 
-  <Spacer size="sm" />
+  <Hero
+    image={{
+      src: prayerConference,
+      alt: 'Pääsiäisen rukouskonferenssi',
+    }}
+  />
+
+  <Spacer size="md" />
+
+  <div class="mx-auto -my-4 text-center relative z-0 h-[20rem] sm:h-[24rem] lg:h-[40rem] w-full overflow-hidden mb-20">
+    <div class="absolute -right-20 top-10 sm:top-0 md:top-0 lg:top-0 -translate-y-0 w-full h-full">
+      <div class="relative w-full h-full">
+        <!-- Oval-like highlight area with radial gradient -->
+        <div
+          class="absolute -right-20 top-0 w-full h-full rounded-full"
+          style="background: radial-gradient(ellipse at center, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 40%, rgba(255,255,255,0) 70%);"
+        >
+        </div>
+
+        <!-- Grid pattern container - clipped to the highlight area -->
+        <div class="absolute right-0 top-0 w-full h-full overflow-hidden">
+          <div class="absolute right-5 top-0 w-5/6 h-full overflow-hidden rounded-full">
+            <!-- Horizontal grid lines with fixed spacing for 40px height -->
+            {
+              Array.from({ length: 15 }).map((_, i) => {
+                if (i === 0) {
+                  return null;
+                }
+                return (
+                  <div
+                    class="absolute right-0 h-[0.5px] w-full opacity-10"
+                    style={`top: ${i * 72}px; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 30%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);`}
+                  />
+                );
+              })
+            }
+
+            <!-- Vertical grid lines with fixed spacing for 40px width -->
+            {
+              Array.from({ length: 15 }).map((_, i) => (
+                <div
+                  class="absolute top-0 w-[0.5px] h-full opacity-10"
+                  style={`right: ${i * 72}px; background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 30%, rgba(255,255,255,0.3) 70%, rgba(255,255,255,0) 100%);`}
+                />
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full overflow-hidden absolute bottom-0 left-0">
+      <div class="w-[112vw] relative -left-[11vw] overflow-visible">
+        <GradientText
+          imageNro={2}
+          animate={false}
+          class="inline-block text-[35vw] font-bold leading-none"
+          backgroundStyles={styleStyle}
+        >
+          Jeesus
+        </GradientText>
+      </div>
+    </div>
+  </div>
 </Layout>
