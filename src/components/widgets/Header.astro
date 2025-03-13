@@ -1,4 +1,5 @@
 ---
+import LanguagePicker from '~/components/common/LanguagePicker.astro';
 import ToggleMenu from '~/components/common/ToggleMenu.astro';
 import Logo from '~/components/Logo.astro';
 import Button from '~/components/ui/Button.astro';
@@ -188,7 +189,9 @@ const { nav: navClass = '' } = classes;
       ]}
     >
       <div class="items-center flex justify-between w-full lg:w-auto">
-        <div class="flex"></div>
+        <div class="flex">
+          <LanguagePicker />
+        </div>
         {
           actions?.length ? (
             <span class="ml-4 rtl:ml-0 rtl:mr-4">
