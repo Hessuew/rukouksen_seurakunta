@@ -2,9 +2,9 @@
 import akosua from '~/assets/images/deacons/akosua.webp';
 import ben from '~/assets/images/deacons/ben.webp';
 import ida from '~/assets/images/deacons/ida.webp';
-import juhani_helsinki from '~/assets/images/elders/juhani_helsinki.webp';
 // import cj from '~/assets/images/elders/cj.webp';
-import greta from '~/assets/images/greta.jpg';
+import greta from '~/assets/images/elders/greta.jpg';
+import juhani_helsinki from '~/assets/images/elders/juhani_helsinki.webp';
 
 // import mahi from '~/assets/images/elders/mahi.webp';
 
