@@ -11,8 +11,8 @@ export const ui = {
     prayer: 'Prayer',
     church: 'Church',
     prayerDefinesTheChurch: 'Prayer defines the church. Why? Because Jesus said so,',
-    'mark11:17': 'Eikö ole kirjoitettu: "Minun huoneeni on oleva kaikkien kansojen rukoushuone"? Markus 11:17.',
-    theWayThePeoplePray: 'The way the people in the church shows truly what that church is about.',
+    'mark11:17': 'Is it not written, My house shall be called of all nations the house of prayer? Mark 11:17.',
+    theWayThePeoplePray: 'The way the people pray in a church shows truly what that church is like.',
     thisDoesNotMean:
       'This does not mean small and lazy prayers. Jesus prayed three hours in Gethsemane and wondered that the disciples could not even pray for one hour. If the pastor does not manage to pray one hour the church members will not manage to pray for 20 minutes.',
     theFireIsMissing: 'The fire is missing.',
@@ -22,17 +22,17 @@ export const ui = {
     christ: 'Christ',
     theSonOfGod: 'The Son of God',
     thisSameJesus: 'This same Jesus',
-    cameToSaveHisPeopleFromIts: 'came to save his people from its',
-    notIn: 'not in',
-    butFrom: 'but from',
-    ssä: '',
-    stä: '',
+    cameToSaveHisPeopleFromIts: 'came to save his people from its sins',
+    notIn: 'not in ',
+    butFrom: 'but from ',
+    ssä: 'sins',
+    stä: 'sins',
     areYouFreeFromAllTheSins: 'Are you free from all sins?',
     wouldYouLikeToBe: 'Would you like to be?',
     address: 'Address: ',
-    address2: 'Yliopistonranta 15, sisäänkäynti C, 70210 Kuopio',
+    address2: 'Yliopistonranta 15, entrance C, 70210 Kuopio',
     time: 'Time: ',
-    time2: 'Sunnuntai klo 13 - (16)',
+    time2: 'Sunday 13 - (16)',
     phone: 'Phone: ',
     phone2: '046 5714 634',
     email: 'Email: ',
@@ -47,7 +47,7 @@ export const ui = {
       "'Neither is there salvation in any other: for there is none other name under heaven given among men, whereby we must be saved.' Acts 4:12.",
     jesusIsTheSonOfGod: 'Jeesus on Jumalan Poika',
     jesusIsTheSonOfGodDescription1:
-      'Jesus is the Son of God, through whom salvation from sin is possible... John 20:30-31.',
+      'Jesus is the Son of God, through whom salvation from sin is possible... John 20:30,31.',
     jesusIsTheSonOfGodDescription2:
       "'The next day John seeth Jesus coming unto him, and saith, Behold the Lamb of God, which taketh away the sin of the world.' John 1:29.",
     jesusIsTheSonOfGodDescription3:
@@ -55,7 +55,7 @@ export const ui = {
     preachingTheGospel: 'Preaching the gospel',
     preachingTheGospelDescription1: 'The Gospel must be proclaimed to every creature... Matthew 28.',
     preachingTheGospelDescription2: `'And he said unto them, Go ye into all the world, and preach the gospel to every creature. He that believeth and is baptized shall be saved; but he that believeth not shall be damned.' Mark 16:15,16.`,
-    preachingTheGospelDescription3: `'And Jesus came and spake unto them, saying, All power is given unto me in heaven and in earth. Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you always, even unto the end of the world. Amen.' Matthew 28:18-20`,
+    preachingTheGospelDescription3: `'And Jesus came and spake unto them, saying, All power is given unto me in heaven and in earth. Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you always, even unto the end of the world. Amen.' Matthew 28:18-20.`,
     signsAndWonders: 'Signs and wonders',
     signsAndWondersDescription1:
       'Miracles and signs, healings, deliverances, and the casting out of evil spirits follow and are evidence of the true Gospel... Mark 16.',
@@ -67,11 +67,11 @@ export const ui = {
     prayer2Description2:
       "'But we will give ourselves continually to prayer, and to the ministry of the word.' Acts 6:4.",
     prayer2Description3:
-      "'These all continued with one accord in prayer and supplication, with the women, and Mary the mother of Jesus, and with his brethren ... And when the day of Pentecost was fully come, they were all with one accord in one place. And suddenly there came a sound from heaven as of a rushing mighty wind, and it filled all the house where they were sitting.' Acts 1:14, 2:1-2",
+      "'These all continued with one accord in prayer and supplication, with the women, and Mary the mother of Jesus, and with his brethren ... And when the day of Pentecost was fully come, they were all with one accord in one place. And suddenly there came a sound from heaven as of a rushing mighty wind, and it filled all the house where they were sitting.' Acts 1:14, 2:1-2.",
     aboutUs: 'About us',
     workersOfTheGospel: 'Workers of the gospel',
     toYou:
-      "'For I speak to you Gentiles, inasmuch as I am the apostle of the Gentiles, I magnify mine office.' Romans 11:13. <br /> <br /> 'I have therefore whereof I may glory through Jesus Christ in those things which pertain to God. For I will not dare to speak of any of those things which Christ hath not wrought by me, to make the Gentiles obedient, by word and deed, Through mighty signs and wonders, by the power of the Spirit of God ...' Romans 15:17-19. <br /> <br/> 'For not he that commendeth himself is approved, but whom the Lord commendeth.' 2nd Corinthians 10:18. <br /> <br /> Below are examples what the Holy Spirit has spoken through His servants.",
+      "'For I speak to you Gentiles, inasmuch as I am the apostle of the Gentiles, I magnify mine office.' Romans 11:13. <br /> <br /> 'I have therefore whereof I may glory through Jesus Christ in those things which pertain to God. For I will not dare to speak of any of those things which Christ hath not wrought by me, to make the Gentiles obedient, by word and deed, Through mighty signs and wonders, by the power of the Spirit of God ...' Romans 15:17-19. <br /> <br/> 'For not he that commendeth himself is approved, but whom the Lord commendeth.' 2 Corinthians 10:18. <br /> <br /> Below are examples what the Holy Spirit has spoken through His servants.",
     juhaniJuusola: 'Bishop Juhani Juusola',
     juhaniJuusolaContent1: `This is the word of the Lord: that person needs to leave from the place where you work. She cannot endure this fire of God in you.`,
     juhaniJuusolaContent2: `You have been called at this time, the glory of God has been bestowed upon you, be faithful in the little that has been given unto you, do not give excuses, God has put you in his palm to use you, He will increase you. It is not for your glory, but for the name and glory of Jesus to be shown. Do not dismiss your calling for a single moment but make it plain, because God will be glorified through your life.`,
@@ -111,7 +111,7 @@ export const ui = {
     'testimonialNonMentioned3.t': 'They will drive against a wall.',
     'testimonialNonMentioned3.job': 'A pastor in a Finnish church',
     'testimonialIda.t': `I have grown tremendously in the spirit over the past six months after the Lord guided me to prioritize church meetings in my life and daily activities. <br /> I have even been told that God has nurtured my growth to the point where I am now spiritually more mature than many pastors.`,
-    'testimonialIda.name': 'Ida Pikkarainen',
+    'testimonialIda.name': 'Ida',
     'testimonialIda.job': 'A nurse practitioner, rehabilitation counselor',
     'testimonialBenwillis.t': `My experiences in the prayer church are countless. Before I joined, I never took prayer seriously. Now I have developed a strong habit of trusting God in everything that I do. Through that, I have seen the hand Jesus in my life, especially in my career where I specifically prayed for a job and Jesus delivered. My life has since transformed from someone who lived life aimlessly to a focused, deeply spiritual person whose faith has been renewed and who knows that it's only Jesus that can save our lives.`,
     'testimonialBenwillis.name': 'Benwillis',
@@ -141,12 +141,12 @@ export const ui = {
     whatYouWillExperience: 'What you will experience?',
     '1cor2:4-5': `'And my speech and my preaching was not with enticing words of man's wisdom, but in demonstration of the Spirit and of power: That your faith should not stand in the wisdom of men, but in the power of God.' 1 Corinthians 2:4-5.`,
     'forYou.items1.title': 'To be freed from all sins so that you can start freeing others.',
-    'forYou.items1.description': `Jesus came to set you completely free. And when you are free, He sends you to set others free. So come and experience Jesus, and then He will send you to help others. <br /><br /> 'And she shall bring forth a son, and thou shalt call his name Jesus: for he shall save his people from their sins.' Matthew 1:21`,
+    'forYou.items1.description': `Jesus came to set you completely free. And when you are free, He sends you to set others free. So come and experience Jesus, and then He will send you to help others. <br /><br /> 'And she shall bring forth a son, and thou shalt call his name Jesus: for he shall save his people from their sins.' Matthew 1:21.`,
     'forYou.items2.title': 'You begin to proclaim the Gospel with joy and power',
     'forYou.items2.description': `If you have not been filled with the Holy Spirit, you will most likely be filled at the first meeting. And after that, you will be a powerful witness for Jesus! <br /> <br /> 'But ye shall receive power, after that the Holy Ghost is come upon you: and ye shall be witnesses unto me ...' Acts 1:8.`,
     'forYou.items3.title':
       'Your life is filled with joy, and the Holy Spirit Himself teaches you songs of the spirit 🎵',
-    'forYou.items3.description': `The kingdom of God is not about eating and drinking (ahem... cake and coffee after a church service), but righteousness, peace, and joy in the Holy Spirit. <br /> <br /> 'And be not drunk with wine, wherein is excess; but be filled with the Spirit; Speaking to yourselves in psalms and hymns and spiritual songs, singing and making melody in your heart to the Lord.' Ephesians 5:18,19.'`,
+    'forYou.items3.description': `The kingdom of God is not about eating and drinking (ahem... cake and coffee after a church service), but righteousness, peace, and joy in the Holy Spirit. <br /> <br /> 'And be not drunk with wine, wherein is excess; but be filled with the Spirit; Speaking to yourselves in psalms and hymns and spiritual songs, singing and making melody in your heart to the Lord.' Ephesians 5:18,19.`,
     'forYou.items4.title': 'He reveals, guides, and prepares you for your calling',
     'forYou.items4.description': `The Holy Spirit guides you in spiritual preparation, after which you are like Esther, whom the king chooses for a noble task. <br /><br /> 'But as it is written, Eye hath not seen, nor ear heard, neither have entered into the heart of man, the things which God hath prepared for them that love him.' 1 Corinthians 2:9.`,
     'forYou.items5.title': 'Your prayer life ignites, blazing like a great fire',
@@ -155,7 +155,7 @@ export const ui = {
     'forYou.items6.description': `'And there went great multitudes with him: and he turned, and said unto them, If any man come to me, and hate not his father, and mother, and wife, and children, and brethren, and sisters, yea, and his own life also, he cannot be my disciple. And whosoever doth not bear his cross, and come after me, cannot be my disciple.' Luke 14:25-27.`,
     'forYou.items7.title':
       'People in despair begin to gather around you, whom <span class="underline italic">Jesus</span> helps through you. God makes you the David of this generation',
-    'forYou.items7.description': `'David therefore departed thence, and escaped to the cave Adullam: and when his brethren and all his father's house heard it, they went down thither to him. And every one that was in distress, and every one that was in debt, and every one that was discontented, gathered themselves unto him; and he became a captain over them: and there were with him about four hundred men.' 1 Samuel 22:1-2.`,
+    'forYou.items7.description': `'David therefore departed thence, and escaped to the cave Adullam: and when his brethren and all his father's house heard it, they went down thither to him. And every one that was in distress, and every one that was in debt, and every one that was discontented, gathered themselves unto him; and he became a captain over them: and there were with him about four hundred men.' 1 Samuel 22:1,2.`,
     prayerChurchMeetingImageAlt: 'Meeting of the Prayer church',
     prayerConferenceImageAlt: 'Eastern Prayer Conference',
   },
@@ -201,7 +201,7 @@ export const ui = {
       "'Eikä ole pelastusta kenessäkään toisessa, sillä ei ole taivaan alla ihmisille annettu muuta nimeä, jossa meidän tulisi pelastua.' Apostolien teot 4:12.",
     jesusIsTheSonOfGod: 'Jeesus on Jumalan Poika',
     jesusIsTheSonOfGodDescription1:
-      'Jeesus on Jumalan Poika jonka kautta pelastuminen synnistä on mahdollista... Johannes 20:30-31.',
+      'Jeesus on Jumalan Poika jonka kautta pelastuminen synnistä on mahdollista... Johannes 20:30,31.',
     jesusIsTheSonOfGodDescription2:
       "'Seuraavana päivänä Johannes näki Jeesuksen tulevan luokseen ja sanoi: ”Katso, Jumalan Karitsa, joka ottaa pois maailman synnin!”' Johannes 1:29.",
     jesusIsTheSonOfGodDescription3:
@@ -316,13 +316,8 @@ export const ui = {
     'forYou.items6.description': `'Jeesuksen mukana kulki suuri joukko ihmisiä. Hän kääntyi ja sanoi heille: ”Jos joku tulee minun luokseni eikä vihaa isäänsä ja äitiään, vaimoaan ja lapsiaan, veljiään ja sisariaan, jopa omaa elämäänsä, hän ei voi olla minun opetuslapseni. Ja joka ei kanna ristiään ja seuraa minua, ei voi olla minun opetuslapseni.”' Luuk 14:25-27.`,
     'forYou.items7.title':
       'Ympärillesi alkaa kerääntyä surkeita ihmisiä, joita <span class="underline italic">Jeesus</span> auttaa kauttasi. Jumala tekee sinusta tämän sukupolven Daavidin.',
-    'forYou.items7.description': `'Daavid lähti sieltä ja pakeni Adullamin luolaan. Kun hänen veljensä ja koko hänen isänsä perhe kuulivat sen, he tulivat sinne hänen luokseen. Hänen luokseen kokoontui myös kaikenlaista ahdingossa olevaa, velkaantunutta ja katkeroitunutta väkeä, ja hänestä tuli heidän päämiehensä. Näin hänen kanssaan oli noin neljäsataa miestä.' 1. Samuelin kirja 22:1-2.`,
+    'forYou.items7.description': `'Daavid lähti sieltä ja pakeni Adullamin luolaan. Kun hänen veljensä ja koko hänen isänsä perhe kuulivat sen, he tulivat sinne hänen luokseen. Hänen luokseen kokoontui myös kaikenlaista ahdingossa olevaa, velkaantunutta ja katkeroitunutta väkeä, ja hänestä tuli heidän päämiehensä. Näin hänen kanssaan oli noin neljäsataa miestä.' 1. Samuelin kirja 22:1,2.`,
     prayerChurchMeetingImageAlt: 'Rukouksen seurakunnan kokous',
     prayerConferenceImageAlt: 'Pääsiäisen rukouskonferenssi',
   },
 } as const;
-
-// Jesus is a Savior. He truly saves from darkness when one calls unto Him. My life has transformed in a way that I cannot even explain. From a godless life to one that is ever aware of Him. The Prayer Church teaches the uncompromising truth of the Bible. The gatherings are always Spirit-filled and Spirit-led. The community is simply unmatched.
-// The first day I set foot in this church, after a long absence from the grace of God and under the devil's bondage, I was met with the mercy of Jesus Christ and Holy Spirit confirmed it by his powerful and visible encounter. In a single day, I received freedom, healing, and the fire of the Holy Spirit. Forever be glory, for His work on the Cross!,
-// My experiences in the prayer church are countless. Before I joined, I never took prayer seriously. Now I have developed a strong habit of trusting God in everything that I do. Through that, I have seen the hand of Jesus in my life, especially in my career where I specifically prayed for a job and Jesus delivered. My life has since transformed from someone who lived life aimlessly to a focused, deeply spiritual person whose faith has been renewed and who knows that it's only Jesus that can save our lives. I'm a medical researcher currently working as a teaching assistant at the university of Eastern Finland.
-// Since I joined the Flame the Freeze meetings, I have experienced a profound renewal of my spiritual sensitivity and appetite for the Lord. The liberal prayer sessions, in partnership with the Holy Spirit, have revived and awakened my scriptural songs' bank, building my most holy faith (Jude 1:20) The liberty we have in our gatherings has facilitated the manifestation of the Spirit, breaking down the barriers of religious tradition and deepening our relationships with the Holy Spirit and one another. Truly, our fellowship embodies Zion—the city of the living God, the heavenly Jerusalem, and the innumerable company of angels (Heb 12:22). It is a place of divine encounters and transformative experiences.
