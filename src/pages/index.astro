@@ -6,7 +6,8 @@ import cj from '~/assets/images/elders/cj.webp';
 import greta from '~/assets/images/elders/greta.jpg';
 import juhani_helsinki from '~/assets/images/elders/juhani_helsinki.webp';
 import mahi from '~/assets/images/elders/mahi_enhanced.webp';
-import prayerConference from '~/assets/images/other/Kuopio Prayer conference_ April 2025_finnish.webp';
+import prayerConferenceFi from '~/assets/images/other/Kuopio Prayer conference_ April 2025_finnish.webp';
+import prayerConferenceEn from '~/assets/images/other/Kuopio Prayer conference_ April 2025.webp';
 import logo from '~/assets/images/other/logo.webp';
 import imgPrayerChurchKuopio from '~/assets/images/other/prayer_church_kuopio2.webp';
 import iina from '~/assets/images/testimonials/iina.webp';
@@ -23,6 +24,7 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/PageLayout.astro';
 import { Icon } from 'astro-icon/components';
+import { twMerge } from 'tailwind-merge';
 
 const metadata = {
   title: 'Rukouksen seurakunta | Meidän tulemme ei ole asia, vaan henkilö.. Jeesus',
@@ -110,7 +112,7 @@ const t = useTranslations(lang);
   <Jesus classes={{ container: 'max-w-none w-full px-4 overflow-x-hidden' }}>
     <Fragment slot="title">
       <div class="py-4">
-        <GradientText imageNro={2} class="text-3xl xs:text-4xl md:text-5xl">
+        <GradientText imageNro={2} class="text-3xl xs:text-4xl md:text-5xl pb-1">
           {t('ourFireIsNotA')}
         </GradientText>
       </div>
@@ -162,10 +164,10 @@ const t = useTranslations(lang);
           class="w-full text-[8vw] sm:text-[8vw] md:text-[8vw] lg:text-[6vw] font-bold leading-none pb-10"
         >
           <div class="flex flex-col">
-            <div class="flex flex-row items-center justify-center">
+            <div class={twMerge('flex flex-row items-center justify-center', lang === 'en' && 'gap-4')}>
               1. {t('notIn')}<div class="border-b-2 mt-0.5 border-white">{t('ssä')}</div>
             </div>
-            <div class="flex flex-row text-center justify-center">
+            <div class={twMerge('flex flex-row items-center justify-center', lang === 'en' && 'gap-4')}>
               2. {t('butFrom')}<span class="border-b-2 border-white">{t('stä')}</span>
             </div>
           </div>
@@ -576,7 +578,7 @@ const t = useTranslations(lang);
 
   <Hero
     image={{
-      src: prayerConference,
+      src: lang === 'en' ? prayerConferenceEn : prayerConferenceFi,
       alt: t('prayerConferenceImageAlt'),
     }}
   />
@@ -625,11 +627,11 @@ const t = useTranslations(lang);
       </div>
     </div>
     <div class="w-full overflow-hidden absolute bottom-0 left-0">
-      <div class="w-[112vw] relative -left-[11vw] overflow-visible">
+      <div class="w-[112vw] relative -left-[6vw] overflow-visible">
         <GradientText
           imageNro={2}
           animate={false}
-          class="inline-block text-[34vw] xs:text-[35vw] font-bold leading-none"
+          class={twMerge('inline-block font-bold leading-none', lang === 'en' ? 'text-[35vw]' : 'text-[29vw]')}
           backgroundStyles={styleStyle}
         >
           {t('jesus')}
