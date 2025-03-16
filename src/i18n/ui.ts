@@ -116,7 +116,7 @@ export const ui = {
     'testimonialNonMentioned3.job': 'A pastor in a Finnish church',
     'testimonialIda.t': `I have grown tremendously in the spirit over the past six months after the Lord guided me to prioritize church meetings in my life and daily activities. <br /> I have even been told that God has nurtured my growth to the point where I am now spiritually more mature than many pastors.`,
     'testimonialIda.name': 'Ida',
-    'testimonialIda.job': 'A nurse practitioner, rehabilitation counselor',
+    'testimonialIda.job': 'Nurse, counselor',
     'testimonialBenwillis.t': `My experiences in the prayer church are countless. Before I joined, I never took prayer seriously. Now I have developed a strong habit of trusting God in everything that I do. Through that, I have seen the hand Jesus in my life, especially in my career where I specifically prayed for a job and Jesus delivered. My life has since transformed from someone who lived life aimlessly to a focused, deeply spiritual person whose faith has been renewed and who knows that it's only Jesus that can save our lives.`,
     'testimonialBenwillis.name': 'Benwillis',
     'testimonialBenwillis.job':
@@ -132,7 +132,7 @@ export const ui = {
     'testimonialAhunsi.t':
       'At UEF Bible Club, there is no denying the transforming power and love of Jesus. The last few months of my membership has been a time of spiritual refreshing and reawakening, and closer walk with God.',
     'testimonialAhunsi.name': 'Ahunsimere',
-    'testimonialAhunsi.job': '',
+    'testimonialAhunsi.job': 'Doctor',
     'luke6:26':
       'Woe unto you, when all men shall speak well of you! for so did their fathers to the false prophets. Luke 6:26.',
     'john18:20-21': `Jesus answered him, I spake openly to the world; I ever taught in the synagogue, and in the temple, whither the Jews always resort; and in secret have I said nothing. Why askest thou me? ask them which heard me, what I have said unto them: behold, they know what I said. John 18:20,21.`,
@@ -287,7 +287,7 @@ export const ui = {
     'testimonialNonMentioned3.job': 'Pastori suomalaisessa seurakunnassa',
     'testimonialIda.t': `Olen kasvanut hengellisesti todella paljon 6 kuukaudessa, kun aloin elämässä ja arjessa priorisoida Herran ohjaamana seurakunnan tapaamisia. <br /> Minulle on kerrottu, että Jumala on todella kasvattanut minua niin paljon, että olen hengellisesti vanhempi kuin moni pastori.`,
     'testimonialIda.name': 'Ida',
-    'testimonialIda.job': 'Lähihoitaja, kuntoutusohjaaja',
+    'testimonialIda.job': 'Lähihoitaja, ohjaaja',
     'testimonialBenwillis.t': `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaicessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
     'testimonialBenwillis.name': 'Benwillis',
     'testimonialBenwillis.job': 'Lääketieteen tutkija, opetusassitentti Itä-Suomen Yliopistolla',
@@ -302,7 +302,7 @@ export const ui = {
     'testimonialAhunsi.t':
       'On täysin selvää, että Jeesuksen elämiä muuttava voima ja rakkaus on läsnä UEF Raamattukerhossa. Viimeiset kuukaudet ovat olleet minulle hengellisen virkistymisen sekä heräämisen aikaa ja nyt elämäni on lähempänä Jumalaa.',
     'testimonialAhunsi.name': 'Ahunsimere',
-    'testimonialAhunsi.job': '',
+    'testimonialAhunsi.job': 'Lääkäri',
     'testimonialAhunsi.imageAlt': 'Ahunsimere - kuva',
     'luke6:26':
       'Voi teitä, kun kaikki ihmiset puhuvat teistä hyvää! Samoinhan tekivät heidän isänsä väärille profeetoille.” Luukas 6:26',

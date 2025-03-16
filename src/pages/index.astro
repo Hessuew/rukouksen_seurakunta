@@ -78,6 +78,7 @@ const t = useTranslations(lang);
   >
     <Fragment slot="title">
       <GradientText
+        animate={false}
         imageNro={2}
         class="w-full text-[12vw] sm:text-[14vw] md:text-[12vw] lg:text-[10vw] font-bold leading-none"
         backgroundStyles={styleStyle}
@@ -121,11 +122,7 @@ const t = useTranslations(lang);
         </GradientText>
       </div>
       <div class="overflow-hidden mx-auto -my-4">
-        <GradientText
-          imageNro={2}
-          class="w-full text-[28vw] sm:text-[24vw] md:text-[24vw] lg:text-[26vw] font-bold leading-none"
-          backgroundStyles={styleStyle}
-        >
+        <GradientText imageNro={2} class="w-full text-[26vw] font-bold leading-none" backgroundStyles={styleStyle}>
           {t('jesus')}
         </GradientText>
       </div>
@@ -169,10 +166,10 @@ const t = useTranslations(lang);
           class="w-full text-[8vw] sm:text-[8vw] md:text-[8vw] lg:text-[6vw] font-bold leading-none pb-10"
         >
           <div class="flex flex-col">
-            <div class={twMerge('flex flex-row items-center justify-center', lang === 'en' && 'gap-4')}>
+            <div class={twMerge('flex flex-row items-center justify-center', lang === 'en' && 'gap-2')}>
               1. {t('notIn')}<div class="border-b-2 mt-0.5 border-white">{t('ssä')}</div>
             </div>
-            <div class={twMerge('flex flex-row items-center justify-center', lang === 'en' && 'gap-4')}>
+            <div class={twMerge('flex flex-row items-center justify-center', lang === 'en' && 'gap-2')}>
               2. {t('butFrom')}<span class="border-b-2 border-white">{t('stä')}</span>
             </div>
           </div>
