@@ -82,6 +82,8 @@ export const ui = {
     cjImageAlt: 'CJ - image',
     greta: 'Pastor Greta',
     gretaImageAlt: 'Dear Greta - image',
+    ahunsi: 'Pastor Ahunsimere',
+    ahunsiImageAlt: 'Ahunsimere - image',
     akosua: 'Deaconess Akosua',
     akosuaContent1: `The religious people were people without the Spirit of God inside of them. Therefore, their speech brought forth no conviction. Stephen, on the other hand, was a man who was full of the Holy Ghost, which meant that the words proceeding from him brought conviction to the hearers' hearts. Due to this, religious people would prefer to have one of their own speak rather than Stephen. Because then they would still feel comfortable in their positions with no conviction.`,
     akosuaContent2: `The Bible commands us to seek and set our minds on things that are above, eternal. Stephen, as a believer, always had his mind on things eternal. Thus, when the religious people started gnashing their teeth at him, Stephen gazed into heaven because he was used to doing it and didn't focus at all at the peoples’ reaction. Sure, as he was full of the Holy Spirit, the Spirit could have directed his eyes up. Regardless, he focused on things above.`,
@@ -245,6 +247,8 @@ export const ui = {
     //   <br /> <br />
     //   2) Kun vaellamme Kristuksen tiellä täysin antautuneena, olemme täydellisiä niin kuin itse Kristus on. Niin kauan kun emme katso lihaan, Jumala kyllä ilmoittaa kaikesta miten asiat ovat. Fil. 3:12-16`,
     gretaImageAlt: 'Rakas Greta - kuva',
+    ahunsi: 'Pastori Ahunsimere',
+    ahunsiImageAlt: 'Ahunsimere - kuva',
     akosua: 'Seurakunnan palvelija Akosua',
     akosuaContent1:
       'Ihmiset ilman Jumalan Henkeä sisimmässään olivat uskonnollisia. Siksi heidän puheensa ei tuonut synnintuntoa toisille. Stefanos taas oli mies täynnä Pyhää Henkeä. Tämä tarkoitti, että hänen suustaan lähtevät sanat toivat synnintunnon kuulijoiden sydämiin. Uskonnolliset ihmiset olisivat halunneet jonkun toisen puhuvan, koska silloin he olisivat voineet elää niin kuin elivät ilman synnintuntoa.',
