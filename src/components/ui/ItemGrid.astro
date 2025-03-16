@@ -110,43 +110,54 @@ const {
 }
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // Function to extract SVG path from Icon component and apply it as mask
-    function applySVGMask() {
-      // Get all icon background elements
-      const iconBackgrounds = document.querySelectorAll('.icon-gold-background');
+  // Function to extract SVG path from Icon component and apply it as mask
+  function applySVGMask() {
+    // Get all icon background elements
+    const iconBackgrounds = document.querySelectorAll('.icon-gold-background');
 
-      iconBackgrounds.forEach((background) => {
-        // Find the corresponding Icon SVG
-        const container = background.closest('.icon-gold-container');
-        if (!container) return;
+    iconBackgrounds.forEach((background) => {
+      // Find the corresponding Icon SVG
+      const container = background.closest('.icon-gold-container');
+      if (!container) return;
 
-        const svgElement = container.querySelector('svg');
-        if (!svgElement) return;
+      const svgElement = container.querySelector('svg');
+      if (!svgElement) return;
 
-        // Clone the SVG to avoid modifying the original
-        const svgClone = svgElement.cloneNode(true) as Element;
+      // Clone the SVG to avoid modifying the original
+      const svgClone = svgElement.cloneNode(true) as Element;
 
-        // Remove any fill attributes to ensure mask works properly
-        const paths = svgClone.querySelectorAll('path');
-        paths.forEach((path) => {
-          if (path.hasAttribute('fill')) {
-            path.setAttribute('fill', '#000000');
-          }
-        });
-
-        // Convert SVG to a data URL for use as mask
-        const svgString = new XMLSerializer().serializeToString(svgClone);
-        const encodedSvg = encodeURIComponent(svgString).replace(/'/g, '%27').replace(/"/g, '%22');
-
-        const svgUrl = `data:image/svg+xml,${encodedSvg}`;
-
-        // Apply the SVG as mask
-        (background as HTMLHtmlElement).style.maskImage = `url("${svgUrl}")`;
+      // Remove any fill attributes to ensure mask works properly
+      const paths = svgClone.querySelectorAll('path');
+      paths.forEach((path) => {
+        if (path.hasAttribute('fill')) {
+          path.setAttribute('fill', '#000000');
+        }
       });
-    }
 
-    // Apply masks after a short delay to ensure SVGs are loaded
-    setTimeout(applySVGMask, 100);
-  });
+      // Convert SVG to a data URL for use as mask
+      const svgString = new XMLSerializer().serializeToString(svgClone);
+      const encodedSvg = encodeURIComponent(svgString).replace(/'/g, '%27').replace(/"/g, '%22');
+
+      const svgUrl = `data:image/svg+xml,${encodedSvg}`;
+
+      // Apply the SVG as mask
+      (background as HTMLElement).style.maskImage = `url("${svgUrl}")`;
+      (background as HTMLElement).style.webkitMaskImage = `url("${svgUrl}")`;
+    });
+  }
+
+  // Initialize icon masks when the DOM is ready and after each page navigation
+  function initializeIconMasks() {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', applySVGMask);
+    } else {
+      applySVGMask();
+    }
+  }
+
+  // Run on initial load
+  initializeIconMasks();
+  
+  // Run after each Astro page navigation
+  document.addEventListener('astro:page-load', applySVGMask);
 </script>
