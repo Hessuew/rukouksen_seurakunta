@@ -1,4 +1,5 @@
 ---
+import LanguagePicker from '~/components/common/LanguagePicker.astro';
 import ToggleMenu from '~/components/common/ToggleMenu.astro';
 import Logo from '~/components/Logo.astro';
 import Button from '~/components/ui/Button.astro';
@@ -58,10 +59,28 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 const { nav: navClass = '' } = classes;
 ---
 
+<style>
+  @keyframes slideDown {
+    from {
+      transform: translateY(-32%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-down {
+    animation: slideDown 1.2s ease-out forwards;
+  }
+</style>
+
 <header
   class:list={[
     { sticky: isSticky, relative: !isSticky, dark: isDark },
     'top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out',
+    { 'animate-slide-down': currentPath === '/' },
   ]}
   {...isSticky ? { 'data-aw-sticky-header': true } : {}}
   {...id ? { id } : {}}
@@ -82,7 +101,7 @@ const { nav: navClass = '' } = classes;
     ]}
   >
     <div class:list={[{ 'mr-auto rtl:mr-0 rtl:ml-auto': position === 'right' }, 'flex justify-between']}>
-      <a class="items-center relative inline-block" href={getHomePermalink()}>
+      <a class="flex items-center" href={getHomePermalink()}>
         <Logo />
       </a>
       <div class="flex items-center lg:hidden">
@@ -170,7 +189,9 @@ const { nav: navClass = '' } = classes;
       ]}
     >
       <div class="items-center flex justify-between w-full lg:w-auto">
-        <div class="flex"></div>
+        <div class="flex">
+          <LanguagePicker />
+        </div>
         {
           actions?.length ? (
             <span class="ml-4 rtl:ml-0 rtl:mr-4">

@@ -1,12 +1,19 @@
 ---
+import akosua_zoomed_in from '~/assets/images/deacons/akosua_zoomed_in.webp';
 import akosua from '~/assets/images/deacons/akosua.webp';
 import ben from '~/assets/images/deacons/ben.webp';
+import ida_zoomed_in from '~/assets/images/deacons/ida_zoomed_in.webp';
 import ida from '~/assets/images/deacons/ida.webp';
+import ahunsi_zoomed from '~/assets/images/elders/ahunsi_zoomed.webp';
+import ahunsi_zoomed2 from '~/assets/images/elders/ahunsi_zoomed2.webp';
 import cj from '~/assets/images/elders/cj.webp';
-import mahi from '~/assets/images/elders/mahi.webp';
-import prayerConference from '~/assets/images/Kuopio Prayer conference_ April 2025_finnish.webp';
-import logo from '~/assets/images/logo.webp';
-import imgPrayerChurchKuopio from '~/assets/images/prayer_church_kuopio2.webp';
+import greta from '~/assets/images/elders/greta.jpg';
+import juhani_helsinki from '~/assets/images/elders/juhani_helsinki.webp';
+import mahi from '~/assets/images/elders/mahi_enhanced.webp';
+import prayerConferenceFi from '~/assets/images/other/Kuopio Prayer conference_ April 2025_finnish.webp';
+import prayerConferenceEn from '~/assets/images/other/Kuopio Prayer conference_ April 2025.webp';
+import logo from '~/assets/images/other/logo.webp';
+import imgPrayerChurchKuopio from '~/assets/images/other/prayer_church_kuopio2.webp';
 import iina from '~/assets/images/testimonials/iina.webp';
 import maria from '~/assets/images/testimonials/maria.webp';
 import GradientText from '~/components/ui/GradientText.astro';
@@ -18,9 +25,10 @@ import Spacer from '~/components/widgets/Spacer.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
-import { ministers } from '~/data/ministers';
+import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/PageLayout.astro';
 import { Icon } from 'astro-icon/components';
+import { twMerge } from 'tailwind-merge';
 
 const metadata = {
   title: 'Rukouksen seurakunta | Meidän tulemme ei ole asia, vaan henkilö.. Jeesus',
@@ -54,45 +62,45 @@ const styleStyle = {
   backgroundRepeat: 'repeat',
   backgroundSize: '100% 100%',
 };
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout metadata={metadata}>
   <Hero
     image={{
       src: logo,
-      alt: 'Rukouksen seurakunnan logo',
+      alt: t('prayerChurchImageAlt'),
       width: 600,
       height: 600,
     }}
   >
     <Fragment slot="title">
       <GradientText
-        isHeading={true}
         imageNro={2}
         class="w-full text-[12vw] sm:text-[14vw] md:text-[12vw] lg:text-[10vw] font-bold leading-none"
         backgroundStyles={styleStyle}
       >
         <div class="flex flex-col">
-          <span>Rukouksen</span>
-          <span>seurakunta</span>
+          <span>{t('prayer')}</span>
+          <span>{t('church')}</span>
         </div>
       </GradientText>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Rukous määrittää seurakunnan elävyyden. Miksi? Koska Jeesus sanoi niin,
+      {t('prayerDefinesTheChurch')}
       <span class="italic">
-        'Eikö ole kirjoitettu: "Minun huoneeni on oleva kaikkien kansojen rukoushuone"?' Markus 11:17.
+        '{t('mark11:17')}'
       </span>
-      Se miten seurakunnassa rukoillaan näyttää siis oikeasti, millainen seurakunta on.
+      {t('theWayThePeoplePray')}
       <br />
       <br />
-      Tämä ei tarkoita pieniä ja nättejä rukouksia. Jeesus rukoili kolme tuntia Getsemanessa ja ihmetteli etteivät opetuslapset
-      jaksaneet rukoilla edes tuntia. Jos pastori ei jaksa rukoilla edes tuntia, seurakuntalaiset eivät jaksa rukoilla 20
-      minuuttia.
+      {t('thisDoesNotMean')}
       <br />
       <br />
-      Tuli puuttuu.
+      {t('theFireIsMissing')}
       <br />
       <br />
       <GradientText
@@ -100,17 +108,17 @@ const styleStyle = {
         backgroundStyles={{ ...styleStyle, backgroundSize: '200% 100%', backgroundPosition: '10% 20%' }}
         class="italic font-bold text-xl pr-1"
       >
-        Missä on sinun tulesi?
+        {t('whereIsYourFire')}
       </GradientText>
     </Fragment>
   </Hero>
 
-  <Jesus classes={{ container: 'max-w-none w-full p-0 overflow-x-hidden' }}>
+  <Jesus classes={{ container: 'max-w-none w-full px-4 overflow-x-hidden' }}>
     <Fragment slot="title">
       <div class="py-4">
-        <GradientText imageNro={2} class="text-3xl xs:text-4xl md:text-5xl"
-          >Meidän tulemme ei ole asia, vaan henkilö..</GradientText
-        >
+        <GradientText imageNro={2} class="text-3xl xs:text-4xl md:text-5xl pb-1">
+          {t('ourFireIsNotA')}
+        </GradientText>
       </div>
       <div class="overflow-hidden mx-auto -my-4">
         <GradientText
@@ -118,7 +126,7 @@ const styleStyle = {
           class="w-full text-[28vw] sm:text-[24vw] md:text-[24vw] lg:text-[26vw] font-bold leading-none"
           backgroundStyles={styleStyle}
         >
-          Jeesus
+          {t('jesus')}
         </GradientText>
       </div>
       <div class="py-4">
@@ -128,8 +136,8 @@ const styleStyle = {
           class="w-full text-[10vw] sm:text-[14vw] md:text-[10vw] lg:text-[6vw] font-bold leading-none"
         >
           <div class="flex flex-col">
-            <span>Kristus</span>
-            <span>Jumalan Poika</span>
+            <span>{t('christ')}</span>
+            <span>{t('theSonOfGod')}</span>
           </div>
         </GradientText>
       </div>
@@ -143,12 +151,13 @@ const styleStyle = {
           <div class="">
             <GradientText
               animate={false}
+              class="pr-1"
               imageNro={2}
               backgroundStyles={{ ...styleStyle, backgroundSize: '200% 100%', backgroundPosition: '10% 40%' }}
             >
-              Tämä sama Jeesus
+              {t('thisSameJesus')}
             </GradientText>
-            <span>tuli pelastamaan kansansa sen..</span>
+            <span>{t('cameToSaveHisPeopleFromIts')}</span>
           </div>
         </GradientText>
       </div>
@@ -160,11 +169,11 @@ const styleStyle = {
           class="w-full text-[8vw] sm:text-[8vw] md:text-[8vw] lg:text-[6vw] font-bold leading-none pb-10"
         >
           <div class="flex flex-col">
-            <div class="flex flex-row items-center justify-center">
-              1. ei synnei<div class="border-b-2 mt-0.5 border-white">ssä</div>
+            <div class={twMerge('flex flex-row items-center justify-center', lang === 'en' && 'gap-4')}>
+              1. {t('notIn')}<div class="border-b-2 mt-0.5 border-white">{t('ssä')}</div>
             </div>
-            <div class="flex flex-row text-center justify-center">
-              2. vaan synnei<span class="border-b-2 mt-0.5 border-white">stä</span>
+            <div class={twMerge('flex flex-row items-center justify-center', lang === 'en' && 'gap-4')}>
+              2. {t('butFrom')}<span class="border-b-2 border-white">{t('stä')}</span>
             </div>
           </div>
         </GradientText>
@@ -173,41 +182,41 @@ const styleStyle = {
       <div class="md:py-12">
         <GradientText class="text-3xl sm:text-4xl md:text-5xl font-bold leading-none pb-2">
           <div class="flex flex-col gap-2">
-            <span>Oletko vapaa kaikista synneistä?</span>
-            <span>Tahtoisitko olla?</span>
+            <span>{t('areYouFreeFromAllTheSins')}</span>
+            <span>{t('wouldYouLikeToBe')}</span>
           </div>
         </GradientText>
       </div>
 
       <div class="w-full flex justify-center items-center text-lg md:text-2xl">
-        <div class="flex flex-col xs:flex-row xs:gap-6 text-start text-muted font-normal">
+        <div class="flex flex-col xs:flex-row xs:gap-6 text-start text-muted font-normal pt-4">
           <div class="xs:hidden flex flex-col gap-2">
             <div class="flex flex-col">
-              <span class="font-medium">Osoite: </span>
-              <span>Yliopistonranta 15, sisäänkäynti C, 70210 Kuopio</span>
+              <span class="font-medium">{t('address')} </span>
+              <span>{t('address2')}</span>
             </div>
             <div class="flex flex-col">
-              <span class="font-medium">Aika: </span>
-              <span>Sunnuntai klo 13 - (16)</span>
+              <span class="font-medium">{t('time')} </span>
+              <span>{t('time2')}</span>
             </div>
             <div class="flex flex-col">
-              <span class="font-medium">Puh: </span>
-              <span>046 5714 634</span>
+              <span class="font-medium">{t('phone')} </span>
+              <span>{t('phone2')}</span>
             </div>
-            <span class="font-medium">Sähköposti: </span>
-            <span>rukouksenseurakunta@gmail.com</span>
+            <span class="font-medium">{t('email')} </span>
+            <span>{t('email2')}</span>
           </div>
           <div class="hidden xs:flex xs:flex-col">
-            <span>Osoite:</span>
-            <span>Aika: </span>
-            <span>Puh: </span>
-            <span>Sähköposti: </span>
+            <span>{t('address')} </span>
+            <span>{t('time')} </span>
+            <span>{t('phone')} </span>
+            <span>{t('email')} </span>
           </div>
           <div class="hidden xs:flex xs:flex-col">
-            <span>Yliopistonranta 15, sisäänkäynti C, 70210 Kuopio</span>
-            <span>Sunnuntai klo 13 - (16)</span>
-            <span>046 5714 634</span>
-            <span>rukouksenseurakunta@gmail.com</span>
+            <span>{t('address2')}</span>
+            <span>{t('time2')}</span>
+            <span>{t('phone2')}</span>
+            <span>{t('email2')}</span>
           </div>
         </div>
       </div>
@@ -216,75 +225,55 @@ const styleStyle = {
 
   <Steps
     id="mihin-uskomme"
-    tagline={'Mihin uskomme?'}
-    title={'Rukouksen seurakunnan uskon pilarit'}
+    tagline={t('whatDoWeBelieveIn')}
+    title={t('theBeliefsOfTheChurch')}
     isReversed={true}
     classes={{ container: 'lg:pb-0 md:pb-0', items: { icon: 'border-0 text-primary w-16 h-16' } }}
     items={[
       {
-        title: 'Kaikki tarvitsevat pelastusta',
+        title: t('allNeedSalvation'),
         description: [
           {
-            text: 'Kaikki ihmiset ovat syntisiä syntymästä asti ja tarvitsevat pelastusta... Kirje roomalaisille 3:24.',
+            text: t('allNeedSalvationDescription1'),
           },
           {
-            text: "'Tämä Jumalan vanhurskaus tulee uskosta Jeesukseen Kristukseen kaikille , jotka uskovat. Ei tässä ole mitään erottelua, sillä kaikki ovat tehneet syntiä ja ovat Jumalan kirkkautta vailla mutta saavat lahjaksi vanhurskauden hänen armostaan sen lunastuksen kautta, joka on Kristuksessa Jeesuksessa.' Kirje roomalaisille 3:22-24.",
+            text: t('allNeedSalvationDescription2'),
           },
           {
-            text: "'Eikä ole pelastusta kenessäkään toisessa, sillä ei ole taivaan alla ihmisille annettu muuta nimeä, jossa meidän tulisi pelastua.' Apostolien teot 4:12.",
+            text: t('allNeedSalvationDescription3'),
           },
         ],
         icon: 'tabler:number-1',
       },
       {
-        title: 'Jeesus on Jumalan Poika',
+        title: t('jesusIsTheSonOfGod'),
         description: [
-          { text: 'Jeesus on Jumalan Poika jonka kautta pelastuminen synnistä on mahdollista... Johannes 20:30-31.' },
-          {
-            text: "'Seuraavana päivänä Johannes näki Jeesuksen tulevan luokseen ja sanoi: ”Katso, Jumalan Karitsa, joka ottaa pois maailman synnin!”' Johannes 1:29.",
-          },
-
-          {
-            text: "'Sillä lapsi on meille syntynyt, poika on meille annettu. Hänen harteillaan on herruus, ja hänen nimensä on Ihmeellinen neuvonantaja, Väkevä Jumala, Iankaikkinen isä, Rauhanruhtinas.' Jesaja 9:6.",
-          },
+          { text: t('jesusIsTheSonOfGodDescription1') },
+          { text: t('jesusIsTheSonOfGodDescription2') },
+          { text: t('jesusIsTheSonOfGodDescription3') },
         ],
         icon: 'tabler:number-2',
       },
       {
-        title: 'Evankeliumin julistaminen',
+        title: t('preachingTheGospel'),
         description: [
-          { text: 'Evankeliumi tulee julistaa jokaiselle luodulle... Matteus 28.' },
-          {
-            text: "'Jeesus tuli heidän luokseen ja sanoi heille: ”Minulle on annettu kaikki valta taivaassa ja maan päällä. Menkää siis ja tehkää kaikista kansoista minun opetuslapsiani. Kastakaa heidät Isän ja Pojan ja Pyhän Hengen nimeen ja opettakaa heitä pitämään kaikki, mitä minä olen käskenyt teidän pitää. Ja katso, minä olen teidän kanssanne joka päivä maailmanajan loppuun saakka.”' Matteus 28:18-20.",
-          },
-          {
-            text: "'Hän sanoi heille: ”Menkää kaikkialle maailmaan ja julistakaa evankeliumia kaikille luoduille. Joka uskoo ja saa kasteen, pelastuu, mutta joka ei usko, se tuomitaan kadotukseen.' Markus 16:15-16",
-          },
+          { text: t('preachingTheGospelDescription1') },
+          { text: t('preachingTheGospelDescription2') },
+          { text: t('preachingTheGospelDescription3') },
         ],
         icon: 'tabler:number-3',
       },
       {
-        title: 'Ihmeet ja merkit',
-        description: [
-          {
-            text: 'Ihmeet ja merkit, parantumiset, vapautumiset sekä pahojen henkien ulosajamiset seuraavat ja ovat todisteita todellisesta envakeliumista... Markus 16.',
-          },
-          {
-            text: "'Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ajavat ulos riivaajia, puhuvat uusilla kielillä, 18nostavat käsin käärmeitä. Jos he juovat jotakin kuolettavaa, se ei vahingoita heitä. He panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi ... Opetuslapset lähtivät ja saarnasivat kaikkialla. Ja Herra toimi yhdessä heidän kanssaan vahvistaen sanan sitä seuraavien merkkien kautta.' Markus 16:17, 18, 20.",
-          },
-        ],
+        title: t('signsAndWonders'),
+        description: [{ text: t('signsAndWondersDescription1') }, { text: t('signsAndWondersDescription2') }],
         icon: 'tabler:number-4',
       },
       {
-        title: 'Rukous',
+        title: t('prayer2'),
         description: [
-          {
-            text: 'Rukous on täysin korvaamaton väline herätyksen ja Pyhän Hengen voiman ilmentymiseen... Luukas 18:1, Apostolien teot 4:31; Jaakob 5:16.',
-          },
-          { text: "'Me itse tahdomme pysyä rukouksessa ja sanan palveluksessa.' Apostolien teot 6:4." },
-          {
-            text: "'He kaikki pysyivät yksimielisesti rukouksessa yhdessä naisten kanssa sekä Jeesuksen äidin, Marian ja Jeesuksen veljien kanssa. ...  Kun helluntaipäivä oli tullut, he olivat kaikki yhdessä koolla. Yhtäkkiä tuli taivaasta humaus, niin kuin olisi käynyt raju tuulenpuuska, ja se täytti koko huoneen, jossa he istuivat.' Apostolien teot 2:1-2",
-          },
+          { text: t('prayer2Description1') },
+          { text: t('prayer2Description2') },
+          { text: t('prayer2Description3') },
         ],
         icon: 'tabler:number-5',
       },
@@ -293,22 +282,89 @@ const styleStyle = {
 
   <ImageTextSection
     id="meista"
-    tagline="Meistä"
-    title="Seurakunnan evankeliumin työntekijät"
-    subtitle="'Teille pakanoille sanon: koska olen pakanoiden apostoli, minä pidän virkaani kunniassa' Kirje roomalaisille 11:13. <br /> <br /> 'Minun kerskaukseni on siis Kristuksessa Jeesuksessa palvellessani Jumalaa. En näet rohkene puhua mistään muusta kuin siitä, mitä Kristus, saattaakseen pakanat kuuliaisiksi, on minun kauttani vaikuttanut sanalla ja teoilla, tunnustekojen ja ihmeiden voimalla, Jumalan Hengen voimalla...' Kirje roomalaisille 15:17-19. <br /> <br/> 'Luotettava ei ole se, joka itse suosittelee itseään, vaan se, jota Herra suosittelee.' Kirje korinttilaisille 10:18. <br /> <br /> Alla esimerkkejä siitä, mitä Pyhä Henki on puhunut näiden palvelijoidensa kautta"
+    tagline={t('aboutUs')}
+    title={t('workersOfTheGospel')}
+    subtitle={t('toYou')}
     classes={{ headline: { subtitle: 'max-w-5xl text-base md:text-lg lg:text-xl' } }}
-    items={ministers}
+    items={[
+      {
+        title: t('juhaniJuusola'),
+        name: 'Juhani Juusola',
+        content: `1) ${t('juhaniJuusolaContent1')} <br /> <br /> 2) ${t('juhaniJuusolaContent2')}`,
+        image: {
+          src: juhani_helsinki,
+          alt: t('juhaniJuusolaImageAlt'),
+        },
+        isReversed: false,
+      },
+      {
+        title: t('mahidere'),
+        name: 'Mahidere',
+        image: {
+          src: mahi,
+          alt: t('mahidereImageAlt'),
+        },
+        isReversed: true,
+      },
+      {
+        title: t('greta'),
+        name: 'Greta',
+        image: {
+          src: greta,
+          alt: t('gretaImageAlt'),
+        },
+        isReversed: true,
+      },
+      {
+        title: t('ahunsi'),
+        name: 'Ahunsimere',
+        image: {
+          src: ahunsi_zoomed2,
+          alt: t('ahunsiImageAlt'),
+        },
+        isReversed: true,
+      },
+      {
+        title: t('akosua'),
+        name: 'Akosua',
+        content: `1) ${t('akosuaContent1')} <br /> <br /> 2) ${t('akosuaContent2')} <br /> <br /> 3) ${t('akosuaContent3')}`,
+        image: {
+          src: akosua_zoomed_in,
+          alt: t('akosuaImageAlt'),
+        },
+        isReversed: false,
+      },
+      {
+        title: t('ida'),
+        name: 'Ida',
+        content: `1) ${t('idaContent1')}`,
+        image: {
+          src: ida_zoomed_in,
+          alt: t('idaImageAlt'),
+        },
+        isReversed: true,
+      },
+      // {
+      //   title: t('ben'),
+      //   name: 'Benwillis',
+      //   image: {
+      //     src: ben,
+      //     alt: t('benImageAlt'),
+      //   },
+      //   isReversed: true,
+      // },
+    ]}
   />
 
   <Testimonials
     id="todistuksia"
-    tagline="Todistuksia"
-    title="Mitä ihmiset sanovat"
+    tagline={t('testimonials')}
+    title={t('whatDoPeopleSay')}
     testimonials={[
       {
-        testimonial: 'Kultti',
-        name: 'Nimeltä mainitsematon',
-        job: 'Vanhemmiston jäsen suomalaisessa seurakunnassa',
+        testimonial: t('testimonialNonMentioned1.t'),
+        name: t('testimonialNonMentioned1.name'),
+        job: t('testimonialNonMentioned1.job'),
         image: {
           src: '',
           alt: '',
@@ -316,9 +372,9 @@ const styleStyle = {
         isPositive: false,
       },
       {
-        testimonial: 'En tiennyt, että Kuopiossa on tämmöistä!',
-        name: 'Maria Röning',
-        job: 'Yrittäjä',
+        testimonial: t('testimonialMaria.t'),
+        name: t('testimonialMaria.name'),
+        job: t('testimonialMaria.job'),
         image: {
           src: maria,
           alt: '',
@@ -326,51 +382,49 @@ const styleStyle = {
         isPositive: true,
       },
       {
-        testimonial: `Jeesus on Pelastaja. Hän pelastaa pimeydestä jokaisen, joka  huutaa Häntä avukseen. Elämäni on muuttunut niin paljon etten edes pysty ymmärtämään sitä itse kunnolla. Elin jumalattomasti, mutta nyt olen aina keskittynyt Jeesukseen. Rukouksen seurakunta opettaa mitä Raamattu sanoo laimentamatta tai pehmittelemättä sitä. Kokoontumiset ovat joka kerta täynä Pyhää Henkeä ja Hänen ohjaamiaan. Ryhmä on suoraan sanottuna suurenmoinen ja vertaansa vailla.`,
-        name: 'Akosua Osei',
-        job: 'Yliopisto-opiskelija',
+        testimonial: t('testimonialAkosua.t'),
+        name: t('testimonialAkosua.name'),
+        job: t('testimonialAkosua.job'),
         image: {
           src: akosua,
-          alt: 'Akosua Osei image',
+          alt: t('akosuaImageAlt'),
         },
         isPositive: true,
       },
       {
-        testimonial:
-          'Varo ettet pala loppuun - 2019 <br />(Jonka jälkeen tuli on vain lisääntynyt joka vuosi. Kiitos Herralle!)',
-        name: 'Nimeltä mainitsematon',
-        job: 'Nuorisopastori ***** helluntaiseurakunnassa',
+        testimonial: t('testimonialNonMentioned2.t'),
+        name: t('testimonialNonMentioned1.name'),
+        job: t('testimonialNonMentioned2.job'),
         image: {
           src: '',
           alt: '',
         },
         isPositive: false,
       },
-      // {
-      //   testimonial: ``,
-      //   name: 'Ahunsimere Adeniran',
-      //   job: 'Opiskelija',
-      //   image: {
-      //     src: ahunsi,
-      //     alt: 'Ahunsimere Adeniran image',
-      //   },
-      //   isPositive: true,
-      // },
       {
-        testimonial:
-          'Olin ollut pitkään kaukana Jumalasta ja elämäni oli Saatanan vaivaama. Tullessani ensimmäistä kertaa Rukouksen seurakuntaan Jeesuksen Kristuksen armo kohtasi minut käsin kosketettavasti Pyhä Hengen vahvistaessa tämän voimakkaalla ja näkyvällä Jumalan voiman ilmenemisellä. Vapauduin, parannuin fyysisesti ja sain takaisin menettämäni Pyhän Hengen tulen. Ikuinen ylistys Jeesukselle Hänen ristintyöstään!',
-        name: 'Mahidere Ali',
-        job: 'Lääkäri',
+        testimonial: t('testimonialAhunsi.t'),
+        name: t('testimonialAhunsi.name'),
+        job: t('testimonialAhunsi.job'),
+        image: {
+          src: ahunsi_zoomed,
+          alt: t('ahunsiImageAlt'),
+        },
+        isPositive: true,
+      },
+      {
+        testimonial: t('testimonialMahi.t'),
+        name: t('testimonialMahi.name'),
+        job: t('testimonialMahi.job'),
         image: {
           src: mahi,
-          alt: 'Mahidere Ali image',
+          alt: t('mahidereImageAlt'),
         },
         isPositive: true,
       },
       {
-        testimonial: 'He tulevat ajamaan seinään',
-        name: 'Nimeltä mainitsematon',
-        job: 'Pastori suomalaisessa seurakunnassa',
+        testimonial: t('testimonialNonMentioned3.t'),
+        name: t('testimonialNonMentioned1.name'),
+        job: t('testimonialNonMentioned3.job'),
         image: {
           src: '',
           alt: '',
@@ -378,40 +432,39 @@ const styleStyle = {
         isPositive: false,
       },
       {
-        testimonial: `Olen kasvanut hengellisesti todella paljon 6 kuukaudessa, kun aloin priorisoimaan näitä tapaamisia. <br /> Minulle on kerrottu, että Jumala on kasvattanut minua niin paljon, että olen nyt hengellisesti vanhempi kuin edellisen seurakunnan pastorini.`,
-        name: 'Ida Pikkarainen',
-        job: 'Lähihoitaja, kuntoutusohjaaja',
+        testimonial: t('testimonialIda.t'),
+        name: t('testimonialIda.name'),
+        job: t('testimonialIda.job'),
         image: {
           src: ida,
-          alt: 'Ida Pikkarainen image',
+          alt: t('idaImageAlt'),
         },
         isPositive: true,
       },
       {
-        testimonial: `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaicessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
-        name: 'Benwillis Onchonga',
-        job: 'Lääketieteen tutkija, opetusassitentti Itä-Suomen Yliopistolla',
+        testimonial: t('testimonialBenwillis.t'),
+        name: t('testimonialBenwillis.name'),
+        job: t('testimonialBenwillis.job'),
         image: {
           src: ben,
-          alt: 'Benwillis image',
+          alt: t('benImageAlt'),
         },
         isPositive: true,
       },
       {
-        testimonial:
-          'Vastaanotin Jeesuksen, pääsin eroon tupakasta ilman mitään korvaavia nikotiinituotteita. Rukoilin apua Jeesukselta. Tajusin, että minun pitää myös vastaanottaa apu, ja niin kulkea valossa ilman riippuvuuksia.',
-        name: 'Iina',
-        job: 'Tarjoilija',
+        testimonial: t('testimonialIina.t'),
+        name: t('testimonialIina.name'),
+        job: t('testimonialIina.job'),
         image: {
           src: iina,
-          alt: '',
+          alt: t('testimonialIina.imageAlt'),
         },
         isPositive: true,
       },
       {
-        testimonial: 'He harjoittavat afrikkalaista noituutta',
-        name: 'Nimeltä mainitsematon',
-        job: 'Suomen suurimman seurakunnan sisäinen lähetysjärjestö',
+        testimonial: t('testimonialNonMentioned4.t'),
+        name: t('testimonialNonMentioned1.name'),
+        job: t('testimonialNonMentioned4.job'),
         image: {
           src: '',
           alt: '',
@@ -419,12 +472,12 @@ const styleStyle = {
         isPositive: false,
       },
       {
-        testimonial: `Liityttyäni Flame the Freeze:n tapaamisiin minulle on tapahtunut paljon. Hengellinen herkkyyteni on perusteellisesti uudistunut ja samoin myös intohimoni Herraa kohtaan. Rukous hetket ovat vapaita ja Pyhän Hengen ohjaamia ja tämä yhdistelmä on tuonut takaisin hengellisten laulujen "pankkini", joilla rakennan uskoani (Juu 1:20). Kokouksiemme vapaus on tehnyt Pyhän Hengen liikkumisen normaaliksi kokemukseksi ja suhteemme Häneen ja toisiimme on syventynyt. On ihmeellistä todeta että kokoontumisemme ikäänkuin ruumillistavat Siionin—elävän Jumalan kaupungin, jossa lukematon määrä enkeleitä kokoontuu (Hep 12:22). Tämä on yliluonnollisten kohtaamisten paikka, jossa elämät muuttuvat.`,
+        testimonial: t('testimonialCJ.t'),
         name: 'CJ',
         job: '',
         image: {
           src: cj,
-          alt: 'CJ image',
+          alt: t('cjImageAlt'),
         },
         isPositive: true,
       },
@@ -441,38 +494,34 @@ const styleStyle = {
     ]}
   >
     <Fragment slot="subtitle">
-      Voi teitä, kun kaikki ihmiset puhuvat teistä hyvää! Samoinhan tekivät heidän isänsä väärille profeetoille.” Luukas
-      6:26
+      {t('luke6:26')}
       <br />
       <br />
       <div class="text-muted text-base md:text-lg lg:text-xl">
         <div class="flex flex-row gap-4">
           <Icon name={'tabler:thumb-up'} class="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
-          Jeesus vastasi hänelle: ”Minä olen puhunut julkisesti maailmalle. Olen aina opettanut synagogassa ja temppelissä,
-          jonne kaikki juutalaiset kokoontuvat. Salassa en ole puhunut mitään. Miksi minulta kysyt? Kysy niiltä, jotka ovat
-          kuulleet, mitä minä olen heille puhunut. He kyllä tietävät, mitä olen puhunut.” Johannes 18:20-21.
+          {t('john18:20-21')}
+        </div>
+        <br />
+        <br />
+        <div class="flex flex-row gap-4">
+          <div class="flex flex-col gap-1">
+            <Icon name={'tabler:thumb-up'} class="w-8 h-8 text-green-600 flex-shrink-0" />
+            <Icon name={'tabler:thumb-down'} class="w-8 h-8 text-red-600 flex-shrink-0" />
+          </div>
+          {t('john7:12')}
+        </div>
+        <br />
+        <br />
+        <div class="flex flex-row gap-4">
+          <Icon name={'tabler:thumb-down'} class="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
+          {t('acts17:6')}
         </div>
         <br />
         <br />
         <div class="flex flex-row gap-4">
           <Icon name={'tabler:thumb-up'} class="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
-          <Icon name={'tabler:thumb-down'} class="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
-          Kansan parissa oli hänestä paljon kiistelyä. Toiset sanoivat: ”Hän on hyvä”, toiset taas sanoivat: ”Ei, vaan hän
-          eksyttää kansan.” Johannes 7:12.
-        </div>
-        <br />
-        <br />
-        <div class="flex flex-row gap-4">
-          <Icon name={'tabler:thumb-down'} class="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
-          Mutta kun he eivät näitä löytäneet, he raahasivat Jaasonin ja muutamia muita veljiä kaupungin johtomiesten eteen
-          ja huusivat: ”Nuo koko maailman villitsijät ovat tulleet tännekin.” Apostolien teot 17:6.
-        </div>
-        <br />
-        <br />
-        <div class="flex flex-row gap-4">
-          <Icon name={'tabler:thumb-up'} class="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
-          Demetrios on saanut hyvän todistuksen kaikilta, jopa itse Totuudelta. Myös me todistamme, ja sinä tiedät, että
-          meidän todistuksemme on tosi. 3. Johanneksen kirje 1:12
+          {t('3john1:12')}
         </div>
       </div>
     </Fragment>
@@ -480,82 +529,78 @@ const styleStyle = {
 
   <Stats
     id="lukuja"
-    tagline="Lukuja"
-    title="Käytännön lukuja vuodelta 2025"
+    tagline={t('practicalNumbersFrom2025')}
+    title=""
     stats={[
-      { title: 'Vakiokävijää kokoontumisissa', amount: '14' },
-      { title: 'Kuullut envakeliumin', amount: '+164' },
-      { title: 'Ottanut Jeesuksen vastaan', amount: '16' },
-      { title: 'Parannuksen tehnyttä tuhlaajapoikaa', amount: '4' },
+      { title: t('stats1.title'), amount: '14' },
+      { title: t('stats2.title'), amount: '+164' },
+      { title: t('stats3.title'), amount: '16' },
+      { title: t('stats4.title'), amount: '4' },
     ]}
   />
 
   <Features3
     id="sinulle"
-    title="Mitä sinä tulet kokemaan?"
-    subtitle="'Puheeni ja julistukseni ei ollut inhimillisen viisauden suostuttelevia sanoja vaan Hengen ja voiman osoittamista, jotta teidän uskonne ei perustuisi ihmisviisauteen vaan Jumalan voimaan.' 1. kirje korinttilaisille 2:4-5"
-    tagline="Sinulle"
+    tagline={t('forYou')}
+    title={t('whatYouWillExperience')}
+    subtitle={t('1cor2:4-5')}
     columns={3}
     classes={{ headline: { subtitle: 'max-w-5xl' } }}
     items={[
       {
-        title: 'Vapautumaan kaikista synneistä, jotta sinä alat vapauttamaan muita',
-        description:
-          "Jeesus tuli vapauttamaan sinut täysin vapaaksi. Ja kun olet vapaa, Hän lähettää sinut vapauttamaan muita. Tule siis ja koe Jeesus ja sitten Hän lähettää sinut auttamaan muita. <br /><br /> 'Hän synnyttää pojan, ja sinun on annettava hänelle nimeksi Jeesus, sillä hän pelastaa kansansa sen synneistä.' Mat 1:21.",
+        title: t('forYou.items1.title'),
+        description: t('forYou.items1.description'),
         icon: 'tabler:square-number-1',
       },
 
       {
-        title: 'Alat julistamaan evankeliumia ilolla, voimalla',
-        description:
-          "Jos et ole täyttynyt Pyhällä Hengellä niin todennäköisesti täytyt ensimmäisessä tilaisuudessa. Ja sen jälkeen tulet olemaan Jeesuksen todistaja voimalla! <br /> <br />'Mutta te saatte voiman, kun Pyhä Henki tulee teidän päällenne, ja te tulette olemaan minun todistajani ...”' Apt 1:8.",
+        title: t('forYou.items2.title'),
+        description: t('forYou.items2.description'),
         icon: 'tabler:square-number-2',
       },
       {
-        title: 'Elämäsi täyttyy ilolla ja Pyhä Henki itse opettaa sinulle hengen lauluja 🎵',
-        description:
-          "Jumalan valtakunta ei ole syömistä ja juomista (öhöm.. kakkua ja kahvia seurakunnan tilaisuuden jälkeen), vaan vanhurskautta, rauhaa ja iloa Pyhässä Hengessä. <br /> <br />'Älkää juopuko viinistä, sillä siitä tulee irstas meno, vaan täyttykää Hengellä, puhuen toisillenne psalmein, kiitosvirsin ja hengellisin lauluin. Laulakaa ja soittakaa sydämestänne Herralle.' Ef 5:18, 19.",
+        title: t('forYou.items3.title'),
+        description: t('forYou.items3.description'),
         icon: 'tabler:square-number-3',
       },
       {
-        title: 'Hän näyttää, ohjaa ja valmistaa sinut kutsumukseesi',
-        description: `Pyhä Henki johdattaa sinut hengen valmistautumiseen, jonka jälkeen olet kuin Ester, jonka kuningas valitsee arvokkaaseen työhön. <br /><br /> 'Mutta, niin kuin on kirjoitettu: ”Mitä silmä ei ole nähnyt eikä korva kuullut, mikä ei ole ihmisen sydämeen noussut, minkä Jumala on valmistanut niille, jotka häntä rakastavat”', 1 Kor 2:9.`,
+        title: t('forYou.items4.title'),
+        description: t('forYou.items4.description'),
         icon: 'tabler:square-number-4',
       },
       {
-        title: 'Rukouselämäsi syttyy roihuamaan niin kuin suuri tuli',
-        description: `Sen sijaan, että vietät rennossa kiitosrukouksessa 5 minuuttia, alat oikein odottamaan, että milloin pääset rukoilemaan raskasta taistelurukousta 5 tuntia. <br /> <br /> 'Kerran niihin aikoihin Jeesus lähti vuorelle rukoilemaan ja vietti siellä koko yön rukoillen Jumalaa. Luuk 6:12.`,
+        title: t('forYou.items5.title'),
+        description: t('forYou.items5.description'),
         icon: 'tabler:square-number-5',
       },
       {
-        title: 'Näet, mistä todellisessa kristityn elämässä on kyse',
-        description: `'Jeesuksen mukana kulki suuri joukko ihmisiä. Hän kääntyi ja sanoi heille: ”Jos joku tulee minun luokseni eikä vihaa isäänsä ja äitiään, vaimoaan ja lapsiaan, veljiään ja sisariaan, jopa omaa elämäänsä, hän ei voi olla minun opetuslapseni. Ja joka ei kanna ristiään ja seuraa minua, ei voi olla minun opetuslapseni.”' Luuk 14:25-27.`,
+        title: t('forYou.items6.title'),
+        description: t('forYou.items6.description'),
         icon: 'tabler:square-number-6',
       },
       {
-        title:
-          'Ympärillesi alkaa kerääntyä surkeita ihmisiä, joita <span class="underline italic">Jeesus</span> auttaa kauttasi. Jumala tekee sinusta tämän sukupolven Daavidin.',
-        description: `'Daavid lähti sieltä ja pakeni Adullamin luolaan. Kun hänen veljensä ja koko hänen isänsä perhe kuulivat sen, he tulivat sinne hänen luokseen. Hänen luokseen kokoontui myös kaikenlaista ahdingossa olevaa, velkaantunutta ja katkeroitunutta väkeä, ja hänestä tuli heidän päämiehensä. Näin hänen kanssaan oli noin neljäsataa miestä.' 1. Samuelin kirja 22:1-2.`,
+        title: t('forYou.items7.title'),
+        description: `${t('forYou.items7.description')}`,
         icon: 'tabler:square-number-7',
       },
     ]}
     image={{
       src: imgPrayerChurchKuopio,
-      alt: 'Rukouksen seurakunnan kokous',
+      alt: t('prayerChurchMeetingImageAlt'),
     }}
   />
 
   <Hero
     image={{
-      src: prayerConference,
-      alt: 'Pääsiäisen rukouskonferenssi',
+      src: lang === 'en' ? prayerConferenceEn : prayerConferenceFi,
+      alt: t('prayerConferenceImageAlt'),
     }}
   />
 
   <Spacer size="md" />
 
   <div class="mx-auto -my-4 text-center relative z-0 h-[20rem] sm:h-[24rem] lg:h-[40rem] w-full overflow-hidden mb-20">
-    <div class="absolute -right-20 top-10 sm:top-0 md:top-0 lg:top-0 -translate-y-0 w-full h-full">
+    <div class="absolute -right-20 top-0 -translate-y-0 w-full h-full">
       <div class="relative w-full h-full">
         <!-- Oval-like highlight area with radial gradient -->
         <div
@@ -596,14 +641,14 @@ const styleStyle = {
       </div>
     </div>
     <div class="w-full overflow-hidden absolute bottom-0 left-0">
-      <div class="w-[112vw] relative -left-[11vw] overflow-visible">
+      <div class="w-[112vw] relative -left-[6vw] overflow-visible">
         <GradientText
           imageNro={2}
           animate={false}
-          class="inline-block text-[35vw] font-bold leading-none"
+          class={twMerge('inline-block font-bold leading-none', lang === 'en' ? 'text-[35vw]' : 'text-[29vw]')}
           backgroundStyles={styleStyle}
         >
-          Jeesus
+          {t('jesus')}
         </GradientText>
       </div>
     </div>

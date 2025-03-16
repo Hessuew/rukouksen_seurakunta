@@ -1,7 +1,11 @@
 ---
 import flameTheFreezeLogo from '~/assets/images/footer/flame_the_freeze_logo.webp';
 import youtubeLogo from '~/assets/images/footer/youtube_logo.png';
+import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 import Image from 'astro/components/Image.astro';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 export interface Props {
   theme?: string;
@@ -45,18 +49,16 @@ const { theme = 'light' } = Astro.props;
     <div class="md:flex items-end md:justify-between py-6 md:py-8">
       <div class="flex flex-row gap-6 text-start pb-4 lg:pb-0 text-muted font-normal text-xs xs:text-sm">
         <div class="flex flex-col">
-          <span>Osoite:</span>
-          <span>Aika: </span>
-          <span>Puh: </span>
-          <span>Sähköposti: </span>
+          <span>{t('address')}</span>
+          <span>{t('time')}</span>
+          <span>{t('phone')}</span>
+          <span>{t('email')}</span>
         </div>
         <div class="flex flex-col">
-          <span class="flex flex-row"
-            >Yliopistonranta 15, sisäänkäynti C<span class="hidden xs:block">, 70210 Kuopio</span></span
-          >
-          <span>Sunnuntai klo 13 - (16)</span>
-          <span>046 5714 634</span>
-          <span>rukouksenseurakunta@gmail.com</span>
+          <span class="flex flex-row">{t('address2a')}<span class="hidden xs:block">{t('address2b')}</span></span>
+          <span>{t('time2')}</span>
+          <span>{t('phone2')}</span>
+          <span>{t('email2')}</span>
         </div>
       </div>
       <div class="text-sm mr-4 dark:text-muted"></div>

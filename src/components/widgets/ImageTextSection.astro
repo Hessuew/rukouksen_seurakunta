@@ -74,6 +74,13 @@ function getGridClasses(itemCount: number): string {
     return `${baseClasses} grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4`;
   }
 }
+
+const styleStyle = {
+  backgroundAttachment: 'local',
+  backgroundRepeat: 'repeat',
+  backgroundSize: '200% 100%',
+  backgroundPosition: '10% 20%',
+};
 ---
 
 <WidgetWrapper
@@ -96,7 +103,7 @@ function getGridClasses(itemCount: number): string {
     {
       groupedItems.map((group) => {
         if (group.type === 'content') {
-          const { isReversed, image, title, content, name } = group.item;
+          const { isReversed, image, title, content } = group.item;
           return (
             <div class="grid grid-cols-1 md:grid-cols-5 gap-8 md:items-center items-start intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-tenth sm:intersect-quarter">
               <div
@@ -105,7 +112,7 @@ function getGridClasses(itemCount: number): string {
                 <Image
                   class="rounded-lg shadow-md w-full max-w-40 sm:max-w-52"
                   width={680}
-                  height={680}
+                  height={840}
                   widths={[300, 400, 680]}
                   layout="responsive"
                   {...image}
@@ -117,12 +124,16 @@ function getGridClasses(itemCount: number): string {
               >
                 <div class="border-b-2 border-primary-500 pb-2 w-full mb-4">
                   <h3 class="inline-flex xs:items-center flex-wrap flex-col xs:flex-row">
-                    <GradientText animate={false} class="text-2xl font-bold italic pr-px" set:html={title} />
-                    <span class="text-2xl font-bold px-4 hidden xs:block">-</span>
-                    <span class="font-signature text-4xl font-bold">{name}</span>
+                    <GradientText
+                      animate={false}
+                      imageNro={2}
+                      backgroundStyles={styleStyle}
+                      class="text-5xl font-bold font-signature italic pr-4"
+                      set:html={title}
+                    />
                   </h3>
                 </div>
-                <div class="prose prose-lg max-w-none" set:html={content} />
+                <div class="text-muted prose prose-lg max-w-none" set:html={content} />
               </div>
             </div>
           );
@@ -132,22 +143,26 @@ function getGridClasses(itemCount: number): string {
 
           return (
             <div class={gridClasses}>
-              {group.items.map(({ image, title, name }) => (
+              {group.items.map(({ image, title }) => (
                 <div class="flex flex-col items-center intersect-once motion-safe:intersect:animate-fade motion-safe:opacity-0 intersect-tenth sm:intersect-quarter">
                   <div class="flex justify-center mb-4">
                     <Image
                       class="rounded-lg shadow-md w-full max-w-40 sm:max-w-52"
                       width={680}
-                      height={680}
+                      height={840}
                       widths={[300, 400, 680]}
                       layout="responsive"
                       {...image}
                     />
                   </div>
                   <div class="text-center border-b-2 border-primary-500 pb-2 w-full mb-2">
-                    <h3 class="flex flex-col items-center gap-4">
-                      <GradientText animate={false} class="text-2xl font-bold italic px-2" set:html={title} />
-                      <span class="font-signature text-4xl font-bold">{name}</span>
+                    <h3 class="inline-flex xs:items-center flex-wrap flex-col xs:flex-row">
+                      <GradientText
+                        animate={false}
+                        backgroundStyles={styleStyle}
+                        class="text-5xl font-bold font-signature italic pr-4"
+                        set:html={title}
+                      />
                     </h3>
                   </div>
                 </div>
