@@ -105,7 +105,7 @@ export const ui = {
     'testimonialAkosua.t': `Jesus is a Savior. He truly saves from darkness when one calls unto Him. My life has transformed in a way that I cannot even explain. From a godless life to one that is ever aware of Him. The Prayer Church teaches the uncompromising truth of the Bible. The gatherings are always Spirit-filled and Spirit-led. The community is simply unmatched.`,
     'testimonialAkosua.name': 'Akosua',
     'testimonialAkosua.job': 'University student',
-    'testimonialNonMentioned2.t': `Be careful you don't burn out - 2019 <br />(After that, the fire only increased year by year. Thank you Jesus!)`,
+    'testimonialNonMentioned2.t': `I'm afraid that you will burn out - 2019 <br />(After that, the fire only increased year by year. Thank you Jesus!)`,
     'testimonialNonMentioned2.job': 'Youth pastor in ***** Pentecostal Church',
     'testimonialMahi.t': `The first day I set foot in this church, after a long absence from the grace of God and under the devil's bondage, I was met with the mercy of Jesus Christ and Holy Spirit confirmed it by his powerful and visible encounter. In a single day, I received freedom, healing, and the fire of the Holy Spirit. Forever be glory, for His work on the Cross!`,
     'testimonialMahi.name': 'Mahidere',
@@ -274,7 +274,7 @@ export const ui = {
     'testimonialAkosua.name': 'Akosua',
     'testimonialAkosua.job': 'Yliopisto-opiskelija',
     'testimonialNonMentioned2.t':
-      'Varo ettet pala loppuun - 2019 <br />(Jonka jälkeen tuli on vain lisääntynyt joka vuosi. Kiitos Herralle!)',
+      'Pelkään että palat loppuun - 2019 <br />(Jonka jälkeen tuli on vain lisääntynyt joka vuosi. Kiitos Herralle!)',
     'testimonialNonMentioned2.job': 'Nuorisopastori ***** helluntaiseurakunnassa',
     'testimonialMahi.t':
       'Olin ollut pitkään kaukana Jumalasta ja elämäni oli Saatanan vaivaama. Tullessani ensimmäistä kertaa Rukouksen seurakuntaan Jeesuksen Kristuksen armo kohtasi minut käsin kosketettavasti Pyhä Hengen vahvistaessa tämän voimakkaalla ja näkyvällä Jumalan voiman ilmenemisellä. Vapauduin, parannuin fyysisesti ja sain takaisin menettämäni Pyhän Hengen tulen. Ikuinen ylistys Jeesukselle Hänen ristintyöstään!',

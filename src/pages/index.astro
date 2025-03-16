@@ -1,8 +1,11 @@
 ---
+import akosua_zoomed_in from '~/assets/images/deacons/akosua_zoomed_in.webp';
 import akosua from '~/assets/images/deacons/akosua.webp';
 import ben from '~/assets/images/deacons/ben.webp';
+import ida_zoomed_in from '~/assets/images/deacons/ida_zoomed_in.webp';
 import ida from '~/assets/images/deacons/ida.webp';
-import ahunsi from '~/assets/images/elders/ahunsi.webp';
+import ahunsi_zoomed from '~/assets/images/elders/ahunsi_zoomed.webp';
+import ahunsi_zoomed2 from '~/assets/images/elders/ahunsi_zoomed2.webp';
 import cj from '~/assets/images/elders/cj.webp';
 import greta from '~/assets/images/elders/greta.jpg';
 import juhani_helsinki from '~/assets/images/elders/juhani_helsinki.webp';
@@ -315,7 +318,7 @@ const t = useTranslations(lang);
         title: t('ahunsi'),
         name: 'Ahunsimere',
         image: {
-          src: ahunsi,
+          src: ahunsi_zoomed2,
           alt: t('ahunsiImageAlt'),
         },
         isReversed: true,
@@ -325,7 +328,7 @@ const t = useTranslations(lang);
         name: 'Akosua',
         content: `1) ${t('akosuaContent1')} <br /> <br /> 2) ${t('akosuaContent2')} <br /> <br /> 3) ${t('akosuaContent3')}`,
         image: {
-          src: akosua,
+          src: akosua_zoomed_in,
           alt: t('akosuaImageAlt'),
         },
         isReversed: false,
@@ -335,7 +338,7 @@ const t = useTranslations(lang);
         name: 'Ida',
         content: `1) ${t('idaContent1')}`,
         image: {
-          src: ida,
+          src: ida_zoomed_in,
           alt: t('idaImageAlt'),
         },
         isReversed: true,
@@ -402,7 +405,7 @@ const t = useTranslations(lang);
         name: t('testimonialAhunsi.name'),
         job: t('testimonialAhunsi.job'),
         image: {
-          src: ahunsi,
+          src: ahunsi_zoomed,
           alt: t('testimonialAhunsi.imageAlt'),
         },
         isPositive: true,
