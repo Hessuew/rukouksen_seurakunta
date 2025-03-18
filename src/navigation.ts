@@ -4,19 +4,19 @@ import { getPermalink } from './utils/permalinks';
 export const headerData: { links: Array<MenuLink> } = {
   links: [
     {
-      text: 'Mihin uskomme',
+      text: 'whatWeBelieve',
       href: getPermalink('/#mihin-uskomme'),
     },
     {
-      text: 'Meistä',
+      text: 'aboutUs',
       href: getPermalink('/#meista'),
     },
     {
-      text: 'Todistuksia',
+      text: 'testimonies',
       href: getPermalink('/#todistuksia'),
     },
     {
-      text: 'Sinulle',
+      text: 'forYou',
       href: getPermalink('/#sinulle'),
     },
   ],
