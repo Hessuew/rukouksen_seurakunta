@@ -166,6 +166,8 @@ export const ui = {
     'forYou.items7.description': `'David therefore departed thence, and escaped to the cave Adullam: and when his brethren and all his father's house heard it, they went down thither to him. And every one that was in distress, and every one that was in debt, and every one that was discontented, gathered themselves unto him; and he became a captain over them: and there were with him about four hundred men.' 1 Samuel 22:1,2.`,
     prayerChurchMeetingImageAlt: 'Meeting of the Prayer church',
     prayerConferenceImageAlt: 'Eastern Prayer Conference',
+    whatWeBelieve: 'What we believe',
+    testimonies: 'Testimonies',
   },
   fi: {
     prayerChurchImageAlt: 'Rukouksen seurakunnan logo',
@@ -235,22 +237,22 @@ export const ui = {
     aboutUs: 'Meistä',
     toYou:
       "'Teille pakanoille sanon: koska olen pakanoiden apostoli, minä pidän virkaani kunniassa' Kirje roomalaisille 11:13. <br /> <br /> 'Minun kerskaukseni on siis Kristuksessa Jeesuksessa palvellessani Jumalaa. En näet rohkene puhua mistään muusta kuin siitä, mitä Kristus, saattaakseen pakanat kuuliaisiksi, on minun kauttani vaikuttanut sanalla ja teoilla, tunnustekojen ja ihmeiden voimalla, Jumalan Hengen voimalla...' Kirje roomalaisille 15:17-19. <br /> <br/> 'Luotettava ei ole se, joka itse suosittelee itseään, vaan se, jota Herra suosittelee.' Toinen kirje korinttilaisille 10:18. <br /> <br /> Alla esimerkkejä siitä, mitä Pyhä Henki on puhunut näiden palvelijoidensa kautta.",
-    juhaniJuusola: 'Piispa Juhani Juusola',
+    juhaniJuusola: 'Ylivalvoja (Piispa) Juhani Juusola',
     juhaniJuusolaContent1: `Tämä on Herran sana: tuo henkilö joutuu lähtemään pois työpaikastasi. Hän ei pysty kestämään tätä Jumalan tulta sinussa.`,
     juhaniJuusolaContent2: `Sinut on kutsuttu, Jumalan kirkkaus on sinun päälläsi. Ole uskollinen siinä vähässä, mitä sinulle on annettu äläkä anna mitään tekosyitä. Jumala on asettanut sinut kämmenelleen käyttääkseen sinua ja Hän tulee kasvattamaan sinua. Kyse ei ole sinun kirkkaudestasi vaan Jeesuksen nimen ja tuomisestä esille. Älä laita kutsuasi sivuun edes hetkeksi, vaan tee siitä varma ja selkeä, sillä Jumala tulee kirkastumaan elämäsi kautta.`,
     juhaniJuusolaContent3: `// 2) Nyt ymmärsin sen. Jumala sanoi Jeesukselle, 'Tämä on rakas poikani johon olen mieltynyt'. Sananlaskut 16:7 sanoo, 'Kun miehen tiet miellyttävät Herraa, Hän saataa hänen vihollisensa hänen ystävikseen'. Eivät fariseukset ja kansa rakastaneet ja halanneet Jeesusta vaan ristiinnaulitsivat Hänet, 1 Kor 2:8, 'Jos he olisivat tietäneet he eivät olisi ristiinnaulinneet kirkkauden Herraa'. Eli kun sinun tiesi miellyttää Jumalaa Hän saattaa sinun vihollistesi kaikkien tekojen sinua kohtaan olevan kuin ystävän palveluksia! Eli vaikka kuinka he vainoaisivat sinua tai vihaisivat sinua, kaikki mitä he tekevät, on kuin ystävän tekoja sinulle! Vau! Kiitos Jeesus!!`,
     juhaniJuusolaImageAlt: 'Juhani - kuva',
-    mahidere: 'Pastori Mahidere',
+    mahidere: 'Seurakunnan paimen Mahidere',
     mahidereImageAlt: 'Mahidere - kuva',
-    cj: 'Pastori CJ',
+    cj: 'Seurakunnan paimen CJ',
     cjImageAlt: 'CJ - kuva',
-    greta: 'Pastori Greta',
+    greta: 'Seurakunnan paimen Greta',
     gretaContent: `1) *****n argumentti: ‘Mutta sinä et ymmärrä, kun sinulla ei ole lapsia.’
     //   Gretan vastaus: ’Ei olekaan, mutta minä tiedän mitä Raamattu sanoo ja Raamattu sanoo että kädenlämpöisyys ja että jos mikään asia on tärkeämpi kuin Jumala, niin se on väärin.’
     //   <br /> <br />
     //   2) Kun vaellamme Kristuksen tiellä täysin antautuneena, olemme täydellisiä niin kuin itse Kristus on. Niin kauan kun emme katso lihaan, Jumala kyllä ilmoittaa kaikesta miten asiat ovat. Fil. 3:12-16`,
     gretaImageAlt: 'Rakas Greta - kuva',
-    ahunsi: 'Pastori Ahunsimere',
+    ahunsi: 'Seurakunnan paimen Ahunsimere',
     ahunsiImageAlt: 'Ahunsimere - kuva',
     akosua: 'Seurakunnan palvelija Akosua',
     akosuaContent1:
@@ -336,5 +338,7 @@ export const ui = {
     'forYou.items7.description': `'Daavid lähti sieltä ja pakeni Adullamin luolaan. Kun hänen veljensä ja koko hänen isänsä perhe kuulivat sen, he tulivat sinne hänen luokseen. Hänen luokseen kokoontui myös kaikenlaista ahdingossa olevaa, velkaantunutta ja katkeroitunutta väkeä, ja hänestä tuli heidän päämiehensä. Näin hänen kanssaan oli noin neljäsataa miestä.' 1. Samuelin kirja 22:1,2.`,
     prayerChurchMeetingImageAlt: 'Rukouksen seurakunnan kokous',
     prayerConferenceImageAlt: 'Pääsiäisen rukouskonferenssi',
+    whatWeBelieve: 'Mihin uskomme',
+    testimonies: 'Todistuksia',
   },
 } as const;

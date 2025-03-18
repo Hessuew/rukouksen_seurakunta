@@ -1,8 +1,11 @@
 ---
 import logo_transparent from '~/assets/images/other/logo_transparent.webp';
 import Image from '~/components/common/Image.astro';
-import { SITE } from 'astrowind:config';
+import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 import GradientText from './ui/GradientText.astro';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <span
@@ -16,9 +19,10 @@ import GradientText from './ui/GradientText.astro';
     width={32}
     height={32}
     src={logo_transparent}
-    alt="Rukouksen Seurakunta logo"
+    alt={t('prayerChurchImageAlt')}
   />
   <GradientText animate={false}>
-    {SITE?.name}
+    <span>{t('prayer')}</span>
+    <span>{t('church')}</span>
   </GradientText>
 </span>
