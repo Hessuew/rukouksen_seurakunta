@@ -67,15 +67,13 @@ const navigateToLanguage = (href: string | undefined) => {
 
   // Get the current language from URL
   const currentLang = getLangFromUrl(Astro.url);
-  console.log('currentLang', currentLang);
 
   // Handle anchor links specially
   if (href.startsWith('#')) {
-    console.log('href', href);
     // Check if the current URL already contains /en
     const currentUrl = new URL(Astro.url);
     const pathContainsEn = currentUrl.pathname.includes('/en');
-  
+
     // Only add /en if we're in English mode and the current path doesn't already have it
     if (currentLang === 'en' && !pathContainsEn) {
       return `/en${href}`;
