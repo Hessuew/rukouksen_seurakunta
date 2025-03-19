@@ -132,7 +132,6 @@ const navigateToLanguage = (href: string | undefined) => {
     return href;
   }
 };
-
 ---
 
 <style>
@@ -157,36 +156,36 @@ const navigateToLanguage = (href: string | undefined) => {
   document.addEventListener('DOMContentLoaded', () => {
     const handleAnchorClick = (e) => {
       const href = e.currentTarget.getAttribute('href');
-      
+
       // Only handle links with hash
       if (href && href.includes('#')) {
         const hashIndex = href.indexOf('#');
         const hash = href.substring(hashIndex);
-        
+
         // Check if we're on the same page (URL without hash matches current path)
         const currentPath = window.location.pathname;
         const linkPath = href.substring(0, hashIndex) || '/';
-        
+
         // If we're on the same page or the link is just a hash
         if (currentPath === linkPath || hashIndex === 0) {
           e.preventDefault();
-          
+
           // Find the target element
           const targetElement = document.querySelector(hash);
-          
+
           if (targetElement) {
             // Scroll to the element
             targetElement.scrollIntoView({ behavior: 'smooth' });
-            
+
             // Update URL without reloading the page
             history.pushState('', '', href);
           }
         }
       }
     };
-    
+
     // Add click event listeners to all anchor links
-    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+    document.querySelectorAll('a[href*="#"]').forEach((anchor) => {
       anchor.addEventListener('click', handleAnchorClick);
     });
   });
@@ -286,7 +285,7 @@ const navigateToLanguage = (href: string | undefined) => {
                     'hover:text-muted px-2.5 py-3 flex items-center whitespace-nowrap',
                     { 'aw-link-active': href === currentPath },
                   ]}
-                  href={navigateToLanguage(href)}
+                  href={'/en#sinulle'}
                 >
                   {t(text as keyof typeof t)}
                 </a>
