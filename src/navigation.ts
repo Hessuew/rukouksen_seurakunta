@@ -5,19 +5,19 @@ export const headerData: { links: Array<MenuLink> } = {
   links: [
     {
       text: 'whatWeBelieve',
-      href: getPermalink('/#mihin-uskomme'),
+      href: getPermalink('#mihin-uskomme'),
     },
     {
       text: 'aboutUs',
-      href: getPermalink('/#meista'),
+      href: getPermalink('#meista'),
     },
     {
       text: 'testimonies',
-      href: getPermalink('/#todistuksia'),
+      href: getPermalink('#todistuksia'),
     },
     {
       text: 'forYou',
-      href: getPermalink('/#sinulle'),
+      href: getPermalink('#sinulle'),
     },
   ],
 };
