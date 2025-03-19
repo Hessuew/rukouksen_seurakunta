@@ -87,7 +87,15 @@ const navigateToLanguage = (href: string | undefined) => {
         return href;
       }
       // Otherwise add /en prefix
-      return path === '/' ? `/en#${fragment}` : `/en${path}#${fragment}`;
+      // Check if we're on the root path and handle trailing slash consistently
+      if (path === '/' || path === '') {
+        // Get the current URL to check if we have a trailing slash
+        const currentUrl = new URL(Astro.url);
+        const hasTrailingSlash = currentUrl.pathname.endsWith('/');
+        // Match the format of the current URL (with or without trailing slash)
+        return hasTrailingSlash ? `/en/#${fragment}` : `/en#${fragment}`;
+      }
+      return `/en${path}#${fragment}`;
     } else {
       // Remove /en prefix if present
       if (path.startsWith('/en/')) {
@@ -124,6 +132,7 @@ const navigateToLanguage = (href: string | undefined) => {
     return href;
   }
 };
+
 ---
 
 <style>
@@ -142,6 +151,46 @@ const navigateToLanguage = (href: string | undefined) => {
     animation: slideDown 1.2s ease-out forwards;
   }
 </style>
+
+<script>
+  // Handle anchor links to prevent page reload and implement smooth scrolling
+  document.addEventListener('DOMContentLoaded', () => {
+    const handleAnchorClick = (e) => {
+      const href = e.currentTarget.getAttribute('href');
+      
+      // Only handle links with hash
+      if (href && href.includes('#')) {
+        const hashIndex = href.indexOf('#');
+        const hash = href.substring(hashIndex);
+        
+        // Check if we're on the same page (URL without hash matches current path)
+        const currentPath = window.location.pathname;
+        const linkPath = href.substring(0, hashIndex) || '/';
+        
+        // If we're on the same page or the link is just a hash
+        if (currentPath === linkPath || hashIndex === 0) {
+          e.preventDefault();
+          
+          // Find the target element
+          const targetElement = document.querySelector(hash);
+          
+          if (targetElement) {
+            // Scroll to the element
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+            
+            // Update URL without reloading the page
+            history.pushState('', '', href);
+          }
+        }
+      }
+    };
+    
+    // Add click event listeners to all anchor links
+    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+      anchor.addEventListener('click', handleAnchorClick);
+    });
+  });
+</script>
 
 <header
   class:list={[
