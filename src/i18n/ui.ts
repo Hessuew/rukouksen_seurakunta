@@ -83,6 +83,10 @@ export const ui = {
     cj: 'Pastor CJ',
     cjImageAlt: 'CJ - image',
     greta: 'Pastor Greta',
+    gretaContent1: `*****n argument: ‘But you don't understand because you don't have children.’
+    <br />
+    Gretan's answer: 'No, I don't, but I know what the Bible says, and the Bible says that being lukewarm is wrong and if anything is more important than God, then that is wrong.`,
+    gretaContent2: `When we walk in the way of Jesus fully sundered we are as perfect as Christ is. As long as we don't look at the flesh then God will surely tell about everything how things are and should be.`,
     gretaImageAlt: 'Dear Greta - image',
     ahunsi: 'Pastor Ahunsimere',
     ahunsiImageAlt: 'Ahunsimere - image',
@@ -126,13 +130,22 @@ export const ui = {
     'testimonialIina.name': 'Iina',
     'testimonialIina.job': 'Waitress',
     'testimonialIina.imageAlt': 'Iina - image',
-    'testimonialNonMentioned4.t': 'They are practicing African witchcraft',
-    'testimonialNonMentioned4.job': `The internal mission organization of Finland's largest church.`,
+    'testimonialNonMentioned4.t':
+      'We are all convinced that the group is not led by the Holy Spirit. They are antichristian and led by spirits of witchcraft from Africa.',
+    'testimonialNonMentioned4.job': 'Largest church congregation in the country',
     'testimonialCJ.t': `Since I joined the Flame the Freeze meetings, I have experienced a profound renewal of my spiritual sensitivity and appetite for the Lord. The liberal prayer sessions, in partnership with the Holy Spirit, have revived and awakened my scriptural songs' bank, building my most holy faith (Jude 1:20) The liberty we have in our gatherings has facilitated the manifestation of the Spirit, breaking down the barriers of religious tradition and deepening our relationships with the Holy Spirit and one another. Truly, our fellowship embodies Zion—the city of the living God, the heavenly Jerusalem, and the innumerable company of angels (Heb 12:22). It is a place of divine encounters and transformative experiences.`,
+    'testimonialCJ.name': 'CJ',
+    'testimonialCJ.job': 'Ph.D, Principal Lecturer and Adjunct Senior Lecturer',
     'testimonialAhunsi.t':
       'At UEF Bible Club, there is no denying the transforming power and love of Jesus. The last few months of my membership has been a time of spiritual refreshing and reawakening, and closer walk with God.',
     'testimonialAhunsi.name': 'Ahunsimere',
     'testimonialAhunsi.job': 'Doctor',
+    'testimonialNonMentioned5.t':
+      'Personally I think that it is a waste of time to pray if I am not sure that we are in a position where God will answer our prayers. At worst it could be a spiritual deception which opens a door for the devil. That kind of prayer meeting would not be in the will of God.',
+    'testimonialNonMentioned5.job': 'Leader of a Christian youth organization in the city',
+    'testimonialGood1.t':
+      'We are all convinced that the group is not led by the Holy Spirit. They are antichristian and led by spirits of witchcraft from Africa.',
+    'testimonialGood1.job': 'Doctor',
     'luke6:26':
       'Woe unto you, when all men shall speak well of you! for so did their fathers to the false prophets. Luke 6:26.',
     'john18:20-21': `Jesus answered him, I spake openly to the world; I ever taught in the synagogue, and in the temple, whither the Jews always resort; and in secret have I said nothing. Why askest thou me? ask them which heard me, what I have said unto them: behold, they know what I said. John 18:20,21.`,
@@ -247,10 +260,11 @@ export const ui = {
     cj: 'Seurakunnan paimen CJ',
     cjImageAlt: 'CJ - kuva',
     greta: 'Seurakunnan paimen Greta',
-    gretaContent: `1) *****n argumentti: ‘Mutta sinä et ymmärrä, kun sinulla ei ole lapsia.’
-    //   Gretan vastaus: ’Ei olekaan, mutta minä tiedän mitä Raamattu sanoo ja Raamattu sanoo että kädenlämpöisyys ja että jos mikään asia on tärkeämpi kuin Jumala, niin se on väärin.’
-    //   <br /> <br />
-    //   2) Kun vaellamme Kristuksen tiellä täysin antautuneena, olemme täydellisiä niin kuin itse Kristus on. Niin kauan kun emme katso lihaan, Jumala kyllä ilmoittaa kaikesta miten asiat ovat. Fil. 3:12-16`,
+    gretaContent1: `*****n argumentti: ‘Mutta sinä et ymmärrä, kun sinulla ei ole lapsia.’
+    <br />
+    Gretan vastaus: 'Ei olekaan, mutta minä tiedän mitä Raamattu sanoo ja Raamattu sanoo että kädenlämpöisyys ja että jos mikään asia on tärkeämpi kuin Jumala, niin se on väärin.`,
+    gretaContent2:
+      'Kun vaellamme Kristuksen tiellä täysin antautuneena, olemme täydellisiä niin kuin itse Kristus on. Niin kauan kun emme katso lihaan, Jumala kyllä ilmoittaa kaikesta miten asiat ovat. Fil. 3:12-16',
     gretaImageAlt: 'Rakas Greta - kuva',
     ahunsi: 'Seurakunnan paimen Ahunsimere',
     ahunsiImageAlt: 'Ahunsimere - kuva',
@@ -298,14 +312,22 @@ export const ui = {
     'testimonialIina.name': 'Iina',
     'testimonialIina.job': 'Tarjoilija',
     'testimonialIina.imageAlt': 'Iina - kuva',
-    'testimonialNonMentioned4.t': 'He harjoittavat afrikkalaista noituutta',
-    'testimonialNonMentioned4.job': 'Suomen suurimman seurakunnan sisäinen lähetysjärjestö',
+    'testimonialNonMentioned4.t':
+      'Me kaikki olemme vakuuttuneita, että Pyhä Hneki ei johda tätä ryhmää. He ovat antikristillisiä ja afrikkalaisten noituuden henkien vaikutuksen alla.',
+    'testimonialNonMentioned4.job': 'Maan suurin kirkkokunta',
     'testimonialCJ.t': `Liityttyäni Flame the Freeze:n tapaamisiin minulle on tapahtunut paljon. Hengellinen herkkyyteni on perusteellisesti uudistunut ja samoin myös intohimoni Herraa kohtaan. Rukous hetket ovat vapaita ja Pyhän Hengen ohjaamia ja tämä yhdistelmä on tuonut takaisin hengellisten laulujen "pankkini", joilla rakennan uskoani (Juu 1:20). Kokouksiemme vapaus on tehnyt Pyhän Hengen liikkumisen normaaliksi kokemukseksi ja suhteemme Häneen ja toisiimme on syventynyt. On ihmeellistä todeta että kokoontumisemme ikäänkuin ruumillistavat Siionin—elävän Jumalan kaupungin, jossa lukematon määrä enkeleitä kokoontuu (Hep 12:22). Tämä on yliluonnollisten kohtaamisten paikka, jossa elämät muuttuvat.`,
+    'testimonialCJ.name': 'CJ',
+    'testimonialCJ.job': 'Luennoitsija ja apulaislehtori',
     'testimonialAhunsi.t':
       'On täysin selvää, että Jeesuksen elämiä muuttava voima ja rakkaus on läsnä UEF Raamattukerhossa. Viimeiset kuukaudet ovat olleet minulle hengellisen virkistymisen sekä heräämisen aikaa ja nyt elämäni on lähempänä Jumalaa.',
     'testimonialAhunsi.name': 'Ahunsimere',
     'testimonialAhunsi.job': 'Lääkäri',
     'testimonialAhunsi.imageAlt': 'Ahunsimere - kuva',
+    'testimonialNonMentioned5.t':
+      'Minusta on ajanhukkaa rukoilla jos en ole varma, että Jumala vastaa rukouksiimme. Pahimmassa tapauksessa saatamme harhautua hengellisesti ja avata oven Saatanalle. Tuollainen rukoustapaaminen ei olisi Jumalan tahdon mukaista.',
+    'testimonialNonMentioned5.job': 'Johtaja paikallisessa kristillisessä organisaatiossa',
+    'testimonialGood1.t': 'Kun minun puolestani rukoilliin',
+    'testimonialGood1.job': 'Lääkäri',
     'luke6:26':
       'Voi teitä, kun kaikki ihmiset puhuvat teistä hyvää! Samoinhan tekivät heidän isänsä väärille profeetoille.” Luukas 6:26',
     'john18:20-21': `Jeesus vastasi hänelle: ”Minä olen puhunut julkisesti maailmalle. Olen aina opettanut synagogassa ja temppelissä, jonne kaikki juutalaiset kokoontuvat. Salassa en ole puhunut mitään. Miksi minulta kysyt? Kysy niiltä, jotka ovat kuulleet, mitä minä olen heille puhunut. He kyllä tietävät, mitä olen puhunut.” Johannes 18:20,21.`,

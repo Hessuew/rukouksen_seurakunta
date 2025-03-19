@@ -2,6 +2,7 @@
 import akosua_zoomed_in from '~/assets/images/deacons/akosua_zoomed_in.webp';
 import akosua from '~/assets/images/deacons/akosua.webp';
 import ben from '~/assets/images/deacons/ben.webp';
+import ben2 from '~/assets/images/deacons/ben2.webp';
 import ida_zoomed_in from '~/assets/images/deacons/ida_zoomed_in.webp';
 import ida from '~/assets/images/deacons/ida.webp';
 import ahunsi_zoomed from '~/assets/images/elders/ahunsi_zoomed.webp';
@@ -295,20 +296,21 @@ const t = useTranslations(lang);
         isReversed: false,
       },
       {
+        title: t('greta'),
+        name: 'Greta',
+        // content: `1) ${t('gretaContent1')} <br /> <br /> 2) ${t('gretaContent2')}`,
+        image: {
+          src: greta,
+          alt: t('gretaImageAlt'),
+        },
+        isReversed: true,
+      },
+      {
         title: t('mahidere'),
         name: 'Mahidere',
         image: {
           src: mahi,
           alt: t('mahidereImageAlt'),
-        },
-        isReversed: true,
-      },
-      {
-        title: t('greta'),
-        name: 'Greta',
-        image: {
-          src: greta,
-          alt: t('gretaImageAlt'),
         },
         isReversed: true,
       },
@@ -341,15 +343,15 @@ const t = useTranslations(lang);
         },
         isReversed: true,
       },
-      // {
-      //   title: t('ben'),
-      //   name: 'Benwillis',
-      //   image: {
-      //     src: ben,
-      //     alt: t('benImageAlt'),
-      //   },
-      //   isReversed: true,
-      // },
+      {
+        title: t('ben'),
+        name: 'Benwillis',
+        image: {
+          src: ben2,
+          alt: t('benImageAlt'),
+        },
+        isReversed: true,
+      },
     ]}
   />
 
@@ -470,13 +472,23 @@ const t = useTranslations(lang);
       },
       {
         testimonial: t('testimonialCJ.t'),
-        name: 'CJ',
-        job: '',
+        name: t('testimonialCJ.name'),
+        job: t('testimonialCJ.job'),
         image: {
           src: cj,
           alt: t('cjImageAlt'),
         },
         isPositive: true,
+      },
+      {
+        testimonial: t('testimonialNonMentioned5.t'),
+        name: t('testimonialNonMentioned1.name'),
+        job: t('testimonialNonMentioned5.job'),
+        image: {
+          src: '',
+          alt: '',
+        },
+        isPositive: false,
       },
       // {
       //   testimonial: ``,
