@@ -65,72 +65,25 @@ const t = useTranslations(lang);
 const navigateToLanguage = (href: string | undefined) => {
   if (!href) return '#';
 
-  // If href is an external link or javascript link, return it as is
-  if (href.startsWith('http') || href.startsWith('javascript:')) {
-    return href;
-  }
-
   // Get the current language from URL
   const currentLang = getLangFromUrl(Astro.url);
+  console.log('currentLang', currentLang);
 
   // Handle anchor links specially
   if (href.startsWith('#')) {
-    return currentLang === 'en' ? `/en/${href}` : href;
-  }
-
-  // Handle anchor links with path
-  if (href.includes('#')) {
-    const [path, fragment] = href.split('#');
-    if (currentLang === 'en') {
-      // If already has /en prefix, use it as is
-      if (path.startsWith('/en/') || path === '/en') {
-        return href;
-      }
-      // Otherwise add /en prefix
-      // Check if we're on the root path and handle trailing slash consistently
-      if (path === '/' || path === '') {
-        // Get the current URL to check if we have a trailing slash
-        const currentUrl = new URL(Astro.url);
-        const hasTrailingSlash = currentUrl.pathname.endsWith('/');
-        // Match the format of the current URL (with or without trailing slash)
-        return hasTrailingSlash ? `/en/#${fragment}` : `/en#${fragment}`;
-      }
-      return `/en${path}#${fragment}`;
-    } else {
-      // Remove /en prefix if present
-      if (path.startsWith('/en/')) {
-        return `${path.replace('/en', '')}#${fragment}`;
-      }
-      if (path === '/en') {
-        return `/#${fragment}`;
-      }
-      return href;
-    }
-  }
-
-  // Handle regular paths
-  if (currentLang === 'en') {
-    // If already has /en prefix, use it as is
-    if (href.startsWith('/en/') || href === '/en') {
-      return href;
-    }
-    // For root path
-    if (href === '/') {
-      return '/en';
-    }
-    // Otherwise, add /en prefix
-    return `/en${href}`;
-  }
-  // If current language is Finnish (default), remove /en prefix if present
-  else {
-    if (href.startsWith('/en/')) {
-      return href.replace('/en', '');
-    }
-    if (href === '/en') {
-      return '/';
+    console.log('href', href);
+    // Check if the current URL already contains /en
+    const currentUrl = new URL(Astro.url);
+    const pathContainsEn = currentUrl.pathname.includes('/en');
+  
+    // Only add /en if we're in English mode and the current path doesn't already have it
+    if (currentLang === 'en' && !pathContainsEn) {
+      return `/en${href}`;
     }
     return href;
   }
+
+  return href;
 };
 ---
 
@@ -150,46 +103,6 @@ const navigateToLanguage = (href: string | undefined) => {
     animation: slideDown 1.2s ease-out forwards;
   }
 </style>
-
-<script>
-  // Handle anchor links to prevent page reload and implement smooth scrolling
-  document.addEventListener('DOMContentLoaded', () => {
-    const handleAnchorClick = (e) => {
-      const href = e.currentTarget.getAttribute('href');
-
-      // Only handle links with hash
-      if (href && href.includes('#')) {
-        const hashIndex = href.indexOf('#');
-        const hash = href.substring(hashIndex);
-
-        // Check if we're on the same page (URL without hash matches current path)
-        const currentPath = window.location.pathname;
-        const linkPath = href.substring(0, hashIndex) || '/';
-
-        // If we're on the same page or the link is just a hash
-        if (currentPath === linkPath || hashIndex === 0) {
-          e.preventDefault();
-
-          // Find the target element
-          const targetElement = document.querySelector(hash);
-
-          if (targetElement) {
-            // Scroll to the element
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-
-            // Update URL without reloading the page
-            history.pushState('', '', href);
-          }
-        }
-      }
-    };
-
-    // Add click event listeners to all anchor links
-    document.querySelectorAll('a[href*="#"]').forEach((anchor) => {
-      anchor.addEventListener('click', handleAnchorClick);
-    });
-  });
-</script>
 
 <header
   class:list={[
@@ -285,7 +198,7 @@ const navigateToLanguage = (href: string | undefined) => {
                     'hover:text-muted px-2.5 py-3 flex items-center whitespace-nowrap',
                     { 'aw-link-active': href === currentPath },
                   ]}
-                  href={'/en#sinulle'}
+                  href={navigateToLanguage(href)}
                 >
                   {t(text as keyof typeof t)}
                 </a>
