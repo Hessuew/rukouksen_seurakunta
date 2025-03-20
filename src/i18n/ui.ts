@@ -118,7 +118,7 @@ export const ui = {
     'testimonialMahi.job': 'Doctor',
     'testimonialNonMentioned3.t': 'They will drive against a wall.',
     'testimonialNonMentioned3.job': 'A pastor in a Finnish church',
-    'testimonialIda.t': `I have grown tremendously in the spirit over the past six months after the Lord guided me to prioritize church meetings in my life and daily activities. <br /> I have even been told that God has nurtured my growth to the point where I am now spiritually more mature than many pastors.`,
+    'testimonialIda.t': `I have grown tremendously in the spirit over the past six months after the Lord guided me to prioritize church meetings in my life and daily activities. <br /> I have even been told that God has nurtured my growth to the point where I am now spiritually more mature than many pastors. <br /> <br /> When ****** was praying in tongues, I started to understand what he was praying. I was very surprised, and after we had prayed for a long time, I said that I might have understood the prayer. When I told him what I understood, ****** confirmed that he knew in the spirit that those were the subjects he was praying for and told me that was the manifestation of the interpretation of tongues. Glory be to God!`,
     'testimonialIda.name': 'Ida',
     'testimonialIda.job': 'Nurse, counselor',
     'testimonialBenwillis.t': `My experiences in the prayer church are countless. Before I joined, I never took prayer seriously. Now I have developed a strong habit of trusting God in everything that I do. Through that, I have seen the hand Jesus in my life, especially in my career where I specifically prayed for a job and Jesus delivered. My life has since transformed from someone who lived life aimlessly to a focused, deeply spiritual person whose faith has been renewed and who knows that it's only Jesus that can save our lives.`,
@@ -143,9 +143,18 @@ export const ui = {
     'testimonialNonMentioned5.t':
       'Personally I think that it is a waste of time to pray if I am not sure that we are in a position where God will answer our prayers. At worst it could be a spiritual deception which opens a door for the devil. That kind of prayer meeting would not be in the will of God.',
     'testimonialNonMentioned5.job': 'Leader of a Christian youth organization in the city',
+    'testimonialGood1.name': '40-year-old woman',
     'testimonialGood1.t':
-      'We are all convinced that the group is not led by the Holy Spirit. They are antichristian and led by spirits of witchcraft from Africa.',
+      "I shared my testimony, after which I was asked if I had been filled with the Holy Spirit. Then they prayed for me, and I heard voices inside me saying, 'Leave here quickly.' I refused to leave, and a struggle began inside me, which also manifested physically—I was shaking and thrashing around. After about 10 minutes, those entities inside me said, 'We have to leave.' They left, and I raised my hands, crying, and thanked Jesus. Then they prayed for me again, and Jesus filled me with the Holy Spirit, and I began speaking in tongues.",
     'testimonialGood1.job': 'Doctor',
+    'testimonialGood2.name': '+70-year-old woman',
+    'testimonialGood2.t':
+      'Did you see what happened to me when we prayed? Well, as we prayed, I started yawning immensely, as if something was beginning to leave me. It continued and continued, and I believe that something left. I was involved in occultism when I was young, and it has affected my life for over 70 years. But now, something happened. Could it have been evil spirits?',
+    'testimonialGood2.job': 'Retired',
+    'testimonialGood3.name': '40-year-old woman',
+    'testimonialGood3.t':
+      'I frequently had extremely disturbing nightmares about snakes. And I am afraid of snakes. At the event, people prayed for deliverance from nightmares. Those nightmares stopped, and great changes began to happen in my life. Thank you, Jesus!',
+    'testimonialGood3.job': 'Nurse',
     'luke6:26':
       'Woe unto you, when all men shall speak well of you! for so did their fathers to the false prophets. Luke 6:26.',
     'john18:20-21': `Jesus answered him, I spake openly to the world; I ever taught in the synagogue, and in the temple, whither the Jews always resort; and in secret have I said nothing. Why askest thou me? ask them which heard me, what I have said unto them: behold, they know what I said. John 18:20,21.`,
@@ -301,7 +310,7 @@ export const ui = {
     'testimonialMahi.job': 'Lääkäri',
     'testimonialNonMentioned3.t': 'He tulevat ajamaan seinään.',
     'testimonialNonMentioned3.job': 'Pastori suomalaisessa seurakunnassa',
-    'testimonialIda.t': `Olen kasvanut hengellisesti todella paljon 6 kuukaudessa, kun aloin elämässä ja arjessa priorisoida Herran ohjaamana seurakunnan tapaamisia. <br /> Minulle on kerrottu, että Jumala on todella kasvattanut minua niin paljon, että olen hengellisesti vanhempi kuin moni pastori.`,
+    'testimonialIda.t': `Olen kasvanut hengellisesti todella paljon 6 kuukaudessa, kun aloin elämässä ja arjessa priorisoida Herran ohjaamana seurakunnan tapaamisia. <br /> Minulle on kerrottu, että Jumala on todella kasvattanut minua niin paljon, että olen hengellisesti vanhempi kuin monet pastorit. <br /> <br /> Kun ****** rukoili kielillä, aloin ymmärtämään, mitä hän rukoili. Olin erittäin yllättynyt, ja kun olimme rukoilleet pitkään, sanoin, että saatoin ymmärtää rukouksen. Kun kerroin hänelle, mitä olin ymmärtänyt, ****** vahvisti, että hän tiesi hengessä, että ne olivat aiheita, joista hän rukoili, ja kertoi minulle, että se oli kielten tulkinnan ilmeneminen. Kunnia Jumalalle!`,
     'testimonialIda.name': 'Ida',
     'testimonialIda.job': 'Lähihoitaja, ohjaaja',
     'testimonialBenwillis.t': `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaicessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
@@ -326,8 +335,18 @@ export const ui = {
     'testimonialNonMentioned5.t':
       'Minusta on ajanhukkaa rukoilla jos en ole varma, että Jumala vastaa rukouksiimme. Pahimmassa tapauksessa saatamme harhautua hengellisesti ja avata oven Saatanalle. Tuollainen rukoustapaaminen ei olisi Jumalan tahdon mukaista.',
     'testimonialNonMentioned5.job': 'Johtaja paikallisessa kristillisessä organisaatiossa',
-    'testimonialGood1.t': 'Kun minun puolestani rukoilliin',
+    'testimonialGood1.name': 'N. 40-vuotias nainen',
+    'testimonialGood1.t':
+      "Kerroin todistukseni jonka jälkeen minulta kysyttiin olinko täyttynyt Pyhällä Hengellä. Sitten puolestani rukoiltiin ja kuulin äänten sanovan sisälläni, 'Lähde äkkiä pois täältä'. En suostunut lähtemään ja sisälläni alkoi kamppailu joka myös ilmeni fyysisesti, minä heiluin ja ruihdoin ympäriinsä. Noin 10 minuutin päästä nuo persoonat sisälläni sanoivat, 'Meidän täytyy lähteä'. Ne lähtivät ja minä nostin käteni itkien ja kiitin Jeesusta. Sitten puolestani rukoiltiin uudelleen ja Jeesus täytti minut Pyhällä Hengellä ja aloin puhumaan kielillä.",
     'testimonialGood1.job': 'Lääkäri',
+    'testimonialGood2.name': '+70-vuotias nainen',
+    'testimonialGood2.t':
+      'Näittekö mitä minulle tapahtui kun rukoilimme? No, kun rukoilimme minua alkoi haukotuttaa valtavasti ja kuin jotain olisi alkanut lähteä ulos minusta. Se jatkui ja jatkui ja uskon, että jotain lähti. Olin nuorena mukana okkultismissa ja se on vaikuttanut elämääni yli 70 vuotta. Mutta nyt jotain tapahtui. Olisivatko ne olleet pahoja henkiä?',
+    'testimonialGood2.job': 'Eläkeläinen',
+    'testimonialGood3.name': 'N. 40-vuotias nainen',
+    'testimonialGood3.t':
+      'Minulla oli todella pahoja painajaisia käärmeistä ja todella usein. Ja minä pelkään käärmeitä. Tapahtumassa rukoiltiin painajaisista vapautumisesta. Nuo painajaiset loppuivat ja elämässäni alkoi tapahtua suuria muutoksia. Kiitos Jeesukselle!',
+    'testimonialGood3.job': 'Hoitaja',
     'luke6:26':
       'Voi teitä, kun kaikki ihmiset puhuvat teistä hyvää! Samoinhan tekivät heidän isänsä väärille profeetoille.” Luukas 6:26',
     'john18:20-21': `Jeesus vastasi hänelle: ”Minä olen puhunut julkisesti maailmalle. Olen aina opettanut synagogassa ja temppelissä, jonne kaikki juutalaiset kokoontuvat. Salassa en ole puhunut mitään. Miksi minulta kysyt? Kysy niiltä, jotka ovat kuulleet, mitä minä olen heille puhunut. He kyllä tietävät, mitä olen puhunut.” Johannes 18:20,21.`,
