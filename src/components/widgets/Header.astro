@@ -68,6 +68,13 @@ const navigateToLanguage = (href: string | undefined) => {
   // Get the current language from URL
   const currentLang = getLangFromUrl(Astro.url);
 
+  if (href === '/') {
+    if (currentLang === 'en') {
+      return '/en';
+    }
+    return '/';
+  }
+
   // Handle anchor links specially
   if (href.startsWith('#')) {
     // Check if the current URL already contains /en
@@ -140,6 +147,9 @@ const navigateToLanguage = (href: string | undefined) => {
       )}
       aria-label="Main navigation"
     >
+      <div class="flex justify-start py-2 lg:hidden">
+        <LanguagePicker />
+      </div>
       <ul
         class="flex flex-col lg:flex-row lg:self-center w-full lg:w-auto text-xl lg:text-[0.9375rem] tracking-[0.01rem] font-medium lg:justify-center"
       >
@@ -209,12 +219,13 @@ const navigateToLanguage = (href: string | undefined) => {
     <HeaderNavigation links={links.filter((link) => link.links?.length)} currentPath={currentPath} />
     <div
       class:list={[
+        'hidden lg:flex items-center lg:self-center lg:mb-0 fixed w-full lg:w-auto lg:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 lg:p-0 lg:justify-self-end z-50',
         { 'ml-auto rtl:ml-0 rtl:mr-auto': position === 'left' },
-        'hidden lg:self-center lg:flex items-center lg:mb-0 fixed w-full lg:w-auto lg:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 lg:p-0 lg:justify-self-end z-50',
       ]}
     >
       <div class="items-center flex justify-between w-full lg:w-auto">
         <div class="flex">
+          <div class="absolute top-0 h-full w-full bg-page"></div>
           <LanguagePicker />
         </div>
         {

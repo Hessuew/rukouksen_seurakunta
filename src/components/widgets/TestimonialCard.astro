@@ -3,7 +3,7 @@ import imgGold2 from '~/assets/images/gold.webp';
 import Image from '~/components/common/Image.astro';
 import { Icon } from 'astro-icon/components';
 
-const { title, testimonial, name, job, image, isPositive = true } = Astro.props;
+const { title, testimonial, name, job, image, isPositive = true, extraContent } = Astro.props;
 
 const defaultBackgroundStyles = {
   backgroundImage: `url(${imgGold2.src})`,
@@ -13,6 +13,8 @@ const defaultBackgroundStyles = {
   backgroundPosition: '0% 10%',
   backgroundSize: 'cover',
 };
+
+const hasExtraContent = !!extraContent;
 ---
 
 <div
@@ -20,11 +22,27 @@ const defaultBackgroundStyles = {
 >
   <div
     style={defaultBackgroundStyles}
-    class="max-w-[400px] sm:max-w-none flex flex-col w-full rounded-md shadow-xl dark:shadow-none dark:border dark:border-white/60 overflow-hidden relative"
+    class={`max-w-[400px] sm:max-w-none flex flex-col w-full rounded-md shadow-xl dark:shadow-none dark:border dark:border-white/60 overflow-hidden relative ${hasExtraContent ? 'cursor-pointer hover:shadow-2xl transition-shadow duration-300' : ''}`}
+    data-testimonial-id={hasExtraContent ? crypto.randomUUID() : undefined}
+    data-has-extra-content={hasExtraContent.toString()}
+    data-name={name}
+    data-job={job}
+    data-title={title}
+    data-testimonial={testimonial}
+    data-extra-content={extraContent}
   >
     <div class="flex flex-col p-4 md:p-6">
       <div class="flex items-center">
-        <div class="absolute right-4 top-3 z-10">
+        <div class="absolute right-4 top-3 z-10 flex items-center gap-2">
+          {
+            hasExtraContent && (
+              <Icon
+                name="tabler:arrows-maximize"
+                class="w-6 h-6 text-black flex-shrink-0"
+                title="Click to see more content"
+              />
+            )
+          }
           <Icon
             name={isPositive ? 'tabler:thumb-up' : 'tabler:thumb-down'}
             class={`w-6 h-6 ${isPositive ? 'text-green-600' : 'text-red-600'} flex-shrink-0`}

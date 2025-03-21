@@ -81,7 +81,7 @@ const t = useTranslations(lang);
       <GradientText
         animate={false}
         imageNro={2}
-        class="w-full text-[12vw] sm:text-[14vw] md:text-[12vw] lg:text-[10vw] font-bold leading-none"
+        class="w-full text-[14vw] xs:text-[14vw] sm:text-[14vw] md:text-[12vw] lg:text-[10vw] font-bold leading-none"
         backgroundStyles={styleStyle}
       >
         <div class="flex flex-col">
@@ -151,7 +151,7 @@ const t = useTranslations(lang);
               animate={false}
               class="pr-1"
               imageNro={2}
-              backgroundStyles={{ ...styleStyle, backgroundSize: '200% 100%', backgroundPosition: '10% 40%' }}
+              backgroundStyles={{ ...styleStyle, backgroundSize: '200% 400%', backgroundPosition: '10% 40%' }}
             >
               {t('thisSameJesus')}
             </GradientText>
@@ -163,7 +163,7 @@ const t = useTranslations(lang);
       <div class="py-4">
         <GradientText
           imageNro={2}
-          backgroundStyles={{ ...styleStyle, backgroundSize: '100% 200%', backgroundPosition: '10% 20%' }}
+          backgroundStyles={{ ...styleStyle, backgroundSize: '200% 400%', backgroundPosition: '40% 100%' }}
           class="w-full text-[8vw] sm:text-[8vw] md:text-[8vw] lg:text-[6vw] font-bold leading-none pb-10"
         >
           <div class="flex flex-col">
@@ -364,6 +364,7 @@ const t = useTranslations(lang);
         testimonial: t('testimonialNonMentioned1.t'),
         name: t('testimonialNonMentioned1.name'),
         job: t('testimonialNonMentioned1.job'),
+        extraContent: 'Testao dhfoiahsd ofha sodifh oasdhfoasdhfa sdf;asdfiuh',
         image: {
           src: '',
           alt: '',
@@ -374,6 +375,7 @@ const t = useTranslations(lang);
         testimonial: t('testimonialMaria.t'),
         name: t('testimonialMaria.name'),
         job: t('testimonialMaria.job'),
+        extraContent: 'Testao dhfoiahsd ofha sodifh oasdhfoasdhfa sdf;asdfiuh',
         image: {
           src: maria,
           alt: '',
