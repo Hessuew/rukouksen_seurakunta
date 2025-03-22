@@ -56,13 +56,13 @@ export const ui = {
       "'For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.' Isaiah 9:6.",
     preachingTheGospel: 'Preaching the gospel',
     preachingTheGospelDescription1: 'The Gospel must be proclaimed to every creature... Matthew 28.',
-    preachingTheGospelDescription2: `'And he said unto them, Go ye into all the world, and preach the gospel to every creature. He that believeth and is baptized shall be saved; but he that believeth not shall be damned.' Mark 16:15,16.`,
+    preachingTheGospelDescription2: `'And he said unto them, Go ye into all the world, and preach the gospel to every creature. He that believeth and is baptized shall be saved; but he that believeth not shall be damned.' Mark 16:15, 16.`,
     preachingTheGospelDescription3: `'And Jesus came and spake unto them, saying, All power is given unto me in heaven and in earth. Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you always, even unto the end of the world. Amen.' Matthew 28:18-20.`,
     signsAndWonders: 'Signs and wonders',
     signsAndWondersDescription1:
       'Miracles and signs, healings, deliverances, and the casting out of evil spirits follow and are evidence of the true Gospel... Mark 16.',
     signsAndWondersDescription2:
-      "'And these signs shall follow them that believe; In my name shall they cast out devils; they shall speak with new tongues; They shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they shall lay hands on the sick, and they shall recover. And they went forth, and preached every where, the Lord working with them, and confirming the word with signs following. Amen.' Mark 16:17,18,20.",
+      "'And these signs shall follow them that believe; In my name shall they cast out devils; they shall speak with new tongues; They shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they shall lay hands on the sick, and they shall recover. And they went forth, and preached every where, the Lord working with them, and confirming the word with signs following. Amen.' Mark 16:17, 18, 20.",
     prayer2: 'Prayer',
     prayer2Description1:
       'Prayer is an indispensable tool for revival and the manifestation of the power of the Holy Spirit... Luke 18:1, Acts 4:31, James 5:16.',
@@ -106,6 +106,7 @@ export const ui = {
     'testimonialNonMentioned1.name': 'Not mentioned',
     'testimonialNonMentioned1.job': 'Member of the board of deacons in a Finnish church',
     'testimonialMaria.t': 'I did not know that there was such a thing in Kuopio!',
+    'testimonialMaria.t2': `After the name round, people started praying for me. As I sat on the couch leaning forward, during the prayer, God's power threw me forcefully against the backrest of the couch without anyone touching me. <br /> <br /> On another occasion, we were about to end the gathering when people started praying for me again. Soon, I fell to the ground under God's power. <br />  <br /> Thank you, Jesus.`,
     'testimonialMaria.name': 'Maria',
     'testimonialMaria.job': 'Entrepreneur',
     'testimonialAkosua.t': `Jesus is a Savior. He truly saves from darkness when one calls unto Him. My life has transformed in a way that I cannot even explain. From a godless life to one that is ever aware of Him. The Prayer Church teaches the uncompromising truth of the Bible. The gatherings are always Spirit-filled and Spirit-led. The community is simply unmatched.`,
@@ -114,11 +115,55 @@ export const ui = {
     'testimonialNonMentioned2.t': `I'm afraid that you will burn out - 2019 <br />(After that, the fire only increased year by year. Thank you Jesus!)`,
     'testimonialNonMentioned2.job': 'Youth pastor in ***** Pentecostal Church',
     'testimonialMahi.t': `The first day I set foot in this church, after a long absence from the grace of God and under the devil's bondage, I was met with the mercy of Jesus Christ and Holy Spirit confirmed it by his powerful and visible encounter. In a single day, I received freedom, healing, and the fire of the Holy Spirit. Forever be glory, for His work on the Cross!`,
+    'testimonialMahi.t2': `
+Praise be to God! <br /><br />
+
+I'm not sure how to explain what happened without first telling you what was happening before. I am a Christian—well, my parents were Christians—but I never truly believed until I was about 21 or 22 years old. Then, I understood Jesus. The way I came to believe in Christ is a long story, but it was a miraculous moment for me. <br /><br />
+
+After that, I developed a deep and intimate relationship with God. That was when I was at university, studying. I had this relationship with God and the Holy Spirit, which I was introduced to through the baptism of the Holy Spirit in a special way. This intimate relationship with God lasted for three years. <br /><br />
+
+Then, through a series of events, I was heartbroken—both personally and with the church I was attending at the time. Satan used that situation to drive me away from the church, and I was on my own for six years or more. I was going through a period where I first wanted to forget about God and the relationship I had with Him, which I deeply missed. <br /><br />
+
+After a few years, I started formulating my own theories about life—how to survive, how to make it on my own, and things like that. Over the past year, everything suddenly became so difficult that I realized it was foolish to think I could make it on my own, that I could live without God. I saw the people around me appearing to live their lives successfully without Him, but that was a lie. <br /><br />
+
+Because I once had that relationship with God, I felt as if life was slowly draining out of me, drop by drop. I was suffocating. Over the past few months, the strong resistance I had within myself—the fight not to return to God—started manifesting physically. I became exhausted, started experiencing physical pain, and was in and out of the hospital. I even had to get an MRI to see what was wrong with me, but there was nothing physically wrong. <br /><br />
+
+Even my husband started thinking it might be psychological. But in truth, it wasn’t psychological—it was spiritual. Even painkillers stopped working for me, and I had been unable to sleep for many months. Strangely, my husband, who isn’t a very spiritual person, started suspecting that this could be a spiritual issue. He even joked that I was under some kind of attack. <br /><br />
+
+Then, he started encouraging me to go to church. Before, whenever I suggested going to church, we would just joke about it, knowing it wouldn’t happen. But this time, he strongly urged me to go every Sunday. <br /><br />
+
+As I mentioned last time, I wanted to go to a Bible study group to see what was going on, but I never had the courage or strength. Then, last week, I woke up in the morning and prayed. Well, actually, I just knelt down and thought about this prayer meeting. I asked God, "Why do I feel this fear? What is the source of it?" <br /><br />
+
+For a moment, I even wondered if God didn’t want me to go to this meeting. But then I thought—if that were true, and I still went, how would that be any different from any other day when I ignored what God was telling me? So, I decided to go and see what would happen. <br /><br />
+
+When I arrived, Maria was giving her testimony. Her words, in some way, confirmed to me that I was in the right place. Immediately, I felt the Spirit of God so strongly—I was shaking and trembling the entire time. Then, we prayed, and Yani shared the Word of God, which spoke directly to me. <br /><br />
+
+In the middle of the Bible study, he asked me to introduce myself. I said, "My name is Mahi, and I've been trying to come to this place for ten months." That’s when Andrew stopped everything and said, "We need to pray." <br /><br />
+
+A few seconds later, I felt the Spirit of God—angry and ready to attack whoever had been attacking me for so long. Everyone prayed. Andrew prayed about my health, which he didn’t even know about, about my family issues, and about a generational curse—which is another long story. This past week, God has been revealing more details about that curse. <br /><br />
+
+Also, AA joined us online. She had a vision of me being bound, as if I were caught in a net like a fish, and she said I had been like that for a long time. But as we prayed, she saw the net being dismantled. I was becoming freer and starting to move. That vision deeply touched me. Now, I realize—she said I was curled up like a baby in a womb. That position, that chain, I now believe was the source of my pain. It was a pain I couldn’t pinpoint. <br /><br />
+
+As we prayed, I was freed. The Spirit of God touched me powerfully. I cried. A few minutes later, I was overwhelmed with joy. Jesus had done it again! He had freed me again and saved me from Satan’s hold—again! And when I say "again," I don’t mean just a second time. This has been a long history of bondage, but there I was—free. <br /><br />
+
+At the end of the Bible study, we prayed over the words spoken that night. I prayed, "God, if I leave this meeting and go home, You need to restore the Holy Spirit to me. If I go home and I can’t pray in tongues, then I won’t have the power to pray, and this will all happen again. It needs to happen tonight." <br /><br />
+
+Then, at the end, Andrew came up to me and asked, "Have you ever prayed in tongues?" <br /><br />
+
+I replied, "I used to, but over time, it faded away." <br /><br />
+
+So, we prayed, and right then and there, I received the baptism of the Holy Spirit again. Everything was restored. I left that night as a joyful person, jumping in the streets—praise be to God! <br /><br />
+
+Since then, every day, God has been teaching me new things—things I had never learned before. He’s been inspiring me to reach out to my family and remind them of Christ. Very soon, I expect to hear testimonies from them too. <br /><br />
+
+Amen! Praise be to God!  
+    `,
     'testimonialMahi.name': 'Mahidere',
     'testimonialMahi.job': 'Doctor',
     'testimonialNonMentioned3.t': 'They will drive against a wall.',
     'testimonialNonMentioned3.job': 'A pastor in a Finnish church',
     'testimonialIda.t': `I have grown tremendously in the spirit over the past six months after the Lord guided me to prioritize church meetings in my life and daily activities. <br /> I have even been told that God has nurtured my growth to the point where I am now spiritually more mature than many pastors.`,
+    'testimonialIda.t2': `When ****** was praying in tongues, I started to understand what he was praying about. I was very surprised, and after we had prayed for a long time, I said that I might have understood the subjects he was praying for. When I told what I understood, ****** confirmed that he knew in the spirit that those were the subjects he was praying for and told me that what I experienced was a manifestation of the interpretation of tongues. Glory be to God!`,
     'testimonialIda.name': 'Ida',
     'testimonialIda.job': 'Nurse, counselor',
     'testimonialBenwillis.t': `My experiences in the prayer church are countless. Before I joined, I never took prayer seriously. Now I have developed a strong habit of trusting God in everything that I do. Through that, I have seen the hand Jesus in my life, especially in my career where I specifically prayed for a job and Jesus delivered. My life has since transformed from someone who lived life aimlessly to a focused, deeply spiritual person whose faith has been renewed and who knows that it's only Jesus that can save our lives.`,
@@ -134,6 +179,30 @@ export const ui = {
       'We are all convinced that the group is not led by the Holy Spirit. They are antichristian and led by spirits of witchcraft from Africa.',
     'testimonialNonMentioned4.job': 'Largest church congregation in the country',
     'testimonialCJ.t': `Since I joined the Flame the Freeze meetings, I have experienced a profound renewal of my spiritual sensitivity and appetite for the Lord. The liberal prayer sessions, in partnership with the Holy Spirit, have revived and awakened my scriptural songs' bank, building my most holy faith (Jude 1:20) The liberty we have in our gatherings has facilitated the manifestation of the Spirit, breaking down the barriers of religious tradition and deepening our relationships with the Holy Spirit and one another. Truly, our fellowship embodies Zion—the city of the living God, the heavenly Jerusalem, and the innumerable company of angels (Heb 12:22). It is a place of divine encounters and transformative experiences.`,
+    'testimonialCJ.t2': `
+And glory to God! I want to bless the name of the Lord for His faithfulness this year. <br /><br />
+
+For the few times I have been part of the fellowships here—both the prayer meeting, the Bible study, and the Sunday gathering—I think I have attended each of these meetings twice. I didn’t necessarily intend to say much, but the truth is, there is a kind of call to revival in my life. <br /><br />
+
+When I was coming to Finland, one of the prayers my family and I sincerely made was for the Lord to lead us to a body of Christ that would keep our faith aflame. When we arrived, we found a fellowship and joined. But instead of experiencing growth and the joy that comes from spiritual fulfillment, we found ourselves going downward. <br /><br />
+
+It’s not that we started committing one sin or another, but I could literally feel that life was leaving me. I began searching for a place where I could be spiritually refreshed. It became such a big concern that I even called home to share my worries with a few people. <br /><br />
+
+Then, I heard about the UEF Bible Club, and I also found a leaflet in my mailbox. It wasn’t easy for me to participate until very recently. My first participation was on the 18th of January. When I attended, I felt God’s presence. A lot of things started coming alive in me again—spiritual songs began returning to my memory, scriptures I had forgotten started coming back. These were scriptures that had seemed to erode away during the two years I had been in Finland. <br /><br />
+
+Before, I was merely existing—not really living according to my calling or purpose. I was just going through the motions like everyone else. But that was never the desire of my heart from the moment I made the decision to come here. <br /><br />
+
+I have now come to discover that the Spirit of God is truly in this place. For me, I would rather stay, settle, and be part of what God is doing. I want to immerse myself fully in the revival that God is bringing into my life. <br /><br />
+
+I deeply appreciate this gathering because, since coming to Finland, this is the first time I have been able to sit in a spiritual program for more than two hours and not feel tired. Instead, I feel joyful at the end of the meetings. <br /><br />
+
+Another thing that seemed like a mystery to me has now been demystified in this gathering. From what people had said, I never believed I could be in the midst of some original Finns—something truly filled with the Holy Ghost—and experience this kind of fellowship. <br /><br />
+
+So, it became a sign to me that God is in this place, and it is the desire of my heart to soak in everything that God has prepared for me here. It truly feels like revival, and I desire it to continue in my life. <br /><br />
+
+I know that testimonies will come from this—great testimonies—and in due time, I will share them. For now, I am simply enjoying the atmosphere of this fellowship, and God is bringing revival into my life. <br /><br />
+
+    `,
     'testimonialCJ.name': 'CJ',
     'testimonialCJ.job': 'Ph.D, Principal Lecturer and Adjunct Senior Lecturer',
     'testimonialAhunsi.t':
@@ -143,9 +212,18 @@ export const ui = {
     'testimonialNonMentioned5.t':
       'Personally I think that it is a waste of time to pray if I am not sure that we are in a position where God will answer our prayers. At worst it could be a spiritual deception which opens a door for the devil. That kind of prayer meeting would not be in the will of God.',
     'testimonialNonMentioned5.job': 'Leader of a Christian youth organization in the city',
+    'testimonialGood1.name': '40-year-old woman',
     'testimonialGood1.t':
-      'We are all convinced that the group is not led by the Holy Spirit. They are antichristian and led by spirits of witchcraft from Africa.',
+      "I shared my testimony, after which I was asked if I had been filled with the Holy Spirit. Then they prayed for me, and I heard voices inside me saying, 'Leave here quickly.' I refused to leave, and a struggle began inside me, which also manifested physically—I was shaking and thrashing around. After about 10 minutes, those entities inside me said, 'We have to leave.' They left, and I raised my hands, crying, and thanked Jesus. Then they prayed for me again, and Jesus filled me with the Holy Spirit, and I began speaking in tongues.",
     'testimonialGood1.job': 'Doctor',
+    'testimonialGood2.name': '+70-year-old woman',
+    'testimonialGood2.t':
+      'Did you see what happened to me when we prayed? Well, as we prayed, I started yawning immensely, as if something was beginning to leave me. It continued and continued, and I believe that something left. I was involved in occultism when I was young, and it has affected my life for over 70 years. But now, something happened. Could it have been evil spirits?',
+    'testimonialGood2.job': 'Retired',
+    'testimonialGood3.name': '40-year-old woman',
+    'testimonialGood3.t':
+      'I frequently had extremely disturbing nightmares about snakes. And I am afraid of snakes. At the event, people prayed for deliverance from nightmares. Those nightmares stopped, and great changes began to happen in my life. Thank you, Jesus!',
+    'testimonialGood3.job': 'Nurse',
     'luke6:26':
       'Woe unto you, when all men shall speak well of you! for so did their fathers to the false prophets. Luke 6:26.',
     'john18:20-21': `Jesus answered him, I spake openly to the world; I ever taught in the synagogue, and in the temple, whither the Jews always resort; and in secret have I said nothing. Why askest thou me? ask them which heard me, what I have said unto them: behold, they know what I said. John 18:20,21.`,
@@ -181,6 +259,9 @@ export const ui = {
     prayerConferenceImageAlt: 'Eastern Prayer Conference',
     whatWeBelieve: 'What we believe',
     testimonies: 'Testimonies',
+    press: 'Press the',
+    icon: ' icon',
+    toReadTheFullTestimony: 'to read the full testimony',
   },
   fi: {
     prayerChurchImageAlt: 'Rukouksen seurakunnan logo',
@@ -233,13 +314,13 @@ export const ui = {
       "'Sillä lapsi on meille syntynyt, poika on meille annettu. Hänen harteillaan on herruus, ja hänen nimensä on Ihmeellinen neuvonantaja, Väkevä Jumala, Iankaikkinen isä, Rauhanruhtinas.' Jesaja 9:6.",
     preachingTheGospel: 'Evankeliumin julistaminen',
     preachingTheGospelDescription1: 'Evankeliumi tulee julistaa jokaiselle luodolle... Matteus 28.',
-    preachingTheGospelDescription2: `'Hän sanoi heille: "Menkää kaikkialle maailmaan ja julistakaa evankeliumia kaicille luoduille. Joka uskoo ja saa kasteen, pelastuu, mutta joka ei usko, se tuomitaan kadotukseen." Markus 16:15-16`,
+    preachingTheGospelDescription2: `'Hän sanoi heille: "Menkää kaikkialle maailmaan ja julistakaa evankeliumia kaicille luoduille. Joka uskoo ja saa kasteen, pelastuu, mutta joka ei usko, se tuomitaan kadotukseen." Markus 16:15, 16`,
     preachingTheGospelDescription3: `Jeesus tuli heidän luokseen ja sanoi heille: "Minulle on annettu kaikki valta taivaassa ja maan päällä. Menkää siis ja tehkää kaicista kansoista minun opetuslapsiani. Kastakaa heidät Isän ja Pojan ja Pyhän Hengen nimeen ja opettakaa heitä pitämään kaikki, mitä minä olen käskenyt teidän pitää. Ja katso, minä olen teidän kanssenne joka päivä maailmanajan loppuun saakka."' Matteus 28:18-20.`,
     signsAndWonders: 'Ihmeet ja merkit',
     signsAndWondersDescription1:
       'Ihmeet ja merkit, parantumiset, vapautumiset sekä pahojen henkien ulosajamiset seuraavat ja ovat todisteita todellisesta envakeliumista... Markus 16.',
     signsAndWondersDescription2:
-      "'Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ajavat ulos riivaajia, puhuvat uusilla kielillä, 18nostavat käsin käärmeitä. Jos he juovat jotakin kuolettavaa, se ei vahingoita heitä. He panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi ... Opetuslapset lähtivät ja saarnasivat kaikkialla. Ja Herra toimi yhdessä heidän kanssaan vahvistaen sanan sitä seuraavien merkkien kautta.' Markus 16:17,18,20.",
+      "'Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ajavat ulos riivaajia, puhuvat uusilla kielillä, 18nostavat käsin käärmeitä. Jos he juovat jotakin kuolettavaa, se ei vahingoita heitä. He panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi ... Opetuslapset lähtivät ja saarnasivat kaikkialla. Ja Herra toimi yhdessä heidän kanssaan vahvistaen sanan sitä seuraavien merkkien kautta.' Markus 16:17, 18, 20.",
     prayer2: 'Rukous',
     prayer2Description1:
       'Rukous on täysin korvaamaton väline herätyksen ja Pyhän Hengen voiman ilmentymiseen... Luukas 18:1, Apostolien teot 4:31; Jaakob 5:16.',
@@ -287,6 +368,8 @@ export const ui = {
     'testimonialNonMentioned1.name': 'Nimeltä mainitsematon',
     'testimonialNonMentioned1.job': 'Vanhemmiston jäsen suomalaisessa seurakunnassa',
     'testimonialMaria.t': 'En tiennyt, että Kuopiossa on tämmöistä!',
+    'testimonialMaria.t2':
+      'Nimikierroksen jälkeen puolestani alettiin rukoilla. Nojasin istuessani sohvalla eteenpäin ja rukouksen aikana Jumalan voima heitti minut sohvan selkänojaa vasten voimalla ilman, että kukaan koski minua. <br /> <br /> Toisella kerralla olimme lopettamassa tilaisuutta, kun puolestani alettiin rukoilla. Kaaduin pian maahan Jumalan voiman alla. <br /> <br /> Kiitos Jeesukselle.',
     'testimonialMaria.name': 'Maria',
     'testimonialMaria.job': 'Yrittäjä',
     'testimonialAkosua.t': `Jeesus on Pelastaja. Hän pelastaa pimeydestä jokaisen, joka  huutaa Häntä avukseen. Elämäni on muuttunut niin paljon etten edes pysty ymmärtämään sitä itse kunnolla. Elin jumalattomasti, mutta nyt olen aina keskittynyt Jeesukseen. Rukouksen seurakunta opettaa mitä Raamattu sanoo laimentamatta tai pehmittelemättä sitä. Kokoontumiset ovat joka kerta täynä Pyhää Henkeä ja Hänen ohjaamiaan. Ryhmä on suoraan sanottuna suurenmoinen ja vertaansa vailla.`,
@@ -297,14 +380,58 @@ export const ui = {
     'testimonialNonMentioned2.job': 'Nuorisopastori ***** helluntaiseurakunnassa',
     'testimonialMahi.t':
       'Olin ollut pitkään kaukana Jumalasta ja elämäni oli Saatanan vaivaama. Tullessani ensimmäistä kertaa Rukouksen seurakuntaan Jeesuksen Kristuksen armo kohtasi minut käsin kosketettavasti Pyhä Hengen vahvistaessa tämän voimakkaalla ja näkyvällä Jumalan voiman ilmenemisellä. Vapauduin, parannuin fyysisesti ja sain takaisin menettämäni Pyhän Hengen tulen. Ikuinen ylistys Jeesukselle Hänen ristintyöstään!',
+    'testimonialMahi.t2': `
+Ylitys Jumalalle!  <br /><br />
+
+En ole varma miten selittäisin, mitä minulle tapahtui, ennen kuin olen selittänyt, mitä minulle tapahtui aiemmin. Olen kristitty—tai minun vanhempani olivat kristittyjä—mutta minä en uskonut oikeasti ennen kuin oli 21 tai 22 vuotta vanha. Sitten ymmärsin todella, kuka Jeesus on. Se miten aloin uskomaan Jeesukseen on pitkä tarina, mutta tuo hetki oli minulle ihmeellinen hetki. <br /><br />
+
+Tuon jälkeen minulle kehittyi syvä ja intiimi suhde Jumalaan. Olin tuolloin opiskelemassa yliopistossa. Minulle oli elävä suhde Jumalaan ja Pyhään Henkeen johon pääsin Pyhän Hengen kasteen kautta, joka oli myös ihmeellinen kokemus. Tämä intiimi suhde jatkui kolme vuotta. <br /><br />
+
+Tuon jälkeen useiden tapahtuneiden asioiden vaikutuksen kautta sydämeni oli murtunut—henkilökohtaisista asioista ja myös sen seurakunnan takia, jossa kävin tuolloin—ja oli sitten kuusi vuotta kaukana Jumalasta. Tuona aikana halusin unohtaa Jumalan ja myös suhteen, joka minulle oli ollut Hänen kanssaan, vaikka samalla ikävöin todella paljon tuota suhdetta. <br /><br />
+
+Muutaman vuoden jälkeen minulle kehittyi omia teorioita elämästä—miten selvitä, miten selvitä omillani ja niin edelleen. Viime vuoden aikana kaikki muuttui yhtäkkiä niin vaikeaksi, että ymmärsin ajatusten, että pärjäisin omillani ja ilman Jumalaa, olevan täysin hölmöjä. Ympärilläni olevat ihmiset näyttivät elävän menestyksekkäitä elämiä ilman Häntä, mutta se ei ollut totta.  <br /><br />
+
+Sen takia, että minulla oli ollut todellinen suhde Jumalaan aiemmin, minusta tuntui kuin elämä oli pikkuhiljaa valunut minusta ylös tippa tipalta. Minä tukehduin. Muutaman viimeisen kuukauden aikana tuo sisälläni oleva valtava vastustus, etten palaisi takaisin Jumalan luokse, alkoi ilmetä fyysisinä oireina. Olin täysin uupunut, aloin kärsiä kivusta ja vierailin sairaalassa uudelleen ja uudelleen. Minulle tehtiin myös magneettikuvaus sen selvittämiseksi, mikä oli vialla, mutta fyysisesti olin täysin kunnossa. <br /><br />
+
+Jopa mieheni alkoi ajatella, että ongelma oli psykologinen. Mutta todellisuudessa ongelma ei ollut psykologinen, vaan hengellinen. Edes särkylääkkeet eivät toimineet enää kipuuni ja en ollut nukkunut lähes ollenkaan moneen kuukauteen. Sitten tapahtui eräs kummallinen asia: mieheni, joka ei ole kovin hengellinen henkilö, alkoi epäillä, että ongelma oli hengellinen. Hän jopa vitsaili, että olisin jonkinlaisen hyökkäyksen alla. <br /><br />
+
+Sen jälkeen hän alkoi rohkaista minua menemään seurakuntaan. Aiemmin, kun olin tuonut esille itse, että saattaisin mennä kirkkoon, hän vain vitsaili siitä ja tiesi, etten kuitenkaan menisi. Mutta nyt hän rohkaisi todella vahvasti, että menisin joka sunnuntaina. <br /><br />
+
+Halusin mennä käymään (UEF )Raamattukerhossa nähdäkseni, mitä siellä tapahtui, mutta minulta puuttui rohkeus ja voima siihen. Viime viikolla sitten heräsin aamulla ja rukoilin. Tai oikeastaan minä vain polvistuin ja mietin tuota rukoustapaamista. Kysyin Jumalalta, "Miksi tunnen pelkoa? Mistä se tulee?" <br /><br />
+
+Mietin jopa hetken aikaa, ettei Jumala olisi halunnut minun tulevan tähän tapaamiseen. Mutta sitten ajattelin, että jos tuo ajatus olisikin totta ja silti menisin, niin että se ei eroaisi millään tavoin jokaisesta päivästä, jolloin en välittänyt Jumalan äänestä. Joten päätin että menen ja näen itse, mitä siellä tapahtuu. <br /><br />
+
+Kun saavuin paikalle Maria jakoi todistustaan. Hänen sanansa jotenkin vakuuttivat minut, että olin oikeassa paikassa. Tunsin heti voimakkaan Pyhän Hengen läsnäolon; vapisin ja tärisin koko tapaamisen ajan. Sitten rukoilimme ja Juhani jakoi Jumalan sanaa, joka puhutteli minua suoraan. <br /><br />
+
+Raamatun käsittelyn keskellä Juhani kysyi, että voisinko esitellä itseni. Sanoin, "Nimeni on Mahi ja olen yrittänyt tulla tänne 10 kuukautta." Silloin Andrew pysäytti kaiken ja sanoin, "Meidän pitää rukoilla."  <br /><br />
+
+Tunsin muutamassa sekunnissa Pyhän Hengen olevan vihainen sille, joka oli hyökännyt minua kohtaan näin pitkään hengellisesti, ja myös hyökäävän nyt tätä vastaan. Kaikki rukoilivat. Andrew rukoili terveyteni puolesta, josta hän ei tiennyt, perheongelmieni puolesta ja myös sukupolvet ylittävästä kirouksesta—joka on oma pitkä tarinansa, tällä viikolla Jumala on paljastanut minulle lisää yksityiskohtia tuosta kirouksesta. <br /><br />
+
+Myös Ida oli mukana Zoomin kautta. Hän näki näyn, jossa minä olin jumissa verkossa kuten kala ja hän sanoi, että olin ollut noin jo pitkään. Mutta kun rukoilimme hän näki kun verkko alkoi purkautua. Aloin vapautua ja liikkua. Näky kosketti minua syvästi. Ymmärrän nyt sen, että kun Ida kertoi minun olevan kerällä kuin kohdussa oleva vauva, että tuo asento tai kahle oli kipuni lähde. Kipu jota en osannut paikallistaa. <br /><br />
+
+Kun rukoilimme minä vapauduin. Pyhä Henki kosketti minua voimakkaasti. Minä itkin. Muutaman minuutin päästä täytyin ylitsevuotavasti ilolla. Jeesus oli tullut elämääni uudelleen! Hän vapautti minut ja pelasti minut Saatanan loukusta uudelleen! Ja kun sanon 'uudelleen' en tarkoita vaan toista kertaa. Kyseessä oli pitkä orjuus, mutta nyt tuolla hetkellä minä olin vapaa. <br /><br />
+
+Tapaamisen lopussa rukoilimme sen pohjalta, mitä Raamatusta oli avautunut meille. Rukoilin, "Jumala, jos lähden tästä tapaamisesta ja menen kotiin, sinun täytyy palauttaa Pyhä Henki minulle. Jos menen kotiin enkä voi rukoilla kielillä niin sitten minulla ei ole voimaa rukoilla ja kaikki tuo aiempi paha tapahtuu minulle uudelleen. Minä tarvitsen Pyhän Hengen täyteyden tänään." <br /><br />
+
+Sitten lopussa Andrew tuli luokseni ja kysyi, "Oletko ikinä rukoillut kielillä?" <br /><br />
+
+Vastasin, "Kyllä ennen, mutta ajan kuluessa se hiipui pois." <br /><br />
+
+Joten me rukoilimme jolloin siinä ja silloin koin Pyhän Hengen kasteen uudelleen. Jeesus oli palauttanut minulle kaikki. Lähdin tuona iltana tapaamisesta täynä iloa ja hyppeleskelin kaduilla—ylistys Jumalalle! <br /><br />
+
+Tuon jälkeen Jumala on opettanut minulle uusia asioita joka päivä—sellaisia asioita, joita en ole tiennyt ikinä aiemmin. Hän inspiroi minut ottamaan yhteyttä perheeseeni ja muistuttamaan heitä Kristuksesta. Odotan, että kuulen pian myös heiltä todistuksia. <br /><br />
+
+Aamen! Ylistys Jumalalle!
+    `,
     'testimonialMahi.name': 'Mahidere',
     'testimonialMahi.job': 'Lääkäri',
     'testimonialNonMentioned3.t': 'He tulevat ajamaan seinään.',
     'testimonialNonMentioned3.job': 'Pastori suomalaisessa seurakunnassa',
-    'testimonialIda.t': `Olen kasvanut hengellisesti todella paljon 6 kuukaudessa, kun aloin elämässä ja arjessa priorisoida Herran ohjaamana seurakunnan tapaamisia. <br /> Minulle on kerrottu, että Jumala on todella kasvattanut minua niin paljon, että olen hengellisesti vanhempi kuin moni pastori.`,
+    'testimonialIda.t': `Olen kasvanut hengellisesti todella paljon 6 kuukaudessa, kun aloin elämässä ja arjessa priorisoida Herran ohjaamana seurakunnan tapaamisia. <br /> Minulle on kerrottu, että Jumala on todella kasvattanut minua niin paljon, että olen hengellisesti vanhempi kuin monet pastorit.`,
+    'testimonialIda.t2': ` Kun ****** rukoili kielillä, aloin ymmärtämään aiheet, mitä hän rukoili. Olin erittäin yllättynyt, ja kun olimme rukoilleet pitkään, sanoin, että saatoin ymmärtää rukouksen. Kun kerroin hänelle, mitä olin ymmärtänyt, ****** vahvisti, että hän tiesi hengessä, että ne olivat aiheita, joista hän rukoili, ja kertoi minulle, että se oli kielten tulkinnan ilmeneminen. Kunnia Jumalalle!`,
     'testimonialIda.name': 'Ida',
     'testimonialIda.job': 'Lähihoitaja, ohjaaja',
-    'testimonialBenwillis.t': `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaicessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
+    'testimonialBenwillis.t': `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaikessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
     'testimonialBenwillis.name': 'Benwillis',
     'testimonialBenwillis.job': 'Lääketieteen tutkija, opetusassitentti Itä-Suomen Yliopistolla',
     'testimonialIina.t':
@@ -313,9 +440,32 @@ export const ui = {
     'testimonialIina.job': 'Tarjoilija',
     'testimonialIina.imageAlt': 'Iina - kuva',
     'testimonialNonMentioned4.t':
-      'Me kaikki olemme vakuuttuneita, että Pyhä Hneki ei johda tätä ryhmää. He ovat antikristillisiä ja afrikkalaisten noituuden henkien vaikutuksen alla.',
+      'Me kaikki olemme vakuuttuneita, että Pyhä Henki ei johda tätä ryhmää. He ovat antikristillisiä ja afrikkalaisten noituuden henkien vaikutuksen alla.',
     'testimonialNonMentioned4.job': 'Maan suurin kirkkokunta',
     'testimonialCJ.t': `Liityttyäni Flame the Freeze:n tapaamisiin minulle on tapahtunut paljon. Hengellinen herkkyyteni on perusteellisesti uudistunut ja samoin myös intohimoni Herraa kohtaan. Rukous hetket ovat vapaita ja Pyhän Hengen ohjaamia ja tämä yhdistelmä on tuonut takaisin hengellisten laulujen "pankkini", joilla rakennan uskoani (Juu 1:20). Kokouksiemme vapaus on tehnyt Pyhän Hengen liikkumisen normaaliksi kokemukseksi ja suhteemme Häneen ja toisiimme on syventynyt. On ihmeellistä todeta että kokoontumisemme ikäänkuin ruumillistavat Siionin—elävän Jumalan kaupungin, jossa lukematon määrä enkeleitä kokoontuu (Hep 12:22). Tämä on yliluonnollisten kohtaamisten paikka, jossa elämät muuttuvat.`,
+    'testimonialCJ.t2': `
+Haluan siunata Herran nimeä, sillä Hän on ollut hyvin uskollinen minua kohtaan tänä vuonna. <br /><br />
+
+Olen ollut mukana muutaman kerran rukouskokouksessa, Raamiksessa ja sunnuntain tapaamisessa, uskoakseni kaikissa kokouksissa kaksi kertaa. En ajatellut sanovani paljon, mutta totta puhuakseni elämässäni on tapahtunut herätys. <br /><br />
+
+Kun tulimme perheeni kanssa Suomeen yksi vilpitön rukouksemme oli, että Herra johtaisi Kristuksen ruumiin osaan, joka pitäisi tulemme palavana. Saavuimme ja löysimme seurakunnan ja aloimme käymään siellä. Mutta sen sijaan, että olisimme kasvaneet hengessä ja kokeneet sitä iloa, joka syntyy Hengen täyteydestä, hengellinen elämämme alkoi taantua. <br /><br />
+
+Emme alkaneet tekemään joitain syntejä, mutta kirjaimellisesti tunsin, että elämää poistui minusta. Aloin etsimään paikkaa, jossa hengellinen elämäni voisi virvoittua. Asiasta tuli minulle  niin iso huoli, että soitin takaisin kotimaahani kertoakseni siitä muutamalle henkilölle. <br /><br />
+
+Sen jälkeen kuulin UEF Raamattukerhosta ja lisäksi löysin esitteen postilaatikostani. En kuintenkaan pystynyt osallistumaan kuin aivan vasta. Olin paikalla ensimmäistä kertaa 18:sta Tammikuuta. Tunsin Jumalan läsnäolon. Elämäni alkoi tulla uudelleen eloon; hengelliset laulut alkoivat palautua muistiini ja Raamatun paikat, jotka olin unohtanut, alkoivat myös palautua. Jotenkin nuo kirjoitukset olivat kuin kuihtuneet pois minusta noiden kahden vuoden aikana, jotka oli ollut Suomessa. <br /><br />
+
+Tuona aikana minä olin vain olemassa; en täyttänyt kutsumustani tai tarkoitustani. Elin vain arjen keskellä niin kuin kuka tahansa ihminen ilman mitään syvempää merkitystä. Tuo ei kuitenkaan ollut ikinä ollut se mitä tahdoin kokea Suomessa. <br /><br />
+
+Olen nyt nähnyt, että Jumalan Henki on todella tässä paikassa. Henkilökohtaisesti haluan pysyä, asettua ja olla osa sitä, mitä Jumala tekee. Haluan uppoutua täysin tähän herätykseen, jonka Jumala on tuonut elämääni. <br /><br />
+
+Arvostan tätä tapaamista todella paljon sillä tultuani Suomeen tämä on ensimmäinen kerta kun voin olla hengellisessä tapaamisessa yli kaksi tuntia enkä koe olevani yhtään väsynyt. Sen sijaan olen täynä iloa jokaisen kokouksen jälkeen. <br /><br />
+
+Myös toinen asia, joka oli minulle aiemmin mysteeri, on avautunut näissä kokoontumissa minulle. Sen pohjalta, mitä olen kuullut ihmisiltä, en uskonut että voisin koskaan olla keskellä suomalaisia, jotka ovat todella täynä Pyhää Henkeä ja kokea tämän kaltaista yhteyttä. <br /><br />
+
+Tästä tuli minulle merkki, että Jumala on tässä paikassa ja sydämeni halu on upottoautua kaikkeen siihen, mitä Jumala on valmistanut minun varalleni. Tämä todella tuntuu herätykseltä ja haluan sen jatkuvan elämässäni. <br /><br />
+
+Tiedän, että elämässäni syntyy tämän pohjalta uusia todistuksia, suuria todistuksia, ja tulen pian jakamaan ne. Mutta nyt minä yksinkertaisesti nautin tästä ilmapiiristä ja yhteydestä ja tästä Jumalan elämääni tuomasta herätyksestä. <br /><br /> 
+    `,
     'testimonialCJ.name': 'CJ',
     'testimonialCJ.job': 'Luennoitsija ja apulaislehtori',
     'testimonialAhunsi.t':
@@ -326,8 +476,18 @@ export const ui = {
     'testimonialNonMentioned5.t':
       'Minusta on ajanhukkaa rukoilla jos en ole varma, että Jumala vastaa rukouksiimme. Pahimmassa tapauksessa saatamme harhautua hengellisesti ja avata oven Saatanalle. Tuollainen rukoustapaaminen ei olisi Jumalan tahdon mukaista.',
     'testimonialNonMentioned5.job': 'Johtaja paikallisessa kristillisessä organisaatiossa',
-    'testimonialGood1.t': 'Kun minun puolestani rukoilliin',
+    'testimonialGood1.name': 'N. 40-vuotias nainen',
+    'testimonialGood1.t':
+      "Kerroin todistukseni jonka jälkeen minulta kysyttiin olinko täyttynyt Pyhällä Hengellä. Sitten puolestani rukoiltiin ja kuulin äänten sanovan sisälläni, 'Lähde äkkiä pois täältä'. En suostunut lähtemään ja sisälläni alkoi kamppailu joka myös ilmeni fyysisesti, minä heiluin ja ruihdoin ympäriinsä. Noin 10 minuutin päästä nuo persoonat sisälläni sanoivat, 'Meidän täytyy lähteä'. Ne lähtivät ja minä nostin käteni itkien ja kiitin Jeesusta. Sitten puolestani rukoiltiin uudelleen ja Jeesus täytti minut Pyhällä Hengellä ja aloin puhumaan kielillä.",
     'testimonialGood1.job': 'Lääkäri',
+    'testimonialGood2.name': '+70-vuotias nainen',
+    'testimonialGood2.t':
+      'Näittekö mitä minulle tapahtui kun rukoilimme? No, kun rukoilimme minua alkoi haukotuttaa valtavasti ja kuin jotain olisi alkanut lähteä ulos minusta. Se jatkui ja jatkui ja uskon, että jotain lähti. Olin nuorena mukana okkultismissa ja se on vaikuttanut elämääni yli 70 vuotta. Mutta nyt jotain tapahtui. Olisivatko ne olleet pahoja henkiä?',
+    'testimonialGood2.job': 'Eläkeläinen',
+    'testimonialGood3.name': 'N. 40-vuotias nainen',
+    'testimonialGood3.t':
+      'Minulla oli todella pahoja painajaisia käärmeistä ja todella usein. Ja minä pelkään käärmeitä. Tapahtumassa rukoiltiin painajaisista vapautumisesta. Nuo painajaiset loppuivat ja elämässäni alkoi tapahtua suuria muutoksia. Kiitos Jeesukselle!',
+    'testimonialGood3.job': 'Hoitaja',
     'luke6:26':
       'Voi teitä, kun kaikki ihmiset puhuvat teistä hyvää! Samoinhan tekivät heidän isänsä väärille profeetoille.” Luukas 6:26',
     'john18:20-21': `Jeesus vastasi hänelle: ”Minä olen puhunut julkisesti maailmalle. Olen aina opettanut synagogassa ja temppelissä, jonne kaikki juutalaiset kokoontuvat. Salassa en ole puhunut mitään. Miksi minulta kysyt? Kysy niiltä, jotka ovat kuulleet, mitä minä olen heille puhunut. He kyllä tietävät, mitä olen puhunut.” Johannes 18:20,21.`,
@@ -362,5 +522,8 @@ export const ui = {
     prayerConferenceImageAlt: 'Pääsiäisen rukouskonferenssi',
     whatWeBelieve: 'Mihin uskomme',
     testimonies: 'Todistuksia',
+    press: 'Paina',
+    icon: ' -ikonia',
+    toReadTheFullTestimony: 'lukiaksesi koko todistuksen',
   },
 } as const;

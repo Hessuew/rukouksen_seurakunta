@@ -1,0 +1,128 @@
+---
+import { getLangFromUrl, useTranslations } from '~/i18n/utils';
+import { Icon } from 'astro-icon/components';
+
+// Props for customizing the speech bubble
+const {
+  position = 'top-right', // Position of the bubble
+  size = 'md', // Size of the icon: sm, md, lg
+  classes = {},
+  targetSectionId = 'todistuksia', // ID of the section to observe
+} = Astro.props;
+
+// Size mapping
+const sizeMap = {
+  sm: 'w-6 h-6',
+  md: 'w-8 h-8',
+  lg: 'w-10 h-10',
+};
+
+// Position mapping
+const positionMap = {
+  'top-right': 'top-4 right-4',
+  'top-left': 'top-4 left-4',
+  'bottom-right': 'bottom-4 right-4',
+  'bottom-left': 'bottom-4 left-4',
+  center: 'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2',
+};
+
+const iconSize = sizeMap[size] || sizeMap.md;
+const iconPosition = positionMap[position] || positionMap['top-right'];
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div
+  id="speech-bubble-icon"
+  class={`fixed z-50 ${iconPosition} ${iconSize} ${classes.container || ''} opacity-0 pointer-events-none transition-opacity duration-500 group cursor-pointer`}
+>
+  <div class="relative">
+    <Icon
+      name="tabler:info-circle-filled"
+      class={`text-primary-600 drop-shadow-lg ${iconSize} ${classes.icon || ''} group-hover:scale-110 transition-transform`}
+    />
+    <div class="absolute -top-1 -right-1 w-3 h-3 bg-primary-600 rounded-full animate-pulse"></div>
+
+    <!-- Tooltip that appears on hover -->
+    <div
+      class="absolute flex flex-col bottom-full items-start justify-start right-0 mb-2 w-max max-w-[200px] bg-white/90 text-black text-sm p-2 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
+    >
+      <div class="flex flex-row items-center gap-1">
+        {t('press')}
+        <Icon name="tabler:hand-click" class="w-5 h-5 text-black flex-shrink-0" title="Click to see more content" />
+        {t('icon')}
+      </div>
+      <div class="text-left">{t('toReadTheFullTestimony')}</div>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ targetSectionId }}>
+  // Function to show the speech bubble
+  function showSpeechBubble() {
+    const speechBubble = document.getElementById('speech-bubble-icon');
+    if (!speechBubble) return;
+
+    // Make visible with animation
+    speechBubble.classList.remove('opacity-0', 'pointer-events-none');
+    speechBubble.classList.add('opacity-100', 'animate-bounce-gentle');
+  }
+
+  // Function to hide the speech bubble
+  function hideSpeechBubble() {
+    const speechBubble = document.getElementById('speech-bubble-icon');
+    if (!speechBubble) return;
+
+    // Hide with fade out animation
+    speechBubble.classList.remove('opacity-100', 'animate-bounce-gentle');
+    speechBubble.classList.add('opacity-0', 'pointer-events-none');
+  }
+
+  // Function to handle click on the speech bubble
+  function handleSpeechBubbleClick() {
+    // Hide the speech bubble when clicked
+    hideSpeechBubble();
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const speechBubble = document.getElementById('speech-bubble-icon');
+    const targetSection = document.getElementById(targetSectionId);
+
+    if (!speechBubble || !targetSection) return;
+
+    // Add click event listener
+    speechBubble.addEventListener('click', handleSpeechBubbleClick);
+
+    // Create an Intersection Observer to detect when the testimonial section is visible
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // When the testimonial section comes into view
+          if (entry.isIntersecting) {
+            // Show the speech bubble with a slight delay
+            setTimeout(showSpeechBubble, 500);
+          } else {
+            // Hide the speech bubble when scrolling past the testimonial section
+            hideSpeechBubble();
+          }
+        });
+      },
+      {
+        // Options for the observer
+        threshold: 0.4, // Trigger when at least 10% of the target is visible
+        rootMargin: '0px 0px -20% 0px', // Adjust the bottom margin to trigger earlier
+      }
+    );
+
+    // Start observing the testimonial section
+    observer.observe(targetSection);
+  });
+</script>
+
+<style>
+  /* Transition for opacity is now handled by Tailwind classes */
+  #speech-bubble-icon {
+    will-change: opacity, transform;
+  }
+</style>

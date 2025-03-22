@@ -1,4 +1,4 @@
-import imgGold2 from '~/assets/images/gold.webp';
+import imgGold2 from '~/assets/images/gold_original.webp';
 import { useEffect, useRef, useState } from 'react';
 
 type Props = {

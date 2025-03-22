@@ -30,12 +30,17 @@ export default {
       },
       animation: {
         fade: 'fadeInUp 1s both',
+        'bounce-gentle': 'bounceGentle 2s ease-in-out infinite',
       },
 
       keyframes: {
         fadeInUp: {
           '0%': { opacity: 0, transform: 'translateY(2rem)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        bounceGentle: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
         },
       },
     },
