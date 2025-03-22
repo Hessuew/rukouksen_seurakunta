@@ -1,5 +1,5 @@
 ---
-import imgGold2 from '~/assets/images/gold.webp';
+import imgGold2 from '~/assets/images/gold_original.webp';
 import Button from '~/components/ui/Button.astro';
 import Headline from '~/components/ui/Headline.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
@@ -52,6 +52,7 @@ const defaultBackgroundStyles = {
     title?: string;
     testimonial?: string;
     extraContent?: string;
+    image?: string;
   } | null = null;
 
   function closeModal() {
@@ -99,11 +100,11 @@ const defaultBackgroundStyles = {
         const imageContainer = document.createElement('div');
         imageContainer.className = 'flex-shrink-0';
 
-        if (testimonialCard.dataset.image) {
+        if (selectedTestimonial?.image) {
           const image = document.createElement('img');
-          image.src = testimonialCard.dataset.image;
+          image.src = selectedTestimonial.image;
           image.alt = selectedTestimonial?.name || 'Testimonial author';
-          image.className = 'min-h-12 min-w-12 rounded-full border border-slate-200 dark:border-slate-600';
+          image.className = 'h-16 w-16 rounded-full border border-slate-200 dark:border-slate-600';
           image.style.objectFit = 'cover';
           image.style.objectPosition = 'center';
 
@@ -155,7 +156,7 @@ const defaultBackgroundStyles = {
 
       // Create combined content container
       const contentContainer = document.createElement('div');
-      contentContainer.className = 'bg-white/60 rounded-lg p-4 text-black';
+      contentContainer.className = 'bg-white/60 rounded-lg p-4 text-black max-h-[50vh] overflow-y-auto';
 
       // Combine testimonial and extra content
       let combinedContent = '';
@@ -225,6 +226,7 @@ const defaultBackgroundStyles = {
       title: testimonialCard.dataset.title,
       testimonial: testimonialCard.dataset.testimonial,
       extraContent: testimonialCard.dataset.extraContent,
+      image: testimonialCard.dataset.image,
     };
 
     await openModal(testimonialCard, modal, modalContent);
@@ -271,6 +273,12 @@ const defaultBackgroundStyles = {
     max-height: 90vh;
     overflow-y: auto;
   }
+
+  @media (max-width: 640px) {
+    #testimonial-modal-content {
+      max-height: 85vh;
+    }
+  }
 </style>
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
@@ -299,6 +307,9 @@ const defaultBackgroundStyles = {
                 image={item.image}
                 isPositive={item.isPositive}
                 extraContent={item.extraContent}
+                waveLg={item.waveLg}
+                waveMd={item.waveMd}
+                waveSm={item.waveSm}
               />
             ))
           }
@@ -314,6 +325,9 @@ const defaultBackgroundStyles = {
                 image={item.image}
                 isPositive={item.isPositive}
                 extraContent={item.extraContent}
+                waveLg={item.waveLg}
+                waveMd={item.waveMd}
+                waveSm={item.waveSm}
               />
             ))
           }
@@ -329,6 +343,9 @@ const defaultBackgroundStyles = {
                 image={item.image}
                 isPositive={item.isPositive}
                 extraContent={item.extraContent}
+                waveLg={item.waveLg}
+                waveMd={item.waveMd}
+                waveSm={item.waveSm}
               />
             ))
           }
@@ -349,6 +366,9 @@ const defaultBackgroundStyles = {
                 image={item.image}
                 isPositive={item.isPositive}
                 extraContent={item.extraContent}
+                waveLg={item.waveLg}
+                waveMd={item.waveMd}
+                waveSm={item.waveSm}
               />
             ))
           }
@@ -364,6 +384,9 @@ const defaultBackgroundStyles = {
                 image={item.image}
                 isPositive={item.isPositive}
                 extraContent={item.extraContent}
+                waveLg={item.waveLg}
+                waveMd={item.waveMd}
+                waveSm={item.waveSm}
               />
             ))
           }
@@ -392,7 +415,7 @@ const defaultBackgroundStyles = {
 >
   <div
     id="testimonial-modal-content"
-    class="relative overflow-hidden max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-lg"
+    class="relative bg-gradient-to-b from-gray-100 to-white dark:from-gray-800 dark:to-gray-900 max-w-4xl w-full rounded-lg"
     style={defaultBackgroundStyles}
   >
     <!-- Content will be dynamically inserted here -->

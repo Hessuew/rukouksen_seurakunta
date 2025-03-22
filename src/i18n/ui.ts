@@ -106,6 +106,7 @@ export const ui = {
     'testimonialNonMentioned1.name': 'Not mentioned',
     'testimonialNonMentioned1.job': 'Member of the board of deacons in a Finnish church',
     'testimonialMaria.t': 'I did not know that there was such a thing in Kuopio!',
+    'testimonialMaria.t2': `After the name round, people started praying for me. As I sat on the couch leaning forward, during the prayer, God's power threw me forcefully against the backrest of the couch without anyone touching me. <br /> <br /> On another occasion, we were about to end the gathering when people started praying for me again. Soon, I fell to the ground under God's power. <br />  <br /> Thank you, Jesus.`,
     'testimonialMaria.name': 'Maria',
     'testimonialMaria.job': 'Entrepreneur',
     'testimonialAkosua.t': `Jesus is a Savior. He truly saves from darkness when one calls unto Him. My life has transformed in a way that I cannot even explain. From a godless life to one that is ever aware of Him. The Prayer Church teaches the uncompromising truth of the Bible. The gatherings are always Spirit-filled and Spirit-led. The community is simply unmatched.`,
@@ -114,11 +115,55 @@ export const ui = {
     'testimonialNonMentioned2.t': `I'm afraid that you will burn out - 2019 <br />(After that, the fire only increased year by year. Thank you Jesus!)`,
     'testimonialNonMentioned2.job': 'Youth pastor in ***** Pentecostal Church',
     'testimonialMahi.t': `The first day I set foot in this church, after a long absence from the grace of God and under the devil's bondage, I was met with the mercy of Jesus Christ and Holy Spirit confirmed it by his powerful and visible encounter. In a single day, I received freedom, healing, and the fire of the Holy Spirit. Forever be glory, for His work on the Cross!`,
+    'testimonialMahi.t2': `
+Praise be to God! <br /><br />
+
+I'm not sure how to explain what happened without first telling you what was happening before. I am a Christian—well, my parents were Christians—but I never truly believed until I was about 21 or 22 years old. Then, I understood Jesus. The way I came to believe in Christ is a long story, but it was a miraculous moment for me. <br /><br />
+
+After that, I developed a deep and intimate relationship with God. That was when I was at university, studying. I had this relationship with God and the Holy Spirit, which I was introduced to through the baptism of the Holy Spirit in a special way. This intimate relationship with God lasted for three years. <br /><br />
+
+Then, through a series of events, I was heartbroken—both personally and with the church I was attending at the time. Satan used that situation to drive me away from the church, and I was on my own for six years or more. I was going through a period where I first wanted to forget about God and the relationship I had with Him, which I deeply missed. <br /><br />
+
+After a few years, I started formulating my own theories about life—how to survive, how to make it on my own, and things like that. Over the past year, everything suddenly became so difficult that I realized it was foolish to think I could make it on my own, that I could live without God. I saw the people around me appearing to live their lives successfully without Him, but that was a lie. <br /><br />
+
+Because I once had that relationship with God, I felt as if life was slowly draining out of me, drop by drop. I was suffocating. Over the past few months, the strong resistance I had within myself—the fight not to return to God—started manifesting physically. I became exhausted, started experiencing physical pain, and was in and out of the hospital. I even had to get an MRI to see what was wrong with me, but there was nothing physically wrong. <br /><br />
+
+Even my husband started thinking it might be psychological. But in truth, it wasn’t psychological—it was spiritual. Even painkillers stopped working for me, and I had been unable to sleep for many months. Strangely, my husband, who isn’t a very spiritual person, started suspecting that this could be a spiritual issue. He even joked that I was under some kind of attack. <br /><br />
+
+Then, he started encouraging me to go to church. Before, whenever I suggested going to church, we would just joke about it, knowing it wouldn’t happen. But this time, he strongly urged me to go every Sunday. <br /><br />
+
+As I mentioned last time, I wanted to go to a Bible study group to see what was going on, but I never had the courage or strength. Then, last week, I woke up in the morning and prayed. Well, actually, I just knelt down and thought about this prayer meeting. I asked God, "Why do I feel this fear? What is the source of it?" <br /><br />
+
+For a moment, I even wondered if God didn’t want me to go to this meeting. But then I thought—if that were true, and I still went, how would that be any different from any other day when I ignored what God was telling me? So, I decided to go and see what would happen. <br /><br />
+
+When I arrived, Maria was giving her testimony. Her words, in some way, confirmed to me that I was in the right place. Immediately, I felt the Spirit of God so strongly—I was shaking and trembling the entire time. Then, we prayed, and Yani shared the Word of God, which spoke directly to me. <br /><br />
+
+In the middle of the Bible study, he asked me to introduce myself. I said, "My name is Mahi, and I've been trying to come to this place for ten months." That’s when Andrew stopped everything and said, "We need to pray." <br /><br />
+
+A few seconds later, I felt the Spirit of God—angry and ready to attack whoever had been attacking me for so long. Everyone prayed. Andrew prayed about my health, which he didn’t even know about, about my family issues, and about a generational curse—which is another long story. This past week, God has been revealing more details about that curse. <br /><br />
+
+Also, AA joined us online. She had a vision of me being bound, as if I were caught in a net like a fish, and she said I had been like that for a long time. But as we prayed, she saw the net being dismantled. I was becoming freer and starting to move. That vision deeply touched me. Now, I realize—she said I was curled up like a baby in a womb. That position, that chain, I now believe was the source of my pain. It was a pain I couldn’t pinpoint. <br /><br />
+
+As we prayed, I was freed. The Spirit of God touched me powerfully. I cried. A few minutes later, I was overwhelmed with joy. Jesus had done it again! He had freed me again and saved me from Satan’s hold—again! And when I say "again," I don’t mean just a second time. This has been a long history of bondage, but there I was—free. <br /><br />
+
+At the end of the Bible study, we prayed over the words spoken that night. I prayed, "God, if I leave this meeting and go home, You need to restore the Holy Spirit to me. If I go home and I can’t pray in tongues, then I won’t have the power to pray, and this will all happen again. It needs to happen tonight." <br /><br />
+
+Then, at the end, Andrew came up to me and asked, "Have you ever prayed in tongues?" <br /><br />
+
+I replied, "I used to, but over time, it faded away." <br /><br />
+
+So, we prayed, and right then and there, I received the baptism of the Holy Spirit again. Everything was restored. I left that night as a joyful person, jumping in the streets—praise be to God! <br /><br />
+
+Since then, every day, God has been teaching me new things—things I had never learned before. He’s been inspiring me to reach out to my family and remind them of Christ. Very soon, I expect to hear testimonies from them too. <br /><br />
+
+Amen! Praise be to God!  
+    `,
     'testimonialMahi.name': 'Mahidere',
     'testimonialMahi.job': 'Doctor',
     'testimonialNonMentioned3.t': 'They will drive against a wall.',
     'testimonialNonMentioned3.job': 'A pastor in a Finnish church',
-    'testimonialIda.t': `I have grown tremendously in the spirit over the past six months after the Lord guided me to prioritize church meetings in my life and daily activities. <br /> I have even been told that God has nurtured my growth to the point where I am now spiritually more mature than many pastors. <br /> <br /> When ****** was praying in tongues, I started to understand what he was praying. I was very surprised, and after we had prayed for a long time, I said that I might have understood the prayer he was praying. When I told what I understood, ****** confirmed that he knew in the spirit that those were the subjects he was praying for and told me that what I experienced was a manifestation of the interpretation of tongues. Glory be to God!`,
+    'testimonialIda.t': `I have grown tremendously in the spirit over the past six months after the Lord guided me to prioritize church meetings in my life and daily activities. <br /> I have even been told that God has nurtured my growth to the point where I am now spiritually more mature than many pastors.`,
+    'testimonialIda.t2': `When ****** was praying in tongues, I started to understand what he was praying about. I was very surprised, and after we had prayed for a long time, I said that I might have understood the subjects he was praying for. When I told what I understood, ****** confirmed that he knew in the spirit that those were the subjects he was praying for and told me that what I experienced was a manifestation of the interpretation of tongues. Glory be to God!`,
     'testimonialIda.name': 'Ida',
     'testimonialIda.job': 'Nurse, counselor',
     'testimonialBenwillis.t': `My experiences in the prayer church are countless. Before I joined, I never took prayer seriously. Now I have developed a strong habit of trusting God in everything that I do. Through that, I have seen the hand Jesus in my life, especially in my career where I specifically prayed for a job and Jesus delivered. My life has since transformed from someone who lived life aimlessly to a focused, deeply spiritual person whose faith has been renewed and who knows that it's only Jesus that can save our lives.`,
@@ -134,6 +179,30 @@ export const ui = {
       'We are all convinced that the group is not led by the Holy Spirit. They are antichristian and led by spirits of witchcraft from Africa.',
     'testimonialNonMentioned4.job': 'Largest church congregation in the country',
     'testimonialCJ.t': `Since I joined the Flame the Freeze meetings, I have experienced a profound renewal of my spiritual sensitivity and appetite for the Lord. The liberal prayer sessions, in partnership with the Holy Spirit, have revived and awakened my scriptural songs' bank, building my most holy faith (Jude 1:20) The liberty we have in our gatherings has facilitated the manifestation of the Spirit, breaking down the barriers of religious tradition and deepening our relationships with the Holy Spirit and one another. Truly, our fellowship embodies Zion—the city of the living God, the heavenly Jerusalem, and the innumerable company of angels (Heb 12:22). It is a place of divine encounters and transformative experiences.`,
+    'testimonialCJ.t2': `
+And glory to God! I want to bless the name of the Lord for His faithfulness this year. <br /><br />
+
+For the few times I have been part of the fellowships here—both the prayer meeting, the Bible study, and the Sunday gathering—I think I have attended each of these meetings twice. I didn’t necessarily intend to say much, but the truth is, there is a kind of call to revival in my life. <br /><br />
+
+When I was coming to Finland, one of the prayers my family and I sincerely made was for the Lord to lead us to a body of Christ that would keep our faith aflame. When we arrived, we found a fellowship and joined. But instead of experiencing growth and the joy that comes from spiritual fulfillment, we found ourselves going downward. <br /><br />
+
+It’s not that we started committing one sin or another, but I could literally feel that life was leaving me. I began searching for a place where I could be spiritually refreshed. It became such a big concern that I even called home to share my worries with a few people. <br /><br />
+
+Then, I heard about the UEF Bible Club, and I also found a leaflet in my mailbox. It wasn’t easy for me to participate until very recently. My first participation was on the 18th of January. When I attended, I felt God’s presence. A lot of things started coming alive in me again—spiritual songs began returning to my memory, scriptures I had forgotten started coming back. These were scriptures that had seemed to erode away during the two years I had been in Finland. <br /><br />
+
+Before, I was merely existing—not really living according to my calling or purpose. I was just going through the motions like everyone else. But that was never the desire of my heart from the moment I made the decision to come here. <br /><br />
+
+I have now come to discover that the Spirit of God is truly in this place. For me, I would rather stay, settle, and be part of what God is doing. I want to immerse myself fully in the revival that God is bringing into my life. <br /><br />
+
+I deeply appreciate this gathering because, since coming to Finland, this is the first time I have been able to sit in a spiritual program for more than two hours and not feel tired. Instead, I feel joyful at the end of the meetings. <br /><br />
+
+Another thing that seemed like a mystery to me has now been demystified in this gathering. From what people had said, I never believed I could be in the midst of some original Finns—something truly filled with the Holy Ghost—and experience this kind of fellowship. <br /><br />
+
+So, it became a sign to me that God is in this place, and it is the desire of my heart to soak in everything that God has prepared for me here. It truly feels like revival, and I desire it to continue in my life. <br /><br />
+
+I know that testimonies will come from this—great testimonies—and in due time, I will share them. For now, I am simply enjoying the atmosphere of this fellowship, and God is bringing revival into my life. <br /><br />
+
+    `,
     'testimonialCJ.name': 'CJ',
     'testimonialCJ.job': 'Ph.D, Principal Lecturer and Adjunct Senior Lecturer',
     'testimonialAhunsi.t':
@@ -296,6 +365,8 @@ export const ui = {
     'testimonialNonMentioned1.name': 'Nimeltä mainitsematon',
     'testimonialNonMentioned1.job': 'Vanhemmiston jäsen suomalaisessa seurakunnassa',
     'testimonialMaria.t': 'En tiennyt, että Kuopiossa on tämmöistä!',
+    'testimonialMaria.t2':
+      'Nimikierroksen jälkeen puolestani alettiin rukoilla. Nojasin istuessani sohvalla eteenpäin ja rukouksen aikana Jumalan voima heitti minut sohvan selkänojaa vasten voimalla ilman, että kukaan koski minua. <br /> <br /> Toisella kerral olimme lopettamassa tilaisuutta, kun puolestani alettiin rukoilla. Kaaduin pian maahan Jumalan voiman alla. <br /> <br /> Kiitos Jeesukselle.',
     'testimonialMaria.name': 'Maria',
     'testimonialMaria.job': 'Yrittäjä',
     'testimonialAkosua.t': `Jeesus on Pelastaja. Hän pelastaa pimeydestä jokaisen, joka  huutaa Häntä avukseen. Elämäni on muuttunut niin paljon etten edes pysty ymmärtämään sitä itse kunnolla. Elin jumalattomasti, mutta nyt olen aina keskittynyt Jeesukseen. Rukouksen seurakunta opettaa mitä Raamattu sanoo laimentamatta tai pehmittelemättä sitä. Kokoontumiset ovat joka kerta täynä Pyhää Henkeä ja Hänen ohjaamiaan. Ryhmä on suoraan sanottuna suurenmoinen ja vertaansa vailla.`,
@@ -306,14 +377,58 @@ export const ui = {
     'testimonialNonMentioned2.job': 'Nuorisopastori ***** helluntaiseurakunnassa',
     'testimonialMahi.t':
       'Olin ollut pitkään kaukana Jumalasta ja elämäni oli Saatanan vaivaama. Tullessani ensimmäistä kertaa Rukouksen seurakuntaan Jeesuksen Kristuksen armo kohtasi minut käsin kosketettavasti Pyhä Hengen vahvistaessa tämän voimakkaalla ja näkyvällä Jumalan voiman ilmenemisellä. Vapauduin, parannuin fyysisesti ja sain takaisin menettämäni Pyhän Hengen tulen. Ikuinen ylistys Jeesukselle Hänen ristintyöstään!',
+    'testimonialMahi.t2': `
+Ylitys Jumalalle!  <br /><br />
+
+En ole varma miten selittäisin, mitä minulle tapahtui, ennen kuin olen selittänyt, mitä minulle tapahtui aiemmin. Olen kristitty—tai minun vanhempani olivat kristittyjä—mutta minä en uskonut oikeasti ennen kuin oli 21 tai 22 vuotta vanha. Sitten ymmärsin todella, kuka Jeesus on. Se miten aloin uskomaan Jeesukseen on pitkä tarina, mutta tuo hetki oli minulle ihmeellinen hetki. <br /><br />
+
+Tuon jälkeen minulle kehittyi syvä ja intiimi suhde Jumalaan. Olin tuolloin opiskelemassa yliopistossa. Minulle oli elävä suhde Jumalaan ja Pyhään Henkeen johon pääsin Pyhän Hengen kasteen kautta, joka oli myös ihmeellinen kokemus. Tämä intiimi suhde jatkui kolme vuotta. <br /><br />
+
+Tuon jälkeen useiden tapahtuneiden asioiden vaikutuksen kautta sydämeni oli murtunut—henkilökohtaisista asioista ja myös sen seurakunnan takia, jossa kävin tuolloin—ja oli sitten kuusi vuotta kaukana Jumalasta. Tuona aikana halusin unohtaa Jumalan ja myös suhteen, joka minulle oli ollut Hänen kanssaan, vaikka samalla ikävöin todella paljon tuota suhdetta. <br /><br />
+
+Muutaman vuoden jälkeen minulle kehittyi omia teorioita elämästä—miten selvitä, miten selvitä omillani ja niin edelleen. Viime vuoden aikana kaikki muuttui yhtäkkiä niin vaikeaksi, että ymmärsin ajatusten, että pärjäisin omillani ja ilman Jumalaa, olevan täysin hölmöjä. Ympärilläni olevat ihmiset näyttivät elävän menestyksekkäitä elämiä ilman Häntä, mutta se ei ollut totta.  <br /><br />
+
+Sen takia, että minulla oli ollut todellinen suhde Jumalaan aiemmin, minusta tuntui kuin elämä oli pikkuhiljaa valunut minusta ylös tippa tipalta. Minä tukehduin. Muutaman viimeisen kuukauden aikana tuo sisälläni oleva valtava vastustus, etten palaisi takaisin Jumalan luokse, alkoi ilmetä fyysisinä oireina. Olin täysin uupunut, aloin kärsiä kivusta ja vierailin sairaalassa uudelleen ja uudelleen. Minulle tehtiin myös magneettikuvaus sen selvittämiseksi, mikä oli vialla, mutta fyysisesti olin täysin kunnossa. <br /><br />
+
+Jopa mieheni alkoi ajatella, että ongelma oli psykologinen. Mutta todellisuudessa ongelma ei ollut psykologinen, vaan hengellinen. Edes särkylääkkeet eivät toimineet enää kipuuni ja en ollut nukkunut lähes ollenkaan moneen kuukauteen. Sitten tapahtui eräs kummallinen asia: mieheni, joka ei ole kovin hengellinen henkilö, alkoi epäillä, että ongelma oli hengellinen. Hän jopa vitsaili, että olisin jonkinlaisen hyökkäyksen alla. <br /><br />
+
+Sen jälkeen hän alkoi rohkaista minua menemään seurakuntaan. Aiemmin, kun olin tuonut esille itse, että saattaisin mennä kirkkoon, hän vain vitsaili siitä ja tiesi, etten kuitenkaan menisi. Mutta nyt hän rohkaisi todella vahvasti, että menisin joka sunnuntaina. <br /><br />
+
+Halusin mennä käymään (UEF )Raamattukerhossa nähdäkseni, mitä siellä tapahtui, mutta minulta puuttui rohkeus ja voima siihen. Viime viikolla sitten heräsin aamulla ja rukoilin. Tai oikeastaan minä vain polvistuin ja mietin tuota rukoustapaamista. Kysyin Jumalalta, "Miksi tunnen pelkoa? Mistä se tulee?" <br /><br />
+
+Mietin jopa hetken aikaa, ettei Jumala olisi halunnut minun tulevan tähän tapaamiseen. Mutta sitten ajattelin, että jos tuo ajatus olisikin totta ja silti menisin, niin että se ei eroaisi millään tavoin jokaisesta päivästä, jolloin en välittänyt Jumalan äänestä. Joten päätin että menen ja näen itse, mitä siellä tapahtuu. <br /><br />
+
+Kun saavuin paikalle Maria jakoi todistustaan. Hänen sanansa jotenkin vakuuttivat minut, että olin oikeassa paikassa. Tunsin heti voimakkaan Pyhän Hengen läsnäolon; vapisin ja tärisin koko tapaamisen ajan. Sitten rukoilimme ja Juhani jakoi Jumalan sanaa, joka puhutteli minua suoraan. <br /><br />
+
+Raamatun käsittelyn keskellä Juhani kysyi, että voisinko esitellä itseni. Sanoin, "Nimeni on Mahi ja olen yrittänyt tulla tänne 10 kuukautta." Silloin Andrew pysäytti kaiken ja sanoin, "Meidän pitää rukoilla."  <br /><br />
+
+Tunsin muutamassa sekunnissa Pyhän Hengen olevan vihainen sille, joka oli hyökännyt minua kohtaan näin pitkään hengellisesti, ja myös hyökäävän nyt tätä vastaan. Kaikki rukoilivat. Andrew rukoili terveyteni puolesta, josta hän ei tiennyt, perheongelmieni puolesta ja myös sukupolvet ylittävästä kirouksesta—joka on oma pitkä tarinansa, tällä viikolla Jumala on paljastanut minulle lisää yksityiskohtia tuosta kirouksesta. <br /><br />
+
+Myös Ida oli mukana Zoomin kautta. Hän näki näyn, jossa minä olin jumissa verkossa kuten kala ja hän sanoi, että olin ollut noin jo pitkään. Mutta kun rukoilimme hän näki kun verkko alkoi purkautua. Aloin vapautua ja liikkua. Näky kosketti minua syvästi. Ymmärrän nyt sen, että kun Ida kertoi minun olevan kerällä kuin kohdussa oleva vauva, että tuo asento tai kahle oli kipuni lähde. Kipu jota en osannut paikallistaa. <br /><br />
+
+Kun rukoilimme minä vapauduin. Pyhä Henki kosketti minua voimakkaasti. Minä itkin. Muutaman minuutin päästä täytyin ylitsevuotavasti ilolla. Jeesus oli tullut elämääni uudelleen! Hän vapautti minut ja pelasti minut Saatanan loukusta uudelleen! Ja kun sanon 'uudelleen' en tarkoita vaan toista kertaa. Kyseessä oli pitkä orjuus, mutta nyt tuolla hetkellä minä olin vapaa. <br /><br />
+
+Tapaamisen lopussa rukoilimme sen pohjalta, mitä Raamatusta oli avautunut meille. Rukoilin, "Jumala, jos lähden tästä tapaamisesta ja menen kotiin, sinun täytyy palauttaa Pyhä Henki minulle. Jos menen kotiin enkä voi rukoilla kielillä niin sitten minulla ei ole voimaa rukoilla ja kaikki tuo aiempi paha tapahtuu minulle uudelleen. Minä tarvitsen Pyhän Hengen täyteyden tänään." <br /><br />
+
+Sitten lopussa Andrew tuli luokseni ja kysyi, "Oletko ikinä rukoillut kielillä?" <br /><br />
+
+Vastasin, "Kyllä ennen, mutta ajan kuluessa se hiipui pois." <br /><br />
+
+Joten me rukoilimme jolloin siinä ja silloin koin Pyhän Hengen kasteen uudelleen. Jeesus oli palauttanut minulle kaikki. Lähdin tuona iltana tapaamisesta täynä iloa ja hyppeleskelin kaduilla—ylistys Jumalalle! <br /><br />
+
+Tuon jälkeen Jumala on opettanut minulle uusia asioita joka päivä—sellaisia asioita, joita en ole tiennyt ikinä aiemmin. Hän inspiroi minut ottamaan yhteyttä perheeseeni ja muistuttamaan heitä Kristuksesta. Odotan, että kuulen pian myös heiltä todistuksia. <br /><br />
+
+Aamen! Ylistys Jumalalle!
+    `,
     'testimonialMahi.name': 'Mahidere',
     'testimonialMahi.job': 'Lääkäri',
     'testimonialNonMentioned3.t': 'He tulevat ajamaan seinään.',
     'testimonialNonMentioned3.job': 'Pastori suomalaisessa seurakunnassa',
-    'testimonialIda.t': `Olen kasvanut hengellisesti todella paljon 6 kuukaudessa, kun aloin elämässä ja arjessa priorisoida Herran ohjaamana seurakunnan tapaamisia. <br /> Minulle on kerrottu, että Jumala on todella kasvattanut minua niin paljon, että olen hengellisesti vanhempi kuin monet pastorit. <br /> <br /> Kun ****** rukoili kielillä, aloin ymmärtämään, mitä hän rukoili. Olin erittäin yllättynyt, ja kun olimme rukoilleet pitkään, sanoin, että saatoin ymmärtää rukouksen. Kun kerroin hänelle, mitä olin ymmärtänyt, ****** vahvisti, että hän tiesi hengessä, että ne olivat aiheita, joista hän rukoili, ja kertoi minulle, että se oli kielten tulkinnan ilmeneminen. Kunnia Jumalalle!`,
+    'testimonialIda.t': `Olen kasvanut hengellisesti todella paljon 6 kuukaudessa, kun aloin elämässä ja arjessa priorisoida Herran ohjaamana seurakunnan tapaamisia. <br /> Minulle on kerrottu, että Jumala on todella kasvattanut minua niin paljon, että olen hengellisesti vanhempi kuin monet pastorit.`,
+    'testimonialIda.t2': ` Kun ****** rukoili kielillä, aloin ymmärtämään aiheet, mitä hän rukoili. Olin erittäin yllättynyt, ja kun olimme rukoilleet pitkään, sanoin, että saatoin ymmärtää rukouksen. Kun kerroin hänelle, mitä olin ymmärtänyt, ****** vahvisti, että hän tiesi hengessä, että ne olivat aiheita, joista hän rukoili, ja kertoi minulle, että se oli kielten tulkinnan ilmeneminen. Kunnia Jumalalle!`,
     'testimonialIda.name': 'Ida',
     'testimonialIda.job': 'Lähihoitaja, ohjaaja',
-    'testimonialBenwillis.t': `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaicessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
+    'testimonialBenwillis.t': `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaikessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
     'testimonialBenwillis.name': 'Benwillis',
     'testimonialBenwillis.job': 'Lääketieteen tutkija, opetusassitentti Itä-Suomen Yliopistolla',
     'testimonialIina.t':
@@ -322,9 +437,32 @@ export const ui = {
     'testimonialIina.job': 'Tarjoilija',
     'testimonialIina.imageAlt': 'Iina - kuva',
     'testimonialNonMentioned4.t':
-      'Me kaikki olemme vakuuttuneita, että Pyhä Hneki ei johda tätä ryhmää. He ovat antikristillisiä ja afrikkalaisten noituuden henkien vaikutuksen alla.',
+      'Me kaikki olemme vakuuttuneita, että Pyhä Henki ei johda tätä ryhmää. He ovat antikristillisiä ja afrikkalaisten noituuden henkien vaikutuksen alla.',
     'testimonialNonMentioned4.job': 'Maan suurin kirkkokunta',
     'testimonialCJ.t': `Liityttyäni Flame the Freeze:n tapaamisiin minulle on tapahtunut paljon. Hengellinen herkkyyteni on perusteellisesti uudistunut ja samoin myös intohimoni Herraa kohtaan. Rukous hetket ovat vapaita ja Pyhän Hengen ohjaamia ja tämä yhdistelmä on tuonut takaisin hengellisten laulujen "pankkini", joilla rakennan uskoani (Juu 1:20). Kokouksiemme vapaus on tehnyt Pyhän Hengen liikkumisen normaaliksi kokemukseksi ja suhteemme Häneen ja toisiimme on syventynyt. On ihmeellistä todeta että kokoontumisemme ikäänkuin ruumillistavat Siionin—elävän Jumalan kaupungin, jossa lukematon määrä enkeleitä kokoontuu (Hep 12:22). Tämä on yliluonnollisten kohtaamisten paikka, jossa elämät muuttuvat.`,
+    'testimonialCJ.t2': `
+Haluan siunata Herran nimeä, sillä Hän on ollut hyvin uskollinen minua kohtaan tänä vuonna. <br /><br />
+
+Olen ollut mukana muutaman kerran rukouskokouksessa, Raamiksessa ja sunnuntain tapaamisessa, uskoakseni kaikissa kokouksissa kaksi kertaa. En ajatellut sanovani paljon, mutta totta puhuakseni elämässäni on tapahtunut herätys. <br /><br />
+
+Kun tulimme perheeni kanssa Suomeen yksi vilpitön rukouksemme oli, että Herra johtaisi Kristuksen ruumiin osaan, joka pitäisi tulemme palavana. Saavuimme ja löysimme seurakunnan ja aloimme käymään siellä. Mutta sen sijaan, että olisimme kasvaneet hengessä ja kokeneet sitä iloa, joka syntyy Hengen täyteydestä, hengellinen elämämme alkoi taantua. <br /><br />
+
+Emme alkaneet tekemään joitain syntejä, mutta kirjaimellisesti tunsin, että elämää poistui minusta. Aloin etsimään paikkaa, jossa hengellinen elämäni voisi virvoittua. Asiasta tuli minulle  niin iso huoli, että soitin takaisin kotimaahani kertoakseni siitä muutamalle henkilölle. <br /><br />
+
+Sen jälkeen kuulin UEF Raamattukerhosta ja lisäksi löysin esitteen postilaatikostani. En kuintenkaan pystynyt osallistumaan kuin aivan vasta. Olin paikalla ensimmäistä kertaa 18:sta Tammikuuta. Tunsin Jumalan läsnäolon. Elämäni alkoi tulla uudelleen eloon; hengelliset laulut alkoivat palautua muistiini ja Raamatun paikat, jotka olin unohtanut, alkoivat myös palautua. Jotenkin nuo kirjoitukset olivat kuin kuihtuneet pois minusta noiden kahden vuoden aikana, jotka oli ollut Suomessa. <br /><br />
+
+Tuona aikana minä olin vain olemassa; en täyttänyt kutsumustani tai tarkoitustani. Elin vain arjen keskellä niin kuin kuka tahansa ihminen ilman mitään syvempää merkitystä. Tuo ei kuitenkaan ollut ikinä ollut se mitä tahdoin kokea Suomessa. <br /><br />
+
+Olen nyt nähnyt, että Jumalan Henki on todella tässä paikassa. Henkilökohtaisesti haluan pysyä, asettua ja olla osa sitä, mitä Jumala tekee. Haluan uppoutua täysin tähän herätykseen, jonka Jumala on tuonut elämääni. <br /><br />
+
+Arvostan tätä tapaamista todella paljon sillä tultuani Suomeen tämä on ensimmäinen kerta kun voin olla hengellisessä tapaamisessa yli kaksi tuntia enkä koe olevani yhtään väsynyt. Sen sijaan olen täynä iloa jokaisen kokouksen jälkeen. <br /><br />
+
+Myös toinen asia, joka oli minulle aiemmin mysteeri, on avautunut näissä kokoontumissa minulle. Sen pohjalta, mitä olen kuullut ihmisiltä, en uskonut että voisin koskaan olla keskellä suomalaisia, jotka ovat todella täynä Pyhää Henkeä ja kokea tämän kaltaista yhteyttä. <br /><br />
+
+Tästä tuli minulle merkki, että Jumala on tässä paikassa ja sydämeni halu on upottoautua kaikkeen siihen, mitä Jumala on valmistanut minun varalleni. Tämä todella tuntuu herätykseltä ja haluan sen jatkuvan elämässäni. <br /><br />
+
+Tiedän, että elämässäni syntyy tämän pohjalta uusia todistuksia, suuria todistuksia, ja tulen pian jakamaan ne. Mutta nyt minä yksinkertaisesti nautin tästä ilmapiiristä ja yhteydestä ja tästä Jumalan elämääni tuomasta herätyksestä. <br /><br /> 
+    `,
     'testimonialCJ.name': 'CJ',
     'testimonialCJ.job': 'Luennoitsija ja apulaislehtori',
     'testimonialAhunsi.t':
@@ -383,3 +521,352 @@ export const ui = {
     testimonies: 'Todistuksia',
   },
 } as const;
+
+// and Glory want to bless the name of the Lord for his faithfulness this year for the few times
+// I have been part of the fellowships here both the prayer meeting and the Bible
+// study and the Sunday Gathering I think I have been part of each of this meeting
+// twice not necessarily intending to say much but the truth is there is a kind of
+// a call to Revival in my life when I was coming to Finland one of the prayers we
+// sincerely made my family and I was from the Lord to get us into a body of Christ
+// that will keep our faith a flame but all right we came in and found a fellowship
+// and joined but instead of having growth and having a joy coming from the
+// satisfaction of what we longed in the spirit we were rather going down now
+// that we started going down in committing one evil or the other but I could
+// literally see that life was leaving me until I began to move around searching
+// for where I could get soer in the spirit that became a very big worry to me that
+// I called home to complain to a few people until I I heard about this uef
+// Bible club and I also saw a leaflet in my mailbox it hasn't been very easy for
+// me to participate until very recently my first participation should be on the
+// 18th of January and I came and I felt God a lot of things started coming alive
+// in me again spiritual songs where I will be in my room spiritual songs will begin
+// to come back to my memory scriptures will begin to come back to me these were
+// like scriptures that appeared to have eroded away these two years that I have
+// been in Finland so I was rather existing not necessarily leaving onto my calling
+// or onto a p P but I was just existing doing what every other person could do
+// and that was not the desire of my heart from the very first day the decision was
+// taken to come to this place so I have come to discover that the spirit of God
+// is in this place and for me I would rather prefer to stay to sell and be
+// part of what God is doing and soak into myself the entirety of the Revival that
+// God is bringing into my life I so much appreciate this Gathering that since I
+// came to Finland this is the first time I could sit in a spiritual program lasting
+// for more than two hours and yet not tired and rather G joyful at the end of
+// the meeting and another thing appeared like a mystery to me which has been demystified in this Gathering I never
+// believed from what people were saying that I could be in the midst of original
+// things that are filled in the Holy Ghost and could have this type of Fellowship
+// so it became like a sign to me that God is in this place and it is my hard
+// desire to soak everything that God has packaged for me in this meeting so it's
+// like a Revival which I desire and is ongoing in my life I know there are
+// testimonies that will come out of it very great testimonies and in due course
+// I will share them at the moment I'm enjoying the atmosphere of this fellowship and God is causing Revival to
+// take place in my life
+
+// amen let's read glory be to God let's
+// read Hebrews chapter 12 Roy can you read verse 22 and 23 but ye are come unto man
+// Z and unto the city of the Living God the heavenly Jerusalem and to an innumerable company of angels to the
+// general assembly and Church of the firstborn which are written in heaven and to God the judge of all and to the
+// spirits of just men made per ye are come is not talking to people who are dead
+// it's a letter written to the Church of Hebrew they were still alive so I wonder where you are coming from and I wonder
+// where you came to if for 2 years there's a place you have been going to and the people where you are are not written
+// here example that place has to be Zion that place has to be the city of the Living God has to be an Heavenly
+// Jerusalem when you say yeah have come how can a man come to Heavenly Jerusalem and he's on Earth because Jerusalem is
+// very mobile you read the book of Revelation even the literal real Jerusalem the Bible say it will proceed
+// out of God so Jerusalem is mobile if something will proceed out of God in the
+// future God always have a shadow before the substance by that implication
+// Jerusalem is proceeding to us because we have come may you get something tonight
+// we have come we have come every time you show up here you have come you get the point so don't be
+// surprised at the workings of the Holy Ghost when you come because Jerusalem has also arrived he said ye have come
+// unto mon Zion ye have come unto the city of the Living God ye have come unto the Heavenly Jerusalem ye have come to what
+// to an innumerable company of angels angels are ministering Spirit to war to
+// those who are HS of Salvation do you think angels are ministering to the dead do you think so the Bible says don't you
+// know that ye shall judge the Angels so when we go to the other side after death we will judge the Angels the person you
+// are judging cannot be ministering to you okay so the office of ministration of angels is only to believers who are
+// still on this part of the world part of the of the universe and he say we have come so it is a thing for angels to join
+// the fellowship a thing because we have come it says here to the general assembly to the Church of the first born
+// there are churches of second born there are churches of Third born there are churches of no B at all but there is one
+// the Church of the firstborn the church that go Jesus Christ gave birth to that is called The Church of the firstborn
+// that means the church looks like him you don't give birth to a child and you be asking the mother every day why is this boy not looking like me you are a native
+// thing no no genetic anory to anybody in Africa and the first child your wife
+// gave birth to is a black boy there's crisis is that not correct how dare we go into a church that does not resemble
+// Jesus when John saw him he said his eyes were like flames of fire when he comes he will baptize in the Holy Ghost and
+// fire it is impossible to enter into the Church of the Living God and not be revived it's impossible because it is
+// the Church of the firstborn two disciples on the way to ous they participated briefly in the Church of
+// the firstborn is that correct and when their eyes of understanding were light he said no wonder no wonder how our
+// hearts were burning while he spoke to us no wonder may I tell you the flag and
+// the badge of the Church of the first born is fired you feel it in your spirit and that's the reason why you stay 1
+// Hour 2 hours 3 hours why because in the presence how can men stay with Jesus for
+// 3 days and forgetful what was he telling them you think what we read in the scripture does not happen in the time a
+// day is coming Bible study I speak by the spirit Bible study we start at 600 I don't know when we are going to end
+// tonight one day it may end at 6:00 a.m. why because we have come what was Paul telling people that till midnight a man
+// forgot to lie down he fell from the window is that not correct and Paul went to wake him up come and continue listening to me how can you die the
+// Church of the firstborn I don't know where you have come to but I guarantee something if this place is the Church of the firstborn you will have the biblical
+// experience watch it we have come to the general assembly the Church of the firstborn which are written in heaven
+// that means the church is not in heaven because heaven now is not a distant location the church is here but have a
+// written identity where in heaven look at that so every Church of the firstborn
+// that bears the emblem of divine fire really has a written document in heaven
+// and it tells us to God the judge of all and to the spirits of just men made
+// perfect so when you come to the Church of the firstborn you are not coming bodily you are bringing your spirit man
+// because you are just a sinner is not part of the church he's coming for a glorious Church Without spot without
+// wrinkle holy without any blemish just men but when the spirit of just men come
+// into the Church of the Living God what happen they are change into His Image the Perfection begins into His Image
+// because in the Church of the firstborn is the theater of transformation The Church of the firstborn is the place
+// where God makes his men and makes his women the spirit of just men made
+// perfect and so you don't hear a message in the Church of the firstborn that we are all sinners it does not happen
+// because those who came to the Church of the firstborn number one they are just men so they cannot use the terminology
+// we are all sinners trying to secure mercy so that God can look on us and be
+// us as his handma or hand s whatever it is not so we have come we do not come apologetically we come because we are
+// Sons we come because we are daughters we come because we know that the one who give better the church he said I will
+// build my church and the Gate of Hell will not Prevail Others May build their
+// but I have my own when you come into his own church what is in Christ will fall
+// upon you I'm telling you as we have seen today is it not just one day May came to the Church of the Living God one day one
+// moment one encounter just once through evidence it is the church of his first
+// born to the innumerable company of angels we have come so tonight well
+// maybe what has happened before is an appetizer who knows but one thing I want to tell you is you are welcome because
+// you have come you have come you have come you have come and there are unseen Angels you cannot see who only once in a
+// while the Holy Ghost shows me but they are many we have come innumerable company they uncountable so I speak by
+// the spirit your footsteps I don't know what this is for particularly but watch it your footsteps will no longer be
+// living natural print of your shoes or your feet on the ground but it will be living Footprints of fire that is what
+// the Holy Ghost is saying I don't know who that belongs to but how that will happen it will mean that God will put
+// your feet in holes of fire watch that and your step your footprint in the SS of time will be
+// deposites of fire blazes of fire the spirit of God is moving
+// everywhere you go droppings of fire and War beti mind my words who beti
+// whosoever will try to put his leg in your footprint with an alterior motive a
+// person will be roasted alive watch that for you will have a sign you will have a
+// sign that you have come everybody here the Holy Ghost will give you a sign that
+// you have come you have come to mon Zion there is a small song I can put on the chat very small we can sing it very
+// small song about mon Zion sing it A Min it very small song we have come to Zion to Zion to Zion we have come to Zion a
+// place of encounter we have come to Zion to
+// Zion to Zion we have come to Zion a
+// place of encounter you see very simple we're going to sing it and as you are singing it minute the Bible study will
+// not proceed further from this place but the Holy Ghost had blown the final WIS and after this song we will
+// launch into prayer and Zion will happen to
+// you come to Zion to Zion to
+// Zion we have come come to Z a place of enounter sing along we are
+// come to Zion to Zion to
+// Zion we have come to Z a place of
+// encounter we have come to Zion to
+// Zion to Zion we have come to Z a place of
+// encounter we have come to Z to Z to
+// Z we have come to Zion a place of
+// encounter we have come to Zion z to Zion
+// we have come to Z a place of
+// encounter we have Z to Z to
+// Z we have come to Z a place
+// of we have come to Zion to
+// z z we have come to
+// Z place of we have come to Zion to Z to
+// Z we have come to Z a place
+// of we have come to Zion to Zion to
+// Z we have come to Zion the place of
+// we have come to z
+// z we have come to Zion a place
+// of we have come to Z to Z to
+// Z we have come to Z place
+// of we have come to Z to Z to
+// Z we have come to Z
+// of we have come to Z to
+// Z we have come to [Music]
+// Z you have come to Z to Zion Lord to
+// Z you are have come to Z
+// of I have come to Z to Z to Z Lord I
+// have come to Z
+// my I have come to Z Z Z Lord I have come to Zion my place of
+// I have come to
+// [Music] Z I have come to Z to Z
+// to Z I have come to Z a place
+// [Music]
+// ofter Z to Zion Lord I have come to Z my
+// place of encounter have you come to Zion to
+// z z have you come to Z the place of
+// encounter I have come to Z Z
+// Z I have come to Z on my
+// of I have come to Z to Z to
+// Z I have come to Z my place
+// I come to Z to z
+// z i have come to Z my place
+// of I have come to Z to Z to
+// Z I have come to Z my place of
+// encounter have you come to Z oh yes
+// Z I have come to Z my
+// place to Z to Zion I have come to Z
+// my place of counter I have come to
+// Z Z to Z I have come to Z my place ofter
+// you have come to and I saw in the spirit one of us was walking around and
+// there is a place where people were passed in a bus it looked like a coaster
+// bus and for whatsoever reason in that coaster bus there is artme very
+// wonderful art meal was being set to those who were in The coaster B and for
+// you to participate in the OT meal you have to join the boss and I can see
+// Humanity coming one by one but they have heard it is a boss of
+// encounter friend join The Chariot and an art meal shall be delivered unto you for
+// I see a man with a blue cooler and here because your cooler was so small your
+// cooler was so small and because it was so small that is the much art meal you
+// can collect I want to speak to you by the spirit enlarge your res expand your V don't bring something tiny
+// when you come to mon it is what you get will be corresponding to the size of
+// your vessel enlarge your heart enlarge your expectation enlarge yourself and
+// you will see that heaven has prepared much more than what you can carry Heaven
+// has much more than what you can download Heaven ask much more than what can satisfy you so enlarge your horizon
+// enlarge your bucket enlarge your vessel and let God F you let God F you let God
+// fill you to overflowing don't come with tiny things don't come with things that
+// you have manufactured by your in your own ideologies God Is So vast and
+// greater than your mind can comprehend just come as you are he will feel you he
+// will feel you he will feel you for you have come to mon Zion let's give God
+// praise let's give God praise let's give God praise worship him give him all the glory for so it has pleased him to walk
+// amongst us tonight give him all the praise give him all the glory give him all the praise for we have come to
+// for so we plan but the Holy Ghost has something better the Holy Ghost has something better the Holy Ghost has
+// something better and since the Holy Ghost is the governor of the me he has chosen to glorify himself glorify his
+// name Magnify Him worship Him but that is the will of
+// God for we have come to indeed we have come and our life will never remain the
+// same never remain the same because whosoever comes to Christ we always have
+// a deposit of himself he is the baptizer in the Holy Ghost and Fire and he has
+// given us a sevener for the first day of February and is discharging us into the
+// year for our Exodus and he releasing us with great in great Company the company
+// of innumerable Angels is releasing us he releasing us he releasing us with great
+// substance and he telling us there is more when we come we encounter him the
+// more there is death there is more there is more there is more in Jesus name we
+// have prayed in Jesus holy name we pray our heavenly father we worship you we thank you for who you are we thank you
+// for the Gathering of your people today we bless your holy name because there is none like you we say glory honor
+// adoration be given unto you now and forever we thank you because it has pleased you to dwell amongst your people
+// we thank you Father Lord because it has pleased you to come and bestore yourself to come and impart yourself in each and
+// every one of our hearts Heavenly Father Lord We Gather today oh God having no expectation god of what you're about of
+// what you were going to do in our midst but as always father Lord you have not let your people go without anything you
+// have put yourselves in US you have given us the hope of your glory you have blessed us immeasurably you have come to
+// do amongst us you have fellowed with us you have imparted your Holy Spirit in each and every one of our hearts but the
+// down trading you have given hope father those who are were hopeless you have given your glory we thank you heavenly
+// father because you're faithful there is none like you you have visited each and every one of us today in the way that
+// each and every person needed we magnify your Holy Name we say there is none like you we say Glory H adoration be given
+// unto you now and forever we bless you Lord because you have given us even a bigger bucket to increase our capacity
+// you have given us hope oh God to enlarge our Coast oh God you have given us the grace to carry much more than we thought
+// we could handle and for that we honor you we glorify you we adore you we worship you we say there is none like
+// you we bow your Fe oh God we bring back all that is yours to you father oh Lord we magnify your holy name oh God we
+// worship you we thank you for all that you're doing in us God we thank you for the deliverance we thank you for the
+// healing we thank you for the impartation of your spirit we thank you Lord Jesus for those your those things that you're
+// turning around oh God we thank you for the hope of glory we thank you for the faith you put in us oh God we thank you
+// Lord Jesus for the joy oh God in your presence we thank you Lord Jesus Christ for the capacity oh God the capacity the
+// ability to stay in your presence the ability to stay in your presence to dwell in your presence to fellowship
+// with you to have joy in your presence father Lord there is none like you God we magnify you for all that you're doing
+// in our midst we magnify you oh God for the strength of your spirit in us we magnify you God for the remolding of our
+// characters we magnify you oh lord for the growth that we're seeing we magnify you oh Lord for all of the fleshly
+// things that are dying in us oh God we magnify you oh God because our Spirits are being built oh God we magnify you oh
+// God because we're growing from glory to glory we magnify you God because you are building a church oh God we magnify you
+// God because this year we will lead our batt oh God we magnify you God because your m in general so God we magnify you
+// God because every spirit of fear in us has gone oh God we magnify you oh God because your glory oh God is in us oh
+// God we magnify you because your people are being transformed oh God we worship you Lord we thank you oh God we honor
+// you we say there is none like you we say there is none like you glory honor be unto you now and forever more God take
+// all the glory take all the honor take all the Adoration oh God thank you for your presence amongst your people today
+// thank you for your hand amongst your people Lord God today thank you for your spirit amongst your leaders today God
+// glory honor God and adoration oh God even as we have started this month oh God in this way with you God we will
+// continue we will not be tired we will not be tired we will stay for as long as your spirit stays with us we will dwell
+// in your midst oh God we will have joy in the Lord oh God your mercy oh God will be renewed for us every day oh God thank
+// you Lord Jesus thank you God in Jesus holy name afraid amen hallelujah father
+// we want to say thank you from the depths of our hearts from the core of our
+// Spirits thank you for all you have been doing in our midst all you are doing
+// right now and all you will yet do thank you because this is just a tie of the iceberg thank you Father because the
+// confirmation of all you're doing here is unfolding already thank you Lord for impressing things in the hearts of your
+// people thank you for the testimonies all all of the credit we return to you thank
+// you Father thank you Father thank you Father we are so so so grateful more than our mouths can tell more than our
+// hearts can express Lord we are grateful thank you for being in our midst thank
+// you for always being the one with the agenda for our meetings thank you for always leading the way thank you for for
+// men that are able to yield enough to you to to express and show
+// flexibility thank you Father for all you do thank you so much thank you so much
+// all we want to say this evening is thank you be exalted above all else be praised
+// forever we lift you up we honor you Lord we honor you Lord we we lay our crowns
+// before you we worship you we worship you thank you for the ability to continually
+// walk with you thank you for the ability to continually desire growth thank you for the ability to continually hear your
+// voice and follow through in that direction thank you for the ability to
+// let go of the things we see and follow you regardless of the circumstances
+// around thank you Father for every testimony we have heard here we see you all over we see your fingerprints
+// everywhere we see your Footprints everywhere we cannot deny it and we have come to say Thank You Lord thank you for
+// this evening's meeting that has gone on so beautifully thank you for showing
+// Yourself Strong in our midst again we give you thanks for the leadership of this body thank you even for the rest of
+// us who are following thank you because you use everybody alike that's the beauty of this Gathering we are just
+// grateful to you oh God thank you father in Jesus name we have given thanks Amen
+// in Jesus name father we want to thank you for today thank you Father for this
+// incredible privilege Lord to be in your presence thank you Father for how you've
+// spoken to each of us individually and collectively we ask Lord that even as we
+// leave the meeting today I father your presence will continue to go with us it
+// continue to be with us that all we've Heards today Lord may they find fertile
+// souls in our hearts and let's continue to grow and continue to command our
+// battalions this year father in Jesus name thank you Lord for those you've used um to speak to us this evening
+// father we ask that you continue to uphold their hands Lord the same way you did with Joshua um and the people of I
+// when you held his hand up we ask Lord that you just continue to strengthen them Father help us Lord to continue to
+// walk in your way help us father to to answer your call to command our
+// battalions in wherever we are Lord there are people on this call from different parts of the world in different places
+// Lord help us to be the light father that all that we're experiencing here all
+// that we're hearing here father we will not just they will not just be for us Lord but for our communities Lord
+// because we know that in doing so in shining strong Lord we will bring glory
+// to your name father and draw your people closer to you this is our Earnest prayer
+// for we pray in Jesus name amen heavly father king of glory we worship you
+// adore you give you thanks there is no likely all over the Earth thank you for such an opportunity for Brethren who are
+// likeminded GA unto your name oh je God we worship you for you are the God who was who is and who is to come you change
+// is not oh je God in all sectors and all areas of Our Lives oh Lord as we leave
+// daily Lord let your wisdom your manifold wisdom and your glory oh Lord be a part of our Liv so much oh Lord that it
+// cannot be refuted in the name of the Lord Jesus Lord I want to thank you for the vessel go Lord the conduits you used
+// at all times during our gathering oh Lord to minister the word and of your spirit unto us Lord I pray oh Lord that
+// we we are continually filled oh Lord with your spirit and also of your wisdom that we may apply ourselves oh Lord Onto
+// You unto every good work in the name that is a name above every other name we give you thanks oh lord for such an
+// opportunity for an outpour it oh Lord such as this let your name alone be highly exalted far above every other
+// name in Jesus mighty name we pray amen amen in Jesus name so Lord thank you for
+// such as this thank you Father we came before Zion and we all have different encounters to testify about thank you
+// Father for your move today thank you Father for always being with us thank you Father for the privilege of being
+// with Brethren may your name be exalted in the name of Jesus father I ask Lord
+// Jesus that you continue to be a shield around us our glory and the lifter of our heads father we ask Lord Jesus
+// continue to walk your work of transformation in our minds after your wisdom follow us let not just be your
+// heers of the world also be doers of the world father that even as we live here our light will so shine before men that
+// they will see us and give glory to you our father who is in heaven father help us to speak to men around us help us to
+// minister Christ to everyone around us help us Lord just to live a Victorious life in everything we do father in a in
+// a walking place at home even amongst some families that your presence continually abide with us we are
+// grateful father for everything you've done for us we are grateful for the month of February for bringing us thirs
+// far Lord Jesus we know your presence of Contin abide with us in the name of Jesus be th exalted father for the
+// management be th exalted for our families be exalted for those G for brother Andrew and everybody present
+// here your name be glorified in Jesus name we pray amen amen father we want to
+// thank you once again for your faithfulness your word said you have not called the seed of Jacob to seek you in
+// vain we have come in your presence and you have ued us with your spirit and your power we are so glad we are so
+// thankful having called us into this inheritance of the saint thank you for
+// making us recipients of your great grace wherein you have made us acceptable in the Beloved thank you for the things
+// that you have opened our eyes to behold and for the encounters we are having in
+// your presence with one another and with the spirit of just men made perfect we
+// thank you for being the F amongst many Brethren and having launched Us in the
+// midst of innumerable company of angels where our strength is built where we
+// stand firm declaring the authority of Christ over our territory over our
+// situations over everything that lock around us we are so grateful to you
+// because you have called us into this great promise you have given us a hope that does not make a shame and we are so
+// glad GL that you have done so tonight your word has gone into the RS of our
+// hearts we ask for the spirit to sustain us and let your word continue to find
+// expression in our lives that wherever we appear we shall become blessings to our environment and to everyone that comes
+// in contact with us the spirit of God in us shall encounter them and they shall
+// never remain the same in the name of Jesus thank you for your word that has has come and will never fall to the
+// ground so many declarations prophecies have been made upon this altar this
+// evening we trust you according to your word that you can never lie you are not a man and so will you not lie all these
+// prophecies We Stand Upon Our watch to receive their fulfillment in their
+// entirety in the name of Jesus thank you for having had an answer us tonight
+// Hallelujah to the King of Kings having come on to Zion the city of the Living
+// God we have come to our place of encounter onto Zion tonight let our
+// encounters never be denied us hfor let our manifestation be as a reason of
+// encountering you on this m thank you in Jesus name in the name of Jesus thank
+// you Lord thank you Lord thank you Lord as we have all pray already we are very grateful of you of this evening thank
+// you of the wonderful things that you do you are the only one you are the only one who is capable of these Miracles you
+// are the only one who is so good to us you are the only one who looks at the people what what is a person what is a
+// human being that you look into them the translation from Finish but thank you Lord thank you Lord you so loved us you
+// went to the cross for us you died you went to the grave but the stone was rolled away and you resurrected you got
+// the keys of the hell you gave them to your disciples thank you Lord that we have received those those keys and we
+// have heard many testimonies of how these keys were used For Your Glory thank you Lord that you will do greater things you
+// will do even greater things through your vessels and you will use each one of us
+// who are open with their heart who are thirsty of you who want to glorify you Jesus not ourselves but you thank you
+// Lord thank you Lord thank you that we have been been filled with your spirit this evening again thank you Lord that
+// we have heard and and read Bible a bit not so much Bible in this Bible study
+// but you knew the best you have edified us you have built Us in The Most Holy Faith all the glory belongs to you and
+// you know the best what is needed and when is needed all the glory belongs to you Jesus in Jesus name amen amen father
+// thank you thank you for this evening and every time we gather together guide everything as you want everything as you
+// want all the time every moment every second to every person you want to move the order you want to move the thing way
+// you want to do things we commit those all things to your hand because without you we cannot do anything every every
+// doing Without You is nothing it's meaning and is void and formless and void but when the spirit is hovering
+// upon the water and your word comes oh Lord there is light there is light thank you for the light this evening thank you
+// for your M thank you for the M of your God we are so thank you thankful for you
+// for these things that you have done continue continue father we are so delighted in your presence and what you
+// doing thank you what you spoken this evening thank you for this year of commanding Battalion thank you Lord we
+// will continue because where would we go you have the words of eternal life we have come to know not just partially not
+// just head knowledge but from our heart that you God your son is truly the
+// living Christ the resurrect you brought us to Shion and we will return here we will return here again and again and
+// again we have we haven't gotten enough for you from you all of you we want more and more father thank you we are waai
+// for the father we actually waiting for the time we will be here 6:00 a.m. in morning we are waiting for even the time
+// that we will be 3 days I don't know how it's possible but our father you know arrang everything we we trust we trust
+// him we don't understand everything but more than that we trust him all in the name of Jesus um

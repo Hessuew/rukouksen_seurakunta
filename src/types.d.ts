@@ -187,6 +187,9 @@ export interface Testimonial {
   job?: string;
   image?: string | unknown;
   isPositive?: boolean;
+  waveSm?: boolean;
+  waveMd?: boolean;
+  waveLg?: boolean;
 }
 
 export interface Input {

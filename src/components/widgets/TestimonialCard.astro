@@ -1,9 +1,9 @@
 ---
-import imgGold2 from '~/assets/images/gold.webp';
+import imgGold2 from '~/assets/images/gold_original.webp';
 import Image from '~/components/common/Image.astro';
 import { Icon } from 'astro-icon/components';
 
-const { title, testimonial, name, job, image, isPositive = true, extraContent } = Astro.props;
+const { title, testimonial, name, job, image, isPositive = true, extraContent, waveLg, waveMd, waveSm } = Astro.props;
 
 const defaultBackgroundStyles = {
   backgroundImage: `url(${imgGold2.src})`,
@@ -15,10 +15,48 @@ const defaultBackgroundStyles = {
 };
 
 const hasExtraContent = !!extraContent;
+const imageUrl = typeof image === 'string' ? image : image?.src ? image.src : '';
 ---
 
+<style>
+  .wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+</style>
+
 <div
-  class="flex h-auto intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-tenth sm:intersect-quarter"
+  class="flex h-auto justify-center intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-tenth sm:intersect-quarter"
 >
   <div
     style={defaultBackgroundStyles}
@@ -30,17 +68,69 @@ const hasExtraContent = !!extraContent;
     data-title={title}
     data-testimonial={testimonial}
     data-extra-content={extraContent}
+    data-image={imageUrl.src}
   >
     <div class="flex flex-col p-4 md:p-6">
       <div class="flex items-center">
-        <div class="absolute right-4 top-3 z-10 flex items-center gap-2">
+        <div class="absolute right-4 top-3 z-10 flex items-center gap-4">
           {
             hasExtraContent && (
-              <Icon
-                name="tabler:arrows-maximize"
-                class="w-6 h-6 text-black flex-shrink-0"
-                title="Click to see more content"
-              />
+              <div class="flex items-center">
+                {/* Large screens - wave animation */}
+                {waveLg && (
+                  <div class="hidden lg:inline-block">
+                    <div class="wave">
+                      <Icon
+                        name="tabler:hand-click"
+                        class="w-6 h-6 text-black flex-shrink-0"
+                        title="Click to see more content"
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {/* Medium screens - wave animation */}
+                {waveMd && (
+                  <div class="hidden md:inline-block lg:hidden">
+                    <div class="wave">
+                      <Icon
+                        name="tabler:hand-click"
+                        class="w-6 h-6 text-black flex-shrink-0"
+                        title="Click to see more content"
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {/* Small screens - wave animation */}
+                {waveSm && (
+                  <div class="inline-block sm:hidden">
+                    <div class="wave">
+                      <Icon
+                        name="tabler:hand-click"
+                        class="w-6 h-6 text-black flex-shrink-0"
+                        title="Click to see more content"
+                      />
+                    </div>
+                  </div>
+                )}
+
+                {/* Static icon for all other cases */}
+                <div
+                  class={`
+                  ${waveLg ? 'inline-block lg:hidden' : ''}
+                  ${waveMd ? 'inline-block md:hidden' : ''}
+                  ${waveSm ? 'hidden sm:inline-block' : ''}
+                  ${!waveLg && !waveMd && !waveSm ? 'inline-block' : ''}
+                `}
+                >
+                  <Icon
+                    name="tabler:hand-click"
+                    class="w-6 h-6 text-black flex-shrink-0"
+                    title="Click to see more content"
+                  />
+                </div>
+              </div>
             )
           }
           <Icon
