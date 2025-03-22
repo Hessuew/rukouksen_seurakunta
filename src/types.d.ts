@@ -182,6 +182,7 @@ export interface Price {
 export interface Testimonial {
   title?: string;
   testimonial?: string;
+  extraContent?: string;
   name?: string;
   job?: string;
   image?: string | unknown;

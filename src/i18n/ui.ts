@@ -56,13 +56,13 @@ export const ui = {
       "'For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, The mighty God, The everlasting Father, The Prince of Peace.' Isaiah 9:6.",
     preachingTheGospel: 'Preaching the gospel',
     preachingTheGospelDescription1: 'The Gospel must be proclaimed to every creature... Matthew 28.',
-    preachingTheGospelDescription2: `'And he said unto them, Go ye into all the world, and preach the gospel to every creature. He that believeth and is baptized shall be saved; but he that believeth not shall be damned.' Mark 16:15,16.`,
+    preachingTheGospelDescription2: `'And he said unto them, Go ye into all the world, and preach the gospel to every creature. He that believeth and is baptized shall be saved; but he that believeth not shall be damned.' Mark 16:15, 16.`,
     preachingTheGospelDescription3: `'And Jesus came and spake unto them, saying, All power is given unto me in heaven and in earth. Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you always, even unto the end of the world. Amen.' Matthew 28:18-20.`,
     signsAndWonders: 'Signs and wonders',
     signsAndWondersDescription1:
       'Miracles and signs, healings, deliverances, and the casting out of evil spirits follow and are evidence of the true Gospel... Mark 16.',
     signsAndWondersDescription2:
-      "'And these signs shall follow them that believe; In my name shall they cast out devils; they shall speak with new tongues; They shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they shall lay hands on the sick, and they shall recover. And they went forth, and preached every where, the Lord working with them, and confirming the word with signs following. Amen.' Mark 16:17,18,20.",
+      "'And these signs shall follow them that believe; In my name shall they cast out devils; they shall speak with new tongues; They shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they shall lay hands on the sick, and they shall recover. And they went forth, and preached every where, the Lord working with them, and confirming the word with signs following. Amen.' Mark 16:17, 18, 20.",
     prayer2: 'Prayer',
     prayer2Description1:
       'Prayer is an indispensable tool for revival and the manifestation of the power of the Holy Spirit... Luke 18:1, Acts 4:31, James 5:16.',
@@ -118,7 +118,7 @@ export const ui = {
     'testimonialMahi.job': 'Doctor',
     'testimonialNonMentioned3.t': 'They will drive against a wall.',
     'testimonialNonMentioned3.job': 'A pastor in a Finnish church',
-    'testimonialIda.t': `I have grown tremendously in the spirit over the past six months after the Lord guided me to prioritize church meetings in my life and daily activities. <br /> I have even been told that God has nurtured my growth to the point where I am now spiritually more mature than many pastors. <br /> <br /> When ****** was praying in tongues, I started to understand what he was praying. I was very surprised, and after we had prayed for a long time, I said that I might have understood the prayer. When I told him what I understood, ****** confirmed that he knew in the spirit that those were the subjects he was praying for and told me that was the manifestation of the interpretation of tongues. Glory be to God!`,
+    'testimonialIda.t': `I have grown tremendously in the spirit over the past six months after the Lord guided me to prioritize church meetings in my life and daily activities. <br /> I have even been told that God has nurtured my growth to the point where I am now spiritually more mature than many pastors. <br /> <br /> When ****** was praying in tongues, I started to understand what he was praying. I was very surprised, and after we had prayed for a long time, I said that I might have understood the prayer he was praying. When I told what I understood, ****** confirmed that he knew in the spirit that those were the subjects he was praying for and told me that what I experienced was a manifestation of the interpretation of tongues. Glory be to God!`,
     'testimonialIda.name': 'Ida',
     'testimonialIda.job': 'Nurse, counselor',
     'testimonialBenwillis.t': `My experiences in the prayer church are countless. Before I joined, I never took prayer seriously. Now I have developed a strong habit of trusting God in everything that I do. Through that, I have seen the hand Jesus in my life, especially in my career where I specifically prayed for a job and Jesus delivered. My life has since transformed from someone who lived life aimlessly to a focused, deeply spiritual person whose faith has been renewed and who knows that it's only Jesus that can save our lives.`,
@@ -242,13 +242,13 @@ export const ui = {
       "'Sillä lapsi on meille syntynyt, poika on meille annettu. Hänen harteillaan on herruus, ja hänen nimensä on Ihmeellinen neuvonantaja, Väkevä Jumala, Iankaikkinen isä, Rauhanruhtinas.' Jesaja 9:6.",
     preachingTheGospel: 'Evankeliumin julistaminen',
     preachingTheGospelDescription1: 'Evankeliumi tulee julistaa jokaiselle luodolle... Matteus 28.',
-    preachingTheGospelDescription2: `'Hän sanoi heille: "Menkää kaikkialle maailmaan ja julistakaa evankeliumia kaicille luoduille. Joka uskoo ja saa kasteen, pelastuu, mutta joka ei usko, se tuomitaan kadotukseen." Markus 16:15-16`,
+    preachingTheGospelDescription2: `'Hän sanoi heille: "Menkää kaikkialle maailmaan ja julistakaa evankeliumia kaicille luoduille. Joka uskoo ja saa kasteen, pelastuu, mutta joka ei usko, se tuomitaan kadotukseen." Markus 16:15, 16`,
     preachingTheGospelDescription3: `Jeesus tuli heidän luokseen ja sanoi heille: "Minulle on annettu kaikki valta taivaassa ja maan päällä. Menkää siis ja tehkää kaicista kansoista minun opetuslapsiani. Kastakaa heidät Isän ja Pojan ja Pyhän Hengen nimeen ja opettakaa heitä pitämään kaikki, mitä minä olen käskenyt teidän pitää. Ja katso, minä olen teidän kanssenne joka päivä maailmanajan loppuun saakka."' Matteus 28:18-20.`,
     signsAndWonders: 'Ihmeet ja merkit',
     signsAndWondersDescription1:
       'Ihmeet ja merkit, parantumiset, vapautumiset sekä pahojen henkien ulosajamiset seuraavat ja ovat todisteita todellisesta envakeliumista... Markus 16.',
     signsAndWondersDescription2:
-      "'Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ajavat ulos riivaajia, puhuvat uusilla kielillä, 18nostavat käsin käärmeitä. Jos he juovat jotakin kuolettavaa, se ei vahingoita heitä. He panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi ... Opetuslapset lähtivät ja saarnasivat kaikkialla. Ja Herra toimi yhdessä heidän kanssaan vahvistaen sanan sitä seuraavien merkkien kautta.' Markus 16:17,18,20.",
+      "'Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ajavat ulos riivaajia, puhuvat uusilla kielillä, 18nostavat käsin käärmeitä. Jos he juovat jotakin kuolettavaa, se ei vahingoita heitä. He panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi ... Opetuslapset lähtivät ja saarnasivat kaikkialla. Ja Herra toimi yhdessä heidän kanssaan vahvistaen sanan sitä seuraavien merkkien kautta.' Markus 16:17, 18, 20.",
     prayer2: 'Rukous',
     prayer2Description1:
       'Rukous on täysin korvaamaton väline herätyksen ja Pyhän Hengen voiman ilmentymiseen... Luukas 18:1, Apostolien teot 4:31; Jaakob 5:16.',
