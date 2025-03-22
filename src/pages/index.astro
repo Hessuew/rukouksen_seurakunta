@@ -23,6 +23,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import ImageTextSection from '~/components/widgets/ImageTextSection.astro';
 import Jesus from '~/components/widgets/Jesus.astro';
 import Spacer from '~/components/widgets/Spacer.astro';
+import SpeechBubbleIcon from '~/components/widgets/SpeechBubbleIcon.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
@@ -562,6 +563,16 @@ const t = useTranslations(lang);
       </div>
     </Fragment>
   </Testimonials>
+
+  <!-- Speech bubble icon that persists even if Testimonial component stops -->
+  <SpeechBubbleIcon
+    position="bottom-right"
+    size="lg"
+    classes={{
+      icon: 'text-yellow-500 hover:text-yellow-600',
+      container: 'mb-16 mr-4',
+    }}
+  />
 
   <Stats
     id="lukuja"
