@@ -35,7 +35,7 @@ const t = useTranslations(lang);
 
 <div
   id="speech-bubble-icon"
-  class={`fixed z-50 ${iconPosition} ${iconSize} ${classes.container || ''} opacity-0 pointer-events-none transition-opacity duration-500 group cursor-pointer`}
+  class={`fixed z-[9999] ${iconPosition} ${iconSize} ${classes.container || ''} opacity-0 pointer-events-none transition-opacity duration-500 group cursor-pointer`}
 >
   <div class="relative">
     <Icon
@@ -67,6 +67,9 @@ const t = useTranslations(lang);
     // Make visible with animation
     speechBubble.classList.remove('opacity-0', 'pointer-events-none');
     speechBubble.classList.add('opacity-100', 'animate-bounce-gentle');
+
+    // Add a debug class to help identify if it's being shown
+    speechBubble.classList.add('speech-bubble-visible');
   }
 
   // Function to hide the speech bubble
@@ -75,7 +78,7 @@ const t = useTranslations(lang);
     if (!speechBubble) return;
 
     // Hide with fade out animation
-    speechBubble.classList.remove('opacity-100', 'animate-bounce-gentle');
+    speechBubble.classList.remove('opacity-100', 'animate-bounce-gentle', 'speech-bubble-visible');
     speechBubble.classList.add('opacity-0', 'pointer-events-none');
   }
 
@@ -85,14 +88,38 @@ const t = useTranslations(lang);
     hideSpeechBubble();
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
+  // Check if we're on a mobile device
+  function isMobileDevice() {
+    return (
+      window.innerWidth <= 768 ||
+      navigator.userAgent.match(/Android/i) ||
+      navigator.userAgent.match(/iPhone|iPad|iPod/i)
+    );
+  }
+
+  // Function to setup the intersection observer for the speech bubble
+  function setupWaveObserver() {
     const speechBubble = document.getElementById('speech-bubble-icon');
     const targetSection = document.getElementById(targetSectionId);
 
-    if (!speechBubble || !targetSection) return;
+    if (!speechBubble || !targetSection) {
+      return;
+    }
 
-    // Add click event listener
+    // Add click event listener (remove existing first to prevent duplicates)
+    speechBubble.removeEventListener('click', handleSpeechBubbleClick);
     speechBubble.addEventListener('click', handleSpeechBubbleClick);
+
+    // For mobile devices, ensure the speech bubble is visible
+    if (isMobileDevice()) {
+      // Add a specific class for mobile
+      speechBubble.classList.add('mobile-speech-bubble');
+
+      // Make sure it's visible on mobile regardless of scroll position
+      setTimeout(() => {
+        showSpeechBubble();
+      }, 1000);
+    }
 
     // Create an Intersection Observer to detect when the testimonial section is visible
     const observer = new IntersectionObserver(
@@ -104,19 +131,32 @@ const t = useTranslations(lang);
             setTimeout(showSpeechBubble, 500);
           } else {
             // Hide the speech bubble when scrolling past the testimonial section
-            hideSpeechBubble();
+            // On mobile, we keep it visible unless clicked
+            if (!isMobileDevice()) {
+              hideSpeechBubble();
+            }
           }
         });
       },
       {
         // Options for the observer
-        threshold: 0.4, // Trigger when at least 10% of the target is visible
-        rootMargin: '0px 0px -20% 0px', // Adjust the bottom margin to trigger earlier
+        threshold: 0.2, // Trigger when at least 20% of the target is visible
+        rootMargin: '0px 0px -10% 0px', // Adjust the bottom margin to trigger earlier
       }
     );
 
     // Start observing the testimonial section
     observer.observe(targetSection);
+  }
+
+  // Initialize on DOMContentLoaded
+  document.addEventListener('DOMContentLoaded', () => {
+    setupWaveObserver();
+  });
+
+  // Run when Astro view transitions complete
+  document.addEventListener('astro:page-load', () => {
+    setupWaveObserver();
   });
 </script>
 
@@ -124,5 +164,23 @@ const t = useTranslations(lang);
   /* Transition for opacity is now handled by Tailwind classes */
   #speech-bubble-icon {
     will-change: opacity, transform;
+  }
+
+  /* Ensure visibility on mobile */
+  @media (max-width: 768px) {
+    #speech-bubble-icon.mobile-speech-bubble {
+      display: block !important;
+      visibility: visible !important;
+    }
+
+    /* Add a higher z-index for mobile to ensure it's above other elements */
+    #speech-bubble-icon {
+      z-index: 9999 !important;
+    }
+  }
+
+  /* Debug styles */
+  .speech-bubble-visible {
+    border: 2px solid transparent;
   }
 </style>

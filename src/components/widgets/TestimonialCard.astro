@@ -2,6 +2,7 @@
 import imgGold2 from '~/assets/images/gold_original.webp';
 import Image from '~/components/common/Image.astro';
 import { Icon } from 'astro-icon/components';
+import { twMerge } from 'tailwind-merge';
 
 const { title, testimonial, name, job, image, isPositive = true, extraContent, waveLg, waveMd, waveSm } = Astro.props;
 
@@ -117,12 +118,12 @@ const imageUrl = typeof image === 'string' ? image : image?.src ? image.src : ''
 
                 {/* Static icon for all other cases */}
                 <div
-                  class={`
-                  ${waveLg ? 'inline-block lg:hidden' : ''}
-                  ${waveMd ? 'inline-block md:hidden' : ''}
-                  ${waveSm ? 'hidden sm:inline-block' : ''}
-                  ${!waveLg && !waveMd && !waveSm ? 'inline-block' : ''}
-                `}
+                  class={twMerge(
+                    waveLg ? 'inline-block lg:hidden' : '',
+                    waveMd ? 'inline-block md:hidden lg:inline-block' : '',
+                    waveSm ? 'hidden sm:inline-block' : '',
+                    !waveLg && !waveMd && !waveSm ? 'inline-block' : ''
+                  )}
                 >
                   <Icon
                     name="tabler:hand-click"

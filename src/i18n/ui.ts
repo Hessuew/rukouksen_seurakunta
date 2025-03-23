@@ -200,8 +200,7 @@ Another thing that seemed like a mystery to me has now been demystified in this 
 
 So, it became a sign to me that God is in this place, and it is the desire of my heart to soak in everything that God has prepared for me here. It truly feels like revival, and I desire it to continue in my life. <br /><br />
 
-I know that testimonies will come from this—great testimonies—and in due time, I will share them. For now, I am simply enjoying the atmosphere of this fellowship, and God is bringing revival into my life. <br /><br />
-
+I know that testimonies will come from this—great testimonies—and in due time, I will share them. For now, I am simply enjoying the atmosphere of this fellowship, and God is bringing revival into my life.
     `,
     'testimonialCJ.name': 'CJ',
     'testimonialCJ.job': 'Ph.D, Principal Lecturer and Adjunct Senior Lecturer',
@@ -214,15 +213,50 @@ I know that testimonies will come from this—great testimonies—and in due tim
     'testimonialNonMentioned5.job': 'Leader of a Christian youth organization in the city',
     'testimonialGood1.name': '40-year-old woman',
     'testimonialGood1.t':
-      "I shared my testimony, after which I was asked if I had been filled with the Holy Spirit. Then they prayed for me, and I heard voices inside me saying, 'Leave here quickly.' I refused to leave, and a struggle began inside me, which also manifested physically—I was shaking and thrashing around. After about 10 minutes, those entities inside me said, 'We have to leave.' They left, and I raised my hands, crying, and thanked Jesus. Then they prayed for me again, and Jesus filled me with the Holy Spirit, and I began speaking in tongues.",
+      'I shared my life story of new age spirituality and occultism, meditation, yoga, depression, how I lost my health, mental health, money, family, and my will to live, and how I finally found Jesus the great saviour. After this, I was asked if I had been filled with the Holy Spirit since ... ',
+    'testimonialGood1.t2': `
+    I shared my life story of new-age spirituality, occultism, meditation, yoga, depression, how I lost my health, mental health, money, family, and my will to live, and how I finally found Jesus, the great Savior. After this, I was asked if I had been filled with the Holy Spirit since giving my life to Jesus. My response was no. <br /> <br />
+
+The Prayer Church prayed for me, and suddenly, I started hearing voices inside me saying, 'Get out of this place quickly.' At first, I was shocked to realize that several voices were speaking within me, but I refused to leave. <br /> <br />
+
+Then, the power of God fell on me mightily, and I began to shake vigorously under the anointing of the Holy Ghost. I lost consciousness during the process—my tongue fell out of my mouth, and I was knocked backward without anyone touching me. It was just like in the Bible when Jesus cast out devils, and those being delivered would react violently. <br /> <br />
+
+I could hear the evil spirits and demons inside me speaking to each other, saying, 'We have to leave now; we cannot stay any longer.' After about 10 minutes, they all left. My hands lifted unconsciously, and I wept uncontrollably, thanking Jesus for my complete deliverance. Freedom at last! <br /> <br />
+
+After this great encounter, the Prayer Church brethren prayed for me again, and Jesus baptized me with the Holy Spirit. I began speaking in tongues, and it was a glorious and unforgettable experience. Hallelujah!
+    `,
     'testimonialGood1.job': 'Doctor',
     'testimonialGood2.name': '+70-year-old woman',
     'testimonialGood2.t':
-      'Did you see what happened to me when we prayed? Well, as we prayed, I started yawning immensely, as if something was beginning to leave me. It continued and continued, and I believe that something left. I was involved in occultism when I was young, and it has affected my life for over 70 years. But now, something happened. Could it have been evil spirits?',
+      'Did you see what happened to me when we prayed? Well, as we prayed, I started yawning immensely. I tried to cover my mouth and hold my jaw, but the relentless yawning persisted. It felt as though something was being forced out of me, escaping through my mouth.',
+    'testimonialGood2.t2': `
+Did you see what happened to me when we prayed? Well, as we prayed, I started yawning immensely. I tried to cover my mouth and hold my jaw, but the relentless yawning persisted. It felt as though something was being forced out of me, escaping through my mouth. This continued for several minutes until, finally, the last of it left. <br /> <br />
+
+I opened my eyes and saw that everyone in the prayer church was praying with their eyes closed. I was astonished at what was happening to me, especially since nobody there knew my life story—this was my very first visit to the church. <br /> <br />
+
+Since childhood, I had been introduced to occultism, and it had impacted my life for over 70 years. Satan tormented me relentlessly, afflicting me with severe mental struggles, anxiety, and panic attacks. <br /> <br />
+
+But now, I know I have been set free from all the oppression that had crippled my life. It is truly shocking to realize that evil spirits had tormented me for 70 long years. Isn’t that incredible? <br /> <br />
+    `,
     'testimonialGood2.job': 'Retired',
     'testimonialGood3.name': '40-year-old woman',
     'testimonialGood3.t':
-      'I frequently had extremely disturbing nightmares about snakes. And I am afraid of snakes. At the event, people prayed for deliverance from nightmares. Those nightmares stopped, and great changes began to happen in my life. Thank you, Jesus!',
+      'I was involved in nature and light therapy. I added new-age spirituality and set up a company to assist people with mental problems, stress, and anxiety. <br /><br /> Unfortunately ...',
+    'testimonialGood3.t2': `
+I was involved in nature and light therapy. I added new-age spirituality and set up a company to assist people with mental problems, stress, and anxiety.  <br /><br />
+
+Unfortunately, I started having extremely disturbing nightmares. I was attacked by Satan and tormented by snakes. No matter how much I tried to follow all the rules of the Dark Age and spirituality, the situation worsened. This affected my life and family.  <br /><br />
+
+I sold my soul to Satan, and a dragon entered into me and wanted to kill me on my living room sofa. In utter desperation, I screamed, "Jesus!" and the dragon loosed its grip on me.  <br /><br />
+
+In desperation, I found the Prayer Church, where I was prayed for, and immediately, I was delivered from all the oppressions of demons. I was thereafter filled with the Holy Spirit, with the evidence of speaking in tongues.  <br /><br />
+
+Great changes occurred in my life within one week—everything changed! I shut down the company I had set up for Satan, and I began to preach the gospel and set people free from demons when I prayed for them.  <br /><br />
+
+There were immediate signs as demons left people. It is amazing that I have been delivered to deliver others.  <br /><br />
+
+Thank you, Jesus!
+      `,
     'testimonialGood3.job': 'Nurse',
     'luke6:26':
       'Woe unto you, when all men shall speak well of you! for so did their fathers to the false prophets. Luke 6:26.',
@@ -262,6 +296,7 @@ I know that testimonies will come from this—great testimonies—and in due tim
     press: 'Press the',
     icon: ' icon',
     toReadTheFullTestimony: 'to read the full testimony',
+    clickOnTestimonialsToReadMore: 'Click to read full testimonies',
   },
   fi: {
     prayerChurchImageAlt: 'Rukouksen seurakunnan logo',
@@ -477,16 +512,55 @@ Tiedän, että elämässäni syntyy tämän pohjalta uusia todistuksia, suuria t
       'Minusta on ajanhukkaa rukoilla jos en ole varma, että Jumala vastaa rukouksiimme. Pahimmassa tapauksessa saatamme harhautua hengellisesti ja avata oven Saatanalle. Tuollainen rukoustapaaminen ei olisi Jumalan tahdon mukaista.',
     'testimonialNonMentioned5.job': 'Johtaja paikallisessa kristillisessä organisaatiossa',
     'testimonialGood1.name': 'N. 40-vuotias nainen',
-    'testimonialGood1.t':
-      "Kerroin todistukseni jonka jälkeen minulta kysyttiin olinko täyttynyt Pyhällä Hengellä. Sitten puolestani rukoiltiin ja kuulin äänten sanovan sisälläni, 'Lähde äkkiä pois täältä'. En suostunut lähtemään ja sisälläni alkoi kamppailu joka myös ilmeni fyysisesti, minä heiluin ja ruihdoin ympäriinsä. Noin 10 minuutin päästä nuo persoonat sisälläni sanoivat, 'Meidän täytyy lähteä'. Ne lähtivät ja minä nostin käteni itkien ja kiitin Jeesusta. Sitten puolestani rukoiltiin uudelleen ja Jeesus täytti minut Pyhällä Hengellä ja aloin puhumaan kielillä.",
+    'testimonialGood1.t': `
+    Jaoin tarinani uushenkisyydestä, okkultismista, meditaatiosta, joogasta, masennuksesta, kuinka menetin terveyteni, mielenterveyteni, rahani, perheeni ja elämänhaluni ja kuinka lopulta löysin Jeesuksen. Tämän jälkeen minulta kysyttiin olinko täyttynyt Pyhällä Hengellä sen jälkeen kun annoin elämäni Jeesukselle. Vastaukseni oli ei. <br /> <br />
+
+Rukouksen seurakunta rukoili puolestani ja yhtäkkiä aloin kuulla ääniä sisälläni ja ne sanoivat, 'Lähde äkkiä pois tästä paikasta.' Ensimmäisenä olin yllättynyt, kun ymmärsin, että usea ääni puhui sisälläni. Mutta päätin olla totettelematta niitä ja en siis lähtenyt pois ... <br /> <br />
+    `,
+    'testimonialGood1.t2': `
+    Jaoin tarinani uushenkisyydestä, okkultismista, meditaatiosta, joogasta, masennuksesta, kuinka menetin terveyteni, mielenterveyteni, rahani, perheeni ja elämänhaluni ja kuinka lopulta löysin Jeesuksen. Tämän jälkeen minulta kysyttiin olinko täyttynyt Pyhällä Hengellä sen jälkeen kun annoin elämäni Jeesukselle. Vastaukseni oli ei. <br /> <br />
+
+Rukouksen seurakunta rukoili puolestani ja yhtäkkiä aloin kuulla ääniä sisälläni ja ne sanoivat, 'Lähde äkkiä pois tästä paikasta.' Ensimmäisenä olin yllättynyt, kun ymmärsin, että usea ääni puhui sisälläni. Mutta päätin olla totettelematta niitä ja en siis lähtenyt pois. <br /> <br />
+
+Sen jälkeen Jumalan voima tuli voimakkaasti päälleni ja aloin heilua ja täristä todella paljon Pyhän Hengen voitelun alla. En tiennyt mitä kaikkea minulle tapahtuu—kieleni 'putosi' ulos suustani ja minut heitettiin taaksepäin ilman, että kukaan koski minua. Tilanne oli kuin Raamatussa, kun Jeesus ajoi ulos pahoja henkiä ja kun nuo henkilöt, jotka vapautuivat, reagoivat joskus hyvin voimakkaasti. <br /> <br />
+
+Kuulin pahojen henkien ja demonien puhuvan sisälläni toisilleen ja sanovan, 'Meidän täytyy lähteä nyt; emme voi pysyä täällä pidempään.' Noin 10 minuutin päästä ne kaikki lähtivät. Nostin tiedostamatta käteni taivasta kohti, itkin paljon ja kiitin Jeesusta, koska Hän oli vapauttanut minut täysin. Vihdoinkin vapaus! <br /> <br />
+
+Tämän mahtavan vapautumisen jälkeen Rukouksen seurakunnan jäsenet rukoilivat uudelleen puolestani ja Jeesus upotti minut Pyhään Henkeen. Aloin puhua vieraalla kielellä ja se oli loistava ja unohtumaton kokemus. Halleluja! 
+    `,
     'testimonialGood1.job': 'Lääkäri',
     'testimonialGood2.name': '+70-vuotias nainen',
     'testimonialGood2.t':
-      'Näittekö mitä minulle tapahtui kun rukoilimme? No, kun rukoilimme minua alkoi haukotuttaa valtavasti ja kuin jotain olisi alkanut lähteä ulos minusta. Se jatkui ja jatkui ja uskon, että jotain lähti. Olin nuorena mukana okkultismissa ja se on vaikuttanut elämääni yli 70 vuotta. Mutta nyt jotain tapahtui. Olisivatko ne olleet pahoja henkiä?',
+      'Näittekö mitä minulle tapahtui kun rukoilimme? No kun rukoilimme, aloin haukotella hallitsemattomasti. Yritin peittää suuni ja pitää leukaani kiinni, mutta ne hallitsemattomat haukotukset vain jatkuivat. Ihan kuin jotain olisi alkanut lähteä minusta suuni kautta ja tämä jatkui monta minuuttia, kunnes viimeinenkin tuli ulos ...',
+    'testimonialGood2.t2': `
+Näittekö mitä minulle tapahtui kun rukoilimme? No kun rukoilimme, aloin haukotella hallitsemattomasti. Yritin peittää suuni ja pitää leukaani kiinni, mutta ne hallitsemattomat haukotukset vain jatkuivat. Ihan kuin jotain olisi alkanut lähteä minusta suuni kautta ja tämä jatkui monta minuuttia, kunnes viimeinenkin tuli ulos.<br /> <br />
+
+Avasin silmäni ja näin, että kaikki Rukouksen seurakunnassa rukoilivat silmät kiinni. Olin yllättynyt siitä, mitä minulle tapahtui, koska kukaan ei tiennyt elämäntarinaani ja tämä oli ensimmäinen kerta, kun olin tässä seurakunnassa.<br /> <br />
+
+Minä osallistuin lapsuudessani okkultismiin ja se on vaikuttanut elämääni yli 70 vuotta. Saatana on kiduttanut minua koko elämäni vakavilla mielenterveysongelmilla, ahdistuksella, paniikilla ja muilla asioilla.<br /> <br />
+
+Mutta nyt Jeesus vapautti minut kaikista noista asioista. Oli shokeeraavaa tietää, että pahat henget olivat vaivanneet minua 70 vuotta.
+    `,
     'testimonialGood2.job': 'Eläkeläinen',
     'testimonialGood3.name': 'N. 40-vuotias nainen',
-    'testimonialGood3.t':
-      'Minulla oli todella pahoja painajaisia käärmeistä ja todella usein. Ja minä pelkään käärmeitä. Tapahtumassa rukoiltiin painajaisista vapautumisesta. Nuo painajaiset loppuivat ja elämässäni alkoi tapahtua suuria muutoksia. Kiitos Jeesukselle!',
+    'testimonialGood3.t': `
+    Harjoitin valo- ja energiahoitoja. Tähän tuli lisäksi mukaan uushenkisyys ja sitten perustin yrityksen, jotta voisin auttaa ihmisiä, joilla oli mielenterveysongelmia, stressiä ja ahdistusta.<br /> <br />
+
+Mutta sitten minulle alkoi tulla todella pahoja painajaisia. Saatana hyökkäsi kimppuuni ja näin unissani käärmeitä, ja vaikka kuinka yritin seurata saamiani oppeja, tilanne vain paheni. Tämä vaikutti minuun sekä koko perheeseeni. Myin sielyni Saatanelle ja lohikäärme meni sisääni ja yritti tappaa minut olohuoneeni sohvalla ...<br /> <br />
+    `,
+    'testimonialGood3.t2': `
+    Harjoitin valo- ja energiahoitoja. Tähän tuli lisäksi mukaan uushenkisyys ja sitten perustin yrityksen, jotta voisin auttaa ihmisiä, joilla oli mielenterveysongelmia, stressiä ja ahdistusta.<br /> <br />
+
+Mutta sitten minulle alkoi tulla todella pahoja painajaisia. Saatana hyökkäsi kimppuuni ja näin unissani käärmeitä, ja vaikka kuinka yritin seurata saamiani oppeja, tilanne vain paheni. Tämä vaikutti minuun sekä koko perheeseeni. Myin sielyni Saatanelle ja lohikäärme meni sisääni ja yritti tappaa minut olohuoneeni sohvalla.<br /> <br />
+
+Huusin täydessä hädässä, "Jeesus," ja tuo lohikäärme vapautti minut otteestaan. Tässä tilanteessa ja täydessä epätoivossa löysin Rukouksen seurakunnan, jossa puolestani rukoiltiin ja minä vapauduin välittömästi kaikesta demonien kidutuksesta.<br /> <br />
+
+Sen jälkeen täytyin siellä Pyhällä Hengellä kielillä puhumisen merkein. Elämässäni alkoi tapahtua suuria muutoksia jo viikon aikana, ja koko elämäni muuttui.<br /> <br />
+
+Suljin yritykseni, koska nyt ymmärsin, että olin perustanut sen Saatanalle, ja aloin julistamaan evankeliumia ja vapauttaa ihmisiä demoneista, kun rukoilin heidän puolestaan. Oli täysin selvää, kun demonit lähtivät ihmisistä, ja se näkyi erilaisten asioiden kautta.<br /> <br />
+
+On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita. Kiitos Jeesus!
+    `,
     'testimonialGood3.job': 'Hoitaja',
     'luke6:26':
       'Voi teitä, kun kaikki ihmiset puhuvat teistä hyvää! Samoinhan tekivät heidän isänsä väärille profeetoille.” Luukas 6:26',
@@ -504,11 +578,11 @@ Tiedän, että elämässäni syntyy tämän pohjalta uusia todistuksia, suuria t
     whatYouWillExperience: 'Mitä sinä tulet kokemaan?',
     '1cor2:4-5': `'Puheeni ja julistukseni ei ollut inhimillisen viisauden suostuttelevia sanoja vaan Hengen ja voiman osoittamista, jotta teidän uskonne ei perustuisi ihmisviisauteen vaan Jumalan voimaan.' 1. kirje korinttilaisille 2:4-5`,
     'forYou.items1.title': 'Vapautumaan kaikista synneistä, jotta sinä alat vapauttamaan muita',
-    'forYou.items1.description': `Jeesus tuli vapauttamaan sinut täysin vapaaksi. Ja kun olet vapaa, Hän lähettää sinut vapauttamaan muita. Tule siis ja koe Jeesus ja sitten Hän lähettää sinut auttamaan muita. <br /><br /> 'Hän synnyttää pojan, ja sinun on annettava hänelle nimeksi Jeesus, sillä hän pelastaa kansansa sen synneistä.' Mat 1:21.`,
+    'forYou.items1.description': `Jeesus tuli vapauttamaan sinut täysin vapaaksi. Ja kun olet vapaa, Hän lähettää sinut vapauttamaan muita. Tule siis ja koe Jeesus ja sitten Hän lähettää sinut auttamaan muita. <><br /> 'Hän synnyttää pojan, ja sinun on annettava hänelle nimeksi Jeesus, sillä hän pelastaa kansansa sen synneistä.' Mat 1:21.`,
     'forYou.items2.title': 'Alat julistamaan evankeliumia ilolla, voimalla',
     'forYou.items2.description': `Jos et ole täyttynyt Pyhällä Hengellä niin todennäköisesti täytyt ensimmäisessä tilaisuudessa. Ja sen jälkeen tulet olemaan Jeesuksen todistaja voimalla! <br /> <br />'Mutta te saatte voiman, kun Pyhä Henki tulee teidän päällenne, ja te tulette olemaan minun todistajani ...”' Apt 1:8.`,
     'forYou.items3.title': 'Elämäsi täyttyy ilolla ja Pyhä Henki itse opettaa sinulle hengen lauluja 🎵',
-    'forYou.items3.description': `Jumalan valtakunta ei ole syömistä ja juomista (öhöm.. kakkua ja kahvia seurakunnan tilaisuuden jälkeen), vaan vanhurskautta, rauhaa ja iloa Pyhässä Hengessä. <br /> <br />'Älkää juopuko viinistä, sillä siitä tulee irstas meno, vaan täyttykää Hengellä, puhuen toisillenne psalmein, kiitosvirsin ja hengellisin lauluin. Laulakaa ja soittakaa sydämestänne Herralle.' Ef 5:18, 19.`,
+    'forYou.items3.description': `Jumalan valtakunta ei ole syömistä ja juomista (ähöm.. kakkua ja kahvia seurakunnan tilaisuuden jälkeen), vaan vanhurskautta, rauhaa ja iloa Pyhässä Hengessä. <br /> <br />'Älkää juopuko viinistä, sillä siitä tulee irstas meno, vaan täyttykää Hengellä, puhuen toisillenne psalmein, kiitosvirsin ja hengellisin lauluin. Laulakaa ja soittakaa sydämestänne Herralle.' Ef 5:18, 19.`,
     'forYou.items4.title': 'Hän näyttää, ohjaa ja valmistaa sinut kutsumukseesi',
     'forYou.items4.description': `Pyhä Henki johdattaa sinut hengen valmistautumiseen, jonka jälkeen olet kuin Ester, jonka kuningas valitsee arvokkaaseen työhön. <br /><br /> 'Mutta, niin kuin on kirjoitettu: ”Mitä silmä ei ole nähnyt eikä korva kuullut, mikä ei ole ihmisen sydämeen noussut, minkä Jumala on valmistanut niille, jotka häntä rakastavat”', 1 Kor 2:9.`,
     'forYou.items5.title': 'Rukouselämäsi syttyy roihuamaan niin kuin suuri tuli',
@@ -524,6 +598,7 @@ Tiedän, että elämässäni syntyy tämän pohjalta uusia todistuksia, suuria t
     testimonies: 'Todistuksia',
     press: 'Paina',
     icon: ' -ikonia',
-    toReadTheFullTestimony: 'lukiaksesi koko todistuksen',
+    toReadTheFullTestimony: 'lukeaksesi koko todistuksen',
+    clickOnTestimonialsToReadMore: 'Klikkaa lukeaksesi koko todistuksen',
   },
 } as const;
