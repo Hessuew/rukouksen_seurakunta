@@ -160,12 +160,9 @@ const defaultBackgroundStyles = {
 
       // Combine testimonial and extra content
       let combinedContent = '';
-      if (selectedTestimonial?.testimonial) {
-        combinedContent += selectedTestimonial.testimonial;
-      }
 
       if (selectedTestimonial?.extraContent) {
-        combinedContent += '<br /> ... <br /> ' + selectedTestimonial.extraContent;
+        combinedContent += selectedTestimonial.extraContent;
       }
 
       if (combinedContent) {
@@ -232,13 +229,26 @@ const defaultBackgroundStyles = {
     await openModal(testimonialCard, modal, modalContent);
   };
 
-  // Add event listeners when the DOM is loaded
-  document.addEventListener('DOMContentLoaded', () => {
+  // Function to set up testimonial card click handlers
+  function setupTestimonialCards() {
     // Add event listeners to testimonial cards with extra content
     const testimonialCards = document.querySelectorAll('[data-has-extra-content="true"]');
     testimonialCards.forEach((card) => {
+      // Remove any existing event listeners to prevent duplicates
+      card.removeEventListener('click', handleTestimonialClick);
+      // Add fresh event listener
       card.addEventListener('click', handleTestimonialClick);
     });
+  }
+
+  // Add event listeners when the DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    setupTestimonialCards();
+  });
+
+  // Run when Astro view transitions complete
+  document.addEventListener('astro:page-load', () => {
+    setupTestimonialCards();
   });
 </script>
 

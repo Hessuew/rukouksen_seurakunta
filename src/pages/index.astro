@@ -172,7 +172,7 @@ const t = useTranslations(lang);
               1. {t('notIn')}<div class="border-b-2 mt-0.5 border-white">{t('ssä')}</div>
             </div>
             <div class={twMerge('flex flex-row items-center justify-center', lang === 'en' && 'gap-2')}>
-              2. {t('butFrom')}<span class="border-b-2 border-white">{t('stä')}</span>
+              2. {t('butFrom')}<span class="border-b-2 border-white mt-[3px]">{t('stä')}</span>
             </div>
           </div>
         </GradientText>
@@ -387,6 +387,7 @@ const t = useTranslations(lang);
         testimonial: t('testimonialGood2.t'),
         name: t('testimonialGood2.name'),
         job: t('testimonialGood2.job'),
+        extraContent: t('testimonialGood2.t2'),
         image: {
           src: '',
           alt: '',
@@ -482,6 +483,7 @@ const t = useTranslations(lang);
         testimonial: t('testimonialGood1.t'),
         name: t('testimonialGood1.name'),
         job: t('testimonialGood1.job'),
+        extraContent: t('testimonialGood1.t2'),
         image: {
           src: '',
           alt: '',
@@ -522,6 +524,7 @@ const t = useTranslations(lang);
         testimonial: t('testimonialGood3.t'),
         name: t('testimonialGood3.name'),
         job: t('testimonialGood3.job'),
+        extraContent: t('testimonialGood3.t2'),
         image: {
           src: '',
           alt: '',
@@ -535,13 +538,17 @@ const t = useTranslations(lang);
       <br />
       <br />
       <div class="text-muted text-base md:text-lg lg:text-xl">
-        <div class="flex flex-row gap-4">
+        <div
+          class="flex flex-row gap-4 intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+        >
           <Icon name={'tabler:thumb-up'} class="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
           {t('john18:20-21')}
         </div>
         <br />
         <br />
-        <div class="flex flex-row gap-4">
+        <div
+          class="flex flex-row gap-4 intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+        >
           <div class="flex flex-col gap-1">
             <Icon name={'tabler:thumb-up'} class="w-8 h-8 text-green-600 flex-shrink-0" />
             <Icon name={'tabler:thumb-down'} class="w-8 h-8 text-red-600 flex-shrink-0" />
@@ -550,13 +557,17 @@ const t = useTranslations(lang);
         </div>
         <br />
         <br />
-        <div class="flex flex-row gap-4">
+        <div
+          class="flex flex-row gap-4 intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+        >
           <Icon name={'tabler:thumb-down'} class="w-8 h-8 text-red-600 flex-shrink-0 mt-1" />
           {t('acts17:6')}
         </div>
         <br />
         <br />
-        <div class="flex flex-row gap-4">
+        <div
+          class="flex flex-row gap-4 intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+        >
           <Icon name={'tabler:thumb-up'} class="w-8 h-8 text-green-600 flex-shrink-0 mt-1" />
           {t('3john1:12')}
         </div>
