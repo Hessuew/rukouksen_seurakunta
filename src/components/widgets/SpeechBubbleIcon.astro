@@ -40,19 +40,18 @@ const t = useTranslations(lang);
     class={`fixed z-[9999] ${iconPosition} ${iconSize} ${classes.container || ''} opacity-0 pointer-events-none transition-opacity duration-500 group cursor-pointer no-movement`}
   >
     <div class="relative">
-      <!-- Icon wrapper to prevent movement -->
-      <div class="icon-wrapper">
+      <!-- Icon wrapper to prevent movement - hidden on mobile -->
+      <div class="lg:block hidden">
         <Icon
           name="tabler:info-circle-filled"
           class={`text-primary-600 drop-shadow-lg ${iconSize} ${classes.icon || ''} group-hover:scale-110 transition-transform no-movement`}
         />
-        <div class="absolute -top-1 -right-1 w-3 h-3 bg-primary-600 rounded-full animate-pulse"></div>
       </div>
 
       <!-- Tooltip that appears on hover (desktop) or by default (mobile) -->
       <div
         id="speech-bubble-tooltip"
-        class="absolute flex flex-col bottom-full items-start justify-start right-0 mb-2 w-max max-w-[200px] bg-white/90 text-black text-sm p-2 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none no-movement"
+        class="absolute flex flex-col bottom-full items-start justify-start right-0 mb-2 w-max max-w-[200px] bg-white/90 text-black text-sm p-2 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none no-movement speech-bubble"
       >
         <!-- Close button (X) for mobile - hidden by default -->
         <button
@@ -79,7 +78,7 @@ const t = useTranslations(lang);
   // Check if we're on a mobile device
   function isMobileDevice() {
     return (
-      window.innerWidth <= 768 ||
+      window.innerWidth <= 1000 ||
       navigator.userAgent.match(/Android/i) ||
       navigator.userAgent.match(/iPhone|iPad|iPod/i)
     );
@@ -101,8 +100,10 @@ const t = useTranslations(lang);
       speechBubble.classList.remove('opacity-0', 'pointer-events-none');
       speechBubble.classList.add('opacity-100');
 
-      // Always add bounce animation for both mobile and desktop
-      speechBubble.classList.add('animate-bounce-gentle');
+      // Only add bounce animation for desktop
+      if (!isMobileDevice()) {
+        speechBubble.classList.add('animate-bounce-gentle');
+      }
     }, 10);
 
     // For mobile devices, show the tooltip by default and make it interactive
@@ -235,12 +236,6 @@ const t = useTranslations(lang);
     z-index: 9999;
   }
 
-  /* Icon wrapper to prevent movement */
-  .icon-wrapper {
-    display: inline-block;
-    position: relative;
-  }
-
   /* Transition for opacity is now handled by Tailwind classes */
   #speech-bubble-icon {
     will-change: opacity, transform;
@@ -271,18 +266,22 @@ const t = useTranslations(lang);
   }
 
   /* Mobile-specific styles */
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     #speech-bubble-tooltip {
       /* Ensure tooltip is visible and interactive on mobile */
-      position: absolute;
+      position: fixed;
       max-width: 200px;
       width: max-content;
+      bottom: auto;
+      right: 4px;
+      top: 4px;
     }
 
     #speech-bubble-close-btn {
       cursor: pointer;
       padding: 2px;
       border-radius: 50%;
+      display: block;
     }
 
     #speech-bubble-close-btn:hover {
@@ -293,5 +292,17 @@ const t = useTranslations(lang);
   /* Debug styles */
   .speech-bubble-visible {
     border: 2px solid transparent;
+  }
+
+  /* Speech bubble triangle */
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.9) transparent transparent transparent;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
   }
 </style>
