@@ -7,6 +7,7 @@ export const defaultLang = 'fi';
 
 export const ui = {
   en: {
+    podcasts: 'Podcasts',
     prayerChurchImageAlt: 'Prayer church logo',
     prayer: 'Prayer',
     church: 'Church',
@@ -297,8 +298,16 @@ Thank you, Jesus!
     icon: ' icon',
     toReadTheFullTestimony: 'to read the full testimony',
     clickOnTestimonialsToReadMore: 'Click to read full testimonies',
+    podcast1: 'Flame the Freeze Bible Study 04/01/25',
+    'podcast1.description': '2025 is the year of commanding battalions, why?',
+    podcastsFrom: 'Podcasts from the Flame the Freeze Bible Studies',
+    podcastSubtitle:
+      'Kaikki eivät puhu tai ymmärrä englantia. Siksi halusimme valmistaa näistä Hengen täytesistä raamiksista lyhyen suomenkielisen läpikäynnin, jotta myös suomenkieliset pääsevät näistä taivaallisista ilmestyksistä. Ja me olemme myös itse tulleet aivan valtavan siunatuiksi kuvatessamme näitä, sillä Pyhä Henki on ollut kuvaussessioiden vetäjä. Hallelujah!',
+    search: 'Search..',
+    allSubjects: 'All subjects',
   },
   fi: {
+    podcasts: 'Podkastit',
     prayerChurchImageAlt: 'Rukouksen seurakunnan logo',
     prayer: 'Rukouksen',
     church: 'seurakunta',
@@ -600,5 +609,12 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
     icon: ' -ikonia',
     toReadTheFullTestimony: 'lukeaksesi koko todistuksen',
     clickOnTestimonialsToReadMore: 'Klikkaa lukeaksesi koko todistuksen',
+    podcastsFrom: 'Podkastit Flame the Freeze raamiksista',
+    podcastSubtitle:
+      'Kaikki eivät puhu tai ymmärrä englantia. Siksi halusimme valmistaa näistä Hengen täytesistä raamiksista lyhyen suomenkielisen läpikäynnin, jotta myös suomenkieliset pääsevät näistä taivaallisista ilmestyksistä. Ja me olemme myös itse tulleet aivan valtavan siunatuiksi kuvatessamme näitä, sillä Pyhä Henki on ollut kuvaussessioiden vetäjä. Hallelujah!',
+    podcast1: 'Flame the Freeze raamis 04/01/25',
+    'podcast1.description': '2025 on pataljoonien komentamisen vuosi, miksi?',
+    search: 'Hae..',
+    allSubjects: 'Kaikki aiheet',
   },
 } as const;
