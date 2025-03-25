@@ -1,5 +1,5 @@
 ---
-import imgGold2 from '~/assets/images/gold_original.webp';
+import imgGold from '~/assets/images/gold_small.webp';
 import Button from '~/components/ui/Button.astro';
 import Headline from '~/components/ui/Headline.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
@@ -36,7 +36,7 @@ const lgSecondColumnItems = testimonials.slice(6, 11);
 const lgThirdColumnItems = testimonials.slice(11);
 
 const defaultBackgroundStyles = {
-  backgroundImage: `url(${imgGold2.src})`,
+  backgroundImage: `url(${imgGold.src})`,
   color: 'transparent',
   backgroundRepeat: 'no-repeat',
   backgroundAttachment: 'local',
@@ -303,107 +303,109 @@ const defaultBackgroundStyles = {
     }}
   />
 
-  <TestimonialCardContainer client:load>
-    <div class="hidden lg:block">
-      <div class="grid grid-cols-3 gap-8">
-        <div class="space-y-8">
-          {
-            lgFirstColumnItems.map((item) => (
-              <TestimonialCard
-                title={item.title}
-                testimonial={item.testimonial}
-                name={item.name}
-                job={item.job}
-                image={item.image}
-                isPositive={item.isPositive}
-                extraContent={item.extraContent}
-                waveLg={item.waveLg}
-                waveMd={item.waveMd}
-                waveSm={item.waveSm}
-              />
-            ))
-          }
-        </div>
-        <div class="space-y-8">
-          {
-            lgSecondColumnItems.map((item) => (
-              <TestimonialCard
-                title={item.title}
-                testimonial={item.testimonial}
-                name={item.name}
-                job={item.job}
-                image={item.image}
-                isPositive={item.isPositive}
-                extraContent={item.extraContent}
-                waveLg={item.waveLg}
-                waveMd={item.waveMd}
-                waveSm={item.waveSm}
-              />
-            ))
-          }
-        </div>
-        <div class="space-y-8">
-          {
-            lgThirdColumnItems.map((item) => (
-              <TestimonialCard
-                title={item.title}
-                testimonial={item.testimonial}
-                name={item.name}
-                job={item.job}
-                image={item.image}
-                isPositive={item.isPositive}
-                extraContent={item.extraContent}
-                waveLg={item.waveLg}
-                waveMd={item.waveMd}
-                waveSm={item.waveSm}
-              />
-            ))
-          }
+  <div class="section" {...id ? { id: 'testimonialsContainer' } : {}}>
+    <TestimonialCardContainer client:load>
+      <div class="hidden lg:block">
+        <div class="grid grid-cols-3 gap-8">
+          <div class="space-y-8">
+            {
+              lgFirstColumnItems.map((item) => (
+                <TestimonialCard
+                  title={item.title}
+                  testimonial={item.testimonial}
+                  name={item.name}
+                  job={item.job}
+                  image={item.image}
+                  isPositive={item.isPositive}
+                  extraContent={item.extraContent}
+                  waveLg={item.waveLg}
+                  waveMd={item.waveMd}
+                  waveSm={item.waveSm}
+                />
+              ))
+            }
+          </div>
+          <div class="space-y-8">
+            {
+              lgSecondColumnItems.map((item) => (
+                <TestimonialCard
+                  title={item.title}
+                  testimonial={item.testimonial}
+                  name={item.name}
+                  job={item.job}
+                  image={item.image}
+                  isPositive={item.isPositive}
+                  extraContent={item.extraContent}
+                  waveLg={item.waveLg}
+                  waveMd={item.waveMd}
+                  waveSm={item.waveSm}
+                />
+              ))
+            }
+          </div>
+          <div class="space-y-8">
+            {
+              lgThirdColumnItems.map((item) => (
+                <TestimonialCard
+                  title={item.title}
+                  testimonial={item.testimonial}
+                  name={item.name}
+                  job={item.job}
+                  image={item.image}
+                  isPositive={item.isPositive}
+                  extraContent={item.extraContent}
+                  waveLg={item.waveLg}
+                  waveMd={item.waveMd}
+                  waveSm={item.waveSm}
+                />
+              ))
+            }
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="lg:hidden">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        <div class="space-y-8">
-          {
-            smFirstColumnItems.map((item) => (
-              <TestimonialCard
-                title={item.title}
-                testimonial={item.testimonial}
-                name={item.name}
-                job={item.job}
-                image={item.image}
-                isPositive={item.isPositive}
-                extraContent={item.extraContent}
-                waveLg={item.waveLg}
-                waveMd={item.waveMd}
-                waveSm={item.waveSm}
-              />
-            ))
-          }
-        </div>
-        <div class="space-y-8">
-          {
-            smSecondColumnItems.map((item) => (
-              <TestimonialCard
-                title={item.title}
-                testimonial={item.testimonial}
-                name={item.name}
-                job={item.job}
-                image={item.image}
-                isPositive={item.isPositive}
-                extraContent={item.extraContent}
-                waveLg={item.waveLg}
-                waveMd={item.waveMd}
-                waveSm={item.waveSm}
-              />
-            ))
-          }
+      <div class="lg:hidden">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div class="space-y-8">
+            {
+              smFirstColumnItems.map((item) => (
+                <TestimonialCard
+                  title={item.title}
+                  testimonial={item.testimonial}
+                  name={item.name}
+                  job={item.job}
+                  image={item.image}
+                  isPositive={item.isPositive}
+                  extraContent={item.extraContent}
+                  waveLg={item.waveLg}
+                  waveMd={item.waveMd}
+                  waveSm={item.waveSm}
+                />
+              ))
+            }
+          </div>
+          <div class="space-y-8">
+            {
+              smSecondColumnItems.map((item) => (
+                <TestimonialCard
+                  title={item.title}
+                  testimonial={item.testimonial}
+                  name={item.name}
+                  job={item.job}
+                  image={item.image}
+                  isPositive={item.isPositive}
+                  extraContent={item.extraContent}
+                  waveLg={item.waveLg}
+                  waveMd={item.waveMd}
+                  waveSm={item.waveSm}
+                />
+              ))
+            }
+          </div>
         </div>
       </div>
-    </div>
-  </TestimonialCardContainer>
+    </TestimonialCardContainer>
+  </div>
 
   {
     callToAction && (

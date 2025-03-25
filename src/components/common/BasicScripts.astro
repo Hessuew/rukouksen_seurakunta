@@ -41,23 +41,23 @@
     }
   }
 
-  function setupThemeToggle() {
-    document.querySelectorAll('[data-aw-toggle-color-scheme]').forEach((elem) => {
-      // Remove existing listeners first
-      const newElem = elem.cloneNode(true);
-      elem.parentNode.replaceChild(newElem, elem);
+  // function setupThemeToggle() {
+  // document.querySelectorAll('[data-aw-toggle-color-scheme]').forEach((elem) => {
+  //   // Remove existing listeners first
+  //   const newElem = elem.cloneNode(true);
+  //   elem.parentNode.replaceChild(newElem, elem);
 
-      newElem.addEventListener('click', function () {
-        // if (defaultTheme.endsWith(':only')) {
-        //   return;
-        // }
-        const isDark = document.documentElement.classList.contains('dark');
-        const newTheme = isDark ? 'light' : 'dark';
-        localStorage.theme = newTheme;
-        applyTheme(newTheme);
-      });
-    });
-  }
+  //   newElem.addEventListener('click', function () {
+  //     // if (defaultTheme.endsWith(':only')) {
+  //     //   return;
+  //     // }
+  //     const isDark = document.documentElement.classList.contains('dark');
+  //     const newTheme = isDark ? 'light' : 'dark';
+  //     localStorage.theme = newTheme;
+  //     applyTheme(newTheme);
+  //   });
+  // });
+  // }
 
   const onLoad = function () {
     let lastKnownScrollPosition = window.scrollY;
@@ -130,9 +130,14 @@
     function applyHeaderStylesOnScroll() {
       const header = document.querySelector('#header[data-aw-sticky-header]');
       if (!header) return;
+      
       if (lastKnownScrollPosition > 1 && !header.classList.contains('scroll')) {
-        header.classList.add('scroll');
+        // Add a small delay before adding the scroll class for a smoother transition
+        setTimeout(() => {
+          header.classList.add('scroll');
+        }, 10);
       } else if (lastKnownScrollPosition <= 1 && header.classList.contains('scroll')) {
+        // Remove scroll class immediately when at the top
         header.classList.remove('scroll');
       }
       ticking = false;
@@ -165,22 +170,22 @@
   window.onload = onLoad;
   window.onpageshow = onPageShow;
 
-  // Handle Astro View Transitions
-  document.addEventListener('astro:before-swap', () => {
-    // Store current theme before transition
-    window.currentTheme = getThemePreference();
-  });
+  // // Handle Astro View Transitions
+  // document.addEventListener('astro:before-swap', () => {
+  //   // Store current theme before transition
+  //   window.currentTheme = getThemePreference();
+  // });
 
   document.addEventListener('astro:after-swap', () => {
     // Restore theme after transition
-    applyTheme(window.currentTheme || getThemePreference());
-    setupThemeToggle();
+    applyTheme('dark');
+    // setupThemeToggle();
     onLoad();
     onPageShow();
   });
 
-  // Initial setup
-  setupThemeToggle();
+  // // Initial setup
+  // setupThemeToggle();
 </script>
 
 <script is:inline>

@@ -1,5 +1,5 @@
 ---
-import imgGold2 from '~/assets/images/gold_original.webp';
+import imgGold from '~/assets/images/gold_small.webp';
 import Image from '~/components/common/Image.astro';
 import { Icon } from 'astro-icon/components';
 import { twMerge } from 'tailwind-merge';
@@ -7,7 +7,7 @@ import { twMerge } from 'tailwind-merge';
 const { title, testimonial, name, job, image, isPositive = true, extraContent, waveLg, waveMd, waveSm } = Astro.props;
 
 const defaultBackgroundStyles = {
-  backgroundImage: `url(${imgGold2.src})`,
+  backgroundImage: `url(${imgGold.src})`,
   color: 'transparent',
   backgroundRepeat: 'no-repeat',
   backgroundAttachment: 'local',
@@ -61,7 +61,7 @@ const imageUrl = typeof image === 'string' ? image : image?.src ? image.src : ''
 >
   <div
     style={defaultBackgroundStyles}
-    class={`max-w-[400px] sm:max-w-none flex flex-col w-full rounded-md shadow-xl dark:shadow-none dark:border dark:border-white/60 overflow-hidden relative ${hasExtraContent ? 'cursor-pointer hover:shadow-2xl transition-shadow duration-300' : ''}`}
+    class={`max-w-[400px] sm:max-w-none flex flex-col w-full rounded-md shadow-none border border-white/60 overflow-hidden relative ${hasExtraContent ? 'cursor-pointer hover:shadow-2xl transition-shadow duration-300' : ''}`}
     data-testimonial-id={hasExtraContent ? crypto.randomUUID() : undefined}
     data-has-extra-content={hasExtraContent.toString()}
     data-name={name}
@@ -141,14 +141,12 @@ const imageUrl = typeof image === 'string' ? image : image?.src ? image.src : ''
         </div>
         {
           image && (
-            <div
-              class={`min-h-12 min-w-12 rounded-full ${name !== 'CJ' ? 'border border-slate-200 dark:border-slate-600' : ''}`}
-            >
+            <div class={`min-h-12 min-w-12 rounded-full ${name !== 'CJ' ? 'border border-slate-600' : ''}`}>
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
                 <Image
-                  class={`min-h-12 min-w-12 rounded-full ${name !== 'CJ' ? 'border border-slate-200 dark:border-slate-600' : ''} min-w-full min-h-full`}
+                  class={`min-h-12 min-w-12 rounded-full ${name !== 'CJ' ? 'border border-slate-600' : ''} min-w-full min-h-full`}
                   width={48}
                   height={48}
                   widths={[400, 768]}
@@ -169,7 +167,7 @@ const imageUrl = typeof image === 'string' ? image : image?.src ? image.src : ''
         </div>
       </div>
 
-      <hr class="border-slate-200 dark:border-slate-600 my-4" />
+      <hr class="border-slate-600 my-4" />
 
       {title && <h2 class="text-lg font-medium leading-6 pb-4 text-black">{title}</h2>}
       {
