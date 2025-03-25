@@ -1,18 +1,15 @@
 ---
-import imgGold2 from '~/assets/images/gold_original.webp';
 import imgGold from '~/assets/images/gold_small.webp';
 import { twMerge } from 'tailwind-merge';
 
 const {
   text,
-  imageNro = 1,
   class: className = '',
   isHeading = false,
   animate = true,
   backgroundStyles = {},
 } = Astro.props as {
   text?: string;
-  imageNro?: number;
   class?: string;
   isHeading?: boolean;
   animate?: boolean;
@@ -26,7 +23,7 @@ const content = text || (await Astro.slots.render('default'));
 const hasFlexClasses = className.includes('flex');
 
 const defaultBackgroundStyles = {
-  backgroundImage: `url(${imageNro === 1 ? imgGold.src : imgGold2.src})`,
+  backgroundImage: `url(${imgGold.src})`,
   WebkitBackgroundClip: 'text',
   backgroundClip: 'text',
   color: 'transparent',

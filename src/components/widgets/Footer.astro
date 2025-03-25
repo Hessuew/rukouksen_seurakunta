@@ -41,11 +41,9 @@ const socialLinks = [
 const { theme = 'light' } = Astro.props;
 ---
 
-<footer
-  class:list={[{ dark: theme === 'dark' }, 'relative bg-page border-t border-gray-200 dark:border-slate-800 not-prose']}
->
+<footer class:list={[{ dark: theme === 'dark' }, 'relative bg-page border-t border-slate-800 not-prose']}>
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-  <div class="relative max-w-7xl mx-auto pt-20 pb-10 px-4 sm:px-6 dark:text-slate-300">
+  <div class="relative max-w-7xl mx-auto pt-20 pb-10 px-4 sm:px-6 text-slate-300">
     <div class="md:flex items-end md:justify-between py-6 md:py-8">
       <div class="flex flex-row gap-6 text-start pb-4 lg:pb-0 text-muted font-normal text-xs xs:text-sm">
         <div class="flex flex-col">
@@ -61,7 +59,7 @@ const { theme = 'light' } = Astro.props;
           <span>{t('email2')}</span>
         </div>
       </div>
-      <div class="text-sm mr-4 dark:text-muted"></div>
+      <div class="text-sm mr-4 text-muted"></div>
       {
         socialLinks?.length ? (
           <nav
@@ -71,7 +69,7 @@ const { theme = 'light' } = Astro.props;
             {socialLinks.map(({ ariaLabel, href, image }) => (
               <div class="group relative">
                 <a
-                  class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                  class="text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                   aria-label={ariaLabel}
                   href={href}
                   target="_blank"
@@ -92,7 +90,7 @@ const { theme = 'light' } = Astro.props;
                     <span class="absolute top-1 right-1 text-[10px] text-white">FF</span>
                   )}
                 </a>
-                <span class="absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-sm text-white opacity-0 transition-opacity delay-500 group-hover:opacity-100 dark:bg-gray-200 dark:text-gray-800">
+                <span class="absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded px-2 py-1 text-sm opacity-0 transition-opacity delay-500 group-hover:opacity-100 bg-gray-200 text-gray-800">
                   {ariaLabel}
                 </span>
               </div>
