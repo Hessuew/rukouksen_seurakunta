@@ -19,5 +19,9 @@ export const headerData: { links: Array<MenuLink> } = {
       text: 'forYou',
       href: getPermalink('#sinulle'),
     },
+    // {
+    //   text: 'podcasts',
+    //   href: getPermalink('/podcasts'),
+    // },
   ],
 };

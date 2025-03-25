@@ -12,6 +12,7 @@ const styles = `
 ` as const;
 
 interface FilterContainerProps {
+  textSearchPlaceholder: string;
   options: string[] | (string[] | string[][])[];
   allLabels: string[];
   showSearch?: boolean;
@@ -20,6 +21,7 @@ interface FilterContainerProps {
 }
 
 export default function ReactFilterContainer({
+  textSearchPlaceholder,
   options,
   allLabels,
   showSearch = true,
@@ -236,7 +238,7 @@ export default function ReactFilterContainer({
                   id={gridId ? `${gridId}-quick-filter` : 'search-input'}
                   type='text'
                   className='w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600'
-                  placeholder='Search...'
+                  placeholder={textSearchPlaceholder}
                   value={filters.search}
                   onChange={handleSearch}
                   data-search-input
