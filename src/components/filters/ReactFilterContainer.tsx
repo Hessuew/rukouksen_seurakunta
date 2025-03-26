@@ -1,3 +1,4 @@
+import { useTranslations } from '~/i18n/utils';
 import React, { useEffect, useRef, useState } from 'react';
 
 // Add CSS styles using template literal
@@ -18,6 +19,7 @@ interface FilterContainerProps {
   showSearch?: boolean;
   gridId?: string;
   targetId?: string;
+  lang: 'fi' | 'en';
 }
 
 export default function ReactFilterContainer({
@@ -27,7 +29,9 @@ export default function ReactFilterContainer({
   showSearch = true,
   gridId,
   targetId,
+  lang,
 }: FilterContainerProps) {
+  const t = useTranslations(lang);
   const [filters, setFilters] = useState({
     type: 'all',
     category: 'all',
@@ -55,7 +59,6 @@ export default function ReactFilterContainer({
     itemCards.forEach((card) => {
       const cardType = card.getAttribute('data-type');
       const cardCategory = card.getAttribute('data-category');
-
       const typeMatch = filters.type === 'all' || cardType === filters.type;
       const categoryMatch = filters.category === 'all' || cardCategory === filters.category;
       const cardContent = card.textContent?.toLowerCase() || '';
@@ -138,7 +141,7 @@ export default function ReactFilterContainer({
 
   const buttonClass = 'rounded-full px-4 py-2 text-sm font-medium transition-all whitespace-nowrap';
   const getHoverClass = (variant: 'type' | 'category') =>
-    variant === 'type' ? 'hover:bg-blue-100 dark:hover:bg-blue-900' : 'hover:bg-gray-100 dark:hover:bg-gray-800';
+    variant === 'type' ? 'hover:bg-blue-900' : 'hover:bg-gray-800';
 
   const typeOptions = Array.isArray(buttonGroups[0]) ? (buttonGroups[0] as string[]) : buttonGroups[0];
 
@@ -158,7 +161,7 @@ export default function ReactFilterContainer({
     >
       <button
         type='button'
-        className='h-full px-3 flex items-center bg-page text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 z-10'
+        className='h-full px-3 flex items-center bg-page text-gray-300 hover:text-gray-100 z-10'
         onClick={() => handleScroll(direction, variant)}
         aria-label={`Scroll ${direction}`}
       >
@@ -194,9 +197,7 @@ export default function ReactFilterContainer({
                   <button
                     type='button'
                     className={`${buttonClass} ${getHoverClass('type')} ${
-                      filters.type === 'all'
-                        ? 'dark:text-white bg-blue-100 dark:bg-blue-900'
-                        : 'bg-white dark:bg-transparent'
+                      filters.type === 'all' ? 'text-white bg-blue-900' : 'bg-transparent'
                     }`}
                     onClick={() => handleFilterClick('type', 'all')}
                     data-filter='all'
@@ -211,9 +212,7 @@ export default function ReactFilterContainer({
                       key={option}
                       type='button'
                       className={`${buttonClass} ${getHoverClass('type')} ${
-                        filters.type === option
-                          ? 'dark:text-white bg-blue-100 dark:bg-blue-900'
-                          : 'bg-white dark:bg-transparent'
+                        filters.type === option ? 'text-white bg-blue-900' : 'bg-transparent'
                       }`}
                       onClick={() => handleFilterClick('type', option)}
                       data-filter={option}
@@ -222,7 +221,7 @@ export default function ReactFilterContainer({
                       aria-pressed={filters.type === option}
                       role='tab'
                     >
-                      {option}
+                      {t(option as keyof typeof t)}
                     </button>
                   ))}
                 </div>
@@ -237,7 +236,7 @@ export default function ReactFilterContainer({
                 <input
                   id={gridId ? `${gridId}-quick-filter` : 'search-input'}
                   type='text'
-                  className='w-full px-4 py-2 rounded-lg border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-600'
+                  className='w-full px-4 py-2 rounded-lg border border-gray-600 bg-gray-800 text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600'
                   placeholder={textSearchPlaceholder}
                   value={filters.search}
                   onChange={handleSearch}
@@ -255,9 +254,7 @@ export default function ReactFilterContainer({
                   <button
                     type='button'
                     className={`${buttonClass} ${getHoverClass('category')} ${
-                      filters.category === 'all'
-                        ? 'dark:text-white bg-gray-100 dark:bg-gray-800'
-                        : 'bg-white dark:bg-transparent'
+                      filters.category === 'all' ? 'text-white bg-blue-900' : 'bg-transparent'
                     }`}
                     onClick={() => handleFilterClick('category', 'all')}
                     data-filter='all'
@@ -272,9 +269,7 @@ export default function ReactFilterContainer({
                       key={option}
                       type='button'
                       className={`${buttonClass} ${getHoverClass('category')} ${
-                        filters.category === option
-                          ? 'dark:text-white bg-gray-100 dark:bg-gray-800'
-                          : 'bg-white dark:bg-transparent'
+                        filters.category === option ? 'text-white bg-blue-900' : 'bg-transparent'
                       }`}
                       onClick={() => handleFilterClick('category', option)}
                       data-filter={option}
@@ -283,7 +278,7 @@ export default function ReactFilterContainer({
                       aria-pressed={filters.category === option}
                       role='tab'
                     >
-                      {option}
+                      {t(option as keyof typeof t)}
                     </button>
                   ))}
                 </div>

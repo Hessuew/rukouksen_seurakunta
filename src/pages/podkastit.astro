@@ -5,7 +5,7 @@ import GradientText from '~/components/ui/GradientText.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import VideosAndPodcastsList from '~/components/widgets/list/VideosAndPodcastsList.astro';
 import Spacer from '~/components/widgets/Spacer.astro';
-import { platforms } from '~/data/videosAndPodcasts';
+import { subjects } from '~/data/videosAndPodcasts';
 import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/PageLayout.astro';
 
@@ -63,7 +63,7 @@ const t = useTranslations(lang);
   </Hero>
 
   <FilterContainer
-    options={[platforms]}
+    options={[subjects]}
     allLabels={[t('allSubjects')]}
     showSearch={true}
     targetId="videos-and-podcasts-list"

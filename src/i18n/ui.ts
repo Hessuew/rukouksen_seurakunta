@@ -298,13 +298,16 @@ Thank you, Jesus!
     icon: ' icon',
     toReadTheFullTestimony: 'to read the full testimony',
     clickOnTestimonialsToReadMore: 'Click to read full testimonies',
-    podcast1: 'Flame the Freeze Bible Study 04/01/25',
+    podcast1: 'Flame the Freeze Bible study 04/01/25',
     'podcast1.description': '2025 is the year of commanding battalions, why?',
     podcastsFrom: 'Podcasts from the Flame the Freeze Bible Studies',
     podcastSubtitle:
       'Kaikki eivät puhu tai ymmärrä englantia. Siksi halusimme valmistaa näistä Hengen täytesistä raamiksista lyhyen suomenkielisen läpikäynnin, jotta myös suomenkieliset pääsevät näistä taivaallisista ilmestyksistä. Ja me olemme myös itse tulleet aivan valtavan siunatuiksi kuvatessamme näitä, sillä Pyhä Henki on ollut kuvaussessioiden vetäjä. Hallelujah!',
     search: 'Search..',
     allSubjects: 'All subjects',
+    commandingBattalions: 'Commanding battalions',
+    wisdom: 'Wisdom',
+    other: 'Other',
   },
   fi: {
     podcasts: 'Podkastit',
@@ -616,5 +619,8 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
     'podcast1.description': '2025 on pataljoonien komentamisen vuosi, miksi?',
     search: 'Hae..',
     allSubjects: 'Kaikki aiheet',
+    commandingBattalions: 'Pataljoonien komentaminen',
+    wisdom: 'Viisaus',
+    other: 'Muut',
   },
 } as const;
