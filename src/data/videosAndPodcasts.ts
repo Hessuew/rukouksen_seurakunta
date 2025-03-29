@@ -13,6 +13,7 @@ interface MediaItem {
   poster?: ImageMetadata;
   video?: string;
   videoQuality?: 'max' | 'hq';
+  subject: 'commandingBattalions' | 'wisdom' | 'other';
 }
 
 export const videosAndPodcasts: MediaItem[] = [
@@ -21,12 +22,13 @@ export const videosAndPodcasts: MediaItem[] = [
     date: '2025-03-22',
     description: 'podcast1.description',
     videoId: 'asqmiQW7hY0',
+    subject: 'commandingBattalions',
     platform: 'Youtube',
   },
 ];
 
-// Get unique platforms for filter buttons
-export const platforms = [...new Set(videosAndPodcasts.map((item) => item.platform))];
+// Get unique subjects for filter buttons
+export const subjects = [...new Set(videosAndPodcasts.map((item) => item.subject))];
 
 // Group publications by year and sort within each year by date
 export const videosAndPodcastsByYear = groupByYear(videosAndPodcasts);
