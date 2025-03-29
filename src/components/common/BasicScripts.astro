@@ -2,7 +2,7 @@
 
 ---
 
-<script is:inline define:vars={{ defaultTheme: 'dark' }}>
+<script is:inline define:vars={{ defaultTheme: 'light' }}>
   if (window.basic_script) {
     return;
   }
@@ -130,7 +130,7 @@
     function applyHeaderStylesOnScroll() {
       const header = document.querySelector('#header[data-aw-sticky-header]');
       if (!header) return;
-      
+
       if (lastKnownScrollPosition > 1 && !header.classList.contains('scroll')) {
         // Add a small delay before adding the scroll class for a smoother transition
         setTimeout(() => {
@@ -178,7 +178,7 @@
 
   document.addEventListener('astro:after-swap', () => {
     // Restore theme after transition
-    applyTheme('dark');
+    applyTheme('light');
     // setupThemeToggle();
     onLoad();
     onPageShow();

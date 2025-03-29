@@ -19,9 +19,11 @@ export const headerData: { links: Array<MenuLink> } = {
       text: 'forYou',
       href: getPermalink('#sinulle'),
     },
-    // {
-    //   text: 'podcasts',
-    //   href: getPermalink('/podcasts'),
-    // },
+    {
+      separator: true,
+      icon: 'tabler:brand-youtube',
+      text: 'podcasts',
+      href: getPermalink('/podkastit'),
+    },
   ],
 };

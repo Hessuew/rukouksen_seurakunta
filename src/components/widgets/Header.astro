@@ -1,4 +1,5 @@
 ---
+import imgGold from '~/assets/images/gold_small.webp';
 import LanguagePicker from '~/components/common/LanguagePicker.astro';
 import ToggleMenu from '~/components/common/ToggleMenu.astro';
 import Logo from '~/components/Logo.astro';
@@ -21,6 +22,7 @@ interface Link {
     src: ImageMetadata;
     alt: string;
   };
+  separator?: boolean;
 }
 
 export interface MenuLink extends Link {
@@ -75,14 +77,41 @@ const navigateToLanguage = (href: string | undefined) => {
     return '/';
   }
 
+  // Check if the current URL already contains /en
+  const currentUrl = new URL(Astro.url);
+  const pathContainsEn = currentUrl.pathname.includes('/en');
+  const pathContainsPodkastit = currentUrl.pathname.includes('podkastit');
+
   // Handle anchor links specially
   if (href.startsWith('#')) {
-    // Check if the current URL already contains /en
-    const currentUrl = new URL(Astro.url);
-    const pathContainsEn = currentUrl.pathname.includes('/en');
+    // When on podcast page and clicking an anchor link, go to the main page with the anchor
+    if (pathContainsPodkastit) {
+      if (currentLang === 'en') {
+        // For English, go to /en with the anchor
+        return `/en${href}`;
+      }
+      // For Finnish, go to root with the anchor
+      return `/${href}`;
+    }
 
     // Only add /en if we're in English mode and the current path doesn't already have it
     if (currentLang === 'en' && !pathContainsEn) {
+      return `/en${href}`;
+    }
+    return href;
+  }
+
+  // Handle podcast link
+  if (href.includes('podkastit')) {
+    if (currentLang === 'en') {
+      return `/en${href}`;
+    }
+    return href;
+  }
+
+  // Handle regular links when on podcast page
+  if (pathContainsPodkastit && !href.startsWith('#') && !href.includes('podkastit')) {
+    if (currentLang === 'en') {
       return `/en${href}`;
     }
     return href;
@@ -112,7 +141,8 @@ const navigateToLanguage = (href: string | undefined) => {
 <header
   class:list={[
     { sticky: isSticky, relative: !isSticky, dark: isDark },
-    'top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out animate-slide-down',
+    'top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out',
+    { 'animate-slide-down': currentPath === '/' || currentPath === '/en' },
   ]}
   {...isSticky ? { 'data-aw-sticky-header': true } : {}}
   {...id ? { id } : {}}
@@ -154,7 +184,7 @@ const navigateToLanguage = (href: string | undefined) => {
         class="flex flex-col lg:flex-row lg:self-center w-full lg:w-auto text-xl lg:text-[0.9375rem] tracking-[0.01rem] font-medium lg:justify-center"
       >
         {
-          links.map(({ text, href, links }, index) => (
+          links.map(({ text, href, links, icon }, index) => (
             <li class={links?.length ? 'dropdown' : ''}>
               {links?.length ? (
                 <>
@@ -208,7 +238,37 @@ const navigateToLanguage = (href: string | undefined) => {
                   ]}
                   href={navigateToLanguage(href)}
                 >
-                  {t(text as keyof typeof t)}
+                  <span class="flex items-center">
+                    {t(text as keyof typeof t)}
+                    {icon && (
+                      <div class="icon-gold-container relative w-5 h-5 inline-flex ml-1 -mt-1.5">
+                        <div
+                          class="icon-gold-background"
+                          style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%',
+                            backgroundImage: `url(${imgGold.src})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            WebkitMaskImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='0' height='0'%3E%3C/svg%3E")`,
+                            maskImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='0' height='0'%3E%3C/svg%3E")`,
+                            WebkitMaskSize: 'contain',
+                            maskSize: 'contain',
+                            WebkitMaskRepeat: 'no-repeat',
+                            maskRepeat: 'no-repeat',
+                            WebkitMaskPosition: 'center',
+                            maskPosition: 'center',
+                          }}
+                          data-icon-name={icon}
+                        />
+                        <Icon name={icon} class="w-5 h-5 opacity-0 absolute top-0 left-0" />
+                      </div>
+                    )}
+                  </span>
                 </a>
               )}
             </li>
@@ -242,3 +302,56 @@ const navigateToLanguage = (href: string | undefined) => {
     </div>
   </div>
 </header>
+
+<script>
+  // Function to extract SVG path from Icon component and apply it as mask
+  function applySVGMask() {
+    // Get all icon background elements
+    const iconBackgrounds = document.querySelectorAll('.icon-gold-background');
+
+    iconBackgrounds.forEach((background) => {
+      // Find the corresponding Icon SVG
+      const container = background.closest('.icon-gold-container');
+      if (!container) return;
+
+      const svgElement = container.querySelector('svg');
+      if (!svgElement) return;
+
+      // Clone the SVG to avoid modifying the original
+      const svgClone = svgElement.cloneNode(true) as Element;
+
+      // Remove any fill attributes to ensure mask works properly
+      const paths = svgClone.querySelectorAll('path');
+      paths.forEach((path) => {
+        if (path.hasAttribute('fill')) {
+          path.setAttribute('fill', '#000000');
+        }
+      });
+
+      // Convert SVG to a data URL for use as mask
+      const svgString = new XMLSerializer().serializeToString(svgClone);
+      const encodedSvg = encodeURIComponent(svgString).replace(/'/g, '%27').replace(/"/g, '%22');
+
+      const svgUrl = `data:image/svg+xml,${encodedSvg}`;
+
+      // Apply the SVG as mask
+      (background as HTMLElement).style.maskImage = `url("${svgUrl}")`;
+      (background as HTMLElement).style.webkitMaskImage = `url("${svgUrl}")`;
+    });
+  }
+
+  // Initialize icon masks when the DOM is ready and after each page navigation
+  function initializeIconMasks() {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', applySVGMask);
+    } else {
+      applySVGMask();
+    }
+  }
+
+  // Run on initial load
+  initializeIconMasks();
+
+  // Run after each Astro page navigation
+  document.addEventListener('astro:page-load', applySVGMask);
+</script>
