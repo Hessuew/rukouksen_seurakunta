@@ -612,10 +612,10 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
     icon: ' -ikonia',
     toReadTheFullTestimony: 'lukeaksesi koko todistuksen',
     clickOnTestimonialsToReadMore: 'Klikkaa lukeaksesi koko todistuksen',
-    podcastsFrom: 'Podkastit Flame the Freeze raamiksista',
+    podcastsFrom: 'Podkastit Flame the Freeze Raamiksista',
     podcastSubtitle:
-      'Kaikki eivät puhu tai ymmärrä englantia. Siksi halusimme valmistaa näistä Hengen täyteisistä raamiksista lyhyen suomenkielisen läpikäynnin, jotta myös suomenkieliset pääsevät näistä taivaallisista ilmestyksistä. Ja me olemme myös itse tulleet aivan valtavan siunatuiksi kuvatessamme näitä, sillä Pyhä Henki on ollut kuvaussessioiden vetäjä. Hallelujah!',
-    podcast1: 'Flame the Freeze raamis 04/01/25',
+      'Kaikki eivät puhu tai ymmärrä englantia. Siksi halusimme tehdä näistä Hengen täyteisistä Raamiksista lyhyen suomenkielisen läpikäynnin, jotta myös suomenkieliset pääsevät osallisiksi näistä taivaallisista ilmestyksistä. Ja me olemme myös itse tulleet aivan valtavan siunatuiksi kuvatessamme näitä, sillä Pyhä Henki on ollut kuvaussessioiden vetäjä. Hallelujah!',
+    podcast1: 'Flame the Freeze Raamis 04/01/25',
     'podcast1.description': '2025 on pataljoonien komentamisen vuosi, miksi?',
     search: 'Hae..',
     allSubjects: 'Kaikki aiheet',
