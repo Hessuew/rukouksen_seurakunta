@@ -308,6 +308,7 @@ Thank you, Jesus!
     commandingBattalions: 'Commanding battalions',
     wisdom: 'Wisdom',
     other: 'Other',
+    kpl: ' pcs',
   },
   fi: {
     podcasts: 'Podkastit',
@@ -622,5 +623,6 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
     commandingBattalions: 'Pataljoonien komentaminen',
     wisdom: 'Viisaus',
     other: 'Muut',
+    kpl: ' kpl',
   },
 } as const;

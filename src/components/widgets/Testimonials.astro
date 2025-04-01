@@ -1,10 +1,12 @@
 ---
+import imgGold2 from '~/assets/images/gold_original.webp';
 import imgGold from '~/assets/images/gold_small.webp';
 import Button from '~/components/ui/Button.astro';
 import Headline from '~/components/ui/Headline.astro';
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import TestimonialCard from '~/components/widgets/TestimonialCard.astro';
 import TestimonialCardContainer from '~/components/widgets/TestimonIalCardContainer';
+import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 import type { Testimonials as Props } from '~/types';
 
 const {
@@ -19,6 +21,9 @@ const {
   classes = {},
   bg = await Astro.slots.render('bg'),
 } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 // Calculate total testimonials
 const totalTestimonials = testimonials.length;
@@ -302,6 +307,23 @@ const defaultBackgroundStyles = {
       subtitle: 'text-xl',
     }}
   />
+
+  <!-- Testimonial counter -->
+  <div class="pb-4 w-full items-end flex justify-end">
+    <div
+      class="relative rounded-full p-0.5 w-24"
+      style={{
+        backgroundImage: `url(${imgGold2.src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div class="flex items-center gap-2 px-6 py-2 text-sm font-medium rounded-full bg-page">
+        <span class="font-semibold">{totalTestimonials}{t('kpl')}</span>
+      </div>
+    </div>
+  </div>
 
   <div class="section" {...id ? { id: 'testimonialsContainer' } : {}}>
     <TestimonialCardContainer client:load>
