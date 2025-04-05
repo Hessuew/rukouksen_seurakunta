@@ -18,7 +18,16 @@ interface MediaItem {
 
 export const videosAndPodcasts: MediaItem[] = [
   {
-    title: 'podcast1',
+    title: 'podcast #2',
+    date: '2025-03-22',
+    description: 'podcast2.description',
+    videoId: 'DSr7BV9cn5I',
+    subject: 'wisdom',
+    videoQuality: 'hq',
+    platform: 'Youtube',
+  },
+  {
+    title: 'podcast #1',
     date: '2025-03-22',
     description: 'podcast1.description',
     videoId: 'asqmiQW7hY0',
