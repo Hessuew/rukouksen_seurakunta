@@ -141,12 +141,12 @@ const imageUrl = typeof image === 'string' ? image : image?.src ? image.src : ''
         </div>
         {
           image && (
-            <div class={`min-h-12 min-w-12 xl:min-h-16 xl:min-w-16 rounded-full border border-slate-600`}>
+            <div class={`min-h-12 min-w-12 2xl:min-h-16 2xl:min-w-16 rounded-full border border-slate-600`}>
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
                 <Image
-                  class={`min-h-12 min-w-12 xl:min-h-16 xl:min-w-16 rounded-full border border-slate-600`}
+                  class={`min-h-12 min-w-12 2xl:min-h-16 2xl:min-w-16 rounded-full border border-slate-600`}
                   width={48}
                   height={48}
                   widths={[400, 768]}
