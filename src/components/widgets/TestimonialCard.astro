@@ -141,19 +141,19 @@ const imageUrl = typeof image === 'string' ? image : image?.src ? image.src : ''
         </div>
         {
           image && (
-            <div class={`min-h-12 min-w-12 rounded-full ${name !== 'CJ' ? 'border border-slate-600' : ''}`}>
+            <div class={`min-h-12 min-w-12 xl:min-h-16 xl:min-w-16 rounded-full border border-slate-600`}>
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
                 <Image
-                  class={`min-h-12 min-w-12 rounded-full ${name !== 'CJ' ? 'border border-slate-600' : ''} min-w-full min-h-full`}
+                  class={`min-h-12 min-w-12 xl:min-h-16 xl:min-w-16 rounded-full border border-slate-600`}
                   width={48}
                   height={48}
                   widths={[400, 768]}
                   layout="fixed"
                   loading="lazy"
                   decoding="async"
-                  style={`object-fit: cover; object-position: center; ${name === 'CJ' ? 'transform: scale(1.025);' : ''}`}
+                  style={`object-fit: cover; object-position: center;`}
                   {...image}
                 />
               )}

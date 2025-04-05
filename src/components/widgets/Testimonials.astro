@@ -109,13 +109,13 @@ const defaultBackgroundStyles = {
           const image = document.createElement('img');
           image.src = selectedTestimonial.image;
           image.alt = selectedTestimonial?.name || 'Testimonial author';
-          image.className = 'h-16 w-16 rounded-full border border-slate-200 dark:border-slate-600';
+          image.className = 'h-16 w-16 rounded-full border border-slate-600';
           image.style.objectFit = 'cover';
           image.style.objectPosition = 'center';
 
           // Special styling for CJ (matching the TestimonialCard component)
           if (selectedTestimonial?.name === 'CJ') {
-            image.classList.remove('border', 'border-slate-200', 'dark:border-slate-600');
+            image.classList.remove('border', 'border-slate-600');
             image.style.transform = 'scale(1.025)';
           }
 
@@ -123,7 +123,7 @@ const defaultBackgroundStyles = {
         } else {
           // Empty container with border styling when no image
           const emptyAvatar = document.createElement('div');
-          emptyAvatar.className = 'min-h-12 min-w-12 rounded-full border border-slate-200 dark:border-slate-600';
+          emptyAvatar.className = 'min-h-12 min-w-12 rounded-full border border-slate-600';
           imageContainer.appendChild(emptyAvatar);
         }
 
