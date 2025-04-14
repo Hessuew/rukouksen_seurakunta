@@ -132,6 +132,7 @@ export interface Stat {
   amount?: number | string;
   classes?: Record<string, string>;
   title?: string;
+  extra?: string;
   icon?: string;
   lowerCase?: boolean;
   curve?: boolean;
