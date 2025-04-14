@@ -5,6 +5,7 @@ import { Icon } from 'astro-icon/components';
 import { twMerge } from 'tailwind-merge';
 import GradientText from '../ui/GradientText.astro';
 import Headline from '../ui/Headline.astro';
+import NumberTicket from '../ui/NumberTicket.astro';
 import WidgetWrapper from '../ui/WidgetWrapper.astro';
 import AnimatedChildSvg from './AnimatedChildSvg.astro';
 
@@ -14,7 +15,6 @@ const {
   tagline,
   stats = [],
   image = await Astro.slots.render('image'),
-
   id,
   isDark = false,
   classes = {},
@@ -36,7 +36,7 @@ const styleStyle = {
   <div class="flex flex-wrap justify-center -m-4 text-center pb-8">
     {
       stats &&
-        stats.map(({ amount, classes, title, icon, lowerCase, curve }) => (
+        stats.map(({ amount, classes, extra, title, icon, lowerCase, curve }) => (
           <div
             class={twMerge(
               'p-4 md:w-1/4 sm:w-1/2 w-full min-w-[220px] text-center md:border-r md:last:border-none md:border-slate-500 intersect-once motion-safe:opacity-0 motion-safe:intersect:animate-fade intersect-tenth sm:intersect-quarter',
@@ -57,9 +57,12 @@ const styleStyle = {
                   )}
                   aria-label={`${title}: ${amount}`}
                 >
-                  <GradientText imageNro={2} backgroundStyles={styleStyle}>
-                    {amount}
-                  </GradientText>
+                  {extra && (
+                    <GradientText imageNro={2} backgroundStyles={styleStyle}>
+                      {extra}
+                    </GradientText>
+                  )}
+                  <NumberTicket value={amount} />
                 </div>
               )}
               {curve && (

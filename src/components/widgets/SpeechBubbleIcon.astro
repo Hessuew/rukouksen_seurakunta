@@ -100,10 +100,10 @@ const t = useTranslations(lang);
       speechBubble.classList.remove('opacity-0', 'pointer-events-none');
       speechBubble.classList.add('opacity-100');
 
-      // Only add bounce animation for desktop
-      if (!isMobileDevice()) {
-        speechBubble.classList.add('animate-bounce-gentle');
-      }
+      // // Only add bounce animation for desktop
+      // if (!isMobileDevice()) {
+      //   speechBubble.classList.add('animate-bounce-gentle');
+      // }
     }, 10);
 
     // For mobile devices, show the tooltip by default and make it interactive

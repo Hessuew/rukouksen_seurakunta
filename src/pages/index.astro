@@ -34,15 +34,15 @@ import { Icon } from 'astro-icon/components';
 import { twMerge } from 'tailwind-merge';
 
 const metadata = {
-  title: 'Rukouksen seurakunta | Meidän tulemme ei ole asia, vaan henkilö.. Jeesus',
+  title: 'Rukouksen seurakunta | Meidän tulemme on Jeesus',
   description:
-    'Rukouksen seurakunta on Kuopiossa kokoontuva ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus. Savilahti, Kuopio.',
+    'Rukouksen seurakunta Kuopio on ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus. Savilahti, Kuopio.',
   ignoreTitleTemplate: true,
   canonical: 'https://rukouksenseurakunta.fi',
   openGraph: {
-    title: 'Rukouksen seurakunta | Meidän tulemme ei ole asia, vaan henkilö.. Jeesus',
+    title: 'Rukouksen seurakunta | Meidän tulemme on Jeesus',
     description:
-      'Rukouksen seurakunta on Kuopiossa kokoontuva ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus.',
+      'Rukouksen seurakunta Kuopio on ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus. Savilahti, Kuopio.',
     type: 'website',
     image: logo,
     article: {
@@ -52,10 +52,9 @@ const metadata = {
       tags: [
         'Rukouksen seurakunta',
         'Rukouksen seurakunta Kuopio',
-        'Savilahti',
-        'Kuopio',
+        'seurakunta Kuopio',
+        'seurakunta Savilahti',
         'Savilahden seurakunta',
-        'Kuopio seurakunta',
       ],
     },
   },
@@ -607,10 +606,10 @@ const t = useTranslations(lang);
     tagline={t('practicalNumbersFrom2025')}
     title=""
     stats={[
-      { title: t('stats1.title'), amount: '15' },
-      { title: t('stats2.title'), amount: '+197' },
-      { title: t('stats3.title'), amount: '18' },
-      { title: t('stats4.title'), amount: '4' },
+      { title: t('stats1.title'), amount: 18 },
+      { title: t('stats2.title'), amount: 680, extra: '+' },
+      { title: t('stats3.title'), amount: 18 },
+      { title: t('stats4.title'), amount: 4 },
     ]}
   />
 
