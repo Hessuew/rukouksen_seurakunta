@@ -81,7 +81,9 @@ export default {
         fade: 'fadeInUp 1s both',
         'bounce-gentle': 'bounceGentle 2s ease-in-out infinite',
         'fade-fast': 'fadeInUp 0.5s both',
-        'bounce-slow': 'bounceGentle 3s ease-in-out infinite'
+        'bounce-slow': 'bounceGentle 3s ease-in-out infinite',
+        'marquee': 'marquee var(--duration) linear infinite',
+        'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
       },
       keyframes: {
         fadeInUp: {
@@ -101,7 +103,15 @@ export default {
 			'50%': {
 				transform: 'translateY(-20px)'
 			}
-		}
+		},
+    marquee: {
+      from: { transform: 'translateX(0)' },
+      to: { transform: 'translateX(calc(-100% - var(--gap)))' },
+    },
+    'marquee-vertical': {
+      from: { transform: 'translateY(0)' },
+      to: { transform: 'translateY(calc(-100% - var(--gap)))' },
+    },
 	},
 	borderRadius: {
 		lg: 'var(--radius)',
