@@ -13,10 +13,37 @@ interface MediaItem {
   poster?: ImageMetadata;
   video?: string;
   videoQuality?: 'max' | 'hq';
-  subject: 'commandingBattalions' | 'wisdom' | 'other';
+  subject: 'commandingBattalions' | 'wisdom' | 'testimonies' | 'other';
 }
 
 export const videosAndPodcasts: MediaItem[] = [
+  {
+    title: 'podcast #5',
+    date: '2025-04-22',
+    description: 'podcast5.description',
+    videoId: '1nfP1v75Lgo',
+    subject: 'other',
+    videoQuality: 'hq',
+    platform: 'Youtube',
+  },
+  {
+    title: 'podcast #4',
+    date: '2025-04-22',
+    description: 'podcast4.description',
+    videoId: 'D0EpiWthjmQ',
+    subject: 'other',
+    videoQuality: 'hq',
+    platform: 'Youtube',
+  },
+  {
+    title: 'podcast #3',
+    date: '2025-04-17',
+    description: 'podcast3.description',
+    videoId: 'icXtHWpkaAY',
+    subject: 'testimonies',
+    videoQuality: 'hq',
+    platform: 'Youtube',
+  },
   {
     title: 'podcast #2',
     date: '2025-03-22',

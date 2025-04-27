@@ -1,0 +1,79 @@
+---
+import prayerConferenceFi from '~/assets/images/other/Kuopio Prayer conference_ April 2025_finnish.webp';
+import prayerConferenceEn from '~/assets/images/other/Kuopio Prayer conference_ April 2025.webp';
+import Headline from '~/components/ui/Headline.astro';
+import { MarqueeDemo } from '~/components/ui/Marguee';
+import Hero from '~/components/widgets/Hero.astro';
+import { getLangFromUrl, useTranslations } from '~/i18n/utils';
+import WidgetWrapper from '../ui/WidgetWrapper.astro';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const reviews = [
+  {
+    name: t('event1.test1.name'),
+    body: t('event1.test1.t'),
+  },
+  {
+    name: t('event1.test2.name'),
+    body: t('event1.test2.t'),
+  },
+  {
+    name: t('event1.test9b.name'),
+    body: t('event1.test9b.t'),
+  },
+  {
+    name: t('event1.test3.name'),
+    body: t('event1.test3.t'),
+  },
+  {
+    name: t('event1.test5.name'),
+    body: t('event1.test5.t'),
+  },
+  {
+    name: t('event1.test4.name'),
+    body: t('event1.test4.t'),
+  },
+  {
+    name: t('event1.test4b.name'),
+    body: t('event1.test4b.t'),
+  },
+  {
+    name: t('event1.test6.name'),
+    body: t('event1.test6.t'),
+  },
+  {
+    name: t('event1.test7.name'),
+    body: t('event1.test7.t'),
+  },
+  {
+    name: t('event1.test8.name'),
+    body: t('event1.test8.t'),
+  },
+  {
+    name: t('event1.test9.name'),
+    body: t('event1.test9.t'),
+  },
+  {
+    name: t('event1.test10.name'),
+    body: t('event1.test10.t'),
+  },
+];
+---
+
+<WidgetWrapper id="events" containerClass="max-w-5xl mx-auto">
+  <Hero
+    image={{
+      src: lang === 'en' ? prayerConferenceEn : prayerConferenceFi,
+      alt: t('prayerConferenceImageAlt'),
+    }}
+  />
+
+  <Headline title={t('whatHappened')} subtitle={t('hereAreSome')} />
+  <div
+    class="relative mx-auto max-w-7xl w-full intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+  >
+    <MarqueeDemo reviews={reviews} />
+  </div>
+</WidgetWrapper>

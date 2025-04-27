@@ -29,9 +29,8 @@ const { title: titleClass = '', subtitle: subtitleClass = '' } = classes as Reco
             'overflow-visible font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl w-full',
             titleClass
           )}
-        >
-          <slot name="title" />
-        </div>
+          set:html={title}
+        />
       )
     }
     {subtitle && <p class={twMerge('mt-4 text-muted mx-auto', subtitleClass)} set:html={subtitle} />}

@@ -99,8 +99,8 @@ export const ui = {
     ida: 'Deaconess Ida',
     idaContent1: `When we prayed, I saw a vision, it was like Mahi was in a net in the spirit realm. Many fishermen's nets had been tied around her and she was completely stuck. She was in the same position as a fetus and could not move. But then, when we prayed, the net's ropes began to separate from each other. The nets separated by themselves, until there was nothing left. Then Mahi rose and started to move so joyful of the liberty the Lord had given to her. Hallelujah!!`,
     idaImageAlt: 'Ida - image',
-    ben: 'Deacon Benwillis',
-    benImageAlt: 'Ben - image',
+    ben: 'Deacon Abraham',
+    benImageAlt: 'Abraham - image',
     testimonials: 'Testimonials',
     whatDoPeopleSay: 'What do people say',
     'testimonialNonMentioned1.t': 'A cult',
@@ -168,7 +168,7 @@ Amen! Praise be to God!
     'testimonialIda.name': 'Ida',
     'testimonialIda.job': 'Nurse, counselor',
     'testimonialBenwillis.t': `My experiences in the prayer church are countless. Before I joined, I never took prayer seriously. Now I have developed a strong habit of trusting God in everything that I do. Through that, I have seen the hand Jesus in my life, especially in my career where I specifically prayed for a job and Jesus delivered. My life has since transformed from someone who lived life aimlessly to a focused, deeply spiritual person whose faith has been renewed and who knows that it's only Jesus that can save our lives.`,
-    'testimonialBenwillis.name': 'Benwillis',
+    'testimonialBenwillis.name': 'Abraham',
     'testimonialBenwillis.job':
       'Medical researcher currently working as a teaching assistant at the university of Eastern Finland',
     'testimonialIina.t':
@@ -307,10 +307,53 @@ Thank you, Jesus!
     podcastsFrom: 'Podcasts from the Flame the Freeze Bible Studies',
     podcastSubtitle:
       "Not everyone speaks or understands English. That's why we wanted to prepare a brief Finnish walkthrough of these Spirit-filled Bible Studies, so that Finnish speakers can also access these heavenly revelations. And we ourselves have been immensely blessed as we filmed these, for the Holy Spirit has been the leader of the recording sessions. Hallelujah!",
+    whatHappened: 'What happened at the conference?',
+    hereAreSome:
+      "Now that the conference has been held, it is important to ask: 'Was God present?' Here are some accounts of what happened at the conference or to the individuals.",
+    'event1.test1.name': '10-year-old boy',
+    'event1.test1.t': 'This was the first time I saw godly things.',
+    'event1.test2.name': 'Old lady',
+    'event1.test2.t':
+      "The lady was shaking and her legs almost failed her; 'The presence of the Holy Spirit is so strong here!'",
+    'event1.test3.name': 'Pastor',
+    'event1.test3.t':
+      'The children were completely focused on the conference, singing spiritual songs spontaneously and praying seriously when prayers were made.',
+    'event1.test4.name': 'Male from the church',
+    'event1.test4.t': 'This was the most powerful presence of God I have ever experienced.',
+    'event1.test4b.name': 'Male from the church',
+    'event1.test4b.t':
+      'Prayers started to gush out from my stomach, and  I needed to film the event so that I would not miss anything. The same happened to my little brothers.',
+    'event1.test5.name': 'Old lady',
+    'event1.test5.t':
+      "We prayed for the partially deaf ear in the name of Jesus. The lady said after the healing, 'How did it heal with such a short prayer?'",
+    'event1.test6.name': 'Pastor 2',
+    'event1.test6.t':
+      'When we prayed for Finland I started to cry out of control. Then I saw that Ida came through the door also crying. I though that what was happening to us.',
+    'event1.test7.name': 'Deaconess',
+    'event1.test7.t':
+      'A woman left early and I went after. She told her prayer requests and we prayed. I returned to the hall, and the Holy Spirit spake the subjects this woman just told me privately.',
+    'event1.test8.name': 'Deaconess',
+    'event1.test8.t':
+      'Akosua came jumping for joy to the stage while we praises and fell on the floor under the power of God. The power of the Spirit upon Akosua was so great that my foot started to vibrate.',
+    'event1.test9.name': 'Eyewitness',
+    'event1.test9.t':
+      'Akosua is usually pretty calm but now she started to pray deeper, deeper, and deeper, until the Spirit of God fell upon the whole hall.',
+    'event1.test9b.name': 'Eyewitness 2',
+    'event1.test9b.t':
+      'The whole hall was filled with prayer, there was complete freedom for prayer and the movements of the Holy Spirit. He moved freely. This lasted for 2 hours.',
+    'event1.test10.name': 'Pastor 3',
+    'event1.test10.t':
+      'If the Holy Spirit would have a body I could imagine Him to be just like that. So joyful in praises, serious in prayers, and sad when speaking about the state of the church.',
     'podcast #1': '2025 is the year of commanding battalions, why?',
     'podcast1.description': 'Flame the Freeze Bible study 04/01/25',
     'podcast #2': 'Christianity without an encounter with the true God vs. The experience of the Queen of Sheba',
     'podcast2.description': 'Flame the Freeze Bible study 18/01/25',
+    'podcast #3': 'The touch of the Finger of God in the first meeting',
+    'podcast3.description': 'Flame the Freeze Bible study 01/02/25',
+    'podcast #4': "God's light to Finland | Easter Prayer Conference 2025",
+    'podcast4.description': 'Flame the Freeze Bible study 18/04/25',
+    'podcast #5': 'Finland repent! Easter Prayer Conference 2025',
+    'podcast5.description': 'Flame the Freeze Bible study 20/04/25',
   },
   fi: {
     podcasts: 'Podkastit',
@@ -410,8 +453,8 @@ Thank you, Jesus!
     ida: 'Seurakunnan palvelija Ida',
     idaImageAlt: 'Riemukas Ida - kuva',
     idaContent1: `Kun rukoilimme, näin näyssä, että Mahi oli hengen maailmassa verkossa. Monta kalastajan verkkoa oli kietoutunut hänen ympärilleen ja hän oli aivan jumissa. Hän oli sikiöasennossa ja ei pystynyt liikkumaan. Mutta sitten rukoillessamme verkon köydet alkoivat erkaantua toisistaan. Verkot hajosivat itsestään, kunnes niistä ei ollut jäljellä mitään. Sitten Mahi nousi ylös ja lähti liikkeelle niin iloisena Herran antamasta vapaudesta. Halleluja!!`,
-    ben: 'Seurakunnan palvelija Benwillis',
-    benImageAlt: 'Ben - kuva',
+    ben: 'Seurakunnan palvelija Abraham',
+    benImageAlt: 'Abraham - kuva',
     testimonials: 'Todistuksia',
     whatDoPeopleSay: 'Mitä ihmiset sanovat',
     'testimonialNonMentioned1.t': 'Kultti',
@@ -481,8 +524,8 @@ Aamen! Ylistys Jumalalle!
     'testimonialIda.t2': ` Kun ****** rukoili kielillä, aloin ymmärtämään aiheet, mitä hän rukoili. Olin erittäin yllättynyt, ja kun olimme rukoilleet pitkään, sanoin, että saatoin ymmärtää rukouksen. Kun kerroin hänelle, mitä olin ymmärtänyt, ****** vahvisti, että hän tiesi hengessä, että ne olivat aiheita, joista hän rukoili, ja kertoi minulle, että se oli kielten tulkinnan ilmeneminen. Kunnia Jumalalle!`,
     'testimonialIda.name': 'Ida',
     'testimonialIda.job': 'Lähihoitaja, ohjaaja',
-    'testimonialBenwillis.t': `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaikessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
-    'testimonialBenwillis.name': 'Benwillis',
+    'testimonialBenwillis.t': `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaicessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
+    'testimonialBenwillis.name': 'Abraham',
     'testimonialBenwillis.job': 'Lääketieteen tutkija, opetusassitentti Itä-Suomen Yliopistolla',
     'testimonialIina.t':
       'Vastaanotin Jeesuksen, pääsin eroon tupakasta ilman mitään korvaavia nikotiinituotteita. Rukoilin apua Jeesukselta. Tajusin, että minun pitää myös vastaanottaa apu, ja niin kulkea valossa ilman riippuvuuksia.',
@@ -624,9 +667,52 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
     wisdom: 'Viisaus',
     other: 'Muut',
     kpl: ' kpl',
+    whatHappened: 'Mitä konfferenssissa tapahtui?',
+    hereAreSome:
+      "Nyt kun konfferenssi on pidetty niin on tärkeä kysyä: 'Oliko Jumala läsnä?' Tässä muutamien paikallaolioiden kuvauksia siitä, mitä konfferenssissa tapahui tai mitä heille itselleen tapahtui.",
+    'event1.test1.name': '10-vuotias poika',
+    'event1.test1.t': 'Tämä oli ensimmäinen kerta kun näin jumalallisia asioita.',
+    'event1.test2.name': 'Vanhempi rouva',
+    'event1.test2.t':
+      "Nainen tärisi ja hänen jalkansa melkein pettivät alta; 'Pyhän Hengen läsnäolo on täällä niin voimakas!'",
+    'event1.test3.name': 'Seurakunnan paimen',
+    'event1.test3.t':
+      'Lapset olivat koko tilaisuuden keskittyneitä, lauloivat hengellisiä lauluja itsestään ja rukoilivat aivan tosissaan rukouksien aikana.',
+    'event1.test4.name': 'Seurakunnan miespuolinen kävijä',
+    'event1.test4.t': 'Tämä oli suurin Jumalan läsnöolo, mitä olen koskaan kokenut.',
+    'event1.test4b.name': 'Seurakunnan miespuolinen kävijä',
+    'event1.test4b.t':
+      'Vatsastani alkoi vyöryä hallitsemattomasti rukouksia ja minun piti alkaa kuvata tapahtumaa etten varmasti missaa mitään. Sama tapahtui pikkuveljilleni.',
+    'event1.test5.name': 'Vanhempi rouva',
+    'event1.test5.t':
+      "Naisen osittain kuuron korvan puolesta rukoiltiin Jeesuksen nimessä; 'Miten se parantui vain noin pienellä rukouksella?'",
+    'event1.test6.name': 'Seurakunnan paimen 2',
+    'event1.test6.t':
+      'Kun rukoilimme Suomen puolesta aloin itkeä hallitsemattomasti. Sitten näin, että Ida tuli ovesta ja itki. Mietin, että mitä meille tapahtuu.',
+    'event1.test7.name': 'Seurakunnan palvelija',
+    'event1.test7.t':
+      'Nainen lähti aikaisin ja lähdin perään. Hän kertoi rukousaiheensa ja rukoilimme. Palasin saliin ja Pyhä Henki kertoi nuo aiheet, jotka nainen oli kertonut vain minulle.',
+    'event1.test8.name': 'Seurakunnan palvelija',
+    'event1.test8.t':
+      'Akosua tuli ilosta pomppien lavalle ylistäessämme ja lyyhistyi pian viereeni Hengen voiman alle. Hengen voima Akosuan päällä oli niin suuri että jalkani alkoivat täristä.',
+    'event1.test9.name': 'Silminnäkijä',
+    'event1.test9.t':
+      'Akosua on yleensä aika rauhallinen. Mutta nyt hän alkoi rukoilla syvempään, syvempään ja syvempään, kunnes Jumalan Henki putosi koko saliin.',
+    'event1.test9b.name': 'Silminnäkijä 2',
+    'event1.test9b.t':
+      'Koko sali kaikui rukouksesta ja paikka oli täydessä vapaudessa rukoukseen ja kaikkeen Pyhän Hengen liikkeeseen. Pyhä Henki liikkui aivan vapaasti. Tämä kesti 2 tuntia.',
+    'event1.test10.name': 'Seurakunnan paimen 3',
+    'event1.test10.t':
+      'Jos Pyhällä Hengellä olisi keho niin voisin kuvitella Hänen olevan juuri tuollainen. Niin iloinen ylistyksessä, tosissaan rukouksissa ja surullinen seurakunnan tilasta puhuttaessa.',
     'podcast #1': '2025 on pataljoonien komentamisen vuosi, miksi?',
     'podcast1.description': 'Flame the Freeze Raamis 04/01/25',
     'podcast #2': 'Kristinuskoa ilman tosi Jumalan kohtaamista vs. Etelän kuningatteren kokemus',
     'podcast2.description': 'Flame the Freeze Raamis 18/01/25',
+    'podcast #3': 'Jumalan Sormen kosketus ensimmäisessä tapaamisessa',
+    'podcast3.description': 'Flame the Freeze Raamis 01/02/25',
+    'podcast #4': 'Jumalan valo Suomeen | Pääsiäinen rukouskonferenssi 2025',
+    'podcast4.description': 'Flame the Freeze Raamis 18/04/25',
+    'podcast #5': 'Suomi, tee parannus! Pääsiäinen rukouskonferenssi 2025',
+    'podcast5.description': 'Flame the Freeze Raamis 20/04/25',
   },
 } as const;
