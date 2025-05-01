@@ -307,6 +307,10 @@ Thank you, Jesus!
     podcastsFrom: 'Podcasts from the Flame the Freeze Bible Studies',
     podcastSubtitle:
       "Not everyone speaks or understands English. That's why we wanted to prepare a brief Finnish walkthrough of these Spirit-filled Bible Studies, so that Finnish speakers can also access these heavenly revelations. And we ourselves have been immensely blessed as we filmed these, for the Holy Spirit has been the leader of the recording sessions. Hallelujah!",
+    events: 'Events',
+    eventsOld: 'Old events',
+    eventsSubtitle:
+      "We organize events to reach the lost and strengthen the churches, following the how the Holy Spirit leads us. Here you'll find information about upcoming and past events. After each event, we also upload testimonies here on the website, so you can see what God has done. Be blessed!",
     whatHappened: 'What happened at the conference?',
     hereAreSome:
       "Now that the conference has been held, it is important to ask: 'Was God present?' Here are some accounts of what happened at the conference or to the individuals.",
@@ -659,14 +663,18 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
     toReadTheFullTestimony: 'lukeaksesi koko todistuksen',
     clickOnTestimonialsToReadMore: 'Klikkaa lukeaksesi koko todistuksen',
     podcastsFrom: 'Podkastit Flame the Freeze Raamiksista',
-    podcastSubtitle:
-      'Kaikki eivät puhu tai ymmärrä englantia. Siksi halusimme tehdä näistä Hengen täyteisistä Raamiksista lyhyen suomenkielisen läpikäynnin, jotta myös suomenkieliset pääsevät osallisiksi näistä taivaallisista ilmestyksistä. Olemme myös itse tulleet aivan valtavan siunatuiksi kuvatessamme näitä, sillä Pyhä Henki on ollut kuvaussessioiden vetäjä. Hallelujah!',
     search: 'Hae..',
     allSubjects: 'Kaikki aiheet',
     commandingBattalions: 'Pataljoonien komentaminen',
     wisdom: 'Viisaus',
     other: 'Muut',
     kpl: ' kpl',
+    podcastSubtitle:
+      'Kaikki eivät puhu tai ymmärrä englantia. Siksi halusimme tehdä näistä Hengen täyteisistä Raamiksista lyhyen suomenkielisen läpikäynnin, jotta myös suomenkieliset pääsevät osallisiksi näistä taivaallisista ilmestyksistä. Olemme myös itse tulleet aivan valtavan siunatuiksi kuvatessamme näitä, sillä Pyhä Henki on ollut kuvaussessioiden vetäjä. Hallelujah!',
+    events: 'Tapahtumat',
+    eventsOld: 'Vanhat tapahtumat',
+    eventsSubtitle:
+      'Järjestämme tapahtumia kadonneiden saavuttamiseksi sekä seurakuntien vahvistamiseksi sen mukaan, kuinka Pyhä Henki ohjaa meitä. Täältä löydät viralliset tiedot tulevista sekä menneistä tapahtumista. Lisäämme tänne jokaisen tapatuman jälkeen todistuksia siitä, mitä Jumala teki tapahtumassa. Ole siunattu!',
     whatHappened: 'Mitä konfferenssissa tapahtui?',
     hereAreSome:
       "Nyt kun konfferenssi on pidetty niin on tärkeä kysyä: 'Oliko Jumala läsnä?' Tässä muutamien paikallaolioiden kuvauksia siitä, mitä konfferenssissa tapahui tai mitä heille itselleen tapahtui.",
