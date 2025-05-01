@@ -62,15 +62,25 @@ const reviews = [
 ];
 ---
 
-<WidgetWrapper id="events" containerClass="max-w-5xl mx-auto">
+<WidgetWrapper id="tapahtumat" containerClass="max-w-5xl mx-auto">
   <Hero
+    title={t('events')}
+    subtitle={t('eventsSubtitle')}
     image={{
       src: lang === 'en' ? prayerConferenceEn : prayerConferenceFi,
       alt: t('prayerConferenceImageAlt'),
     }}
   />
 
-  <Headline title={t('whatHappened')} subtitle={t('hereAreSome')} />
+  <Hero
+    title={t('eventsOld')}
+    image={{
+      src: lang === 'en' ? prayerConferenceEn : prayerConferenceFi,
+      alt: t('prayerConferenceImageAlt'),
+    }}
+  />
+
+  <Headline classes={{ title: 'text-2xl' }} title={t('whatHappened')} subtitle={t('hereAreSome')} />
   <div
     class="relative mx-auto max-w-7xl w-full intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
   >
