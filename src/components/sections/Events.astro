@@ -1,4 +1,6 @@
 ---
+import crusadeEn from '~/assets/images/events/Kuopio Crusade for websites_2025_eng.webp';
+import crusadeFi from '~/assets/images/events/Kuopio Crusade for websites_2025_finnish.webp';
 import prayerConferenceFi from '~/assets/images/other/Kuopio Prayer conference_ April 2025_finnish.webp';
 import prayerConferenceEn from '~/assets/images/other/Kuopio Prayer conference_ April 2025.webp';
 import Headline from '~/components/ui/Headline.astro';
@@ -62,15 +64,26 @@ const reviews = [
 ];
 ---
 
-<WidgetWrapper id="events" containerClass="max-w-5xl mx-auto">
+<WidgetWrapper id="tapahtumat" containerClass="max-w-5xl mx-auto">
   <Hero
+    tagline={t('events')}
+    title={t('godMovesInKuopio')}
+    subtitle={t('eventsSubtitle')}
+    image={{
+      src: lang === 'en' ? crusadeEn : crusadeFi,
+      alt: t('crusadeImageAlt'),
+    }}
+  />
+
+  <Hero
+    title={t('eventsOld')}
     image={{
       src: lang === 'en' ? prayerConferenceEn : prayerConferenceFi,
       alt: t('prayerConferenceImageAlt'),
     }}
   />
 
-  <Headline title={t('whatHappened')} subtitle={t('hereAreSome')} />
+  <Headline classes={{ title: 'text-2xl' }} title={t('whatHappened')} subtitle={t('hereAreSome')} />
   <div
     class="relative mx-auto max-w-7xl w-full intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
   >

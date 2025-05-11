@@ -3,6 +3,7 @@ import Image from '~/components/common/Image.astro';
 import Button from '~/components/ui/Button.astro';
 import type { Hero as Props } from '~/types';
 import { twMerge } from 'tailwind-merge';
+import GradientText from '../ui/GradientText.astro';
 
 const {
   title = await Astro.slots.render('title'),
@@ -19,7 +20,7 @@ const {
   bg = await Astro.slots.render('bg'),
 } = Astro.props;
 
-const { labelContainer: labelContainerClass = '' } = classes;
+const { labelContainer: labelContainerClass = '', titleClass = '' } = classes;
 ---
 
 <section class="relative md:-mt-[76px] not-prose" {...id ? { id } : {}}>
@@ -50,8 +51,11 @@ const { labelContainer: labelContainerClass = '' } = classes;
         }
         {
           title && (
-            <h1
-              class="text-4xl xs:text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading text-gray-200 intersect-once intersect-tenth sm:intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+            <GradientText
+              class={twMerge(
+                'text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading text-gray-200 intersect-once intersect-tenth sm:intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade',
+                titleClass
+              )}
               set:html={title}
             />
           )
