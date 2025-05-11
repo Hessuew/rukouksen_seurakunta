@@ -1,4 +1,6 @@
 ---
+import crusadeEn from '~/assets/images/events/Kuopio Crusade for websites_2025_eng.webp';
+import crusadeFi from '~/assets/images/events/Kuopio Crusade for websites_2025_finnish.webp';
 import prayerConferenceFi from '~/assets/images/other/Kuopio Prayer conference_ April 2025_finnish.webp';
 import prayerConferenceEn from '~/assets/images/other/Kuopio Prayer conference_ April 2025.webp';
 import Headline from '~/components/ui/Headline.astro';
@@ -64,11 +66,12 @@ const reviews = [
 
 <WidgetWrapper id="tapahtumat" containerClass="max-w-5xl mx-auto">
   <Hero
-    title={t('events')}
+    tagline={t('events')}
+    title={t('godMovesInKuopio')}
     subtitle={t('eventsSubtitle')}
     image={{
-      src: lang === 'en' ? prayerConferenceEn : prayerConferenceFi,
-      alt: t('prayerConferenceImageAlt'),
+      src: lang === 'en' ? crusadeEn : crusadeFi,
+      alt: t('crusadeImageAlt'),
     }}
   />
 

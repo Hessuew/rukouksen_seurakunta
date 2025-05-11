@@ -36,7 +36,7 @@ const styleStyle = {
   <div class="flex flex-wrap justify-center -m-4 text-center pb-8">
     {
       stats &&
-        stats.map(({ amount, classes, extra, title, icon, lowerCase, curve }) => (
+        stats.map(({ amount, classes, extra1, extra2, title, icon, lowerCase, curve }) => (
           <div
             class={twMerge(
               'p-4 md:w-1/4 sm:w-1/2 w-full min-w-[220px] text-center md:border-r md:last:border-none md:border-slate-500 intersect-once motion-safe:opacity-0 motion-safe:intersect:animate-fade intersect-tenth sm:intersect-quarter',
@@ -57,12 +57,17 @@ const styleStyle = {
                   )}
                   aria-label={`${title}: ${amount}`}
                 >
-                  {extra && (
+                  {extra1 && (
                     <GradientText imageNro={2} backgroundStyles={styleStyle}>
-                      {extra}
+                      {extra1}
                     </GradientText>
                   )}
                   <NumberTicket value={amount} />
+                  {extra2 && (
+                    <GradientText imageNro={2} backgroundStyles={styleStyle}>
+                      {extra2}
+                    </GradientText>
+                  )}
                 </div>
               )}
               {curve && (
