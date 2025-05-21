@@ -12,7 +12,7 @@ metadata:
   title:
     default: Rukouksen seurakunta # Default page title
     template: '%s — Rukouksen seurakunta' # Template for dynamic page titles
-  description: 'Käytyäsi rukouksen seurakunnassa Jeesus ei enää kysy sinulta, "Etkö jaksanut valvoa minun kanssani edes yhtä hetkeä?" '
+  description: 'Rukouksen seurakunta | Seurakunta Kuopio | Jeesus | intohimoinen rukous | rukouspyyntö | ihmeet ja merkit | Pyhä Henki | Raamattu | herätys | Salilahden seurakunta | Savilahti | Kuopio'
   robots:
     index: true # Allow search engines to index
     follow: true # Allow search engines to follow links
