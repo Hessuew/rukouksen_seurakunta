@@ -1,4 +1,4 @@
-import imgGold from '~/assets/images/gold_original.webp';
+import imgGold from '~/assets/images/rukous_seurakunta_gold_original.webp';
 import { Marquee } from '~/components/magicui/marquee';
 import { cn } from '~/lib/utils';
 
