@@ -1,8 +1,8 @@
 ---
-import crusadeEn from '~/assets/images/events/Kuopio Crusade for websites_2025_eng.webp';
-import crusadeFi from '~/assets/images/events/Kuopio Crusade for websites_2025_finnish.webp';
-import prayerConferenceFi from '~/assets/images/other/Kuopio Prayer conference_ April 2025_finnish.webp';
-import prayerConferenceEn from '~/assets/images/other/Kuopio Prayer conference_ April 2025.webp';
+import crusadeEn from '~/assets/images/events/jesus_fest_kuopio_2025_flyer_en.webp';
+import crusadeFi from '~/assets/images/events/jesus_fest_kuopio_2025_flyer_fi.webp';
+import prayerConferenceEn from '~/assets/images/events/rukous_konfferenssi_kuopio_2025_flyer_en.webp';
+import prayerConferenceFi from '~/assets/images/events/rukous_konfferenssi_kuopio_2025_flyer_fi.webp';
 import Headline from '~/components/ui/Headline.astro';
 import { MarqueeDemo } from '~/components/ui/Marguee';
 import Hero from '~/components/widgets/Hero.astro';
@@ -67,12 +67,13 @@ const reviews = [
 <WidgetWrapper id="tapahtumat" containerClass="max-w-5xl mx-auto">
   <Hero
     tagline={t('events')}
-    title={t('godMovesInKuopio')}
+    title={`${t('godMovesInKuopio')} - Jesus Fest Kuopio 2025`}
     subtitle={t('eventsSubtitle')}
     image={{
       src: lang === 'en' ? crusadeEn : crusadeFi,
       alt: t('crusadeImageAlt'),
     }}
+    imageText={t('crusadeImageText')}
   />
 
   <Hero
@@ -81,6 +82,7 @@ const reviews = [
       src: lang === 'en' ? prayerConferenceEn : prayerConferenceFi,
       alt: t('prayerConferenceImageAlt'),
     }}
+    imageText={t('prayerConferenceImageText')}
   />
 
   <Headline classes={{ title: 'text-2xl' }} title={t('whatHappened')} subtitle={t('hereAreSome')} />

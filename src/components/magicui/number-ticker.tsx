@@ -1,6 +1,6 @@
 'use client';
 
-import imgGold from '~/assets/images/gold_small.webp';
+import imgGold from '~/assets/images/rukous_seurakunta_gold_small.webp';
 import { cn } from '~/lib/utils';
 import { useInView, useMotionValue, useSpring } from 'motion/react';
 import { useEffect, useRef, type ComponentPropsWithoutRef } from 'react';
