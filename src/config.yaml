@@ -19,7 +19,7 @@ metadata:
   openGraph:
     site_name: Rukouksen seurakunta # Site name for social sharing
     images:
-      - url: '~/assets/images/index/other/logo.webp'
+      - url: '~/assets/images/index/other/rukous_seurakunta_logo.webp'
         width: 1024
         height: 1024
     type: website

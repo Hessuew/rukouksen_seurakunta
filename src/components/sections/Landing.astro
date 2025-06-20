@@ -1,5 +1,5 @@
 ---
-import logo from '~/assets/images/other/logo.webp';
+import logo from '~/assets/images/other/rukous_seurakunta_logo.webp';
 import GradientText from '~/components/ui/GradientText.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import { getLangFromUrl, useTranslations } from '~/i18n/utils';
@@ -22,6 +22,7 @@ const t = useTranslations(lang);
     width: 600,
     height: 600,
   }}
+  imageText={t('prayerChurchImageText')}
 >
   <Fragment slot="title">
     <GradientText
