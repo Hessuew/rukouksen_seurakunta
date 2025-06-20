@@ -18,6 +18,33 @@ interface MediaItem {
 
 export const videosAndPodcasts: MediaItem[] = [
   {
+    title: 'podcast #8',
+    date: '2025-05-01',
+    description: 'podcast8.description',
+    videoId: 'b-4aKCp9vhs',
+    subject: 'wisdom',
+    videoQuality: 'hq',
+    platform: 'Youtube',
+  },
+  {
+    title: 'podcast #7',
+    date: '2025-05-01',
+    description: 'podcast7.description',
+    videoId: 'lajnP-FNL7w',
+    subject: 'wisdom',
+    videoQuality: 'hq',
+    platform: 'Youtube',
+  },
+  {
+    title: 'podcast #6',
+    date: '2025-05-01',
+    description: 'podcast6.description',
+    videoId: 'ouqbEqcltuo',
+    subject: 'wisdom',
+    videoQuality: 'hq',
+    platform: 'Youtube',
+  },
+  {
     title: 'podcast #5',
     date: '2025-04-22',
     description: 'podcast5.description',
