@@ -39,7 +39,7 @@ const t = useTranslations(lang);
   </Fragment>
 
   <Fragment slot="subtitle">
-    {t('prayerDefinesTheChurch')}
+    <span set:html={t('prayerDefinesTheChurch')} />
     <span class="italic">
       '{t('mark11:17')}'
     </span>
