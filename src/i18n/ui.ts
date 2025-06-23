@@ -12,7 +12,8 @@ export const ui = {
     prayerChurchImageText: 'Prayer church Kuopio, praying church is alive | Prayer church logo',
     prayer: 'Prayer',
     church: 'Church',
-    prayerDefinesTheChurch: 'Church in Kuopio - Prayer defines the church. Why? Because Jesus said so,',
+    prayerDefinesTheChurch:
+      'Church in Kuopio where real prayers are prayed <br /> Prayer defines the church.Why ? Because Jesus said so, ',
     'mark11:17': 'Is it not written, My house shall be called of all nations the house of prayer? Mark 11:17.',
     theWayThePeoplePray: 'The way the people pray in a church shows truly what that church is like.',
     thisDoesNotMean:
@@ -316,6 +317,36 @@ Thank you, Jesus!
       "Not everyone speaks or understands English. That's why we wanted to prepare a brief Finnish walkthrough of these Spirit-filled Bible Studies, so that Finnish speakers can also access these heavenly revelations. And we ourselves have been immensely blessed as we filmed these, for the Holy Spirit has been the leader of the recording sessions. Hallelujah!",
     events: 'Events',
     godMovesInKuopio: 'God moves in Kuopio',
+    aboutTheEvent: 'About the event',
+    aboutTheEventText:
+      'We are organizing the event for the second time. We are a group of about 15 people who follow Jesus with all our whole hearts, just like the disciples followed Jesus in the Bible. We have seen Jesus doing many miracles, healing the sick and freeing the oppressed.',
+    reasonForTheEvent: 'Reason for the event and its content',
+    reasonForTheEventText:
+      'Kuopio is a very religious city and many people suffer from diseases, addictions, and hardships, as well as in churches and communities. The city is so saturated with the doctrines and commandments of men that what the Bible says is opposed.',
+    reasonForTheEventText2:
+      'We testify that Jesus Christ, the Son of God, is the same yesterday, today, and forever, and He has come to Kuopio to save everyone, heal everyone, and free everyone.',
+    whyYouShouldCome: 'Why should you come to the event?',
+    whyYouShouldComeText: 'Because you will meet a living Jesus. This is not a church event or a cult. We come.',
+    'step1.title': '1. Showing how true knowledge of God looks',
+    'step1.description':
+      'We will show you how a deep and true relationship with God looks in practice. This is not theoretical knowledge, but living experience.',
+    'step2.title': '2. Showing how divine joy and peace look',
+    'step2.description':
+      'You can experience divine joy and peace that transcends all understanding. This is something you can experience in your own life.',
+    'step3.title': '3. Reading together what the Bible actually says',
+    'step3.description':
+      "We will study together the truths of the Bible and what God's word actually teaches us about life and salvation.",
+    'step4.title': "4. Telling you what God's good will is actually toward you",
+    'step4.description': "You will hear what God's plan and good will is just for you. God loves you personally.",
+    'step5.title': '5. Helping you to God and freedom',
+    'step5.description': 'We help you to find God and freedom from sin and bondage.',
+    'step6.title': '6. Teaching you about God through the Bible',
+    'step6.description':
+      'You can experience healing and deliverance through faith in the Word of God. Faith comes by hearing and hearing by the word of God.',
+    'step7.title': '7. You will be saved, healed, and freed!',
+    'step7.description': 'This is a promise to you: God wants to save, heal, and free you. Come and try it yourself!',
+    haveYouHeard: 'Have you heard? Something good is going to happen.',
+    haveYouHeard2: 'Jesus is coming to Kuopio!',
     eventsOld: 'Old events',
     eventsSubtitle:
       "We organize events to reach the lost and strengthen the churches, following the how the Holy Spirit leads us. Here you'll find information about upcoming and past events. After each event, we also upload testimonies here on the website, so you can see what God has done. Be blessed!",
@@ -380,7 +411,7 @@ Thank you, Jesus!
     prayer: 'Rukouksen',
     church: 'seurakunta',
     prayerDefinesTheChurch:
-      'Seurakunta Kuopiossa - Rukous määrittää seurakunnan elävyyden. Miksi? Koska Jeesus sanoi niin,',
+      'Kuopiolainen seurakunta, jossa rukoillaan oikeasti <br /> Rukous määrittää seurakunnan elävyyden. Miksi? Koska Jeesus sanoi niin,',
     'mark11:17': 'Eikö ole kirjoitettu: "Minun huoneeni on oleva kaikkien kansojen rukoushuone"? Markus 11:17.',
     theWayThePeoplePray: 'Se miten seurakunnassa rukoillaan näyttää siis oikeasti, millainen seurakunta on.',
     thisDoesNotMean:
@@ -694,12 +725,46 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
       'Kaikki eivät puhu tai ymmärrä englantia. Siksi halusimme tehdä näistä Hengen täyteisistä Raamiksista lyhyen suomenkielisen läpikäynnin, jotta myös suomenkieliset pääsevät osallisiksi näistä taivaallisista ilmestyksistä. Olemme myös itse tulleet aivan valtavan siunatuiksi kuvatessamme näitä, sillä Pyhä Henki on ollut kuvaussessioiden vetäjä. Hallelujah!',
     events: 'Tapahtumat',
     godMovesInKuopio: 'Jumala liikkuu Kuopiossa',
+    aboutTheEvent: 'Tietoja tapahtumasta',
+    aboutTheEventText:
+      'Järjestämme tapahtuman toista kertaa. Olemme noin 16 henkilön porukka, joka seuraa Jeesusta koko sydämellä, niin kuin opetuslapset seurasivat Jeesusta Raamatussa. Olemme nähneet Jeesuksen tekevän paljon ihmeitä parantamalla sairaita ja vapauttamalla kahlittuja.',
+    reasonForTheEvent: 'Syy tapahtuman järjestämiseen ja sen sisältö',
+    reasonForTheEventText:
+      'Kuopio on erittäin uskonnollinen kaupunki ja todella moni kärsii sairauksista, riippuvuuksista ja päihteistä, masennuksesta — myös seurakuntien ja kirkon sisällä. Kaupunki on niin iskostettu uskonnollisilla opeilla, että sitä mitä Raamattu sanoo vastustetaan hyvin paljon.',
+    reasonForTheEventText2:
+      'Olemme tulleet julistamaan ilosanomaa, että Jeesus Kristus Jumalan Poika on sama eilen, tänään ja ikuisesti ja Hän on tullut Kuopioon pelastamaan jokaisen syntisen, parantamaan jokaisen sairaan ja vapauttamaan jokaisen kahlitun.',
+    whyYouShouldCome: 'Miksi sinun kannattaa tulla tapahtumaan?',
+    whyYouShouldComeText:
+      'Koska tulet kohtaamaan elävän Jeesuksen. Tämä ei ole kirkkotapahtuma tai rippileiri. Me tulemme.',
+    'step1.title': '1. Näyttämään miltä todellinen Jumalan tunteminen näyttää',
+    'step1.description':
+      'Tulemme osoittamaan sinulle, miltä aito ja syvä yhteys Jumalaan näyttää käytännössä. Tämä ei ole teoreettista tietoa, vaan elävää kokemusta.',
+    'step2.title': '2. Näyttämään miltä taivaallinen ilo ja rauha näyttää',
+    'step2.description':
+      'Voit kokea sen taivaallisen ilon ja rauhan, joka ylittää kaiken ymmärryksen. Tämä on jotain, mitä sinäkin voit kokea omassa elämässäsi.',
+    'step3.title': '3. Lukemaan yhdessä mitä Raamatussa oikeasti sanotaan',
+    'step3.description':
+      'Tutkimme yhdessä Raamatun totuuksia ja sen, mitä Jumalan sana todella opettaa meille elämästä ja pelastuksesta.',
+    'step4.title': '4. Kertomaan mikä Jumalan hyvä tahto on oikeasti sinua kohtaan',
+    'step4.description':
+      'Saat kuulla, millainen Jumalan suunnitelma ja hyvä tahto on juuri sinun elämääsi varten. Jumala rakastaa sinua henkilökohtaisesti.',
+    'step5.title': '5. Auttamaan sinut Jumalan yhteyteen ja vapauteen',
+    'step5.description':
+      'Autamme sinua löytämään yhteyden Jumalaan ja vapautumaan synneistä sekä riippuvuuksista, jotka sitovat sinua.',
+    'step6.title': '6. Tuomaan sinulle uskon puhumalla Raamatusta',
+    'step6.description':
+      'Raamatun sanan kautta voit kokea oman täydellisen parantumisesi ja vapautumisesi. Usko syntyy kuulemalla ja kuulemalla Jumalan Sanaa.',
+    'step7.title': '7. Sinä tulet pelastumaan, parantumaan ja vapautumaan!',
+    'step7.description':
+      'Tämä on lupaus sinulle: Jumala haluaa pelastaa, parantaa ja vapauttaa sinut. Tule ja koe itse!',
+    haveYouHeard: 'Oletko kuullut? Jotain hyvää on tapahtumassa.',
+    haveYouHeard2: 'Jeesus on tulossa Kuopioon!',
     eventsOld: 'Vanhat tapahtumat',
     eventsSubtitle:
       'Järjestämme tapahtumia kadonneiden saavuttamiseksi sekä seurakuntien vahvistamiseksi sen mukaan, kuinka Pyhä Henki ohjaa meitä. Täältä löydät viralliset tiedot tulevista sekä menneistä tapahtumista. Lisäämme tänne jokaisen tapahtuman jälkeen todistuksia siitä, mitä Jumala teki tapahtumassa. Ole siunattu!',
     whatHappened: 'Mitä konfferenssissa tapahtui?',
     hereAreSome:
-      "Nyt kun konfferenssi on pidetty niin on tärkeä kysyä: 'Oliko Jumala läsnä?' Tässä muutamien paikallaolioiden kuvauksia siitä, mitä konfferenssissa tapahui tai mitä heille itselleen tapahtui.",
+      "Nyt kun konfferenssi on pidetty niin on tärkeä kysyä: 'Oliko Jumala läsnä?' Tässä muutamien vierailijoiden kuvauksia siitä, mitä konfferenssissa tapahtui.",
     'event1.test1.name': '10-vuotias poika',
     'event1.test1.t': 'Tämä oli ensimmäinen kerta kun näin jumalallisia asioita.',
     'event1.test2.name': 'Vanhempi rouva',
