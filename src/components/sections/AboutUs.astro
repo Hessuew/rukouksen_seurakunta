@@ -19,12 +19,16 @@ const t = useTranslations(lang);
   tagline={t('aboutUs')}
   title={t('workersOfTheGospel')}
   subtitle={t('toYou')}
-  classes={{ headline: { subtitle: 'max-w-5xl text-base md:text-lg lg:text-xl' } }}
+  classes={{
+    headline: {
+      subtitle: 'max-w-5xl xl:max-w-[1024px] mx-auto text-base md:text-lg lg:text-xl xl:text-[20px] xl:leading-[28px]',
+    },
+  }}
   items={[
     {
       title: t('juhaniJuusola'),
       name: 'Juhani Juusola',
-      content: `1) ${t('juhaniJuusolaContent1')} <br /> <br /> 2) ${t('juhaniJuusolaContent2')}`,
+      content: `1) ${t('juhaniJuusolaContent2')}`,
       image: {
         src: juhani_helsinki,
         alt: t('juhaniJuusolaImageAlt'),
@@ -34,7 +38,7 @@ const t = useTranslations(lang);
     {
       title: t('greta'),
       name: 'Greta',
-      // content: `1) ${t('gretaContent1')} <br /> <br /> 2) ${t('gretaContent2')}`,
+      content: `1) ${t('gretaContent1')} <br /> <br /> 2) ${t('gretaContent2')}`,
       image: {
         src: greta,
         alt: t('gretaImageAlt'),

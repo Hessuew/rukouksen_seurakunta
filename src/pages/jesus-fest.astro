@@ -4,13 +4,47 @@ import crusadeFi from '~/assets/images/events/jesus_fest_kuopio_2025_flyer_fi.we
 import prayerConferenceEn from '~/assets/images/events/rukous_konfferenssi_kuopio_2025_flyer_en.webp';
 import prayerConferenceFi from '~/assets/images/events/rukous_konfferenssi_kuopio_2025_flyer_fi.webp';
 import Image from '~/components/common/Image.astro';
+import GradientText from '~/components/ui/GradientText.astro';
 import Headline from '~/components/ui/Headline.astro';
 import { MarqueeDemo } from '~/components/ui/Marguee';
+import ContentSection from '~/components/widgets/ContentSection.astro';
 import Hero from '~/components/widgets/Hero.astro';
+import StepsOriginal from '~/components/widgets/StepsOriginal.astro';
 import { getLangFromUrl, useTranslations } from '~/i18n/utils';
-import GradientText from '../ui/GradientText.astro';
-import WidgetWrapper from '../ui/WidgetWrapper.astro';
-import StepsOriginal from '../widgets/StepsOriginal.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Rukouksen seurakunta | Jesus Fest Kuopio 2025',
+  description:
+    'Rukouksen seurakunta on Kuopiossa kokoontuva ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus. Savilahti, Kuopio.',
+  ignoreTitleTemplate: true,
+  canonical: 'https://rukouksenseurakunta.fi',
+  openGraph: {
+    title: 'Rukouksen seurakunta | Jesus Fest Kuopio 2025',
+    description:
+      'Rukouksen seurakunta on Kuopiossa kokoontuva ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus.',
+    type: 'website',
+    image: crusadeFi,
+    article: {
+      publishedTime: '2025-03-03T05:03:23+02:00',
+      modifiedTime: '2025-03-03T05:03:23+02:00',
+      authors: ['Rukouksen seurakunta'],
+      tags: [
+        'Rukouksen seurakunta',
+        'Rukouksen seurakunta Kuopio',
+        'Savilahti',
+        'Kuopio',
+        'Savilahden seurakunta',
+        'Kuopio seurakunta',
+      ],
+    },
+  },
+  twitter: {
+    handle: '@RukouksenSrk',
+    site: '@RukouksenSrk',
+    cardType: 'summary_large_image',
+  },
+};
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -67,7 +101,7 @@ const reviews = [
 ];
 ---
 
-<WidgetWrapper id="tapahtumat" containerClass="max-w-5xl mx-auto">
+<Layout metadata={metadata}>
   <Hero tagline={t('events')} title="Jesus Fest Kuopio 2025" subtitle={t('eventsSubtitle')}>
     <Fragment slot="image">
       <div class="relative m-auto max-w-5xl text-center">
@@ -180,19 +214,38 @@ const reviews = [
     </Fragment>
   </Hero>
 
-  <Hero
-    title={t('easterPrayerConference')}
-    image={{
-      src: lang === 'en' ? prayerConferenceEn : prayerConferenceFi,
-      alt: t('prayerConferenceImageAlt'),
-    }}
-    imageText={t('prayerConferenceImageText')}
-  />
+  <ContentSection classes={{ content: 'relative m-auto max-w-5xl xl:max-w-[1024px]' }}>
+    <Fragment slot="title">
+      <GradientText class="text-3xl md:text-4xl xl:text-[36px] xl:leading-[40px]">
+        {t('easterPrayerConference')}
+      </GradientText>
+    </Fragment>
 
-  <Headline classes={{ title: 'text-2xl' }} title={t('whatHappened')} subtitle={t('hereAreSome')} />
-  <div
-    class="relative mx-auto max-w-7xl w-full intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
-  >
-    <MarqueeDemo reviews={reviews} />
-  </div>
-</WidgetWrapper>
+    <Fragment slot="default">
+      <div class="relative m-auto max-w-5xl xl:max-w-[1024px]">
+        <Image
+          class="mx-auto rounded-md w-full"
+          widths={[400, 768, 1024, 2040]}
+          sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+          loading="eager"
+          decoding="async"
+          width={1024}
+          height={576}
+          src={lang === 'en' ? prayerConferenceEn : prayerConferenceFi}
+          alt={t('prayerConferenceImageAlt')}
+        />
+      </div>
+
+      <p class="text-center text-sm xl:text-[14px] xl:leading-[20px] text-muted dark:text-slate-400 mb-12 xl:mb-[48px]">
+        {t('prayerConferenceImageText')}
+      </p>
+
+      <Headline classes={{ title: 'text-2xl' }} title={t('whatHappened')} subtitle={t('hereAreSome')} />
+      <div
+        class="relative mx-auto max-w-7xl w-full intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+      >
+        <MarqueeDemo reviews={reviews} />
+      </div>
+    </Fragment>
+  </ContentSection>
+</Layout>
