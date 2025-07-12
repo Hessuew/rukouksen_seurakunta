@@ -80,7 +80,8 @@ const navigateToLanguage = (href: string | undefined) => {
   // Check if the current URL already contains /en
   const currentUrl = new URL(Astro.url);
   const pathContainsEn = currentUrl.pathname.includes('/en');
-  const pathContainsPodkastit = currentUrl.pathname.includes('podkastit') || currentUrl.pathname.includes('jesus-fest');
+  const pathContainsPodkastit =
+    currentUrl.pathname.includes('rukouksen-seurakunta-videot') || currentUrl.pathname.includes('jesus-fest');
 
   // Handle anchor links specially
   if (href.startsWith('#')) {
@@ -102,7 +103,7 @@ const navigateToLanguage = (href: string | undefined) => {
   }
 
   // Handle podcast link
-  if (href.includes('podkastit')) {
+  if (href.includes('rukouksen-seurakunta-videot') || href.includes('jesus-fest')) {
     if (currentLang === 'en') {
       return `/en${href}`;
     }
@@ -110,7 +111,12 @@ const navigateToLanguage = (href: string | undefined) => {
   }
 
   // Handle regular links when on podcast page
-  if (pathContainsPodkastit && !href.startsWith('#') && !href.includes('podkastit') && !href.includes('jesus-fest')) {
+  if (
+    pathContainsPodkastit &&
+    !href.startsWith('#') &&
+    !href.includes('rukouksen-seurakunta-videot') &&
+    !href.includes('jesus-fest')
+  ) {
     if (currentLang === 'en') {
       return `/en${href}`;
     }
@@ -233,7 +239,7 @@ const navigateToLanguage = (href: string | undefined) => {
               ) : (
                 <a
                   class:list={[
-                    'hover:text-muted px-2.5 py-3 flex items-center whitespace-nowrap',
+                    'hover:text-muted px-2.5 py-3 flex items-center whitespace-nowrap group',
                     { 'aw-link-active': href === currentPath },
                   ]}
                   href={navigateToLanguage(href)}
@@ -241,7 +247,7 @@ const navigateToLanguage = (href: string | undefined) => {
                   <span class="flex items-center">
                     {t(text as keyof typeof t)}
                     {icon && (
-                      <div class="icon-gold-container relative w-5 h-5 inline-flex ml-1 -mt-1.5">
+                      <div class="icon-gold-container relative w-5 h-5 inline-flex ml-1 -mt-1.5 transform group-hover:scale-125 transition-transform duration-300 ease-out">
                         <div
                           class="icon-gold-background"
                           style={{

@@ -13,10 +13,46 @@ interface MediaItem {
   poster?: ImageMetadata;
   video?: string;
   videoQuality?: 'max' | 'hq';
-  subject: 'commandingBattalions' | 'wisdom' | 'testimonies' | 'other';
+  subject: 'commandingBattalions' | 'wisdom' | 'testimonies' | 'jesus_fest' | 'other';
 }
 
 export const videosAndPodcasts: MediaItem[] = [
+  {
+    title: 'podcast #12',
+    date: '2025-06-03',
+    description: 'podcast12.description',
+    videoId: 'NcqQGksE80Q',
+    subject: 'jesus_fest',
+    videoQuality: 'hq',
+    platform: 'Youtube',
+  },
+  {
+    title: 'podcast #11',
+    date: '2025-06-03',
+    description: 'podcast11.description',
+    videoId: 'aSpwSIwTMz8',
+    subject: 'jesus_fest',
+    videoQuality: 'hq',
+    platform: 'Youtube',
+  },
+  {
+    title: 'podcast #10',
+    date: '2025-06-03',
+    description: 'podcast10.description',
+    videoId: 'gd75ZNI_-f4',
+    subject: 'jesus_fest',
+    videoQuality: 'hq',
+    platform: 'Youtube',
+  },
+  {
+    title: 'podcast #9',
+    date: '2025-06-03',
+    description: 'podcast9.description',
+    videoId: 'wzfASjzIL3Q',
+    subject: 'jesus_fest',
+    videoQuality: 'hq',
+    platform: 'Youtube',
+  },
   {
     title: 'podcast #8',
     date: '2025-05-01',
