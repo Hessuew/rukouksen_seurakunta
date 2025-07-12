@@ -4,10 +4,6 @@ import { getPermalink } from './utils/permalinks';
 export const headerData: { links: Array<MenuLink> } = {
   links: [
     {
-      text: 'whatWeBelieve',
-      href: getPermalink('#mihin-uskomme'),
-    },
-    {
       text: 'aboutUs',
       href: getPermalink('#meista'),
     },
@@ -16,14 +12,16 @@ export const headerData: { links: Array<MenuLink> } = {
       href: getPermalink('#todistuksia'),
     },
     {
-      text: 'forYou',
-      href: getPermalink('#sinulle'),
+      separator: true,
+      icon: 'tabler:calendar-time',
+      text: 'events',
+      href: getPermalink('/jesus-fest'),
     },
     {
       separator: true,
       icon: 'tabler:brand-youtube',
-      text: 'podcasts',
-      href: getPermalink('/podkastit'),
+      text: 'videos',
+      href: getPermalink('/rukouksen-seurakunta-videot'),
     },
   ],
 };

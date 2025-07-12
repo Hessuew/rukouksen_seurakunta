@@ -13,7 +13,7 @@ export const ui = {
     prayer: 'Prayer',
     church: 'Church',
     prayerDefinesTheChurch:
-      'Church in Kuopio where real prayers are prayed <br /> Prayer defines the church.Why ? Because Jesus said so, ',
+      'Church in Kuopio where real prayers are prayed. <br /> Prayer defines the church.Why ? Because Jesus said so, ',
     'mark11:17': 'Is it not written, My house shall be called of all nations the house of prayer? Mark 11:17.',
     theWayThePeoplePray: 'The way the people pray in a church shows truly what that church is like.',
     thisDoesNotMean:
@@ -312,10 +312,27 @@ Thank you, Jesus!
     wisdom: 'Wisdom',
     other: 'Other',
     kpl: ' pcs',
+    contactTitle: 'Contact us',
+    contactSubtitle:
+      "Every time the Holy Spirit moves, it's supernatural and genuinely fun. It's great to see God's power touch people — and even more fun when they’re surprised by how personally God meets them.",
+    zoomTitle: 'Come and join our Zoom meetings!',
+    prayerMeetingTitle: 'Prayer time!',
+    prayerMeetingSubtitle:
+      'Join us in prayer — because the heartfelt and effectural prayer of a righteous person makes tremendous power available. <br/> <br/> On Saturdays of even-numbered weeks, 6-(11)pm.',
+    bibleStudyTitle: 'Bible study time!',
+    bibleStudySubtitle:
+      'Join us for Bible study, where the Holy Spirit brings the Word to life. Hallelujah! <br/> <br/> On Saturdays of odd-numbered weeks, 6-(10)pm.',
+    joinOurZoomMeeting: 'Join our Zoom meetings',
+    contactInfoTitle: 'Contact information',
+    phoneNumber: 'Phone number:',
+    welcomeToOurMeetingsTitle2: 'Welcome to our meetings',
+    welcomeToOurMeetingsSubtitle2:
+      'Join our prayer meetings and Bible studies. If you are looking for the true heart of God, you will find Him, or rather He will find you. It is absolutely amazing!',
     podcastsFrom: 'Podcasts from the Flame the Freeze Bible Studies',
     podcastSubtitle:
       "Not everyone speaks or understands English. That's why we wanted to prepare a brief Finnish walkthrough of these Spirit-filled Bible Studies, so that Finnish speakers can also access these heavenly revelations. And we ourselves have been immensely blessed as we filmed these, for the Holy Spirit has been the leader of the recording sessions. Hallelujah!",
     events: 'Events',
+    videos: 'Videos',
     godMovesInKuopio: 'God moves in Kuopio',
     aboutTheEvent: 'About the event',
     aboutTheEventText:
@@ -347,7 +364,8 @@ Thank you, Jesus!
     'step7.description': 'This is a promise to you: God wants to save, heal, and free you. Come and try it yourself!',
     haveYouHeard: 'Have you heard? Something good is going to happen.',
     haveYouHeard2: 'Jesus is coming to Kuopio!',
-    eventsOld: 'Old events',
+    easterPrayerConference: 'Easter Prayer Conference',
+    eventsOld: 'Easter Prayer Conference',
     eventsSubtitle:
       "We organize events to reach the lost and strengthen the churches, following the how the Holy Spirit leads us. Here you'll find information about upcoming and past events. After each event, we also upload testimonies here on the website, so you can see what God has done. Be blessed!",
     whatHappened: 'What happened at the conference?',
@@ -393,16 +411,24 @@ Thank you, Jesus!
     'podcast2.description': 'Flame the Freeze Bible study 18/01/25',
     'podcast #3': 'The touch of the Finger of God in the first meeting',
     'podcast3.description': 'Flame the Freeze Bible study 01/02/25',
-    'podcast #4': "God's light to Finland | Easter Prayer Conference 2025",
-    'podcast4.description': 'Flame the Freeze Bible study 18/04/25',
-    'podcast #5': 'Finland repent! Easter Prayer Conference 2025',
-    'podcast5.description': 'Flame the Freeze Bible study 20/04/25',
+    'podcast #4': "God's light to Finland",
+    'podcast4.description': 'Prayer conference 18/04/25',
+    'podcast #5': 'Finland, time to turn around!',
+    'podcast5.description': 'Prayer conference 20/04/25',
     'podcast #6': 'The wisdom of God reveals the heart',
     'podcast6.description': 'Flame the Freeze Bible study 15/02/25',
     'podcast #7': 'The receiving of wisdom should continue',
     'podcast7.description': 'Flame the Freeze Bible study 15/02/25',
     'podcast #8': "Foolishness is the man's default setting",
     'podcast8.description': 'Flame the Freeze Bible study 29/03/25',
+    'podcast #9': 'When Physicians, Priests, Psychotherapists & Pubs Fail',
+    'podcast9.description': 'Jesus Fest Kuopio 27/06/25',
+    'podcast #10': 'Freedom Without Restriction / Boundary = A Wasted Life',
+    'podcast10.description': 'Jesus Fest Kuopio 28/06/25',
+    'podcast #11': "Sari's Deliverance from Demons, Yoga, Meditation, Hypnotism, New Age",
+    'podcast11.description': 'Jesus Fest Kuopio 28/06/25',
+    'podcast #12': 'The Robe of Righteousness and the Ring of Power',
+    'podcast12.description': 'Jesus Fest Kuopio 29/06/25',
   },
   fi: {
     podcasts: 'Podkastit',
@@ -411,7 +437,7 @@ Thank you, Jesus!
     prayer: 'Rukouksen',
     church: 'seurakunta',
     prayerDefinesTheChurch:
-      'Kuopiolainen seurakunta, jossa rukoillaan oikeasti <br /> Rukous määrittää seurakunnan elävyyden. Miksi? Koska Jeesus sanoi niin,',
+      'Kuopiolainen seurakunta, jossa rukoillaan kunnolla. <br /> Rukous määrittää seurakunnan elävyyden. Miksi? Koska Jeesus sanoi niin,',
     'mark11:17': 'Eikö ole kirjoitettu: "Minun huoneeni on oleva kaikkien kansojen rukoushuone"? Markus 11:17.',
     theWayThePeoplePray: 'Se miten seurakunnassa rukoillaan näyttää siis oikeasti, millainen seurakunta on.',
     thisDoesNotMean:
@@ -489,7 +515,7 @@ Thank you, Jesus!
     gretaContent2:
       'Kun vaellamme Kristuksen tiellä täysin antautuneena, olemme täydellisiä niin kuin itse Kristus on. Niin kauan kun emme katso lihaan, Jumala kyllä ilmoittaa kaikesta miten asiat ovat. Fil. 3:12-16',
     gretaImageAlt: 'Kuva Greta - Rukous Seurakunta',
-    ahunsi: 'Paimen Ahunsimere',
+    ahunsi: 'Pastori Ahunsimere',
     ahunsiImageAlt: 'Kuva Ahunsimere - Rukous Seurakunta',
     akosua: 'Seurakunnan palvelija Akosua',
     akosuaContent1:
@@ -721,9 +747,26 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
     wisdom: 'Viisaus',
     other: 'Muut',
     kpl: ' kpl',
+    contactTitle: 'Ota yhteyttä',
+    contactSubtitle:
+      'Joka kerta Pyhä Henki liikkuu yliluonnollisesti ja tosi hauskasti. On hauska nähdä, kun Jumalan voima koskettaa ihmisiä, ja ihmiset itse yllättyvät, kun Jumala kohtaa heidät.',
+    zoomTitle: 'Tule mukaan Zoom-kokouksiimme!',
+    prayerMeetingTitle: 'Rukouksen aika!',
+    prayerMeetingSubtitle:
+      'Liity mukaan rukoukseen sillä sydämestä lähtevä ja voimallinen vanhurskaan rukous tuottaa valtavasti voimaa. <br/> <br/>Parilliset lauantait, klo 18-(23).',
+    bibleStudyTitle: 'Raamatun tutkiskelu aika!',
+    bibleStudySubtitle:
+      'Liity mukaan Raamatun tutkiskeluun, jossa Pyhä Henki tekee sanan eläväksi. Hallelujah! <br/> <br/>Parittomat lauantait, klo 18-(22).',
+    joinOurZoomMeeting: 'Liity mukaan Zoomiin',
+    contactInfoTitle: 'Yhteystiedot',
+    phoneNumber: 'Puhelinnumero:',
+    welcomeToOurMeetingsTitle: 'Tervetuloa kokouksiimme',
+    welcomeToOurMeetingsSubtitle:
+      'Liity mukaan rukoukseen ja Raamatun tutkiskeluun. Jos etsit oikeasti sydämestäsi Jumalaa, niin kohtaat Hänet, tai oikeastaan Hän kohtaa sinut. Aivan mahtavaa!',
     podcastSubtitle:
       'Kaikki eivät puhu tai ymmärrä englantia. Siksi halusimme tehdä näistä Hengen täyteisistä Raamiksista lyhyen suomenkielisen läpikäynnin, jotta myös suomenkieliset pääsevät osallisiksi näistä taivaallisista ilmestyksistä. Olemme myös itse tulleet aivan valtavan siunatuiksi kuvatessamme näitä, sillä Pyhä Henki on ollut kuvaussessioiden vetäjä. Hallelujah!',
     events: 'Tapahtumat',
+    videos: 'Videot',
     godMovesInKuopio: 'Jumala liikkuu Kuopiossa',
     aboutTheEvent: 'Tietoja tapahtumasta',
     aboutTheEventText:
@@ -759,7 +802,7 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
       'Tämä on lupaus sinulle: Jumala haluaa pelastaa, parantaa ja vapauttaa sinut. Tule ja koe itse!',
     haveYouHeard: 'Oletko kuullut? Jotain hyvää on tapahtumassa.',
     haveYouHeard2: 'Jeesus on tulossa Kuopioon!',
-    eventsOld: 'Vanhat tapahtumat',
+    easterPrayerConference: 'Pääsiäinen rukous konfferenssi',
     eventsSubtitle:
       'Järjestämme tapahtumia kadonneiden saavuttamiseksi sekä seurakuntien vahvistamiseksi sen mukaan, kuinka Pyhä Henki ohjaa meitä. Täältä löydät viralliset tiedot tulevista sekä menneistä tapahtumista. Lisäämme tänne jokaisen tapahtuman jälkeen todistuksia siitä, mitä Jumala teki tapahtumassa. Ole siunattu!',
     whatHappened: 'Mitä konfferenssissa tapahtui?',
@@ -806,14 +849,22 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
     'podcast #3': 'Jumalan Sormen kosketus ensimmäisessä tapaamisessa',
     'podcast3.description': 'Flame the Freeze Raamis 01/02/25',
     'podcast #4': 'Jumalan valo Suomeen | Pääsiäinen rukouskonferenssi 2025',
-    'podcast4.description': 'Flame the Freeze Raamis 18/04/25',
+    'podcast4.description': 'Rukous konferenssi 18/04/25',
     'podcast #5': 'Suomi, tee parannus! Pääsiäinen rukouskonferenssi 2025',
-    'podcast5.description': 'Flame the Freeze Raamis 20/04/25',
+    'podcast5.description': 'Rukous konferenssi 20/04/25',
     'podcast #6': 'Jumalan viisaus paljastaa sydämen tilan',
     'podcast6.description': 'Flame the Freeze Raamis 15/02/25',
     'podcast #7': 'Viisauden saamisen pitäisi olla jatkuvaa',
     'podcast7.description': 'Flame the Freeze Raamis 15/03/25',
     'podcast #8': 'Hölmöys on ihmisen vakio asetus',
     'podcast8.description': 'Flame the Freeze Raamis 29/03/25',
+    'podcast #9': 'Kun lääkärit, papit, ja pubit epäonnistuvat',
+    'podcast9.description': 'Jesus Fest Kuopio 27/06/25',
+    'podcast #10': 'Vapaus ilman rajoituksia = hukkaan mennyt elämä',
+    'podcast10.description': 'Jesus Fest Kuopio 28/06/25',
+    'podcast #11': 'Sarin vapautuminen demoneista, joogasta, meditaatiosta, New Age:stä',
+    'podcast11.description': 'Jesus Fest Kuopio 28/06/25',
+    'podcast #12': 'Vanhurskauden viitta ja voiman sormus',
+    'podcast12.description': 'Jesus Fest Kuopio 29/06/25',
   },
 } as const;

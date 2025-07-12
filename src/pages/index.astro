@@ -2,13 +2,13 @@
 import logo from '~/assets/images/other/rukous_seurakunta_logo.webp';
 import AboutUs from '~/components/sections/AboutUs.astro';
 import BottomGrid from '~/components/sections/BottomGrid.astro';
-import Events from '~/components/sections/Events.astro';
 import ForYou from '~/components/sections/ForYou.astro';
 import JesusDescription from '~/components/sections/JesusDescription.astro';
 import JesusIntroduction from '~/components/sections/JesusIntroduction.astro';
 import Landing from '~/components/sections/Landing.astro';
 import TestimonialsSection from '~/components/sections/TestimonialsSection.astro';
 import WhatWeBelieve from '~/components/sections/WhatWeBelieve.astro';
+import ContactWidget from '~/components/widgets/ContactWidget.astro';
 import Spacer from '~/components/widgets/Spacer.astro';
 import SpeechBubbleIcon from '~/components/widgets/SpeechBubbleIcon.astro';
 import Stats from '~/components/widgets/Stats.astro';
@@ -79,8 +79,8 @@ const t = useTranslations(lang);
     classes={{ container: 'pb-0 md:pb-0 lg:pb-0 xl:pb-0' }}
     stats={[
       { title: t('stats2.title1'), amount: 3 },
-      { title: t('stats1.title2'), amount: 831, extra1: '+' },
-      { title: t('stats1.title3'), amount: 26 },
+      { title: t('stats1.title2'), amount: 1881, extra1: '+' },
+      { title: t('stats1.title3'), amount: 64 },
       { title: t('stats1.title4'), amount: 4 },
     ]}
   />
@@ -88,7 +88,7 @@ const t = useTranslations(lang);
   <Stats
     id="lukuja2"
     stats={[
-      { title: t('stats2.title2'), amount: 2000, extra1: '+' },
+      { title: t('stats2.title2'), amount: 2100, extra1: '+' },
       { title: t('stats1.title1'), amount: 15 },
       { title: t('stats2.title3'), amount: 5, extra2: 'h' },
       // { title: t('stats2.title2'), amount: 2200, extra1: '+', extra2: '€' },
@@ -98,7 +98,14 @@ const t = useTranslations(lang);
 
   <ForYou />
 
-  <Events />
+  <ContactWidget
+    title={t('contactTitle')}
+    subtitle={t('contactSubtitle')}
+    prayerZoomLink="https://flamethefreeze.zoom.us/j/82297139976?pwd=2ZCDgn6UVPyuqKeKsh8CWBN3IQhiXu.1"
+    bibleStudyZoomLink="https://flamethefreeze.zoom.us/j/89840579351?pwd=Hr5ZAcJHbUVrybCIIySL6sT6Vw7Rly.1"
+    email="rukouksenseurakunta@gmail.com"
+    phone="+358 46 5714 634"
+  />
 
   <Spacer size="md" />
 

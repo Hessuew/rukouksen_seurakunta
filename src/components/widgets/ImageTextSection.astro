@@ -61,7 +61,7 @@ items.forEach((item, index) => {
 // Helper function to determine grid columns based on item count
 function getGridClasses(itemCount: number): string {
   // Default classes for all grid layouts
-  const baseClasses = 'grid gap-8 mx-auto';
+  const baseClasses = 'grid gap-4 xl:gap-[16px] mx-auto';
 
   // Responsive column classes based on item count
   if (itemCount === 1) {
@@ -99,18 +99,18 @@ const styleStyle = {
     }}
   />
 
-  <div class="space-y-16">
+  <div class="space-y-16 xl:space-y-[64px]">
     {
       groupedItems.map((group) => {
         if (group.type === 'content') {
           const { isReversed, image, title, content } = group.item;
           return (
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 md:items-center items-start intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-tenth sm:intersect-quarter">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4 xl:gap-[16px] md:items-center items-start intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-tenth sm:intersect-quarter">
               <div
-                class={`pt-12 flex justify-center self-start col-span-1 md:col-span-1 ${isReversed ? 'md:order-3 order-1' : 'order-1'}`}
+                class={`pt-12 xl:pt-[16px] flex justify-center self-start col-span-1 md:col-span-1 ${isReversed ? 'md:order-3 order-1' : 'order-1'}`}
               >
                 <Image
-                  class="rounded-lg shadow-md w-full max-w-40 sm:max-w-52"
+                  class="rounded-lg shadow-md w-full max-w-40 sm:max-w-52 xl:max-w-[208px]"
                   width={680}
                   height={840}
                   widths={[300, 400, 680]}
@@ -122,13 +122,13 @@ const styleStyle = {
               <div
                 class={`md:order-2 ${isReversed ? 'order-2' : 'order-2'} md:col-start-2 md:col-span-3 col-span-1 flex flex-col h-full`}
               >
-                <div class="border-b-2 border-primary-500 pb-2 w-full mb-4">
+                <div class="border-b-2 border-primary-500 w-full pb-2 mb-4 xl:pb-[8px] xl:mb-[16px]">
                   <h3 class="inline-flex xs:items-center flex-wrap flex-col xs:flex-row">
                     <GradientText
                       animate={false}
                       imageNro={2}
                       backgroundStyles={styleStyle}
-                      class="text-5xl font-bold font-signature italic pr-4"
+                      class="text-5xl xl:text-[48px] xl:leading-[56px] font-bold font-signature italic pr-4 xl:pr-[16px]"
                       set:html={title}
                     />
                   </h3>
@@ -145,9 +145,9 @@ const styleStyle = {
             <div class={gridClasses}>
               {group.items.map(({ image, title }) => (
                 <div class="flex flex-col items-center intersect-once motion-safe:intersect:animate-fade motion-safe:opacity-0 intersect-tenth sm:intersect-quarter">
-                  <div class="flex justify-center mb-4">
+                  <div class="flex justify-center mb-4 xl:mb-[16px]">
                     <Image
-                      class="rounded-lg shadow-md w-full max-w-40 sm:max-w-52"
+                      class="rounded-lg shadow-md w-full max-w-40 sm:max-w-52 xl:max-w-[208px]"
                       width={680}
                       height={840}
                       widths={[300, 400, 680]}
@@ -155,12 +155,12 @@ const styleStyle = {
                       {...image}
                     />
                   </div>
-                  <div class="text-center border-b-2 border-primary-500 pb-2 w-full mb-2">
+                  <div class="text-center border-b-2 border-primary-500 w-full pb-2 xl:pb-[8px] mb-2 xl:mb-[16px]">
                     <h3 class="inline-flex xs:items-center flex-wrap flex-col xs:flex-row">
                       <GradientText
                         animate={false}
                         backgroundStyles={styleStyle}
-                        class="text-5xl font-bold font-signature italic pr-4"
+                        class="text-5xl xl:text-[48px] xl:leading-[56px] font-bold font-signature italic pr-4 xl:pr-[16px]"
                         set:html={title}
                       />
                     </h3>
