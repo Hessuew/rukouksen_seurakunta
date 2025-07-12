@@ -28,6 +28,7 @@ const t = useTranslations(lang);
     subject: string;
     videoId: string;
     title: string;
+    titleTranslated: string;
     poster?: string;
     video?: { src: string; alt: string };
   } | null = null;
@@ -159,6 +160,7 @@ const t = useTranslations(lang);
   }
 
   async function openModal(videoContainer: HTMLElement, modal: HTMLDivElement, modalContent: HTMLDivElement) {
+    console.log(selectedItem);
     try {
       async function displayModal() {
         await new Promise((resolve) => setTimeout(resolve, PLAYER_CREATION_DELAY));
@@ -295,6 +297,7 @@ const t = useTranslations(lang);
           subject,
           videoId,
           title: videoContainer.dataset.title!,
+          titleTranslated: videoContainer.dataset.titleTranslated!,
           poster: videoContainer.dataset.poster,
           video: videoContainer.dataset.video
             ? {
@@ -310,7 +313,7 @@ const t = useTranslations(lang);
         // Add title
         const titleEl = document.createElement('h3');
         titleEl.className = 'text-xl font-bold text-gray-100 mb-4';
-        titleEl.textContent = selectedItem.title;
+        titleEl.textContent = selectedItem?.titleTranslated;
         modalContent.appendChild(titleEl);
 
         // Add thumbnail first (will be replaced by player after transition)
@@ -422,6 +425,7 @@ const t = useTranslations(lang);
                 data-type={item.subject}
                 data-video-id={item.videoId}
                 data-title={item.title}
+                data-title-translated={t(item.title as keyof typeof t)}
                 data-poster={item.poster?.src}
                 data-video={item.video}
                 aria-label={`View ${item.title} video`}

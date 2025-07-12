@@ -20,8 +20,8 @@ export const headerData: { links: Array<MenuLink> } = {
     {
       separator: true,
       icon: 'tabler:brand-youtube',
-      text: 'podcasts',
-      href: getPermalink('/podkastit'),
+      text: 'videos',
+      href: getPermalink('/rukouksen-seurakunta-videot'),
     },
   ],
 };
