@@ -80,7 +80,7 @@ const navigateToLanguage = (href: string | undefined) => {
   // Check if the current URL already contains /en
   const currentUrl = new URL(Astro.url);
   const pathContainsEn = currentUrl.pathname.includes('/en');
-  const pathContainsPodkastit = currentUrl.pathname.includes('podkastit');
+  const pathContainsPodkastit = currentUrl.pathname.includes('podkastit') || currentUrl.pathname.includes('jesus-fest');
 
   // Handle anchor links specially
   if (href.startsWith('#')) {
@@ -110,7 +110,7 @@ const navigateToLanguage = (href: string | undefined) => {
   }
 
   // Handle regular links when on podcast page
-  if (pathContainsPodkastit && !href.startsWith('#') && !href.includes('podkastit')) {
+  if (pathContainsPodkastit && !href.startsWith('#') && !href.includes('podkastit') && !href.includes('jesus-fest')) {
     if (currentLang === 'en') {
       return `/en${href}`;
     }

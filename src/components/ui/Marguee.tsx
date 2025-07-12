@@ -6,7 +6,7 @@ const ReviewCard = ({ name, body }: { img?: string; name: string; body: string }
   return (
     <figure
       className={cn(
-        'relative h-full w-[352px] cursor-pointer overflow-hidden rounded-xl border p-4 border-white/60',
+        'relative h-full w-[352px] cursor-pointer overflow-hidden rounded-xl border p-4 xl:p-[16px] border-white/60',
         // light styles
         'border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]',
         // dark styles
@@ -22,16 +22,16 @@ const ReviewCard = ({ name, body }: { img?: string; name: string; body: string }
       }}
     >
       <div className='flex flex-row items-center gap-2'>
-        <div className='min-h-8 min-w-8 2xl:min-h-12 2xl:min-w-12 rounded-full border border-slate-600' />
+        <div className='min-h-8 min-w-8 xl:min-h-[32px] xl:min-w-[32px] 2xl:min-h-[48px] 2xl:min-w-[48px] rounded-full border border-slate-600' />
         {/* <img className='rounded-full' width='32' height='32' alt='' src={img || ''} /> */}
 
-        <hr className='border-slate-600 my-4' />
+        <hr className='border-slate-600 my-4 xl:my-[16px]' />
         <div className='flex flex-col'>
-          <figcaption className='text-sm font-medium text-black'>{name}</figcaption>
+          <figcaption className='text-sm xl:text-[14px] xl:leading-[20px] font-medium text-black'>{name}</figcaption>
           {/* <p className='text-xs font-medium dark:text-white/40'>{username}</p> */}
         </div>
       </div>
-      <blockquote className='flex-auto bg-white/60 text-sm mt-2 self-baseline rounded-lg py-2 px-4 text-black'>
+      <blockquote className='flex-auto bg-white/60 text-black text-sm xl:text-[14px] xl:leading-[20px] mt-2 xl:mt-[8px] self-baseline rounded-lg py-2 px-4 xl:py-[8px] xl:px-[16px]'>
         {body}
       </blockquote>
     </figure>
