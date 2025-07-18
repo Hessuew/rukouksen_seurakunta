@@ -10,13 +10,13 @@ import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Rukouksen seurakunta | Seurakunnan podkastit',
+  title: 'Rukouksen seurakunta | Seurakunnan videot',
   description:
-    'Rukouksen seurakunta on Kuopiossa kokoontuva ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus. Savilahti, Kuopio.',
+    'Rukouksen seurakunta on Kuopiossa kokoontuva ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus.',
   ignoreTitleTemplate: true,
   canonical: 'https://rukouksenseurakunta.fi',
   openGraph: {
-    title: 'Rukouksen seurakunta | Seurakunnan podkastit',
+    title: 'Rukouksen seurakunta | Seurakunnan videot',
     description:
       'Rukouksen seurakunta on Kuopiossa kokoontuva ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus.',
     type: 'website',
@@ -54,7 +54,7 @@ const t = useTranslations(lang);
 ---
 
 <Layout metadata={metadata}>
-  <Hero tagline={t('podcasts')} subtitle={t('podcastSubtitle')}>
+  <Hero tagline={t('videos')} subtitle={t('podcastSubtitle')}>
     <Fragment slot="title">
       <GradientText imageNro={2} backgroundStyles={styleStyle}>
         {t('podcastsFrom')}

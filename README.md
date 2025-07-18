@@ -1,51 +1,114 @@
-# Rukouksen seurakunta Website
+# Rukouksen Seurakunta - Prayer Church Finland
 
 ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/Hessuew/rukouksen_seurakunta?utm_source=oss&utm_medium=github&utm_campaign=Hessuew%2Frukouksen_seurakunta&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
 
-## 🎯 Project Overview
+## 🙏 About Prayer Church
 
-The website includes:
+Welcome to [Rukouksen Seurakunta](https://rukouksenseurakunta.fi/) - a vibrant Christian community in Finland dedicated to prayer, worship, and spiritual growth. Our church serves as a beacon of faith, bringing together believers from all walks of life to experience the Holy Spirit and power of God.
 
-## 📑 Pages
+## 🌟 Our Mission
 
-## 🛠 Tech Stack
+At Prayer Church, we are committed to:
 
-- [Astro](https://astro.build/) - Static Site Generator
-- [React](https://reactjs.org/) - UI Components
-- [TypeScript](https://www.typescriptlang.org/) - Type Safety
-- [Tailwind CSS](https://tailwindcss.com/) - Styling
-- [Bun](https://bun.sh/) - JavaScript Runtime & Package Manager
+- **Prayer**: Creating fervent prayer and fostering a culture of prayer
+- **The Word**: Studying the Bible with the Holy Spirit's guidance and revelation
+- **The Spirit of God**: Fostering a culture of the Holy Spirit and His power
+- **Community**: Strengthening bonds within our congregation and reaching out to the broader community
+- **Spiritual Growth**: Providing resources and guidance for personal and collective spiritual development
 
-## 🚀 Getting Started
+## 📍 Website Sections
 
-### Prerequisites
+### Main Website
 
-- Bun (latest version)
+[**rukouksenseurakunta.fi**](https://rukouksenseurakunta.fi/) - Our primary hub featuring:
 
-### Installation
+- Church information and beliefs
+- Service times and events
+- Contact information and location details
+- Information about the ministers
+- Testimonials
 
-```bash
-# Clone the repository
-git clone [repository-url]
+### Jesus Fest
 
-# Install dependencies
-bun install
+[**Jesus Fest**](https://rukouksenseurakunta.fi/jesus-fest/) - Our annual events featuring:
 
-# Start development server
-bun run dev
-```
+- Praise and worship
+- Testimonials
+- Prayers
+- Preaching the gospel
 
-### Building for Production
+### Video Ministry
 
-```bash
-# Create production build
-bun run build
+[**Prayer Church Videos**](https://rukouksenseurakunta.fi/rukouksen-seurakunta-videot/) - Our digital ministry including:
 
-# Preview production build
-bun run preview
-```
+- Bible study sessions podcasts
+- Prayer meetings
+- Special event highlights
 
-## 📁 Project Structure
+## 🎯 Website Features
+
+### User Experience
+
+- **Responsive Design**: Optimized for all devices - desktop, tablet, and mobile
+- **Easy Navigation**: Intuitive menu structure for quick access to information
+- **Search Functionality**: Find sermons, events, and content easily
+- **Multilingual Support**: Content available in multiple languages
+- **Accessibility**: Designed with accessibility standards in mind
+
+### Content Management
+
+- **Regular Updates**: Fresh content including statistics, events, and news
+- **Testimonials**: Engaging testimonies from the community
+- **Newsletter Integration**: Subscribe to stay connected with church updates
+- **Social Media Integration**: Connect with us on YouTube
+
+## 🏛️ Church Information
+
+**Location**: Finland  
+**Services**: Sunday worship, prayer meetings, Bible studies, gospel outreach, personal discipleship  
+**Community**: All men shall know you are my disciples when they see the love that you have one another.  
+**Language**: Finnish and English
+
+## 🤝 Get Involved
+
+Join our community:
+
+- Attend our Sunday services
+- Participate in prayer meetings
+- Join Bible study groups
+- Come and experience the Power of the Holy Spirit
+- Connect through our [main website](https://rukouksenseurakunta.fi/)
+
+## 📞 Contact & Connect
+
+Stay connected with Prayer Church:
+
+- **Website**: [rukouksenseurakunta.fi](https://rukouksenseurakunta.fi/)
+- **Events**: [Jesus Fest](https://rukouksenseurakunta.fi/jesus-fest/)
+- **Videos**: [Church Videos](https://rukouksenseurakunta.fi/rukouksen-seurakunta-videot/)
+
+---
+
+_"For where two or three gather in my name, there am I with them." - Matthew 18:20_
+
+**Rukouksen Seurakunta** | Prayer Church Finland | Christian Community | Worship | Prayer | Fellowship
+
+## 🛠 Technical Information
+
+### Built With Modern Technology
+
+- **Astro** - Fast, modern static site generator
+- **React** - Interactive user interface components
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Responsive, modern styling
+- **Bun** - Fast JavaScript runtime and package manager
+
+### Performance Optimized
+
+- Fast loading times
+- SEO optimized
+- Mobile-first design
+- Accessible to all users
 
 ```
 src/
