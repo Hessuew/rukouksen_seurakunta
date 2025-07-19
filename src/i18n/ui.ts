@@ -330,7 +330,7 @@ Thank you, Jesus!
     welcomeToOurMeetingsTitle: 'Welcome to our meetings',
     welcomeToOurMeetingsSubtitle:
       'Join our prayer meetings and Bible studies. If you are looking for the true heart of God, you will find Him, or rather He will find you. It is absolutely amazing!',
-    podcastsFrom: 'Jesus Fest Kuopio and other events',
+    podcastsFrom: 'Jesus Fest Kuopio and other videos',
     podcastSubtitle:
       "Not everyone speaks or understands English. That's why we wanted to prepare a brief Finnish walkthrough of these Spirit-filled Bible Studies and events so that Finnish speakers can also access these heavenly revelations. And we ourselves have been immensely blessed as we filmed these, for the Holy Spirit has been the leader of the recording sessions. Hallelujah!",
     events: 'Events',
@@ -743,7 +743,7 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
     icon: ' -ikonia',
     toReadTheFullTestimony: 'lukeaksesi koko todistuksen',
     clickOnTestimonialsToReadMore: 'Klikkaa lukeaksesi koko todistuksen',
-    podcastsFrom: 'Jesus Fest Kuopio ja muut tapahtumat',
+    podcastsFrom: 'Jesus Fest Kuopio ja muut videot',
     search: 'Hae..',
     allSubjects: 'Kaikki aiheet',
     commandingBattalions: 'Pataljoonien komentaminen',
