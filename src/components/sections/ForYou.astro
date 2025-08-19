@@ -1,5 +1,5 @@
 ---
-import imgPrayerChurchKuopio from '~/assets/images/other/rukous_seurakunta_kokous.webp';
+import imgPrayerChurchKuopio from '~/assets/images/other/rukous_seurakunta_kuopio_kokous.webp';
 import Features3 from '~/components/widgets/Features3.astro';
 import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 
@@ -13,7 +13,7 @@ const t = useTranslations(lang);
   title={t('whatYouWillExperience')}
   subtitle={t('1cor2:4-5')}
   columns={3}
-  classes={{ headline: { subtitle: 'max-w-5xl' } }}
+  classes={{ headline: { subtitle: 'max-w-5xl xl:max-w-[1024px] mx-auto' } }}
   items={[
     {
       title: t('forYou.items1.title'),
