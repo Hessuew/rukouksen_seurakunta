@@ -168,8 +168,8 @@ Amen! Praise be to God!
     'testimonialIda.t2': `When ****** was praying in tongues, I started to understand what he was praying about. I was very surprised, and after we had prayed for a long time, I said that I might have understood the subjects he was praying for. When I told what I understood, ****** confirmed that he knew in the spirit that those were the subjects he was praying for and told me that what I experienced was a manifestation of the interpretation of tongues. Glory be to God!`,
     'testimonialIda.name': 'Ida',
     'testimonialIda.job': 'Nurse, counselor',
-    'testimonialBenwillis.t': `My experiences in the prayer church are countless. Before I joined, I never took prayer seriously. Now I have developed a strong habit of trusting God in everything that I do. Through that, I have seen the hand Jesus in my life, especially in my career where I specifically prayed for a job and Jesus delivered. My life has since transformed from someone who lived life aimlessly to a focused, deeply spiritual person whose faith has been renewed and who knows that it's only Jesus that can save our lives.`,
-    'testimonialBenwillis.name': 'Abraham',
+    'testimonialBenwillis.t': `I cannot continue to bear the social embarrassment of being associated with your public image. You are snake oil merchants, running a business to which I can no longer lend my name. In time, the truth will become evident to all; that what you lead is not a Christian fellowship, but a cult.`,
+    'testimonialBenwillis.name': 'Benwillies Onchonga',
     'testimonialBenwillis.job':
       'Medical researcher currently working as a teaching assistant at the university of Eastern Finland',
     'testimonialIina.t':
@@ -602,8 +602,10 @@ Aamen! Ylistys Jumalalle!
     'testimonialIda.t2': ` Kun ****** rukoili kielillä, aloin ymmärtämään aiheet, mitä hän rukoili. Olin erittäin yllättynyt, ja kun olimme rukoilleet pitkään, sanoin, että saatoin ymmärtää rukouksen. Kun kerroin hänelle, mitä olin ymmärtänyt, ****** vahvisti, että hän tiesi hengessä, että ne olivat aiheita, joista hän rukoili, ja kertoi minulle, että se oli kielten tulkinnan ilmeneminen. Kunnia Jumalalle!`,
     'testimonialIda.name': 'Ida',
     'testimonialIda.job': 'Lähihoitaja, ohjaaja',
-    'testimonialBenwillis.t': `Minulla on useita kokemuksia Rukouksen seurakunnassa. Aiemmin en ottanut rukoilemista tosissani. Nyt minulle on kehittynyt vahva luottamus Jumalaan kaicessa mitä teen. Jeesus on koskettanut elämääni ja erityisesti uraani, kun rukoilin työpaikkaa ja Jeesus antoi minulle monta. Elämäni on muuttunut. Elin aiemmin ilman päämäärää. Nyt olen päämäärätietoinen ja Hengen ohjaama henkilö, jonka usko on uudistunut ja joka tietää, että vain Jeesus voi pelastaa.`,
-    'testimonialBenwillis.name': 'Abraham',
+    'testimonialBenwillis.t':
+      'En pysty kantamaan sitä sosiaalista häpeää, että olisin millään tavoin osana teidän ryhmäänne. Olette käärmeen myrkyn myyjiä ja johdatte toimintaa, johon en voi osallistua. Ajan kanssa totuus tulee paljastumaan kaikille: te ette johda kristillistä yhteisöä, vaan kulttia.',
+    'testimonialBenwillis.t2': `I cannot continue to bear the social embarrassment of being associated with your public image. You are snake oil merchants, running a business to which I can no longer lend my name. In time, the truth will become evident to all; that what you lead is not a Christian fellowship, but a cult.`,
+    'testimonialBenwillis.name': 'Benwillies Onchonga',
     'testimonialBenwillis.job': 'Lääketieteen tutkija, opetusassitentti Itä-Suomen Yliopistolla',
     'testimonialIina.t':
       'Vastaanotin Jeesuksen, pääsin eroon tupakasta ilman mitään korvaavia nikotiinituotteita. Rukoilin apua Jeesukselta. Tajusin, että minun pitää myös vastaanottaa apu, ja niin kulkea valossa ilman riippuvuuksia.',

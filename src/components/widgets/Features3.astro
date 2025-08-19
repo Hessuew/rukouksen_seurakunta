@@ -38,18 +38,18 @@ const {
   <div aria-hidden="true" class="aspect-w-16 aspect-h-7">
     {
       image && (
-        <div class="relative m-auto max-w-5xl">
+        <div class="relative m-auto max-w-5xl xl:max-w-[1024px]">
           {typeof image === 'string' ? (
             <Fragment set:html={image} />
           ) : (
             <Image
               widths={[400, 768, 1024, 2040]}
               sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-              loading="eager"
+              loading="lazy"
               decoding="async"
               objectPosition="top top"
-              width={2040}
-              height={800}
+              width={1024}
+              height={576}
               {...image}
             />
           )}
