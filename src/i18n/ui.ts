@@ -170,8 +170,7 @@ Amen! Praise be to God!
     'testimonialIda.job': 'Nurse, counselor',
     'testimonialBenwillis.t': `I cannot continue to bear the social embarrassment of being associated with your public image. You are snake oil merchants, running a business to which I can no longer lend my name. In time, the truth will become evident to all; that what you lead is not a Christian fellowship, but a cult.`,
     'testimonialBenwillis.name': 'Benwillies Onchonga',
-    'testimonialBenwillis.job':
-      'Medical researcher currently working as a teaching assistant at the university of Eastern Finland',
+    'testimonialBenwillis.job': 'University student',
     'testimonialIina.t':
       'I received Jesus and was freed from smoking without any replacement nicotine products. I prayed for help from Jesus. I realized that I also needed to accept the help, and so I walk in the light without addictions.',
     'testimonialIina.name': 'Iina',
@@ -606,7 +605,7 @@ Aamen! Ylistys Jumalalle!
       'En pysty kantamaan sitä sosiaalista häpeää, että olisin millään tavoin osana teidän ryhmäänne. Olette käärmeen myrkyn myyjiä ja johdatte toimintaa, johon en voi osallistua. Ajan kanssa totuus tulee paljastumaan kaikille: te ette johda kristillistä yhteisöä, vaan kulttia.',
     'testimonialBenwillis.t2': `I cannot continue to bear the social embarrassment of being associated with your public image. You are snake oil merchants, running a business to which I can no longer lend my name. In time, the truth will become evident to all; that what you lead is not a Christian fellowship, but a cult.`,
     'testimonialBenwillis.name': 'Benwillies Onchonga',
-    'testimonialBenwillis.job': 'Lääketieteen tutkija, opetusassitentti Itä-Suomen Yliopistolla',
+    'testimonialBenwillis.job': 'Yliopisto opiskelija',
     'testimonialIina.t':
       'Vastaanotin Jeesuksen, pääsin eroon tupakasta ilman mitään korvaavia nikotiinituotteita. Rukoilin apua Jeesukselta. Tajusin, että minun pitää myös vastaanottaa apu, ja niin kulkea valossa ilman riippuvuuksia.',
     'testimonialIina.name': 'Iina',
