@@ -214,7 +214,10 @@ const reviews = [
     </Fragment>
   </Hero>
 
-  <ContentSection classes={{ content: 'relative m-auto max-w-5xl xl:max-w-[1024px]' }}>
+  <ContentSection
+    classes={{ content: 'm-auto max-w-5xl xl:max-w-[1024px]' }}
+    containerClass="pb-0 md:pb-0 lg:pb-0 xl:pb-0"
+  >
     <Fragment slot="title">
       <GradientText class="text-3xl md:text-4xl xl:text-[36px] xl:leading-[40px]">
         {t('easterPrayerConference')}
@@ -222,30 +225,25 @@ const reviews = [
     </Fragment>
 
     <Fragment slot="default">
-      <div class="relative m-auto max-w-5xl xl:max-w-[1024px]">
-        <Image
-          class="mx-auto rounded-md w-full"
-          widths={[400, 768, 1024, 2040]}
-          sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-          loading="eager"
-          decoding="async"
-          width={1024}
-          height={576}
-          src={lang === 'en' ? prayerConferenceEn : prayerConferenceFi}
-          alt={t('prayerConferenceImageAlt')}
-        />
-      </div>
+      <Image
+        class="mx-auto rounded-md w-full"
+        widths={[400, 768, 1024, 2040]}
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+        loading="eager"
+        decoding="async"
+        width={1024}
+        height={576}
+        src={lang === 'en' ? prayerConferenceEn : prayerConferenceFi}
+        alt={t('prayerConferenceImageAlt')}
+      />
 
       <p class="text-center text-sm xl:text-[14px] xl:leading-[20px] text-muted dark:text-slate-400 mb-12 xl:mb-[48px]">
         {t('prayerConferenceImageText')}
       </p>
 
       <Headline classes={{ title: 'text-2xl' }} title={t('whatHappened')} subtitle={t('hereAreSome')} />
-      <div
-        class="relative mx-auto max-w-7xl w-full intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
-      >
-        <MarqueeDemo reviews={reviews} />
-      </div>
     </Fragment>
   </ContentSection>
+
+  <MarqueeDemo reviews={reviews} />
 </Layout>

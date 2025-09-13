@@ -21,7 +21,7 @@ const ReviewCard = ({ name, body }: { img?: string; name: string; body: string }
         backgroundSize: 'cover',
       }}
     >
-      <div className='flex flex-row items-center gap-2'>
+      <div className='flex flex-row items-center gap-2 xl:gap-[8px]'>
         <div className='min-h-8 min-w-8 xl:min-h-[32px] xl:min-w-[32px] 2xl:min-h-[48px] 2xl:min-w-[48px] rounded-full border border-slate-600' />
         {/* <img className='rounded-full' width='32' height='32' alt='' src={img || ''} /> */}
 
