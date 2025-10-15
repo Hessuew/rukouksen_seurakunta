@@ -63,11 +63,19 @@ const t = useTranslations(lang);
       <div class="flex flex-col xs:flex-row xs:gap-6 text-start text-muted font-normal pt-4">
         <div class="xs:hidden flex flex-col gap-2">
           <div class="flex flex-col">
-            <span class="font-medium">{t('address')} </span>
+            <span class="font-medium">{t('address')}: </span>
+            <span>Zoom</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-medium">{t('time')}: </span>
+            <span>{t('time1')}</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-medium">{t('address')} 2:</span>
             <span>{t('address2')}</span>
           </div>
           <div class="flex flex-col">
-            <span class="font-medium">{t('time')} </span>
+            <span class="font-medium">{t('time')} 2: </span>
             <span>{t('time2')}</span>
           </div>
           <div class="flex flex-col">
@@ -78,12 +86,16 @@ const t = useTranslations(lang);
           <span>{t('email2')}</span>
         </div>
         <div class="hidden xs:flex xs:flex-col">
-          <span>{t('address')} </span>
-          <span>{t('time')} </span>
+          <span>{t('address')}:</span>
+          <span>{t('time')}:</span>
+          <span>{t('address')} 2: </span>
+          <span>{t('time')} 2: </span>
           <span>{t('phone')} </span>
           <span>{t('email')} </span>
         </div>
         <div class="hidden xs:flex xs:flex-col">
+          <span>Zoom</span>
+          <span>{t('time1')}</span>
           <span>{t('address2')}</span>
           <span>{t('time2')}</span>
           <span>{t('phone2')}</span>

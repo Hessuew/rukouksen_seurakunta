@@ -47,12 +47,16 @@ const { theme = 'light' } = Astro.props;
     <div class="md:flex items-end md:justify-between py-6 md:py-8">
       <div class="flex flex-row gap-6 text-start pb-4 lg:pb-0 text-muted font-normal text-xs xs:text-sm">
         <div class="flex flex-col">
-          <span>{t('address')}</span>
-          <span>{t('time')}</span>
-          <span>{t('phone')}</span>
-          <span>{t('email')}</span>
+          <span>{t('address')}: </span>
+          <span>{t('time')}: </span>
+          <span>{t('address')} 2: </span>
+          <span>{t('time')} 2: </span>
+          <span>{t('phone')}: </span>
+          <span>{t('email')}: </span>
         </div>
         <div class="flex flex-col">
+          <span>Zoom</span>
+          <span>{t('time1')}</span>
           <span>{t('address2')}</span>
           <span>{t('time2')}</span>
           <span>{t('phone2')}</span>
