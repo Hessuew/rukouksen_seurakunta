@@ -302,6 +302,10 @@ Thank you, Jesus!
       'Easter Prayer Conference 2025 - Event focused on prayer,  the Holy Spirit moved in a way that could be seen and heard.',
     crusadeImageAlt: 'Jesus Fest Kuopio flyer',
     crusadeImageText: 'Jesus Fest Kuopio 2025 - Prayer, word, salvations, repentance, miracles and sings.',
+    winterRevival: 'Jesus Fest Winter Revival',
+    winterRevivalImageAlt: 'Jesus Fest Winter Revival flyer',
+    winterRevivalImageText:
+      'Jesus Fest Winter Revival 2025 - Prayer, word, salvations, repentance, miracles and sings.',
     whatWeBelieve: 'What we believe',
     testimonies: 'Testimonies',
     press: 'Press the',
@@ -369,8 +373,12 @@ Thank you, Jesus!
     haveYouHeard2: 'Jesus is coming to Kuopio!',
     easterPrayerConference: 'Easter Prayer Conference',
     eventsOld: 'Easter Prayer Conference',
-    eventsSubtitle:
-      "We organize events to reach the lost and strengthen the churches, following the how the Holy Spirit leads us. Here you'll find information about upcoming and past events. After each event, we also upload testimonies here on the website, so you can see what God has done. Be blessed!",
+    eventsSubtitle: `Here you can find the official information about upcoming and past events. Hallelujah!`,
+    eventsSubtitleItem1: "We organize events every year to fulfill Jesus' great commission in Kuopio 🎉",
+    eventsSubtitleItem2: '1. To save souls',
+    eventsSubtitleItem3: '2. To heal sick',
+    eventsSubtitleItem4: '3. To build believers',
+    eventsSubtitleItem5: '4. To strengthen churches',
     whatHappened: 'What happened at the conference?',
     hereAreSome:
       "Now that the conference has been held, it is important to ask: 'Was God present?' Here are some accounts of what happened at the conference or to the individuals.",
@@ -743,6 +751,10 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
       'Pääsiäisen rukouskonferenssi 2025 - Rukoukseen keskittynyt tapahtuma, jossa Pyhä Hengen liikehdintä voitiin nähdä ja kuulla.',
     crusadeImageAlt: 'Jesus Fest Kuopio esite',
     crusadeImageText: 'Jesus Fest Kuopio 2025 - Rukousta, sanaa, pelastumisia, parannuksen tekoa, ihmeitä ja merkkejä.',
+    winterRevival: 'Jesus Fest Talvi Herätys',
+    winterRevivalImageAlt: 'Jesus Fest Talvi Herätys esite',
+    winterRevivalImageText:
+      'Jesus Fest Talvi Herätys 2025 - Rukousta, sanaa, pelastumisia, parannuksen tekoa, ihmeitä ja merkkejä.',
     whatWeBelieve: 'Mihin uskomme',
     testimonies: 'Todistuksia',
     press: 'Paina',
@@ -813,8 +825,12 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
     haveYouHeard: 'Oletko kuullut? Jotain hyvää on tapahtumassa.',
     haveYouHeard2: 'Jeesus on tulossa Kuopioon!',
     easterPrayerConference: 'Pääsiäinen rukous konfferenssi',
-    eventsSubtitle:
-      'Järjestämme tapahtumia kadonneiden saavuttamiseksi sekä seurakuntien vahvistamiseksi sen mukaan, kuinka Pyhä Henki ohjaa meitä. Täältä löydät viralliset tiedot tulevista sekä menneistä tapahtumista. Lisäämme tänne jokaisen tapahtuman jälkeen todistuksia siitä, mitä Jumala teki tapahtumassa. Ole siunattu!',
+    eventsSubtitle: `Täältä löydät viralliset tiedot tulevista sekä menneistä tapahtumista. Hallelujah!`,
+    eventsSubtitleItem1: 'Järjestämme joka vuosi useita tapahtumia Jeesuksen lähetyskäskyn täyttämiseksi Kuopiossa🎉',
+    eventsSubtitleItem2: '1. Sielujen pelastamiseksi',
+    eventsSubtitleItem3: '2. Sairaiden parantamiseksi',
+    eventsSubtitleItem4: '3. Uskovien rakennukseksi',
+    eventsSubtitleItem5: '4. Seurakuntien vahvistamiseksi',
     whatHappened: 'Mitä konfferenssissa tapahtui?',
     hereAreSome:
       "Nyt kun konfferenssi on pidetty niin on tärkeä kysyä: 'Oliko Jumala läsnä?' Tässä muutamien vierailijoiden kuvauksia siitä, mitä konfferenssissa tapahtui.",
