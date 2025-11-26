@@ -92,6 +92,8 @@ export const ui = {
     Gretan's answer: 'No, I don't, but I know what the Bible says, and the Bible says that being lukewarm is wrong and if anything is more important than God, then that is wrong.`,
     gretaContent2: `When we walk in the way of Jesus fully sundered we are as perfect as Christ is. As long as we don't look at the flesh then God will surely tell about everything how things are and should be.`,
     gretaImageAlt: 'Image of pastor Greta of Church in Kuopio',
+    mahiContent1:
+      "From the beginning of the meeting I felt pain on my right loin. I don't have pain there. I was thinking which person of the meeting then had this pain. 'What do you think it was?' I perceived that it is a spirit. I was this was ********* pain. (Meeting with that person we cast the spirit out, and asked her to test that painful spot). 'It is actually gone, yes, there is no more pain here.'",
     ahunsi: 'Pastor Ahunsimere',
     ahunsiImageAlt: 'Image of pastor Ahunsimere of Church in Kuopio',
     akosua: 'Deaconess Akosua',
@@ -530,6 +532,8 @@ Thank you, Jesus!
     gretaContent2:
       'Kun vaellamme Kristuksen tiellä täysin antautuneena, olemme täydellisiä niin kuin itse Kristus on. Niin kauan kun emme katso lihaan, Jumala kyllä ilmoittaa kaikesta miten asiat ovat. Fil. 3:12-16',
     gretaImageAlt: 'Kuva Greta - Seurakunta Kuopio',
+    mahiContent1:
+      "Tapaamisen alusta asti tunsin kipua oikealla lanteellani. Minulla ei ole kipuja siellä. Ajattelin, kenellä kokouksen sitten henkilöllä oli tämä kipu. 'Mitä luulet sen olevan?' Minulle tuli henkeeni ensimmäisenä, että se on henki. Luulen tämän olevan ********* kipu. (Tapasimme tuon henkilön, ajoimme hengen ulos ja pyysimme häntä testaamaan tuon kipeän kohdan). 'Kipu on itse asiassa poissa, kyllä, tämä ei ole enää kipeä.'",
     ahunsi: 'Pastori Ahunsimere',
     ahunsiImageAlt: 'Kuva Ahunsimere - Seurakunta Kuopio',
     akosua: 'Seurakunnan palvelija Akosua',
