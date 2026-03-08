@@ -3,8 +3,10 @@ import crusadeEn from '~/assets/images/events/jesus_fest_kuopio_2025_flyer_en.we
 import crusadeFi from '~/assets/images/events/jesus_fest_kuopio_2025_flyer_fi.webp';
 import winterRevivalEn from '~/assets/images/events/jesus_fest_winter_revival_2025_en.webp';
 import winterRevivalFi from '~/assets/images/events/jesus_fest_winter_revival_2025_fi.webp';
-import prayerConferenceEn from '~/assets/images/events/rukous_konfferenssi_kuopio_2025_flyer_en.webp';
-import prayerConferenceFi from '~/assets/images/events/rukous_konfferenssi_kuopio_2025_flyer_fi.webp';
+import prayerConference2025En from '~/assets/images/events/rukous_konfferenssi_kuopio_2025_flyer_en.webp';
+import prayerConference2025Fi from '~/assets/images/events/rukous_konfferenssi_kuopio_2025_flyer_fi.webp';
+import prayerConference2026En from '~/assets/images/events/rukous_konfferenssi_kuopio_2026_flyer_en.webp';
+import prayerConference2026Fi from '~/assets/images/events/rukous_konfferenssi_kuopio_2026_flyer_fi.webp';
 import Image from '~/components/common/Image.astro';
 import GradientText from '~/components/ui/GradientText.astro';
 import Headline from '~/components/ui/Headline.astro';
@@ -104,7 +106,7 @@ const reviews = [
 ---
 
 <Layout metadata={metadata}>
-  <Hero tagline={t('events')} title={t('winterRevival')}>
+  <Hero tagline={t('events')} title={t('prayerConference2026Title')}>
     <Fragment slot="image">
       <div class="relative m-auto max-w-5xl text-center">
         <Image
@@ -116,13 +118,13 @@ const reviews = [
           objectPosition="top top"
           width={1024}
           height={576}
-          src={lang === 'en' ? winterRevivalEn : winterRevivalFi}
-          alt={t('winterRevivalImageAlt')}
+          src={lang === 'en' ? prayerConference2026En : prayerConference2026Fi}
+          alt={t('prayerConference2026ImageAlt')}
         />
       </div>
 
       <p class="text-center text-sm xl:text-[14px] xl:leading-[20px] text-muted dark:text-slate-400 mb-12 xl:mb-[48px]">
-        {t('winterRevivalImageText')}
+        {t('prayerConference2026ImageText')}
       </p>
     </Fragment>
 
@@ -146,6 +148,28 @@ const reviews = [
       <br />
     </Fragment>
   </Hero>
+
+  <ContentSection classes={{ content: 'm-auto max-w-5xl xl:max-w-[1024px]' }}>
+    <Fragment slot="title">
+      <GradientText class="text-3xl md:text-4xl xl:text-[36px] xl:leading-[40px]">
+        {t('winterRevivalTitle2025')}
+      </GradientText>
+    </Fragment>
+
+    <Fragment slot="default">
+      <Image
+        class="mx-auto rounded-md w-full"
+        widths={[400, 768, 1024, 2040]}
+        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+        loading="eager"
+        decoding="async"
+        width={1024}
+        height={576}
+        src={lang === 'en' ? winterRevivalEn : winterRevivalFi}
+        alt={t('winterRevivalImageAlt')}
+      />
+    </Fragment>
+  </ContentSection>
 
   <ContentSection classes={{ content: 'm-auto max-w-5xl xl:max-w-[1024px]' }}>
     <Fragment slot="title">
@@ -285,7 +309,7 @@ const reviews = [
         decoding="async"
         width={1024}
         height={576}
-        src={lang === 'en' ? prayerConferenceEn : prayerConferenceFi}
+        src={lang === 'en' ? prayerConference2025En : prayerConference2025Fi}
         alt={t('prayerConferenceImageAlt')}
       />
 
