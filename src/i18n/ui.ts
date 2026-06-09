@@ -313,6 +313,9 @@ Thank you, Jesus!
     prayerConference2026Title: 'Easter Prayer Conference 2026',
     prayerConference2026ImageText:
       'Easter Prayer Conference 2026 - Event focused on prayer. Revival is birthed by travailing prayer.',
+    jesusFest2026Title: 'Jesus Fest Kuopio 2026',
+    jesusFest2026ImageAlt: 'Jesus Fest Kuopio 2026 flyer',
+    jesusFest2026ImageText: 'Jesus Fest Kuopio 2026 - Prayer, word, salvations, repentance, miracles and signs.',
     whatWeBelieve: 'What we believe',
     testimonies: 'Testimonies',
     press: 'Press the',
@@ -769,6 +772,9 @@ On aivan ihmeellistä, että minut on vapautettu, jotta voin nyt vapauttaa muita
     prayerConference2026Title: 'Pääsiäisen Rukouskoferenssi 2026',
     prayerConference2026ImageText:
       "Pääsiäisen Rukouskoferenssi 2026 - Rukoukseen keskittynyt tapahtuma. Herätys syntyy pitkäjänteisen 'synnyttävän' rukouksen kautta'.",
+    jesusFest2026Title: 'Jesus Fest Kuopio 2026',
+    jesusFest2026ImageAlt: 'Jesus Fest Kuopio 2026 esite',
+    jesusFest2026ImageText: 'Jesus Fest Kuopio 2026 - Rukousta, sanaa, pelastumisia, parannuksen tekoa, ihmeitä ja merkkejä.',
     whatWeBelieve: 'Mihin uskomme',
     testimonies: 'Todistuksia',
     press: 'Paina',

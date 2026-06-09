@@ -1,16 +1,8 @@
 ---
-import crusadeEn from '~/assets/images/events/jesus_fest_kuopio_2025_flyer_en.webp';
-import crusadeFi from '~/assets/images/events/jesus_fest_kuopio_2025_flyer_fi.webp';
-import winterRevivalEn from '~/assets/images/events/jesus_fest_winter_revival_2025_en.webp';
-import winterRevivalFi from '~/assets/images/events/jesus_fest_winter_revival_2025_fi.webp';
-import prayerConference2025En from '~/assets/images/events/rukous_konfferenssi_kuopio_2025_flyer_en.webp';
-import prayerConference2025Fi from '~/assets/images/events/rukous_konfferenssi_kuopio_2025_flyer_fi.webp';
-import prayerConference2026En from '~/assets/images/events/rukous_konfferenssi_kuopio_2026_flyer_en.webp';
-import prayerConference2026Fi from '~/assets/images/events/rukous_konfferenssi_kuopio_2026_flyer_fi.webp';
+import jesusFest2026En from '~/assets/images/events/jesus_fest_kuopio_2026_en.webp';
+import jesusFest2026Fi from '~/assets/images/events/jesus_fest_kuopio_2026_fi.webp';
 import Image from '~/components/common/Image.astro';
 import GradientText from '~/components/ui/GradientText.astro';
-import Headline from '~/components/ui/Headline.astro';
-import { MarqueeDemo } from '~/components/ui/Marguee';
 import ContentSection from '~/components/widgets/ContentSection.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import StepsOriginal from '~/components/widgets/StepsOriginal.astro';
@@ -18,27 +10,29 @@ import { getLangFromUrl, useTranslations } from '~/i18n/utils';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Rukouksen seurakunta | Jesus Fest Talvi Herätys',
+  title: 'Rukouksen seurakunta | Jesus Fest Kuopio 2026',
   description:
-    'Rukouksen seurakunta on Kuopiossa kokoontuva ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus. Savilahti, Kuopio.',
+    'Jesus Fest Kuopio 2026 - Rukousta, sanaa, pelastumisia, parannuksen tekoa, ihmeitä ja merkkejä. Tule kohtaamaan elävä Jeesus Kuopioon. Rukouksen seurakunta, Savilahti, Kuopio.',
   ignoreTitleTemplate: true,
-  canonical: 'https://rukouksenseurakunta.fi',
+  canonical: 'https://rukouksenseurakunta.fi/jesus-fest',
   openGraph: {
-    title: 'Rukouksen seurakunta | Jesus Fest Talvi Herätys',
+    title: 'Rukouksen seurakunta | Jesus Fest Kuopio 2026',
     description:
-      'Rukouksen seurakunta on Kuopiossa kokoontuva ryhmä, joka keskittyy Jeesukseen, intohimoiseen rukoukseen, Hengen ja Sanan täyttämään elämään, sekä herätyksen levittämiseen. Tule mukaan rukouskokouksiin ja kohtaa Jeesus.',
+      'Jesus Fest Kuopio 2026 - Rukousta, sanaa, pelastumisia, parannuksen tekoa, ihmeitä ja merkkejä. Tule kohtaamaan elävä Jeesus Kuopioon.',
     type: 'website',
-    image: winterRevivalFi,
+    image: jesusFest2026Fi,
     article: {
       publishedTime: '2025-03-03T05:03:23+02:00',
-      modifiedTime: '2025-03-03T05:03:23+02:00',
+      modifiedTime: '2026-06-09T00:00:00+03:00',
       authors: ['Rukouksen seurakunta'],
       tags: [
+        'Jesus Fest Kuopio',
+        'Jesus Fest',
+        'Jesus Fest 2026',
         'Rukouksen seurakunta',
         'Rukouksen seurakunta Kuopio',
         'Savilahti',
         'Kuopio',
-        'Savilahden seurakunta',
         'Kuopio seurakunta',
       ],
     },
@@ -52,61 +46,10 @@ const metadata = {
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-
-const reviews = [
-  {
-    name: t('event1.test1.name'),
-    body: t('event1.test1.t'),
-  },
-  {
-    name: t('event1.test2.name'),
-    body: t('event1.test2.t'),
-  },
-  {
-    name: t('event1.test9b.name'),
-    body: t('event1.test9b.t'),
-  },
-  {
-    name: t('event1.test3.name'),
-    body: t('event1.test3.t'),
-  },
-  {
-    name: t('event1.test5.name'),
-    body: t('event1.test5.t'),
-  },
-  {
-    name: t('event1.test4.name'),
-    body: t('event1.test4.t'),
-  },
-  {
-    name: t('event1.test4b.name'),
-    body: t('event1.test4b.t'),
-  },
-  {
-    name: t('event1.test6.name'),
-    body: t('event1.test6.t'),
-  },
-  {
-    name: t('event1.test7.name'),
-    body: t('event1.test7.t'),
-  },
-  {
-    name: t('event1.test8.name'),
-    body: t('event1.test8.t'),
-  },
-  {
-    name: t('event1.test9.name'),
-    body: t('event1.test9.t'),
-  },
-  {
-    name: t('event1.test10.name'),
-    body: t('event1.test10.t'),
-  },
-];
 ---
 
 <Layout metadata={metadata}>
-  <Hero tagline={t('events')} title={t('prayerConference2026Title')}>
+  <Hero tagline={t('events')} title={t('jesusFest2026Title')}>
     <Fragment slot="image">
       <div class="relative m-auto max-w-5xl text-center">
         <Image
@@ -118,13 +61,13 @@ const reviews = [
           objectPosition="top top"
           width={1024}
           height={576}
-          src={lang === 'en' ? prayerConference2026En : prayerConference2026Fi}
-          alt={t('prayerConference2026ImageAlt')}
+          src={lang === 'en' ? jesusFest2026En : jesusFest2026Fi}
+          alt={t('jesusFest2026ImageAlt')}
         />
       </div>
 
       <p class="text-center text-sm xl:text-[14px] xl:leading-[20px] text-muted dark:text-slate-400 mb-12 xl:mb-[48px]">
-        {t('prayerConference2026ImageText')}
+        {t('jesusFest2026ImageText')}
       </p>
     </Fragment>
 
@@ -152,49 +95,11 @@ const reviews = [
   <ContentSection classes={{ content: 'm-auto max-w-5xl xl:max-w-[1024px]' }}>
     <Fragment slot="title">
       <GradientText class="text-3xl md:text-4xl xl:text-[36px] xl:leading-[40px]">
-        {t('winterRevivalTitle2025')}
+        Jesus Fest Kuopio 2026
       </GradientText>
     </Fragment>
 
     <Fragment slot="default">
-      <Image
-        class="mx-auto rounded-md w-full"
-        widths={[400, 768, 1024, 2040]}
-        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-        loading="eager"
-        decoding="async"
-        width={1024}
-        height={576}
-        src={lang === 'en' ? winterRevivalEn : winterRevivalFi}
-        alt={t('winterRevivalImageAlt')}
-      />
-    </Fragment>
-  </ContentSection>
-
-  <ContentSection classes={{ content: 'm-auto max-w-5xl xl:max-w-[1024px]' }}>
-    <Fragment slot="title">
-      <GradientText class="text-3xl md:text-4xl xl:text-[36px] xl:leading-[40px]">
-        Jesus Fest Kuopio 2025
-      </GradientText>
-    </Fragment>
-
-    <Fragment slot="default">
-      <Image
-        class="mx-auto rounded-md w-full"
-        widths={[400, 768, 1024, 2040]}
-        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-        loading="eager"
-        decoding="async"
-        width={1024}
-        height={576}
-        src={lang === 'en' ? crusadeEn : crusadeFi}
-        alt={t('crusadeImageAlt')}
-      />
-
-      <p class="text-center text-sm xl:text-[14px] xl:leading-[20px] text-muted dark:text-slate-400 mb-12 xl:mb-[48px]">
-        {t('crusadeImageText')}
-      </p>
-
       <div class="">
         <GradientText
           class="text-2xl md:text-3xl xl:text-[30px] xl:leading-[36px] font-bold leading-tighter tracking-tighter mb-4 font-heading text-gray-200 intersect-once intersect-tenth sm:intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
@@ -289,37 +194,4 @@ const reviews = [
       </GradientText>
     </div>
   </ContentSection>
-
-  <ContentSection
-    classes={{ content: 'm-auto max-w-5xl xl:max-w-[1024px]' }}
-    containerClass="pb-0 md:pb-0 lg:pb-0 xl:pb-0"
-  >
-    <Fragment slot="title">
-      <GradientText class="text-3xl md:text-4xl xl:text-[36px] xl:leading-[40px]">
-        {t('easterPrayerConference')}
-      </GradientText>
-    </Fragment>
-
-    <Fragment slot="default">
-      <Image
-        class="mx-auto rounded-md w-full"
-        widths={[400, 768, 1024, 2040]}
-        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-        loading="eager"
-        decoding="async"
-        width={1024}
-        height={576}
-        src={lang === 'en' ? prayerConference2025En : prayerConference2025Fi}
-        alt={t('prayerConferenceImageAlt')}
-      />
-
-      <p class="text-center text-sm xl:text-[14px] xl:leading-[20px] text-muted dark:text-slate-400 mb-12 xl:mb-[48px]">
-        {t('prayerConferenceImageText')}
-      </p>
-
-      <Headline classes={{ title: 'text-2xl' }} title={t('whatHappened')} subtitle={t('hereAreSome')} />
-    </Fragment>
-  </ContentSection>
-
-  <MarqueeDemo reviews={reviews} />
 </Layout>
